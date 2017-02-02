@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="openmrs@localhost" uuid="70856932-380c-4286-a03e-392937675a35">
+    <data-source source="LOCAL" name="dev4@localhost" uuid="70856932-380c-4286-a03e-392937675a35">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/openmrs</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/dev4</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

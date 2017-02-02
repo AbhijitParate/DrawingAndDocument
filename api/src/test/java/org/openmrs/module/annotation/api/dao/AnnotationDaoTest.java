@@ -9,15 +9,11 @@
  */
 package org.openmrs.module.annotation.api.dao;
 
-import org.junit.Test;
 import org.junit.Ignore;
+import org.junit.Test;
 import org.openmrs.api.UserService;
-import org.openmrs.api.context.Context;
-import org.openmrs.module.annotation.Drawing;
 import org.openmrs.test.BaseModuleContextSensitiveTest;
 import org.springframework.beans.factory.annotation.Autowired;
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
 
 /**
  * It is an integration test (extends BaseModuleContextSensitiveTest), which verifies DAO methods
@@ -37,22 +33,22 @@ public class AnnotationDaoTest extends BaseModuleContextSensitiveTest {
 	@Ignore("Unignore if you want to make the Drawing class persistable, see also Drawing and liquibase.xml")
 	public void saveItem_shouldSaveAllPropertiesInDb() {
 		//Given
-		Drawing drawing = new Drawing();
-		drawing.setDescription("some description");
-		drawing.setOwner(userService.getUser(1));
-		
-		//When
-		dao.addOrUpdateDrawing(drawing);
+		//		Drawing drawing = new Drawing();
+		//		drawing.setDescription("some description");
+		//		drawing.setOwner(userService.getUser(1));
+		//
+		//		When
+		//		dao.addOrUpdateDrawing(drawing);
 		
 		//Let's clean up the cache to be sure getItemByUuid fetches from DB and not from cache
-		Context.flushSession();
-		Context.clearSession();
+		//		Context.flushSession();
+		//		Context.clearSession();
 		
 		//Then
-		Drawing savedDrawing = dao.getItemByUuid(drawing.getUuid());
-		
-		assertThat(savedDrawing, hasProperty("uuid", is(drawing.getUuid())));
-		assertThat(savedDrawing, hasProperty("owner", is(drawing.getOwner())));
-		assertThat(savedDrawing, hasProperty("description", is(drawing.getDescription())));
+		//		Drawing savedDrawing = dao.getItemByUuid(drawing.getUuid());
+		//
+		//		assertThat(savedDrawing, hasProperty("uuid", is(drawing.getUuid())));
+		//		assertThat(savedDrawing, hasProperty("owner", is(drawing.getOwner())));
+		//		assertThat(savedDrawing, hasProperty("description", is(drawing.getDescription())));
 	}
 }

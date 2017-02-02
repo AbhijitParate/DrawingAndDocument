@@ -44,5 +44,7 @@ public interface AnnotationService extends OpenmrsService {
 	 */
 	@Authorized(AnnotationConfig.MODULE_PRIVILEGE)
 	@Transactional
-	Drawing saveItem(Drawing drawing) throws APIException;
+	Drawing addOrUpdateDrawing(Drawing drawing) throws APIException;
+	
+	Drawing removeDrawing(Drawing drawing);
 }

@@ -19,9 +19,11 @@ import org.openmrs.api.UserService;
 import org.openmrs.module.annotation.Drawing;
 import org.openmrs.module.annotation.api.dao.AnnotationDao;
 import org.openmrs.module.annotation.api.impl.AnnotationServiceImpl;
-import static org.mockito.Mockito.*;
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
+
+import static org.hamcrest.Matchers.hasProperty;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.when;
 
 /**
  * This is a unit test, which verifies logic in AnnotationService. It doesn't extend
@@ -55,7 +57,7 @@ public class AnnotationServiceTest {
 		when(userService.getUser(1)).thenReturn(user);
 		
 		//When
-		basicModuleService.saveItem(drawing);
+		basicModuleService.addOrUpdateDrawing(drawing);
 		
 		//Then
 		assertThat(drawing, hasProperty("owner", is(user)));

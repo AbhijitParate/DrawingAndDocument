@@ -32,7 +32,7 @@ import java.io.InputStream;
  * 'module/annotation/annotationLink.form'.
  */
 @Controller("${rootrootArtifactId}.DownloadController")
-@RequestMapping(value = "module/annotation/download.form")
+@RequestMapping(value = { "annotation/download.form", "module/annotation/download.form" })
 public class DownloadController {
 	
 	@Autowired
@@ -51,7 +51,6 @@ public class DownloadController {
 		} else {
 			response.sendError(HttpServletResponse.SC_NOT_FOUND, "File not found.");
 		}
-		//		response.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED, "Method not allowed.");
 	}
 	
 	@SuppressWarnings("Duplicates")
