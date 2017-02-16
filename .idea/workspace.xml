@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36e80d1b-bbfd-4c70-bb1e-2f046640a285" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_anotheria_ano_web_2_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_joda_joda_convert_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_emrapi_api_1_20.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_htmlformentry_api_3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationTagHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/DrawingTagHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/complex_obs/AbstractComplexObsHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/complex_obs/ComplexObsData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/complex_obs/base/BaseComplexData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/complex_obs/base/BaseComplexObs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/resources/drawing.hmb.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/annotation-api-2.1.0-SNAPSHOT-tests.jar" afterPath="$PROJECT_DIR$/api/target/annotation-api-2.1.0-SNAPSHOT-tests.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/annotation-api-2.1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/api/target/annotation-api-2.1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/annotation/AnnotationActivator.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/annotation/AnnotationActivator.class" />
@@ -28,17 +15,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/lib/annotation-api-2.1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/lib/annotation-api-2.1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/org/openmrs/module/annotation/fragment/controller/EditorFragmentController.class" afterPath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/org/openmrs/module/annotation/fragment/controller/EditorFragmentController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/annotation/fragment/controller/EditorFragmentController.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/annotation/fragment/controller/EditorFragmentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/70856932-380c-4286-a03e-392937675a35.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/70856932-380c-4286-a03e-392937675a35.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/annotation-api.iml" afterPath="$PROJECT_DIR$/api/annotation-api.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/pom.xml" afterPath="$PROJECT_DIR$/api/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationActivator.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationActivator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Drawing.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Drawing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/api/dao/AnnotationDao.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/api/dao/AnnotationDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/api/impl/AnnotationServiceImpl.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/api/impl/AnnotationServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/resources/liquibase.xml" afterPath="$PROJECT_DIR$/api/src/main/resources/liquibase.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/test/java/org/openmrs/module/annotation/api/AnnotationServiceTest.java" afterPath="$PROJECT_DIR$/api/src/test/java/org/openmrs/module/annotation/api/AnnotationServiceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/liquibase.xml" afterPath="$PROJECT_DIR$/api/target/classes/liquibase.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/maven-java-formatter-cache.properties" afterPath="$PROJECT_DIR$/api/target/maven-java-formatter-cache.properties" />
@@ -48,12 +25,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/surefire-reports/TEST-org.openmrs.module.annotation.api.dao.AnnotationDaoTest.xml" afterPath="$PROJECT_DIR$/api/target/surefire-reports/TEST-org.openmrs.module.annotation.api.dao.AnnotationDaoTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/surefire-reports/org.openmrs.module.annotation.api.AnnotationServiceTest.txt" afterPath="$PROJECT_DIR$/api/target/surefire-reports/org.openmrs.module.annotation.api.AnnotationServiceTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/surefire-reports/org.openmrs.module.annotation.api.dao.AnnotationDaoTest.txt" afterPath="$PROJECT_DIR$/api/target/surefire-reports/org.openmrs.module.annotation.api.dao.AnnotationDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/pom.xml" afterPath="$PROJECT_DIR$/omod/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EditorFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EditorFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/resources/config.xml" afterPath="$PROJECT_DIR$/omod/src/main/resources/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" afterPath="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/editor.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/editor.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/editors.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/editors.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/config.xml" afterPath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/liquibase.xml" afterPath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/liquibase.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/fragments/editor.gsp" afterPath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/fragments/editor.gsp" />
@@ -68,7 +39,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" afterPath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/surefire-reports/TEST-org.openmrs.module.annotation.AdminListExtensionTest.xml" afterPath="$PROJECT_DIR$/omod/target/surefire-reports/TEST-org.openmrs.module.annotation.AdminListExtensionTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/surefire-reports/org.openmrs.module.annotation.AdminListExtensionTest.txt" afterPath="$PROJECT_DIR$/omod/target/surefire-reports/org.openmrs.module.annotation.AdminListExtensionTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
@@ -1151,7 +1121,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Added required setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added required setup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1370,6 +1341,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1391,6 +1363,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1453,6 +1426,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,6 +1455,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1488,6 +1465,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1296#1297#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1521,6 +1503,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" column="93" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="30" selection-end-column="93" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1528,6 +1511,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="7" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
