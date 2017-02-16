@@ -1,6 +1,10 @@
+org/openmrs/module/annotation/Constants.class
 org/openmrs/module/annotation/Drawing.class
-org/openmrs/module/annotation/api/dao/AnnotationDao.class
-org/openmrs/module/annotation/AnnotationConfig.class
 org/openmrs/module/annotation/AnnotationActivator.class
 org/openmrs/module/annotation/api/AnnotationService.class
+org/openmrs/module/annotation/DrawingTagHandler.class
+org/openmrs/module/annotation/AnnotationTagHandler.class
+org/openmrs/module/annotation/api/dao/AnnotationDao.class
+org/openmrs/module/annotation/AnnotationConfig.class
 org/openmrs/module/annotation/api/impl/AnnotationServiceImpl.class
+org/openmrs/module/annotation/DrawingTagHandler$DrawingEditorElement.class

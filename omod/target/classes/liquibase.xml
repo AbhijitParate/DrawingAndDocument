@@ -13,33 +13,43 @@
         for a list of supported elements and attributes
     -->
  
- 	<!-- Uncomment the changeset below if you want to make the Drawing class persistable, see also Drawing and AnnotationDaoTest -->
-    <changeSet id="drawing-2017-01-31-12-21" author="abhijit">
-        <preConditions onFail="MARK_RAN">
-            <not><tableExists tableName="drawing"/></not>
-        </preConditions>
-        <comment>
-            Creating the drawing table
-        </comment>
-        <createTable tableName="drawing">
-            <column name="drawing_id" type="int" autoIncrement="true">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="uuid" type="char(38)">
-                <constraints nullable="false" unique="true"/>
-            </column>
-            <column name="owner" type="int" />
-            <column name="description" type="varchar(255)" />
-            <column name="patient_id" type="varchar(255)" />
-            <column name="visit_id" type="varchar(255)" />
-            <column name="svg_id" type="varchar(255)" />
-        </createTable>
-        <addForeignKeyConstraint
-                constraintName="drawing_owner_fk"
-                baseTableName="drawing"
-                baseColumnNames="owner"
-                referencedTableName="users"
-                referencedColumnNames="user_id" />
-    </changeSet>
+    <!-- Uncomment the changeset below if you want to make the Drawing class persistable, see also Drawing and AnnotationDaoTest -->
+
+    <!--<changeSet id="drawing_1" author="abhijit">-->
+        <!--<preConditions onFail="MARK_RAN">-->
+            <!--<tableExists tableName="drawing"/>-->
+        <!--</preConditions>-->
+        <!--<sql>-->
+            <!--drop table if exists drawing;-->
+        <!--</sql>-->
+    <!--</changeSet>-->
+
+    <!--<changeSet id="drawing-2017-01-31-12-21" author="abhijit">-->
+        <!--<preConditions onFail="MARK_RAN">-->
+            <!--<not><tableExists tableName="drawing"/></not>-->
+        <!--</preConditions>-->
+        <!--<comment>-->
+            <!--Creating the drawing table-->
+        <!--</comment>-->
+        <!--<createTable tableName="drawing">-->
+            <!--<column name="drawing_id" type="int" autoIncrement="true">-->
+                <!--<constraints primaryKey="true" nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="uuid" type="char(38)">-->
+                <!--<constraints nullable="false" unique="true"/>-->
+            <!--</column>-->
+            <!--&lt;!&ndash;<column name="owner" type="int" />&ndash;&gt;-->
+            <!--<column name="description" type="varchar(255)" />-->
+            <!--<column name="patient_id" type="varchar(255)" />-->
+            <!--<column name="visit_id" type="varchar(255)" />-->
+            <!--<column name="svg_id" type="varchar(255)" />-->
+        <!--</createTable>-->
+        <!--&lt;!&ndash;<addForeignKeyConstraint&ndash;&gt;-->
+                <!--&lt;!&ndash;constraintName="drawing_owner_fk"&ndash;&gt;-->
+                <!--&lt;!&ndash;baseTableName="drawing"&ndash;&gt;-->
+                <!--&lt;!&ndash;baseColumnNames="owner"&ndash;&gt;-->
+                <!--&lt;!&ndash;referencedTableName="users"&ndash;&gt;-->
+                <!--&lt;!&ndash;referencedColumnNames="user_id" />&ndash;&gt;-->
+    <!--</changeSet>-->
  
 </databaseChangeLog>

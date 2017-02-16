@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmrs.module.annotation.AdminListExtensionTest" time="0.382" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="org.openmrs.module.annotation.AdminListExtensionTest" time="0.845" tests="2" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="idea.version" value="2016.3.3"/>
+    <property name="idea.version" value="2016.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.121-b13"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
-    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.3.3 --update-snapshots -s /home/abhijit/.m2/settings.xml -Dmaven.repo.local=/home/abhijit/.m2/repository install"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.3.4 --update-snapshots -s /home/abhijit/.m2/settings.xml -Dmaven.repo.local=/home/abhijit/.m2/repository install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -64,6 +64,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testValidatesLinks" classname="org.openmrs.module.annotation.AdminListExtensionTest" time="0.38"/>
-  <testcase name="testMediaTypeIsHtml" classname="org.openmrs.module.annotation.AdminListExtensionTest" time="0.002"/>
+  <testcase name="testValidatesLinks" classname="org.openmrs.module.annotation.AdminListExtensionTest" time="0.844"/>
+  <testcase name="testMediaTypeIsHtml" classname="org.openmrs.module.annotation.AdminListExtensionTest" time="0.001"/>
 </testsuite>

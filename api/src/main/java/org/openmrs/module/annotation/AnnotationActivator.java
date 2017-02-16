@@ -11,7 +11,10 @@ package org.openmrs.module.annotation;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openmrs.api.context.Context;
 import org.openmrs.module.BaseModuleActivator;
+import org.openmrs.module.ModuleFactory;
+import org.openmrs.module.htmlformentry.HtmlFormEntryService;
 
 /**
  * This class contains the logic that is run every time this module is either started or shutdown
@@ -20,18 +23,44 @@ public class AnnotationActivator extends BaseModuleActivator {
 	
 	private Log log = LogFactory.getLog(this.getClass());
 	
-	/**
-	 * @see #started()
-	 */
+	@Override
+	public void contextRefreshed() {
+		log.info("contextRefreshed");
+	}
+	
+	@Override
 	public void started() {
-		log.info("Started Annotation");
+		if (ModuleFactory.isModuleStarted("htmlformentry")) {
+			HtmlFormEntryService htmlFormEntryService = Context.getService(HtmlFormEntryService.class);
+			htmlFormEntryService.addHandler(Constants.MODULE_TAG, new DrawingTagHandler());
+		}
+		log.info("started");
 	}
 	
-	/**
-	 * @see #shutdown()
-	 */
-	public void shutdown() {
-		log.info("Shutdown Annotation");
+	@Override
+	public void stopped() {
+		try {
+			HtmlFormEntryService htmlFormEntryService = Context.getService(HtmlFormEntryService.class);
+			htmlFormEntryService.getHandlers().remove(Constants.MODULE_TAG);
+		}
+		catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		log.info("stopped");
 	}
 	
+	@Override
+	public void willRefreshContext() {
+		log.info("willRefreshContext");
+	}
+	
+	@Override
+	public void willStart() {
+		log.info("willStart");
+	}
+	
+	@Override
+	public void willStop() {
+		log.info("willStop");
+	}
 }

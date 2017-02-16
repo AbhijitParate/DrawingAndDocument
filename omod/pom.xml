@@ -125,6 +125,26 @@
 
 		<!--End Ui Framework-->
 
+		<!--HTMLFormEntry-->
+		<!--<dependency>-->
+			<!--<groupId>org.openmrs.module</groupId>-->
+			<!--<artifactId>htmlformentry-api-2.0</artifactId>-->
+			<!--<version>3.3.1</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>org.openmrs.module</groupId>-->
+			<!--<artifactId>htmlformentry19ext-api</artifactId>-->
+			<!--<version>RELEASE</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>org.openmrs.module</groupId>-->
+			<!--<artifactId>htmlformentry-api-2.0</artifactId>-->
+			<!--<version>3.3.1</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
+
 		<!-- JSON -->
 		<dependency>
 			<groupId>org.json</groupId>

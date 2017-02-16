@@ -1856,7 +1856,8 @@ $(document).ready(function() {
 
     // Show list of attachments on click
     $("#status-save").click(function () {
-        $( "#dialog-confirm" ).dialog("open");
+        uploadDialog.dialog("open");
+        // $( "#dialog-confirm" ).dialog("open");
     });
 
     $("#status-cancel").click(function () {
@@ -1875,8 +1876,6 @@ $(document).ready(function() {
 
         //new ajax request
         let request = new XMLHttpRequest();
-
-
 
         //event listener progress
         request.upload.addEventListener('progress',function(event){
@@ -1900,7 +1899,7 @@ $(document).ready(function() {
         });
 
         //open the request
-        request.open("POST","upload.form");
+        request.open("POST","../../annotation/upload.form");
 
         //set the request header for no caching
         request.setRequestHeader("Cache-Control","no-cache");
@@ -1998,5 +1997,12 @@ $(document).ready(function() {
             // });
         }
     }
+
+    beforeSubmit.push(function() {
+        $("#status-save").click();
+        setTimeout(function (e) {
+            return true;
+        }, 3000);
+    });
 
 } );

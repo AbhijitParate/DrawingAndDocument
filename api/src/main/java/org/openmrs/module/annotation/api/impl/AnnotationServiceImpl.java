@@ -45,9 +45,9 @@ public class AnnotationServiceImpl extends BaseOpenmrsService implements Annotat
 	
 	@Override
 	public Drawing addOrUpdateDrawing(Drawing drawing) throws APIException {
-		if (drawing.getOwner() == null) {
-			drawing.setOwner(userService.getUser(1));
-		}
+		//		if (drawing.getOwner() == null) {
+		//			drawing.setOwner(userService.getUser(1).getId());
+		//		}
 		
 		//		VisitService vs = Context.getVisitService();
 		//		Visit visit = vs.getVisit(Integer.valueOf(drawing.getVisitId()));
@@ -71,7 +71,7 @@ public class AnnotationServiceImpl extends BaseOpenmrsService implements Annotat
 		
 		//		Integer encounterId = encounter.getEncounterId();
 		
-		return dao.addOrUpdateDrawing(drawing);
+		return dao.saveDrawing(drawing);
 	}
 	
 	@Override

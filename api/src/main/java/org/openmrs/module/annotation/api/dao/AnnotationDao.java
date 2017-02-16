@@ -44,6 +44,12 @@ public class AnnotationDao {
 		return drawing;
 	}
 	
+	public Drawing saveDrawing(Drawing drawing) {
+		getSession().save(drawing);
+		logger.info("Drawing saved successfully, Drawing ID=" + drawing.getPatientId());
+		return drawing;
+	}
+	
 	public List<Drawing> getAllDrawings(String patientId, String visitId) {
 		Session session = getSession().getSessionFactory().getCurrentSession();
 		SQLQuery query = session.createSQLQuery("SELECT *  FROM drawing d where d.patient_id ='" + patientId

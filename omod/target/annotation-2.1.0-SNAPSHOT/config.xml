@@ -12,8 +12,9 @@
 			Improved drawing module
 	</description>
 
+	<!-- Module Activator -->
 	<activator>org.openmrs.module.annotation.AnnotationActivator</activator>
-	
+
 	<!-- <updateURL>https://modules.openmrs.org/modules/download/annotation/update.rdf</updateURL> -->
 	<!-- /Base Module Properties -->
 	
@@ -32,7 +33,16 @@
 		<require_module version="1.7">
 			org.openmrs.module.appui
 		</require_module>
+		<require_module version="3.3.2-SNAPSHOT">
+			org.openmrs.module.htmlformentry
+		</require_module>
+		<require_module version="1.18">
+			org.openmrs.module.emrapi
+		</require_module>
 	</require_modules>
+
+	<!-- Module Activator -->
+	<activator>org.openmrs.module.annotation.AnnotationActivator</activator>
 	
 	<!-- Extensions -->
 	<extension>

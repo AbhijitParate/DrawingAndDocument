@@ -14,14 +14,13 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.openmrs.User;
 import org.openmrs.api.UserService;
 import org.openmrs.module.annotation.Drawing;
 import org.openmrs.module.annotation.api.dao.AnnotationDao;
 import org.openmrs.module.annotation.api.impl.AnnotationServiceImpl;
 
-import static org.hamcrest.Matchers.hasProperty;
-import static org.hamcrest.core.Is.is;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.beans.HasPropertyWithValue.hasProperty;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.when;
 
@@ -53,13 +52,13 @@ public class AnnotationServiceTest {
 		
 		when(dao.addOrUpdateDrawing(drawing)).thenReturn(drawing);
 		
-		User user = new User();
-		when(userService.getUser(1)).thenReturn(user);
+		//		User user = new User();
+		//		when(userService.getUser(1)).thenReturn(user);
 		
 		//When
 		basicModuleService.addOrUpdateDrawing(drawing);
 		
 		//Then
-		assertThat(drawing, hasProperty("owner", is(user)));
+		assertThat(drawing, hasProperty("description", is("some description")));
 	}
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+
+    <hibernate-mapping package="org.openmrs.module.annotation">
+        <!--<class name="Drawing"-->
+               <!--table="drawing">-->
+            <!--<id name="id" type="java.lang.Integer" column="drawing_id" unsaved-value="0">-->
+                <!--<generator class="native" />-->
+            <!--</id>-->
+            <!--<discriminator column="drawing_id" insert="false" />-->
+            <!--<property name="uuid" type="java.lang.String" column="uuid" length="38" unique="true" />-->
+            <!--&lt;!&ndash;<property name="owner" type="java.lang.String" column="owner" length="11" unique="false" />&ndash;&gt;-->
+            <!--<property name="description" type="java.lang.String" column="description" length="255" />-->
+            <!--<property name="patientId" type="java.lang.String" column="patient_id" length="255" />-->
+            <!--<property name="visitId" type="java.lang.String" column="visit_id" length="255" />-->
+            <!--<property name="svgId" type="java.lang.String" column="svg_id" length="255" />-->
+        <!--</class>-->
+    </hibernate-mapping>

@@ -10,9 +10,9 @@
 package org.openmrs.module.annotation;
 
 import org.openmrs.BaseOpenmrsData;
-import org.openmrs.User;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Please note that a corresponding table schema must be created in liquibase.xml.
@@ -20,16 +20,20 @@ import javax.persistence.*;
 //Uncomment 2 lines below if you want to make the Drawing class persistable, see also AnnotationDaoTest and liquibase.xml
 @Entity(name = "annotation.Drawing")
 @Table(name = "drawing")
-public class Drawing extends BaseOpenmrsData {
+public class Drawing extends BaseOpenmrsData implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "drawing_id")
 	private Integer id;
 	
-	@ManyToOne
-	@JoinColumn(name = "owner")
-	private User owner;
+	//	@ManyToOne
+	//	@JoinColumn(name = "owner")
+	//	@Basic
+	//	@Column(name = "description")
+	//	private Integer owner;
 	
 	@Basic
 	@Column(name = "description")
@@ -67,13 +71,13 @@ public class Drawing extends BaseOpenmrsData {
 		super.setUuid(uuid);
 	}
 	
-	public User getOwner() {
-		return owner;
-	}
-	
-	public void setOwner(User owner) {
-		this.owner = owner;
-	}
+	//	public Integer getOwner() {
+	//		return owner;
+	//	}
+	//
+	//	public void setOwner(Integer owner) {
+	//		this.owner = owner;
+	//	}
 	
 	public String getDescription() {
 		return description;
