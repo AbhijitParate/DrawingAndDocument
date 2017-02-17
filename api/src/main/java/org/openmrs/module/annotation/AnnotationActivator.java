@@ -35,26 +35,26 @@ public class AnnotationActivator extends BaseModuleActivator {
 	
 	@Override
 	public void started() {
-
+		
 		updateConceptsAndEncounters();
-
+		
 		if (ModuleFactory.isModuleStarted("htmlformentry")) {
 			HtmlFormEntryService htmlFormEntryService = Context.getService(HtmlFormEntryService.class);
 			htmlFormEntryService.addHandler(Constants.MODULE_TAG, new DrawingTagHandler());
 		}
 		log.info("started");
 	}
-
+	
 	private void updateConceptsAndEncounters() {
-
+		
 		ConceptService conceptService = Context.getConceptService();
-
+		
 		// Concepts Complex
 		{
 			final String name = Constants.MODULE_NAME + Constants.ObsType.DEFAULT;
 			final String desc = "Concept complex for 'default' complex obs.";
 			final String uuid = Constants.ConceptUUID.DEFAULT;
-
+			
 			if (null == conceptService.getConceptByUuid(uuid)) {
 				ConceptComplex conceptComplex = new ConceptComplex();
 				conceptComplex.setUuid(uuid);
@@ -62,10 +62,10 @@ public class AnnotationActivator extends BaseModuleActivator {
 				ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
 				conceptComplex.setFullySpecifiedName(conceptName);
 				conceptComplex.setPreferredName(conceptName);
-				conceptComplex.setConceptClass( conceptService.getConceptClassByUuid(ConceptClass.QUESTION_UUID) );
-				conceptComplex.setDatatype( conceptService.getConceptDatatypeByUuid(ConceptDatatype.COMPLEX_UUID) );
+				conceptComplex.setConceptClass(conceptService.getConceptClassByUuid(ConceptClass.QUESTION_UUID));
+				conceptComplex.setDatatype(conceptService.getConceptDatatypeByUuid(ConceptDatatype.COMPLEX_UUID));
 				conceptComplex.addDescription(new ConceptDescription(desc, Locale.ENGLISH));
-
+				
 				conceptService.saveConcept(conceptComplex);
 			}
 		}
@@ -73,53 +73,53 @@ public class AnnotationActivator extends BaseModuleActivator {
 			final String name = Constants.MODULE_NAME + Constants.ObsType.IMAGE;
 			final String desc = "Concept complex for 'IMAGE' complex obs.";
 			final String uuid = Constants.ConceptUUID.IMAGE;
-
+			
 			if (null == conceptService.getConceptByUuid(uuid)) {
-
+				
 				ConceptComplex conceptComplex = new ConceptComplex();
 				conceptComplex.setUuid(uuid);
 				conceptComplex.setHandler("ImageObsHandler");
 				ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
 				conceptComplex.setFullySpecifiedName(conceptName);
 				conceptComplex.setPreferredName(conceptName);
-				conceptComplex.setConceptClass( conceptService.getConceptClassByUuid(ConceptClass.QUESTION_UUID) );
-				conceptComplex.setDatatype( conceptService.getConceptDatatypeByUuid(ConceptDatatype.COMPLEX_UUID) );
+				conceptComplex.setConceptClass(conceptService.getConceptClassByUuid(ConceptClass.QUESTION_UUID));
+				conceptComplex.setDatatype(conceptService.getConceptDatatypeByUuid(ConceptDatatype.COMPLEX_UUID));
 				conceptComplex.addDescription(new ConceptDescription(desc, Locale.ENGLISH));
-
+				
 				conceptService.saveConcept(conceptComplex);
 			}
 		}
-
+		
 		{
 			final String name = Constants.MODULE_NAME + Constants.ObsType.SVG;
 			final String desc = "Concept complex for 'SVG' complex obs.";
 			final String uuid = Constants.ConceptUUID.SVG;
-
+			
 			if (null == conceptService.getConceptByUuid(uuid)) {
-
+				
 				ConceptComplex conceptComplex = new ConceptComplex();
 				conceptComplex.setUuid(uuid);
 				conceptComplex.setHandler("SvgObsHandler");
 				ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
 				conceptComplex.setFullySpecifiedName(conceptName);
 				conceptComplex.setPreferredName(conceptName);
-				conceptComplex.setConceptClass( conceptService.getConceptClassByUuid(ConceptClass.QUESTION_UUID) );
-				conceptComplex.setDatatype( conceptService.getConceptDatatypeByUuid(ConceptDatatype.COMPLEX_UUID) );
+				conceptComplex.setConceptClass(conceptService.getConceptClassByUuid(ConceptClass.QUESTION_UUID));
+				conceptComplex.setDatatype(conceptService.getConceptDatatypeByUuid(ConceptDatatype.COMPLEX_UUID));
 				conceptComplex.addDescription(new ConceptDescription(desc, Locale.ENGLISH));
-
+				
 				conceptService.saveConcept(conceptComplex);
 			}
 		}
-
+		
 		// Encounter Type
 		{
 			final String name = Constants.ENCOUNTER_TYPE;
 			final String desc = "Encounters used to record visit drawings and docs.";
 			final String uuid = Constants.ENCOUNTER_UUID;
-
+			
 			EncounterService encounterService = Context.getEncounterService();
 			EncounterType encounterType = encounterService.getEncounterTypeByUuid(uuid);
-
+			
 			if (encounterType == null) {
 				encounterType = new EncounterType(name, desc);
 				encounterType.setUuid(uuid);
@@ -127,7 +127,7 @@ public class AnnotationActivator extends BaseModuleActivator {
 			}
 		}
 	}
-
+	
 	@Override
 	public void stopped() {
 		try {

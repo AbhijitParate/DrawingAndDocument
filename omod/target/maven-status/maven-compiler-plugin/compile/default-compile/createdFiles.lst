@@ -1,6 +1,0 @@
-org/openmrs/module/annotation/fragment/controller/EditorFragmentController.class
-org/openmrs/module/annotation/web/controller/UploadController.class
-org/openmrs/module/annotation/extension/html/AdminList.class
-org/openmrs/module/annotation/fragment/controller/UsersFragmentController.class
-org/openmrs/module/annotation/web/controller/DownloadController.class
-org/openmrs/module/annotation/web/controller/AnnotationController.class

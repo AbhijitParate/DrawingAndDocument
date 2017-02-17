@@ -27,32 +27,51 @@
 
     <!-- Wraps AnnotationService methods in DB transactions and OpenMRS interceptors,
     which set audit info like dateCreated, changedBy, etc.-->
-    <bean id="annotation.AnnotationService"
-            class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
-        <property name="transactionManager">
-            <ref bean="transactionManager" />
-        </property>
-        <property name="target">
-            <bean class="org.openmrs.module.annotation.api.impl.AnnotationServiceImpl">
-                <property name="dao" ref="annotation.AnnotationDao" />
-            </bean>
-        </property>
-        <property name="preInterceptors">
-            <ref bean="serviceInterceptors" />
-        </property>
-        <property name="transactionAttributeSource">
-            <ref bean="transactionAttributeSource" />
-        </property>
-    </bean>
+    <!--<bean id="annotation.AnnotationService"-->
+            <!--class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">-->
+        <!--<property name="transactionManager">-->
+            <!--<ref bean="transactionManager" />-->
+        <!--</property>-->
+        <!--<property name="target">-->
+            <!--<bean class="org.openmrs.module.annotation.api.impl.AnnotationServiceImpl">-->
+                <!--<property name="dao" ref="annotation.AnnotationDao" />-->
+            <!--</bean>-->
+        <!--</property>-->
+        <!--<property name="preInterceptors">-->
+            <!--<ref bean="serviceInterceptors" />-->
+        <!--</property>-->
+        <!--<property name="transactionAttributeSource">-->
+            <!--<ref bean="transactionAttributeSource" />-->
+        <!--</property>-->
+    <!--</bean>-->
 
     <!-- Adds AnnotationService to OpenMRS context so it can be accessed
     calling Context.getService(AnnotationService.class) -->
-    <bean parent="serviceContext">
-        <property name="moduleService">
-            <list>
-                <value>org.openmrs.module.annotation.api.AnnotationService</value>
-                <ref bean="annotation.AnnotationService" />
-            </list>
+    <!--<bean parent="serviceContext">-->
+        <!--<property name="moduleService">-->
+            <!--<list>-->
+                <!--<value>org.openmrs.module.annotation.api.AnnotationService</value>-->
+                <!--<ref bean="annotation.AnnotationService" />-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+    <!-- Handlers that can be set to complex concepts -->
+
+
+    <!--TODO: Add more handlers here-->
+    <bean parent="obsServiceTarget">
+        <property name="handlers">
+            <map>
+                <entry key="DefaultObsHandler">
+                    <bean class="org.openmrs.module.annotation.obs.handler.DefaultObsHandler" />
+                </entry>
+                <entry key="ImageObsHandler">
+                    <bean class="org.openmrs.module.annotation.obs.handler.ImageObsHandler" />
+                </entry>
+                <entry key="SvgObsHandler">
+                    <bean class="org.openmrs.module.annotation.obs.handler.SvgObsHandler" />
+                </entry>
+            </map>
         </property>
     </bean>
 </beans>

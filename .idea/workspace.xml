@@ -1,15 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" line="63" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="36e80d1b-bbfd-4c70-bb1e-2f046640a285" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/annotation/AnnotationActivator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT-tests.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT.omod" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/apps/annotation_extension.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/lib/annotation-api-2.1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/lib/commons-codec-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/lib/commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/lib/commons-io-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/lib/json-20090211.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/liquibase.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/messages_es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/messages_fr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/moduleApplicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/org/openmrs/module/annotation/extension/html/AdminList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/org/openmrs/module/annotation/fragment/controller/EditorFragmentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/org/openmrs/module/annotation/fragment/controller/UsersFragmentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/org/openmrs/module/annotation/web/controller/AnnotationController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/org/openmrs/module/annotation/web/controller/DownloadController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/org/openmrs/module/annotation/web/controller/UploadController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/annotation.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/fragments/editor.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/fragments/editor2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/fragments/users.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/pages/annotation.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/pages/annotation_dashboard.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/pages/annotation_demo.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/images/no-preview.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/images/remove.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/images/remove1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/images/templates/template-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/images/templates/template-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/images/templates/template-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/images/templates/template-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/images/templates/template-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/scripts/editors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/scripts/editors2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/scripts/literallycanvas-core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/scripts/literallycanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/scripts/videojs.record.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/scripts/wavesurfer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/scripts/webcam.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/scripts/webcam.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/styles/controls.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/styles/editor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/styles/font/videojs-record.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/web/module/resources/styles/videojs.record.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/annotation-2.1.0-SNAPSHOT/webModuleApplicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/apps/annotation_extension.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/liquibase.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/messages_es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/messages_fr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/annotation/extension/html/AdminList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/annotation/fragment/controller/EditorFragmentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/annotation/fragment/controller/UsersFragmentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/annotation/web/controller/AnnotationController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/annotation/web/controller/DownloadController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/annotation/web/controller/UploadController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/annotation.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/editor.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/editor2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/users.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/pages/annotation.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/pages/annotation_dashboard.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/pages/annotation_demo.gsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/no-preview.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/remove.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/remove1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/templates/template-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/templates/template-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/templates/template-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/templates/template-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/templates/template-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/editors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/editors2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/literallycanvas-core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/literallycanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/videojs.record.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/wavesurfer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/webcam.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/webcam.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/controls.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/editor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/font/videojs-record.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/videojs.record.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/webModuleApplicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/dependency-maven-plugin-markers/org.openmrs.module-annotation-api-jar-2.1.0-SNAPSHOT.marker" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/surefire-reports/TEST-org.openmrs.module.annotation.AdminListExtensionTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/surefire-reports/org.openmrs.module.annotation.AdminListExtensionTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/test-classes/org/openmrs/module/annotation/AdminListExtensionTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationActivator.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationActivator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/api/target/" />
-    <ignored path="$PROJECT_DIR$/omod/target/" />
+    <ignored path="api/target/" />
+    <ignored path="omod/target/" />
+    <manually-removed-from-ignored>
+      <directory path="$PROJECT_DIR$/target/" />
+      <directory path="$PROJECT_DIR$/omod/target/" />
+      <directory path="$PROJECT_DIR$/api/target/" />
+    </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +121,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="false" />
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
@@ -58,11 +163,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="87" lean-forward="true" selection-start-line="13" selection-start-column="87" selection-end-line="13" selection-end-column="87" />
+            <state relative-caret-position="286">
+              <caret line="13" column="87" lean-forward="false" selection-start-line="13" selection-start-column="87" selection-end-line="13" selection-end-column="87" />
+              <folding>
+                <marker date="1487360411922" expanded="true" signature="40:79" ph="/**...*/" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moduleApplicationContext.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -111,7 +228,6 @@
         <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/annotation_demo.gsp" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/annotation_dashboard.gsp" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/api/impl/FileResourceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/api/FileResourceService.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/extension/html/AdminList.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/DownloadController.java" />
@@ -142,6 +258,7 @@
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/complex_obs/base/BaseComplexData.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationActivator.java" />
+        <option value="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" />
       </list>
     </option>
   </component>
@@ -162,7 +279,7 @@
       <MavenGeneralSettings>
         <option name="alwaysUpdateSnapshots" value="true" />
         <option name="localRepository" value="$MAVEN_REPOSITORY$" />
-        <option name="mavenHome" value="/usr/share/maven" />
+        <option name="mavenHome" value="C:/Program Files/Apache/maven" />
         <option name="outputLevel" value="WARN" />
         <option name="pluginUpdatePolicy" value="UPDATE" />
         <option name="usePluginRegistry" value="true" />
@@ -177,30 +294,6 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Annotation OMOD" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Annotation OMOD" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -232,10 +325,10 @@
     <option name="vmOptions" value="-Dmaven.clean.failOnError=false" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="24" />
-    <option name="width" value="1871" />
-    <option name="height" value="1056" />
+    <option name="x" value="-4" />
+    <option name="y" value="-1359" />
+    <option name="width" value="2418" />
+    <option name="height" value="1368" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -255,6 +348,54 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="annotation-omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="annotation-api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="annotation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="annotation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -557,70 +698,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="complex_obs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openmrs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="complex_obs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
+              <option name="myItemId" value="obs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../openmrs-module-visitdocumentsui" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/omod/target" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3034483" />
@@ -632,17 +720,18 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.openmrs.module.annotation" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.openmrs.module.annotation.obs.handler" />
       <recent name="org.openmrs.module.annotation" />
       <recent name="org.openmrs.module.annotation.api.impl" />
       <recent name="org.openmrs.module.annotation.api" />
       <recent name="org.openmrs.module.annotation.web.controller" />
-      <recent name="org.openmrs.module.annotation.fragment.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/omod/src/main/webapp/fragments" />
@@ -653,6 +742,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Maven.Run">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1016,12 +1112,38 @@
       <item index="1" class="java.lang.String" itemvalue="Maven.Run" />
       <item index="2" class="java.lang.String" itemvalue="Maven.Deploy" />
     </list>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36e80d1b-bbfd-4c70-bb1e-2f046640a285" name="Default" comment="" />
+      <created>1487359798740</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1487359798740</updated>
+      <workItem from="1487359808138" duration="993000" />
+    </task>
+    <task id="LOCAL-00001" summary="New Start on Windows">
+      <created>1487360554989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1487360554989</updated>
+    </task>
+    <task id="LOCAL-00002" summary="New Start on Windows">
+      <created>1487360812387</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487360812387</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="993000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1033,32 +1155,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
+    <frame x="-4" y="-1359" width="2418" height="1368" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5041186" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12959912" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818848" sideWeight="0.5041186" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12958333" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25370675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16090061" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290008" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32818848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37774166" sideWeight="0.49588138" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37852496" sideWeight="0.49588138" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1088,7 +1219,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added required setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added required setup" />
+    <MESSAGE value="Added Concepts and Encounter Types" />
+    <MESSAGE value="New Start on Windows" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Start on Windows" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1101,47 +1234,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/api/FileResourceService.java" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/editors2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/hibernate/hibernate-core/3.6.5.Final-mod/hibernate-core-3.6.5.Final-mod.jar!/org/hibernate/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="92" column="9" lean-forward="false" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/api/db/hibernate/DbSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="194" column="29" lean-forward="false" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/5e259921/70856932-380c-4286-a03e-392937675a35/openmrs.encounter">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/api/VisitService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/api/db/hibernate/DbSession.class" />
+    <entry file="dbDummy://dbtable:/5e259921/70856932-380c-4286-a03e-392937675a35/openmrs.encounter" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/api/VisitService.class" />
     <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/AnnotationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -1149,30 +1244,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/5e259921/70856932-380c-4286-a03e-392937675a35/openmrs.drawing">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/5e259921/70856932-380c-4286-a03e-392937675a35/openmrs.users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/5e259921/70856932-380c-4286-a03e-392937675a35/openmrs.drawing" />
+    <entry file="dbDummy://dbtable:/5e259921/70856932-380c-4286-a03e-392937675a35/openmrs.users" />
     <entry file="file://$PROJECT_DIR$/api/src/test/java/org/openmrs/module/annotation/api/dao/AnnotationDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -1180,13 +1253,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/BaseOpenmrsObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/BaseOpenmrsObject.class" />
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/api/impl/FileResourceServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/api/AnnotationService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1223,37 +1290,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/BaseOpenmrsData.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/5e259921/70856932-380c-4286-a03e-392937675a35/dev.drawing">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/5e259921/70856932-380c-4286-a03e-392937675a35/dev2_6.drawing">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/BaseOpenmrsData.class" />
+    <entry file="dbDummy://dbtable:/5e259921/70856932-380c-4286-a03e-392937675a35/dev.drawing" />
+    <entry file="dbDummy://dbtable:/5e259921/70856932-380c-4286-a03e-392937675a35/dev2_6.drawing" />
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/api/impl/AnnotationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -1261,13 +1300,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/htmlformentry-api/2.0/htmlformentry-api-2.0-sources.jar!/org/openmrs/module/htmlformentry/FormEntryContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="202" column="24" lean-forward="false" selection-start-line="202" selection-start-column="21" selection-end-line="202" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/htmlformentry-api/2.0/htmlformentry-api-2.0-sources.jar!/org/openmrs/module/htmlformentry/FormEntryContext.java" />
     <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/extension/html/AdminList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -1282,20 +1315,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/htmlformentry-api/2.0/htmlformentry-api-2.0-sources.jar!/org/openmrs/module/htmlformentry/handler/AbstractTagHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/htmlformentry-api/2.0/htmlformentry-api-2.0-sources.jar!/org/openmrs/module/htmlformentry/FormEntrySession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/htmlformentry-api/2.0/htmlformentry-api-2.0-sources.jar!/org/openmrs/module/htmlformentry/handler/AbstractTagHandler.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/htmlformentry-api/2.0/htmlformentry-api-2.0-sources.jar!/org/openmrs/module/htmlformentry/FormEntrySession.java" />
     <entry file="file://$PROJECT_DIR$/omod/src/main/resources/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -1333,29 +1354,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/drawing.hmb.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/liquibase.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/web/openmrs-web/1.11.6/openmrs-web-1.11.6.jar!/org/openmrs/web/servlet/ComplexObsServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/web/openmrs-web/1.11.6/openmrs-web-1.11.6.jar!/org/openmrs/web/servlet/ComplexObsServlet.class" />
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Drawing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1364,14 +1363,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/complex_obs/ComplexObsData.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/ComplexObsData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/complex_obs/AbstractComplexObsHandler.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/AbstractComplexObsHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -1381,15 +1380,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/complex_obs/base/BaseComplexObs.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/data/base/BaseComplexObs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="53" lean-forward="false" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
@@ -1450,7 +1441,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/complex_obs/base/BaseComplexData.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/data/base/BaseComplexData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="7" selection-end-column="1" />
@@ -1474,30 +1465,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/ConceptClass.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/ConceptClass.class" />
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationActivator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5380#5381#0" expanded="true" />
-            <element signature="e#5408#5409#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/drawing.hmb.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/liquibase.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/DefaultObsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/ImageObsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="87" lean-forward="true" selection-start-line="13" selection-start-column="87" selection-end-line="13" selection-end-column="87" />
+        <state relative-caret-position="286">
+          <caret line="13" column="87" lean-forward="false" selection-start-line="13" selection-start-column="87" selection-end-line="13" selection-end-column="87" />
+          <folding>
+            <marker date="1487360411922" expanded="true" signature="40:79" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
           <folding />
         </state>
       </provider>
