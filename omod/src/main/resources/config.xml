@@ -82,6 +82,60 @@
 		</description>
 	</globalProperty>
 	/Required Global Properties -->
+
+
+    <globalProperty>
+        <property>${project.parent.artifactId}.defaultConceptComplexUuid</property>
+        <defaultValue>5118786a-f41d-11e6-bc64-92361f002671</defaultValue>
+        <description>
+            UUID of the (question) concept complex for 'other' patient files,
+            this is used as the default when the MIME type is not matched
+        </description>
+    </globalProperty>
+
+    <globalProperty>
+        <property>${project.parent.artifactId}.conceptComplexUuidList</property>
+        <defaultValue>
+            [   "5118786a-f41d-11e6-bc64-92361f002671",
+                "51187acc-f41d-11e6-bc64-92361f002671",
+                "51187bc6-f41d-11e6-bc64-92361f002671",
+                "51187c98-f41d-11e6-bc64-92361f002671",
+                "51187d6a-f41d-11e6-bc64-92361f002671",
+                "51188030-f41d-11e6-bc64-92361f002671",
+                "5118810c-f41d-11e6-bc64-92361f002671"
+            ]
+        </defaultValue>
+        <description>
+            List of concept complex UUIDs
+            that are used in queries for viewing documents
+        </description>
+    </globalProperty>
+
+    <globalProperty>
+        <property>${project.parent.artifactId}.encounterTypeUuid</property>
+        <defaultValue>43c25184-f41f-11e6-bc64-92361f002671</defaultValue>
+        <description>
+            UUID of the encounter type used to save module related observations
+        </description>
+    </globalProperty>
+
+    <globalProperty>
+        <property>${project.parent.artifactId}.conceptComplexUuidMap</property>
+        <defaultValue>
+            {   "DEFAULT":  "5118786a-f41d-11e6-bc64-92361f002671",
+                "SVG":      "51187acc-f41d-11e6-bc64-92361f002671",
+                "IMAGE":    "51187bc6-f41d-11e6-bc64-92361f002671",
+                "VIDEO":    "51187c98-f41d-11e6-bc64-92361f002671",
+                "NOTE":     "51187d6a-f41d-11e6-bc64-92361f002671",
+                "AUDIO":    "51188030-f41d-11e6-bc64-92361f002671",
+                "FILE":     "5118810c-f41d-11e6-bc64-92361f002671"
+            }
+        </defaultValue>
+        <description>
+            Mapping between content families and concept complex UUIDs,
+            this is used for saving files based on their MIME type
+        </description>
+    </globalProperty>
 	
 	<!--
 	<dwr>

@@ -1873,6 +1873,7 @@ $(document).ready(function() {
         // formData.append("filetype", attachedFile.type);
         formData.append("patientid", patientid);
         formData.append("visitid", visitid);
+        formData.append("providerid", providerid);
 
         //new ajax request
         let request = new XMLHttpRequest();
@@ -1929,6 +1930,7 @@ $(document).ready(function() {
             formData.append("fileid", attachedFile.id);
             formData.append("patientid", patientid);
             formData.append("visitid", visitid);
+            formData.append("providerid", providerid);
 
             //new ajax request
             let request = new XMLHttpRequest();
@@ -1955,7 +1957,7 @@ $(document).ready(function() {
             });
 
             //open the request
-            request.open("POST","upload.form");
+            request.open("POST","../../annotation/upload.form");
 
             //set the request header for no caching
             request.setRequestHeader("Cache-Control","no-cache");

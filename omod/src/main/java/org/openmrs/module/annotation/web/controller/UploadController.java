@@ -9,39 +9,47 @@
  */
 package org.openmrs.module.annotation.web.controller;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.json.JSONObject;
+import org.openmrs.*;
 import org.openmrs.api.UserService;
+import org.openmrs.module.annotation.Constants;
 import org.openmrs.module.annotation.Drawing;
+import org.openmrs.module.annotation.ModuleContext;
+import org.openmrs.module.annotation.ObservationSaver;
 import org.openmrs.module.annotation.api.AnnotationService;
+import org.openmrs.ui.framework.converter.util.ConversionUtil;
 import org.openmrs.util.OpenmrsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Base64Utils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import javax.mail.Multipart;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 @Controller("${rootrootArtifactId}.UploadController")
 @RequestMapping(value = { "annotation/upload.form", "module/annotation/upload.form" })
 public class UploadController {
 	
-	public static final String ATTACHMENT = "attachment";
-	
-	public static final String SVG = "svg";
+	protected final Log log = LogFactory.getLog(getClass());
 	
 	@Autowired
-	private UserService userService;
+	@Qualifier(Constants.Component.MODULE_CONTEXT)
+	protected ModuleContext moduleContext;
 	
 	@Autowired
-	private AnnotationService annotationService;
+	@Qualifier(Constants.Component.OBSERVATION_SAVER)
+	protected ObservationSaver observationSaver;
 	
 	@RequestMapping(method = RequestMethod.GET)
 	@ResponseBody
@@ -49,99 +57,92 @@ public class UploadController {
 		response.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED, "Method not allowed.");
 	}
 	
-	@RequestMapping(method = RequestMethod.POST)
-	@ResponseBody
-	public String onPostAttachment(HttpServletRequest request) throws Exception {
-		JSONObject jsonObject = new JSONObject();
-		if (request instanceof MultipartHttpServletRequest) {
-			
-			try {
-				
-				String file = request.getParameter("file");
-				String filename = request.getParameter("filename");
-				String filetype = request.getParameter("filetype");
-				String patientId = request.getParameter("patientid");
-				String visitId = request.getParameter("visitid");
-				
-				if (filetype.equals(ATTACHMENT)) {
-					saveFile(ATTACHMENT, file.substring(file.indexOf(",") + 1), filename, patientId, visitId);
-					jsonObject.put("result", "success");
-					return jsonObject.toString();
-				} else if (filetype.equals(SVG)) {
-					saveFile(SVG, file, filename, patientId, visitId);
-					Drawing drawing = new Drawing();
-					drawing.setVisitId(visitId);
-					drawing.setPatientId(patientId);
-					drawing.setSvgId(filename);
-					annotationService.addOrUpdateDrawing(drawing);
-					jsonObject.put("result", "success");
-					return jsonObject.toString();
-				} else {
-					jsonObject.put("result", "failed");
-					return jsonObject.toString();
-				}
-			}
-			catch (Exception e) {
-				jsonObject.put("result", "failed");
-				return jsonObject.toString();
-			}
-		} else {
-			jsonObject.put("result", "not multipart post request");
-			return jsonObject.toString();
-		}
-	}
-	
-	//	@RequestMapping(value = { "annotation/upload_svg.form", "module/annotation/upload_svg.form" }, method = RequestMethod.POST)
+	//	@RequestMapping(method = RequestMethod.POST)
 	//	@ResponseBody
-	//	public String onPostSVG(HttpServletRequest request) throws Exception {
+	//	public String onPostAttachment(HttpServletRequest request) throws Exception {
 	//		JSONObject jsonObject = new JSONObject();
 	//		if (request instanceof MultipartHttpServletRequest) {
-	//			//			CommonsMultipartFile multipartFile = null;
-	//			//			MultipartHttpServletRequest multipartHttpServletRequest = (MultipartHttpServletRequest) request;
-	//			//			Iterator<String> iterator = multipartHttpServletRequest.getFileNames();
-	//			//
-	//			//			while (iterator.hasNext()) {
-	//			//				String key = iterator.next();
-	//			//				// create multipartFile array if you upload multiple files
-	//			//				multipartFile = (CommonsMultipartFile) multipartHttpServletRequest.getFile(key);
-	//			//				String filename = multipartFile.getOriginalFilename();
-	//			//				saveFile(multipartFile.getBytes(), filename);
-	//			//			}
 	//
-	//			String file = request.getParameter("file");
-	//			String filename = request.getParameter("filename");
-	//			String filetype = request.getParameter("filetype");
-	//			String fileid = request.getParameter("fileid");
-	//			String patientId = request.getParameter("patientid");
-	//			String visitId = request.getParameter("visitid");
+	//			try {
 	//
-	//			saveFile(ATTACHMENT, file.substring(file.indexOf(",") + 1), filename, patientId, visitId);
+	//				String file = request.getParameter("file");
+	//				String filename = request.getParameter("filename");
+	//				String filetype = request.getParameter("filetype");
+	//				String patientId = request.getParameter("patientid");
+	//				String visitId = request.getParameter("visitid");
 	//
-	//			Drawing drawing = new Drawing();
-	//			drawing.setVisitId(visitId);
-	//			drawing.setPatientId(patientId);
-	////			annotationService.addOrUpdateDrawing(drawing);
-	//
-	//			jsonObject.put("result", "success");
-	//			return jsonObject.toString();
+	//				if (filetype.equals(ATTACHMENT)) {
+	//					saveFile(ATTACHMENT, file.substring(file.indexOf(",") + 1), filename, patientId, visitId);
+	//					jsonObject.put("result", "success");
+	//					return jsonObject.toString();
+	//				} else if (filetype.equals(SVG)) {
+	//					saveFile(SVG, file, filename, patientId, visitId);
+	//					Drawing drawing = new Drawing();
+	//					drawing.setVisitId(visitId);
+	//					drawing.setPatientId(patientId);
+	//					drawing.setSvgId(filename);
+	//					jsonObject.put("result", "success");
+	//					return jsonObject.toString();
+	//				} else {
+	//					jsonObject.put("result", "failed");
+	//					return jsonObject.toString();
+	//				}
+	//			}
+	//			catch (Exception e) {
+	//				jsonObject.put("result", "failed");
+	//				return jsonObject.toString();
+	//			}
 	//		} else {
 	//			jsonObject.put("result", "not multipart post request");
 	//			return jsonObject.toString();
 	//		}
 	//	}
 	
-	private String saveFile(String location, String fileData, String fileName, String patientId, String visitId)
-	        throws Exception {
-		String storedFileLocation = OpenmrsUtil.getApplicationDataDirectory() + "/Annotation/" + patientId + "/" + visitId
-		        + "/" + location;
+	@RequestMapping(method = RequestMethod.POST)
+	@ResponseBody
+	public String onPostAttachment2(HttpServletRequest request, @RequestParam("file") String fileData,
+	        @RequestParam("filename") String fileName, @RequestParam("patientid") Patient patient,
+	        @RequestParam("visitid") Visit visit, @RequestParam("providerid") String providerId) throws Exception {
+		
+		log.debug(getClass().getName() + " Request received");
+		log.error(getClass().getName() + " filename received : " + fileName);
+		log.error(getClass().getName() + " visitid received : " + visit.getId());
+		log.error(getClass().getName() + " patientid received : " + patient.getId());
+		log.error(getClass().getName() + " providerid received : " + providerId);
+		
+		Provider provider = moduleContext.getProviderService().getProvider(Integer.valueOf(providerId));
+		
+		File dataFile = getFile(fileName, fileData);
+		final Encounter encounter = moduleContext.getModuleEncounter(patient, visit, provider);
+		observationSaver.saveObservation(patient, encounter, dataFile);
+		
+		return new JSONObject().put("result", "success").toString();
+	}
+	
+	private File getFile(String fileName, String fileData) throws IOException {
+		String storedFileLocation = OpenmrsUtil.getApplicationDataDirectory() + "/Annotation/Temp";
 		File folder = new File(storedFileLocation);
 		folder.mkdirs();
-		// Create the file on server
+		
 		File serverFile = new File(folder, fileName);
 		BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(serverFile));
 		stream.write(Base64Utils.decode(fileData.getBytes()));
 		stream.close();
-		return storedFileLocation;
+		return serverFile;
 	}
+	
+	//    private String saveFile(String location, String fileData, String fileName, String patientId, String visitId)
+	//	        throws Exception {
+	//		String storedFileLocation = OpenmrsUtil.getApplicationDataDirectory() + "/Annotation/" + patientId + "/" + visitId
+	//		        + "/" + location;
+	//		File folder = new File(storedFileLocation);
+	//		folder.mkdirs();
+	//		// Create the file on server
+	//		File serverFile = new File(folder, fileName);
+	//		BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(serverFile));
+	//		stream.write(Base64Utils.decode(fileData.getBytes()));
+	//		stream.close();
+	//		return storedFileLocation;
+	//	}
 	
 }

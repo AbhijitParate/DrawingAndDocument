@@ -11,6 +11,10 @@ package org.openmrs.module.annotation.fragment.controller;
 
 import org.openmrs.Patient;
 import org.openmrs.Visit;
+import org.openmrs.module.annotation.ModuleContext;
+import org.openmrs.module.appui.UiSessionContext;
+import org.openmrs.ui.framework.UiUtils;
+import org.openmrs.ui.framework.annotation.InjectBeans;
 import org.openmrs.ui.framework.fragment.FragmentModel;
 import org.openmrs.ui.framework.page.PageRequest;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,9 +26,11 @@ public class EditorFragmentController {
 	
 	public void controller(PageRequest pageRequest, FragmentModel model,
 	        @RequestParam(value = "patientId", required = false) Patient patient,
-	        @RequestParam(value = "visitId", required = false) Visit visit) throws Exception {
+	        @RequestParam(value = "visitId", required = false) Visit visit, UiSessionContext sessionContext, UiUtils ui,
+	        @InjectBeans ModuleContext moduleContext) throws Exception {
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("visitId", visit.getId());
+		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());
 		model.addAttribute("returnUrl", pageRequest.getRequest().getParameter("returnUrl"));
 	}
 	

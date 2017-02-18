@@ -1,9 +1,9 @@
-package org.openmrs.module.annotation.obs.data.base;
+package org.openmrs.module.annotation.obs.data;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang.StringUtils;
 import org.openmrs.obs.ComplexData;
-import org.openmrs.web.servlet.ComplexObsServlet;
 
 import javax.imageio.ImageIO;
 import javax.imageio.stream.ImageOutputStream;
@@ -13,20 +13,27 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * Created by abhijit on 2/8/17.
+ * Created by abhij on 2/17/2017.
  */
-public class BaseComplexObs extends ComplexData {
+public class ModuleComplexData extends ComplexData {
 	
-	public BaseComplexObs(String title, Object data) {
+	private static final long serialVersionUID = 1L;
+	
+	public ModuleComplexData(String title, Object data, String mimeType) {
 		super(title, data);
+		if (!StringUtils.isEmpty(mimeType)) {
+			this.setMimeType(mimeType);
+		}
 	}
 	
-	/**
-	 * This returns the byte array out of a complex data's inner data. This is borrowed from
-	 * {@link ComplexObsServlet}.
-	 * 
-	 * @return The byte array, or an empty array if an error occurred.
-	 */
+	public ComplexData asComplexData() {
+		return this;
+	}
+	
+	public byte[] asByteArray() {
+		return getByteArray(this);
+	}
+	
 	public static byte[] getByteArray(ComplexData complexData) {
 		final byte[] emptyContent = new byte[0];
 		
@@ -62,10 +69,6 @@ public class BaseComplexObs extends ComplexData {
 		} else {
 			return emptyContent;
 		}
-	}
-	
-	public byte[] asByteArray() {
-		return getByteArray(this);
 	}
 	
 }

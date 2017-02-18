@@ -114,8 +114,8 @@ public class AnnotationActivator extends BaseModuleActivator {
 		// Encounter Type
 		{
 			final String name = Constants.ENCOUNTER_TYPE;
-			final String desc = "Encounters used to record visit drawings and docs.";
-			final String uuid = Constants.ENCOUNTER_UUID;
+			final String desc = "Encounters used to record visit drawings and related files.";
+			final String uuid = Constants.ENCOUNTER_TYPE_UUID;
 			
 			EncounterService encounterService = Context.getEncounterService();
 			EncounterType encounterType = encounterService.getEncounterTypeByUuid(uuid);

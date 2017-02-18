@@ -33,15 +33,31 @@ s<% ui.includeCss("annotation", "editor.css") %>
 <script>
     var patientid =${ patientId };
     var visitid = ${ visitId };
+    var providerid = ${ providerId };
     var returnlink ="${ ui.format(returnUrl) }";
 </script>
 
 <% ui.includeJavascript("annotation", "editors.js") %>
 <body>
 
-    <p></p>
-    <button type="button" > Test </button>
-    <a href="../../annotation/upload.form"> Upload Stuff </a>
+    <table>
+        <tr>
+            <td>Patient ID</td>
+            <td> ${ patientId }; </td>
+        </tr>
+        <tr>
+            <td>Visit ID</td>
+            <td> ${ visitId }; </td>
+        </tr>
+        <tr>
+            <td>Provider ID</td>
+            <td> ${ providerId }; </td>
+        </tr>
+        <tr>
+            <td>Return URL</td>
+            <td> ${ ui.format(returnUrl) }; </td>
+        </tr>
+    </table>
 
     <div id="mainContainer" class="outerContainer">
     <div id="status-bar" class="bottomControlContainer">
