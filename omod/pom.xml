@@ -13,14 +13,6 @@
 	<description>Omod submodule for Annotation</description>
 
 	<dependencies>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>4.3.5.RELEASE</version>
-			<scope>provided</scope>
-		</dependency>
-
 		<!-- Begin OpenMRS modules -->
 
 		<dependency>
@@ -30,6 +22,7 @@
 		</dependency>
 
 		<!-- End OpenMRS modules -->
+
 		<!-- Begin OpenMRS core -->
 
 		<dependency>
@@ -72,6 +65,8 @@
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>uiframework-api</artifactId>
+            <version>${uiframeworkVersion}</version>
+            <scope>provided</scope>
 		</dependency>
 
 		<dependency>

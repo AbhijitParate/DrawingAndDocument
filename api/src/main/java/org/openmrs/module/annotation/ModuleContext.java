@@ -26,6 +26,8 @@ import org.springframework.stereotype.Component;
 
 import java.util.*;
 
+import static org.openmrs.module.annotation.Constants.mimeTypes;
+
 /**
  * Inject this class to access services and global properties.
  */
@@ -88,16 +90,37 @@ public class ModuleContext extends ModuleProperties {
 	
 	public ConceptComplex getConceptComplex(Constants.ContentType contentType) {
 		Map<String, String> map = getMapByGlobalProperty(Constants.GlobalPropertyPIdentifier.CONCEPT_COMPLEX_UUID_MAP);
+		log.error("Concept Complex Map " + map.toString());
 		Concept concept = getConceptService().getConceptByUuid(map.get(contentType.toString()));
 		if (concept != null) {
+			log.error("Concept UUID for content type " + concept.getUuid());
+			log.error("Concept is not null for content type " + contentType);
 			return getConceptService().getConceptComplex(concept.getConceptId());
 		}
+		log.error("Concept is null for content type " + contentType);
 		return getDefaultConceptComplex();
+	}
+	
+	public List<String> getConceptComplexList() {
+		List<String> list = Collections.<String> emptyList();
+		final String globalPropertyName = Constants.GlobalPropertyPIdentifier.CONCEPT_COMPLEX_UUID_LIST;
+		String globalProperty = administrationService.getGlobalProperty(globalPropertyName);
+		
+		ObjectMapper mapper = new ObjectMapper();
+		TypeReference<ArrayList<String>> typeRef = new TypeReference<ArrayList<String>>() {};
+		try {
+			list = mapper.readValue(globalProperty, typeRef);
+		}
+		catch (Exception e) {
+			log.error("Could not parse global property '" + globalPropertyName + "' into a List<String>.", e);
+		}
+		return list;
 	}
 	
 	private ConceptComplex getDefaultConceptComplex() {
 		String globalPropertyName = Constants.GlobalPropertyPIdentifier.DEFAULT_CONCEPT_COMPLEX_UUID;
 		Concept concept = getConceptByGlobalProperty(globalPropertyName);
+		log.error("Default Concept UUID for content type " + concept.getUuid());
 		ConceptComplex conceptComplex = getConceptService().getConceptComplex(concept.getConceptId());
 		if (conceptComplex == null) {
 			throw new IllegalStateException("Configuration required: " + globalPropertyName);
@@ -164,5 +187,13 @@ public class ModuleContext extends ModuleProperties {
 	
 	private EncounterType getEncounterType() {
 		return getEncounterTypeByGlobalProperty(Constants.GlobalPropertyPIdentifier.ENCOUNTER_TYPE_UUID);
+	}
+	
+	public static String getExtension(String mimeType) {
+		String ext = "bin";
+		if (mimeTypes.containsKey(mimeType)) {
+			ext = mimeTypes.get(mimeType);
+		}
+		return ext;
 	}
 }

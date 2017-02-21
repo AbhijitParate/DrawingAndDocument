@@ -6,6 +6,7 @@ import org.openmrs.ConceptComplex;
 import org.openmrs.Encounter;
 import org.openmrs.Obs;
 import org.openmrs.Person;
+import org.openmrs.module.annotation.obs.data.ValueComplex;
 import org.openmrs.module.annotation.obs.datahelper.ComplexDataHelper;
 import org.openmrs.obs.ComplexData;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,25 +31,30 @@ public class ObservationSaver {
 	
 	@Autowired
 	@Qualifier(Constants.Component.MODULE_CONTEXT)
-	protected ModuleContext moduleContext;
+	private ModuleContext moduleContext;
 	
 	@Autowired
 	@Qualifier(Constants.Component.COMPLEX_DATA_HELPER)
-	protected ComplexDataHelper ComplexDataHelper;
+	private ComplexDataHelper complexDataHelper;
 	
 	public Obs saveObservation(Person person, Encounter encounter, File file) throws IOException {
-		log.debug("Saving observation");
+		log.error("Saving observation");
 		String mimeType = new MimetypesFileTypeMap().getContentType(file);
-		log.debug("Received file name : " + file.getName());
-		log.debug("Received mimeType : " + mimeType);
+		log.error("Received file name : " + file.getName());
+		log.error("Received mimeType : " + mimeType);
 		Constants.ContentType contentType = getContentFamily(mimeType);
-		log.debug("Generated contentType : " + contentType);
+		log.error("Generated contentType : " + contentType);
 		ConceptComplex conceptComplex = moduleContext.getConceptComplex(contentType);
-		Obs obs = new Obs(person, conceptComplex, new Date(), encounter.getLocation());
 		
+		log.error("ConceptComplex created");
+		
+		Obs obs = new Obs(person, conceptComplex, new Date(), encounter.getLocation());
+		obs.setEncounter(encounter);
+		obs.setComment(file.getName());
 		Object obsData = new FileInputStream(file);
 		
-		ComplexData complexData = ComplexDataHelper.build(file.getName(), obsData, mimeType).asComplexData();
+		ComplexData complexData = complexDataHelper.build(file.getName(), obsData, mimeType,
+		    ValueComplex.INSTRUCTION_DEFAULT).asComplexData();
 		
 		obs.setComplexData(complexData);
 		

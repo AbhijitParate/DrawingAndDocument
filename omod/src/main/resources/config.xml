@@ -18,7 +18,7 @@
 	<!-- <updateURL>https://modules.openmrs.org/modules/download/@MODULE_ID@/update.rdf</updateURL> -->
 	<!-- /Base Module Properties -->
 	
-	<require_version>${openmrsPlatformVersion}</require_version>
+	<require_version>${openMRSVersion}</require_version>
 
 	<require_modules>
 		<require_module version="${appframeworkVersion}">
@@ -40,19 +40,16 @@
 			org.openmrs.module.emrapi
 		</require_module>
 	</require_modules>
-
-	<!-- Module Activator -->
-	<activator>${project.parent.groupId}.${project.parent.artifactId}.AnnotationActivator</activator>
 	
 	<!-- Extensions -->
-	<extension>
-		<point>org.openmrs.admin.list</point>
-		<class>org.openmrs.module.annotation.extension.html.AdminList</class>
-	</extension>
+	<!--<extension>-->
+		<!--<point>org.openmrs.admin.list</point>-->
+		<!--<class>org.openmrs.module.annotation.extension.html.AdminList</class>-->
+	<!--</extension>-->
 
-	<aware_of_modules>
-		<aware_of_module>org.openmrs.module.legacyui</aware_of_module>
-	</aware_of_modules>
+	<!--<aware_of_modules>-->
+		<!--<aware_of_module>org.openmrs.module.legacyui</aware_of_module>-->
+	<!--</aware_of_modules>-->
 	
 	
 	<!-- AOP

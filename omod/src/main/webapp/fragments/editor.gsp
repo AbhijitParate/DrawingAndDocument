@@ -43,19 +43,19 @@ s<% ui.includeCss("annotation", "editor.css") %>
     <table>
         <tr>
             <td>Patient ID</td>
-            <td> ${ patientId }; </td>
+            <td> ${ patientId } </td>
         </tr>
         <tr>
             <td>Visit ID</td>
-            <td> ${ visitId }; </td>
+            <td> ${ visitId } </td>
         </tr>
         <tr>
             <td>Provider ID</td>
-            <td> ${ providerId }; </td>
+            <td> ${ providerId } </td>
         </tr>
         <tr>
             <td>Return URL</td>
-            <td> ${ ui.format(returnUrl) }; </td>
+            <td> ${ ui.format(returnUrl) } </td>
         </tr>
     </table>
 

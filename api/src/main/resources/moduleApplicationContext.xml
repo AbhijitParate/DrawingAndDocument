@@ -23,22 +23,23 @@
   		    http://www.springframework.org/schema/util
   		    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
+    <!-- Add here beans related to the API context -->
     <context:component-scan base-package="org.openmrs.module.annotation" />
 
-    <!--TODO: Add more handlers here-->
-    <!--<bean parent="obsServiceTarget">-->
-        <!--<property name="handlers">-->
-            <!--<map>-->
-                <!--&lt;!&ndash;<entry key="DefaultObsHandler">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<bean class="org.openmrs.module.annotation.obs.handler.DefaultObsHandler" />&ndash;&gt;-->
-                <!--&lt;!&ndash;</entry>&ndash;&gt;-->
-                <!--&lt;!&ndash;<entry key="ImageObsHandler">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<bean class="org.openmrs.module.annotation.obs.handler.ImageObsHandler" />&ndash;&gt;-->
-                <!--&lt;!&ndash;</entry>&ndash;&gt;-->
-                <!--&lt;!&ndash;<entry key="SvgObsHandler">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<bean class="org.openmrs.module.annotation.obs.handler.SvgObsHandler" />&ndash;&gt;-->
-                <!--&lt;!&ndash;</entry>&ndash;&gt;-->
-            <!--</map>-->
-        <!--</property>-->
-    <!--</bean>-->
+    <!-- Handlers that can be set to complex concepts -->
+    <bean parent="obsServiceTarget">
+        <property name="handlers">
+            <map>
+                <entry key="DefaultObsHandler">
+                    <bean class="org.openmrs.module.annotation.obs.handler.DefaultObsHandler" />
+                </entry>
+                <entry key="ImageObsHandler">
+                    <bean class="org.openmrs.module.annotation.obs.handler.ImageObsHandler" />
+                </entry>
+                <entry key="SvgObsHandler">
+                    <bean class="org.openmrs.module.annotation.obs.handler.SvgObsHandler" />
+                </entry>
+            </map>
+        </property>
+    </bean>
 </beans>

@@ -17,6 +17,7 @@ import org.openmrs.api.EncounterService;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.BaseModuleActivator;
 import org.openmrs.module.ModuleFactory;
+import org.openmrs.module.annotation.tag.DrawingTagHandler;
 import org.openmrs.module.htmlformentry.HtmlFormEntryService;
 
 import java.util.Locale;
@@ -47,18 +48,18 @@ public class AnnotationActivator extends BaseModuleActivator {
 	
 	private void updateConceptsAndEncounters() {
 		
-		ConceptService conceptService = Context.getConceptService();
-		
 		// Concepts Complex
 		{
 			final String name = Constants.MODULE_NAME + Constants.ObsType.DEFAULT;
 			final String desc = "Concept complex for 'default' complex obs.";
 			final String uuid = Constants.ConceptUUID.DEFAULT;
 			
+			ConceptService conceptService = Context.getConceptService();
+			
 			if (null == conceptService.getConceptByUuid(uuid)) {
 				ConceptComplex conceptComplex = new ConceptComplex();
 				conceptComplex.setUuid(uuid);
-				conceptComplex.setHandler("DefaultObsHandler");
+				conceptComplex.setHandler("defaultObsHandler");
 				ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
 				conceptComplex.setFullySpecifiedName(conceptName);
 				conceptComplex.setPreferredName(conceptName);
@@ -74,11 +75,13 @@ public class AnnotationActivator extends BaseModuleActivator {
 			final String desc = "Concept complex for 'IMAGE' complex obs.";
 			final String uuid = Constants.ConceptUUID.IMAGE;
 			
+			ConceptService conceptService = Context.getConceptService();
+			
 			if (null == conceptService.getConceptByUuid(uuid)) {
 				
 				ConceptComplex conceptComplex = new ConceptComplex();
 				conceptComplex.setUuid(uuid);
-				conceptComplex.setHandler("ImageObsHandler");
+				conceptComplex.setHandler("imageObsHandler");
 				ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
 				conceptComplex.setFullySpecifiedName(conceptName);
 				conceptComplex.setPreferredName(conceptName);
@@ -95,11 +98,13 @@ public class AnnotationActivator extends BaseModuleActivator {
 			final String desc = "Concept complex for 'SVG' complex obs.";
 			final String uuid = Constants.ConceptUUID.SVG;
 			
+			ConceptService conceptService = Context.getConceptService();
+			
 			if (null == conceptService.getConceptByUuid(uuid)) {
 				
 				ConceptComplex conceptComplex = new ConceptComplex();
 				conceptComplex.setUuid(uuid);
-				conceptComplex.setHandler("SvgObsHandler");
+				conceptComplex.setHandler("svgObsHandler");
 				ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
 				conceptComplex.setFullySpecifiedName(conceptName);
 				conceptComplex.setPreferredName(conceptName);

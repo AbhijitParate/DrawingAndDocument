@@ -11,15 +11,16 @@ import org.springframework.stereotype.Component;
 @Component(Constants.Component.COMPLEX_DATA_HELPER)
 public class ComplexDataHelper {
 	
-	public ModuleComplexData build(String title, Object data, String mimeType) {
-		return new ModuleComplexData(title, data, mimeType);
+	public ModuleComplexData build(String title, Object data, String mimeType, String instruction) {
+		return new ModuleComplexData(title, data, mimeType, instruction);
 	}
 	
 	public ModuleComplexData build(ComplexData complexData) {
-		return new ModuleComplexData(complexData.getTitle(), complexData.getData(), complexData.getMimeType());
+		return new ModuleComplexData(complexData.getTitle(), complexData.getData(),
+		        ((ModuleComplexData) complexData).getMimeType(), "");
 	}
 	
 	public String getContentType(ComplexData complexData) {
-		return complexData.getMimeType();
+		return ((ModuleComplexData) complexData).getMimeType();
 	}
 }

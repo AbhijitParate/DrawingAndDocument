@@ -1,4 +1,4 @@
-package org.openmrs.module.annotation;
+package org.openmrs.module.annotation.tag;
 
 import org.openmrs.module.htmlformentry.*;
 import org.openmrs.module.htmlformentry.action.FormSubmissionControllerAction;
@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class DrawingTagHandler extends SubstitutionTagHandler implements TagHandler {
 	
-	DrawingTagHandler() {
+	public DrawingTagHandler() {
 	}
 	
 	@Override

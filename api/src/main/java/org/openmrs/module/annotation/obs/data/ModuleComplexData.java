@@ -3,6 +3,7 @@ package org.openmrs.module.annotation.obs.data;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
+import org.openmrs.module.annotation.Constants;
 import org.openmrs.obs.ComplexData;
 
 import javax.imageio.ImageIO;
@@ -19,15 +20,31 @@ public class ModuleComplexData extends ComplexData {
 	
 	private static final long serialVersionUID = 1L;
 	
-	public ModuleComplexData(String title, Object data, String mimeType) {
+	private String instruction = ValueComplex.INSTRUCTION_NONE;
+	
+	private String mimeType;
+	
+	public ModuleComplexData(String title, Object data, String mimeType, String instruction) {
 		super(title, data);
 		if (!StringUtils.isEmpty(mimeType)) {
 			this.setMimeType(mimeType);
+		} else {
+			this.setMimeType(Constants.UNKNOWN_MIME_TYPE);
 		}
+		if (!StringUtils.isEmpty(instruction))
+			this.instruction = instruction;
 	}
 	
 	public ComplexData asComplexData() {
 		return this;
+	}
+	
+	public String getInstruction() {
+		return instruction;
+	}
+	
+	public void setInstruction(String instruction) {
+		this.instruction = instruction;
 	}
 	
 	public byte[] asByteArray() {
@@ -71,4 +88,11 @@ public class ModuleComplexData extends ComplexData {
 		}
 	}
 	
+	public void setMimeType(String mimeType) {
+		this.mimeType = mimeType;
+	}
+	
+	public String getMimeType() {
+		return mimeType;
+	}
 }
