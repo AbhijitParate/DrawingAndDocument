@@ -1,0 +1,20 @@
+[
+  {
+    "id": "annotation.encounterTemplate",
+    "extensionPointId": "org.openmrs.referenceapplication.encounterTemplate",
+    "type": "fragment",
+    "extensionParams": {
+      "templateId": "drawingObsEncounterTemplate",
+      "templateFragmentProviderName": "annotation",
+      "templateFragmentId": "drawingObsEncounterTemplate",
+      "supportedEncounterTypes": {
+        "43c25184-f41f-11e6-bc64-92361f002671": {
+          "icon": "icon-paper-clip",
+          "deletable": true,
+          "editable": false,
+          "editUrl": "module/annotation/annotation.form?patientId={{patient.uuid}}&encounterId={{encounter.id}}"
+        }
+      }
+    }
+  }
+]

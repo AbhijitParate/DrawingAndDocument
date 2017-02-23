@@ -1,4 +1,4 @@
-s<% ui.includeCss("annotation", "editor.css") %>
+<% ui.includeCss("annotation", "editor.css") %>
 <% ui.includeCss("annotation", "controls.css") %>
 <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
@@ -38,7 +38,7 @@ s<% ui.includeCss("annotation", "editor.css") %>
 </script>
 
 <% ui.includeJavascript("annotation", "editors.js") %>
-<body>
+
 
     <table>
         <tr>
@@ -534,4 +534,3 @@ s<% ui.includeCss("annotation", "editor.css") %>
         <div class="progress-label">Uploading data...</div>
         <div id="progressbar"></div>
     </div>
-</body>
