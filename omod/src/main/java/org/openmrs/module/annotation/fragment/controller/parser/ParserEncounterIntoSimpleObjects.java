@@ -119,6 +119,8 @@ public class ParserEncounterIntoSimpleObjects {
 			
 			simpleObject.put("question", capitalizeString(uiUtils.format(obs.getConcept())));
 			simpleObject.put("answer", uiUtils.format(obs));
+			simpleObject.put("comment", obs.getComment());
+			simpleObject.put("custom", "Custom Data as a part of SimpleObject");
 			return simpleObject;
 		}
 	}

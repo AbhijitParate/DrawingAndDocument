@@ -14,7 +14,7 @@ public class ParsedObs {
 	private List<SimpleObject> dispositions = new ArrayList<SimpleObject>();
 	
 	public ParsedObs() {
-
+		
 	}
 	
 	public List<SimpleObject> getObs() {

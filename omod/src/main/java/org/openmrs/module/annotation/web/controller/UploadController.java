@@ -99,26 +99,24 @@ public class UploadController {
 	
 	@RequestMapping(method = RequestMethod.POST)
 	@ResponseBody
-	public String onPostAttachment2(HttpServletRequest request, @RequestParam("file") String fileData,
-	        @RequestParam("filename") String fileName, @RequestParam("providerid") String fileType,
+	public String onPostAttachment2(HttpServletRequest request, @RequestParam("files[]") String[] files,
+	        @RequestParam("filenames[]") String[] fileNames, @RequestParam("providerid") String fileType,
 	        @RequestParam("patientid") Patient patient, @RequestParam("visitid") Visit visit,
 	        @RequestParam("providerid") String providerId) throws Exception {
 		
-		log.debug(getClass().getName() + " Request received");
-		log.error(getClass().getName() + " filename received : " + fileName);
+		log.debug(getClass().getName() + " Request received with " + files.length + " files.");
+		log.error(getClass().getName() + " filename received : " + fileNames.length);
 		log.error(getClass().getName() + " visitid received : " + visit.getId());
 		log.error(getClass().getName() + " patientid received : " + patient.getId());
 		log.error(getClass().getName() + " providerid received : " + providerId);
 		
 		Provider provider = moduleContext.getProviderService().getProvider(Integer.valueOf(providerId));
-		if (fileType.equals("attachment")) {
-			fileData = fileData.substring(fileData.indexOf(",") + 1);
-			fileData = fileData.trim();
-		}
-		File dataFile = getFile(fileName, fileData);
 		final Encounter encounter = moduleContext.getModuleEncounter(patient, visit, provider);
-		observationSaver.saveObservation(patient, encounter, dataFile);
 		
+		for (int i = 0; i < files.length; i++) {
+			File dataFile = getFile(fileNames[i], files[i].substring(files[i].indexOf(",") + 1));
+			observationSaver.saveObservation(patient, encounter, dataFile);
+		}
 		return new JSONObject().put("result", "success").toString();
 	}
 	

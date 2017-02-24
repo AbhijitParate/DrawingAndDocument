@@ -1811,8 +1811,7 @@ $(document).ready(function() {
         modal: true,
         autoOpen: false,
         open: function() {
-            saveAttchments();
-            saveSVG();
+            saveData()
         }
     });
 
@@ -1865,16 +1864,35 @@ $(document).ready(function() {
         return false;
     });
 
-    function saveSVG() {
-        var formData = new FormData();
-        formData.append("file", btoa(canvas.toSVG()));
-        formData.append("filename", Math.floor(Date.now()) + ".svg" );
-        formData.append("filetype", "svg" );
-        // formData.append("filetype", attachedFile.type);
+    var formData = new FormData();
+
+    function saveData() {
+        prepareForm();
+        saveSVG(formData);
+        saveAttachments(formData);
+        uploadData();
+    }
+
+    function prepareForm() {
         formData.append("patientid", patientid);
         formData.append("visitid", visitid);
         formData.append("providerid", providerid);
+    }
 
+    function saveSVG() {
+        formData.append("files[]", btoa(canvas.toSVG()));
+        formData.append("filenames[]", Math.floor(Date.now()) + ".svg" );
+    }
+
+    function saveAttachments() {
+        for (let i = 0; i < attachments.length; i++) {
+            var attachedFile = attachments[i];
+            formData.append("files[]", attachedFile.data);
+            formData.append("filenames[]", attachedFile.name);
+        }
+    }
+    
+    function uploadData() {
         //new ajax request
         let request = new XMLHttpRequest();
 
@@ -1900,7 +1918,7 @@ $(document).ready(function() {
         });
 
         //open the request
-        request.open("POST","../../annotation/upload.form");
+        request.open("POST","upload.form");
 
         //set the request header for no caching
         request.setRequestHeader("Cache-Control","no-cache");
@@ -1916,95 +1934,10 @@ $(document).ready(function() {
         };
     }
 
-    function saveAttchments() {
-        for (let i = 0; i < attachments.length; i++) {
-
-            progressbar.progressbar( "value", i * 100 / attachments.length);
-
-            var attachedFile = attachments[i];
-            var formData = new FormData();
-            formData.append("file", attachedFile.data);
-            formData.append("filename", attachedFile.name);
-            formData.append("filetype", "attachment" );
-            // formData.append("filetype", attachedFile.type);
-            formData.append("fileid", attachedFile.id);
-            formData.append("patientid", patientid);
-            formData.append("visitid", visitid);
-            formData.append("providerid", providerid);
-
-            //new ajax request
-            let request = new XMLHttpRequest();
-
-            //event listener progress
-            request.upload.addEventListener('progress',function(event){
-                if(event.lengthComputable){
-                    //get our percentage
-                    var percent = (Math.round(event.loaded / event.total) * 100);
-                    console.error( " progress: " + percent + " %");
-                    progressbar.progressbar( "value", percent);
-                }
-            });
-
-            //add event for when the progress is done
-            request.upload.addEventListener('load',function(data){
-
-            });
-
-            //for errors we'll use the info element but for now console log it
-            request.upload.addEventListener('error',function(event){
-                progressLabel.text("Error occurred!");
-                console.log("error: " + event);
-            });
-
-            //open the request
-            request.open("POST","../../annotation/upload.form");
-
-            //set the request header for no caching
-            request.setRequestHeader("Cache-Control","no-cache");
-
-            //send the data
-            request.send(formData);
-
-            request.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    console.error( "success: Upload succeeded");
-                    console.error( "success: Upload response : " + request.responseText);
-                }
-            };
-
-            // $.ajax({
-            //     url: "upload.form",
-            //     type: 'POST',
-            //     data: formData,
-            //     cache: false,
-            //     contentType: false,
-            //     processData: false,
-            //     beforeSend: function () {
-            //         console.error(" beforeSend: Upload started");
-            //     },
-            //     uploadProgress: function (event, position, total, percentComplete) {
-            //         console.error(" progress: " + percentComplete);
-            //     },
-            //     error: function () {
-            //         console.error(" error: Error occurred");
-            //     },
-            //     success: function (data) {
-            //         console.error(" success: Upload succeeded");
-            //         console.error(" success: Upload response : " + data);
-            //     },
-            //     complete: function () {
-            //         console.error(" complete: Upload completed");
-            //         // window.location.reload();
-            //     }
-            // });
-        }
-    }
-
     beforeSubmit.push(function() {
         $("#status-save").click();
-        setTimeout(function (e) {
-            return true;
-        }, 3000);
+        console.error("Before submit triggered.");
+        return true;
     });
 
 } );

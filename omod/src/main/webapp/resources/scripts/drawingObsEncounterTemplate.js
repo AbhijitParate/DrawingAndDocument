@@ -64,9 +64,9 @@ $(function() {
             }
             console.debug("Inside if (displayWithHtmlForm)");
             $.getJSON(
-                emr.fragmentActionLink("htmlformentryui", "htmlform/viewEncounterWithHtmlForm", "getAsHtml", { encounterId: id })
+                emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: id })
             ).success(function(data){
-                encounterDetailsSection.html(data.html);
+                encounterDetailsSection.html("<p>Hello World</p>");
             }).error(function(err){
                 emr.errorAlert(err);
             });
@@ -84,13 +84,15 @@ $(function() {
             $.getJSON(
                 emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: id })
             ).success(function(data){
+                // encounterDetailsSection.html(displayTemplate(data) + "Hello World");
                 encounterDetailsSection.html(displayTemplate(data));
-                console.debug(data);
+                // encounterDetailsSection.html("<a href\"\" >Hello World</a>");
+                console.debug("printing Hello World");
             }).error(function(err){
                 emr.errorAlert(err);
                 console.debug(err);
             });
-            console.debug("getEncounterDetails function end.");
+            console.debug("getEncounterDetails function ended.");
         }
     }
 });

@@ -56,7 +56,6 @@
     </span>
 
     <div id="encounter-summary{{- encounter.encounterId }}" class="collapse">
-        This is outside encounter summery
         <div class="encounter-summary-container">
 
         </div>
@@ -66,15 +65,14 @@
 
 <!-- This part is printing the concept question and concept answer in the details panel -->
 <script type="text/template" id="drawingObsEncounterTemplate">
-{{ _.each(_.filter(diagnoses, function(d) { return d.answer }), function(d) { }}
-<p><small>{{- d.question}}</small><span>{{- d.answer}}</span></p>
-<p>D : {{- d}}</p>
-{{ }); }}
 
 {{ _.each(observations, function(observation) { }}
-{{ if(observation.answer != null) {}}
-<p><small>{{- observation.question}}</small><span>{{- observation.answer}}</span></p>
-<p>Observation : {{- observation.comment}}</p>
-{{}}}
+    {{ if(observation.answer != null) {}}
+    <p>
+        <small>{{- observation.question}}</small><span>{{- observation.answer}}</span>
+        <small>Observation : </small><span>{{- observation.comment}}</span>
+        <small>Observation : </small><span>{{- observation.custom}}</span>
+    </p>
+    {{}}}
 {{ }); }}
 </script>

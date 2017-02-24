@@ -29,8 +29,7 @@ public class DrawingDetailsFragmentController {
 		ParsedObs parsedObs = parserEncounter.parseObservations(uiUtils.getLocale());
 		List<SimpleObject> orders = parserEncounter.parseOrders();
 		
-		return SimpleObject.create("observations", parsedObs.getObs(), "orders", orders, "diagnoses",
-		    parsedObs.getDiagnoses(), "dispositions", parsedObs.getDispositions());
+		return SimpleObject.create("observations", parsedObs.getObs());
 	}
 	
 }
