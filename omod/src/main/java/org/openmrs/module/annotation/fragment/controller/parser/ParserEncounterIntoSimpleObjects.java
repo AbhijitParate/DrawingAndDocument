@@ -117,10 +117,10 @@ public class ParserEncounterIntoSimpleObjects {
 		} else {
 			SimpleObject simpleObject = SimpleObject.create("obsId", obs.getObsId());
 			
-			simpleObject.put("question", capitalizeString(uiUtils.format(obs.getConcept())));
-			simpleObject.put("answer", uiUtils.format(obs));
-			simpleObject.put("comment", obs.getComment());
-			simpleObject.put("custom", "Custom Data as a part of SimpleObject");
+			simpleObject.put("uuid", obs.getUuid());
+			//            simpleObject.put("question", capitalizeString(uiUtils.format(obs.getConcept())));
+			//            simpleObject.put("answer", uiUtils.format(obs));
+			simpleObject.put("name", obs.getComment());
 			return simpleObject;
 		}
 	}

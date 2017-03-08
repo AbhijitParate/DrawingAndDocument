@@ -9,6 +9,7 @@
  */
 package org.openmrs.module.annotation;
 
+import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -193,6 +194,19 @@ public class ModuleContext extends ModuleProperties {
 		String ext = "bin";
 		if (mimeTypes.containsKey(mimeType)) {
 			ext = mimeTypes.get(mimeType);
+		}
+		return ext;
+	}
+	
+	public static String getExtension(String fileName, String mimeType) {
+		String ext = FilenameUtils.getExtension(fileName);
+		String extFromMimeType = getExtension(mimeType);
+		if (!org.apache.commons.lang.StringUtils.isEmpty(ext)) {
+			if (ext.length() > 6) { // this is a bit arbitrary, just to discriminate funny named files such as "uiohdz.iuhezuidhuih"
+				ext = extFromMimeType;
+			}
+		} else {
+			ext = extFromMimeType;
 		}
 		return ext;
 	}

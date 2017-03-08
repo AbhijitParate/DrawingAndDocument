@@ -54,7 +54,11 @@ public class DrawingTagHandler extends SubstitutionTagHandler implements TagHand
 			
 			StringBuilder sb = new StringBuilder();
 			try {
-				sb.append(uiUtils.includeFragment("annotation", "editor"));
+				if (context.getMode() == FormEntryContext.Mode.VIEW) {
+					sb.append(uiUtils.includeFragment("annotation", "encounterDetails"));
+				} else {
+					sb.append(uiUtils.includeFragment("annotation", "editor"));
+				}
 				return sb.toString();
 			}
 			catch (PageAction pageAction) {

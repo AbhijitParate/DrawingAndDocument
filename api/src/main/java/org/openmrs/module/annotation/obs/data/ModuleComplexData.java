@@ -88,6 +88,10 @@ public class ModuleComplexData extends ComplexData {
 		}
 	}
 	
+	public InputStream asInputStream() {
+		return (InputStream) this.getData();
+	}
+	
 	public void setMimeType(String mimeType) {
 		this.mimeType = mimeType;
 	}

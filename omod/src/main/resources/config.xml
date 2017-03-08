@@ -40,6 +40,10 @@
 			org.openmrs.module.emrapi
 		</require_module>
 	</require_modules>
+
+    <welcome-file-list>
+        <welcome-file> </welcome-file>
+    </welcome-file-list>
 	
 	<!-- Extensions -->
 	<!--<extension>-->

@@ -117,6 +117,7 @@ public class Constants {
 		mimeTypes.put("application/arj", "arj");
 		mimeTypes.put("application/octet-stream", "arj");
 		mimeTypes.put("image/x-jg", "art");
+		mimeTypes.put("image/svg+xml", "svg");
 		mimeTypes.put("video/x-ms-asf", "asf");
 		mimeTypes.put("text/x-asm", "asm");
 		mimeTypes.put("text/asp", "asp");

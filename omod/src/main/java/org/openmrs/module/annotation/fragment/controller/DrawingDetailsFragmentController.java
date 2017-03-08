@@ -18,6 +18,8 @@ import java.util.List;
  */
 public class DrawingDetailsFragmentController {
 	
+	public static final String OBSERVATIONS = "obs";
+	
 	public SimpleObject getEncounterDetails(@RequestParam("encounterId") Encounter encounter,
 	        @SpringBean("emrApiProperties") EmrApiProperties emrApiProperties,
 	        @SpringBean("locationService") LocationService locationService,
@@ -27,9 +29,8 @@ public class DrawingDetailsFragmentController {
 		        emrApiProperties, locationService, dispositionService);
 		
 		ParsedObs parsedObs = parserEncounter.parseObservations(uiUtils.getLocale());
-		List<SimpleObject> orders = parserEncounter.parseOrders();
 		
-		return SimpleObject.create("observations", parsedObs.getObs());
+		return SimpleObject.create(OBSERVATIONS, parsedObs.getObs());
 	}
 	
 }

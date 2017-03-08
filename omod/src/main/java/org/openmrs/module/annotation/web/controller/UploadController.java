@@ -36,8 +36,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-@Controller("${rootrootArtifactId}.UploadController")
-@RequestMapping(value = { "annotation/upload.form", "module/annotation/upload.form" })
+@Controller("${rootArtifactId}.UploadController")
+@RequestMapping(value = "annotation/upload.form")
 public class UploadController {
 	
 	protected final Log log = LogFactory.getLog(getClass());
@@ -56,53 +56,11 @@ public class UploadController {
 		response.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED, "Method not allowed.");
 	}
 	
-	//	@RequestMapping(method = RequestMethod.POST)
-	//	@ResponseBody
-	//	public String onPostAttachment(HttpServletRequest request) throws Exception {
-	//		JSONObject jsonObject = new JSONObject();
-	//		if (request instanceof MultipartHttpServletRequest) {
-	//
-	//			try {
-	//
-	//				String file = request.getParameter("file");
-	//				String filename = request.getParameter("filename");
-	//				String filetype = request.getParameter("filetype");
-	//				String patientId = request.getParameter("patientid");
-	//				String visitId = request.getParameter("visitid");
-	//
-	//				if (filetype.equals(ATTACHMENT)) {
-	//					saveFile(ATTACHMENT, file.substring(file.indexOf(",") + 1), filename, patientId, visitId);
-	//					jsonObject.put("result", "success");
-	//					return jsonObject.toString();
-	//				} else if (filetype.equals(SVG)) {
-	//					saveFile(SVG, file, filename, patientId, visitId);
-	//					Drawing drawing = new Drawing();
-	//					drawing.setVisitId(visitId);
-	//					drawing.setPatientId(patientId);
-	//					drawing.setSvgId(filename);
-	//					jsonObject.put("result", "success");
-	//					return jsonObject.toString();
-	//				} else {
-	//					jsonObject.put("result", "failed");
-	//					return jsonObject.toString();
-	//				}
-	//			}
-	//			catch (Exception e) {
-	//				jsonObject.put("result", "failed");
-	//				return jsonObject.toString();
-	//			}
-	//		} else {
-	//			jsonObject.put("result", "not multipart post request");
-	//			return jsonObject.toString();
-	//		}
-	//	}
-	
 	@RequestMapping(method = RequestMethod.POST)
 	@ResponseBody
-	public String onPostAttachment2(HttpServletRequest request, @RequestParam("files[]") String[] files,
-	        @RequestParam("filenames[]") String[] fileNames, @RequestParam("providerid") String fileType,
-	        @RequestParam("patientid") Patient patient, @RequestParam("visitid") Visit visit,
-	        @RequestParam("providerid") String providerId) throws Exception {
+	public String onPost(HttpServletRequest request, @RequestParam("files[]") String[] files,
+	        @RequestParam("filenames[]") String[] fileNames, @RequestParam("patientid") Patient patient,
+	        @RequestParam("visitid") Visit visit, @RequestParam("providerid") String providerId) throws Exception {
 		
 		log.debug(getClass().getName() + " Request received with " + files.length + " files.");
 		log.error(getClass().getName() + " filename received : " + fileNames.length);
@@ -116,6 +74,7 @@ public class UploadController {
 		for (int i = 0; i < files.length; i++) {
 			File dataFile = getFile(fileNames[i], files[i].substring(files[i].indexOf(",") + 1));
 			observationSaver.saveObservation(patient, encounter, dataFile);
+			dataFile.delete();
 		}
 		return new JSONObject().put("result", "success").toString();
 	}
@@ -131,19 +90,5 @@ public class UploadController {
 		stream.close();
 		return serverFile;
 	}
-	
-	//    private String saveFile(String location, String fileData, String fileName, String patientId, String visitId)
-	//	        throws Exception {
-	//		String storedFileLocation = OpenmrsUtil.getApplicationDataDirectory() + "/Annotation/" + patientId + "/" + visitId
-	//		        + "/" + location;
-	//		File folder = new File(storedFileLocation);
-	//		folder.mkdirs();
-	//		// Create the file on server
-	//		File serverFile = new File(folder, fileName);
-	//		BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(serverFile));
-	//		stream.write(Base64Utils.decode(fileData.getBytes()));
-	//		stream.close();
-	//		return storedFileLocation;
-	//	}
 	
 }

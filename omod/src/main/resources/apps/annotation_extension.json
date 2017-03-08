@@ -4,7 +4,7 @@
         "extensionPointId": "patientDashboard.visitActions",
         "type": "link",
         "label": "Add Drawing",
-        "url": "annotation/annotation_dashboard.page?patientId={{patient.uuid}}&visitId={{visit.uuid}}",
+        "url": "annotation/addDrawing.page?patientId={{patient.uuid}}&visitId={{visit.uuid}}",
         "icon": "icon-plus",
         "order": 25,
         "requiredPrivilege": "Task: coreapps.createVisit",

@@ -48,6 +48,7 @@ public class AdminList extends AdministrationSectionExt {
 		map.put("module/annotation/download.form", "Download");
 		map.put("annotation/annotation.page", "annotation.refapp.title");
 		map.put("annotation/annotation_demo.page", "Annotation Demo");
+		map.put("annotation/drawing_editor.page", "Annotation Demo 2");
 		
 		return map;
 	}

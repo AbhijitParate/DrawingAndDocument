@@ -12,7 +12,8 @@
           "icon": "icon-paper-clip",
           "deletable": true,
           "editable": false,
-          "editUrl": "module/annotation/annotation.form?patientId={{patient.uuid}}&encounterId={{encounter.id}}"
+          "editUrl": "module/annotation/editDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}",
+          "viewUrl": "module/annotation/viewDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}"
         }
       }
     }
