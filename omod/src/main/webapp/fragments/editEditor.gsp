@@ -33,11 +33,12 @@
 %>
 <script>
     var patientid =${ patientId };
-    var visitid = ${ visitId };
-    var providerid = ${ providerId };
-    var returnlink ="${ ui.format(returnUrl) }";
+    var encounterid = ${ encounter.id };
+    var returnlink = "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patientid;
 </script>
-${ui.includeFragment("annotation", "status_bar")}
+<h2>Edit Drawing</h2>
+<!-- todo: Customize for editing encounter -->
+${ui.includeFragment("annotation", "statusBar", [ mode: "edit" ])}
 <div id="mainContainer" class="outerContainer">
     ${ui.includeFragment("annotation", "actions_panel")}
     ${ui.includeFragment("annotation", "canvas")}

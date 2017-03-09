@@ -73,7 +73,12 @@ $(function() {
 
             var html = generateHtml(data);
             encounterDetailsSection.html(html);
-            $('.obs-preview').lightcase();
+            $('.obs-preview').lightcase({
+                maxWidth : 1024,
+                maxHeight: 768,
+                forceWidth: true,
+                forceHeight: true
+            });
             // console.debug(data);
         }).error(function(err){
             emr.errorAlert(err);

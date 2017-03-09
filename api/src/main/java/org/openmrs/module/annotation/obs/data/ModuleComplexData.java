@@ -3,6 +3,8 @@ package org.openmrs.module.annotation.obs.data;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openmrs.module.annotation.Constants;
 import org.openmrs.obs.ComplexData;
 
@@ -13,44 +15,68 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import static org.openmrs.module.annotation.Utils.getObsTypeFromMimeType;
+
 /**
- * Created by abhij on 2/17/2017.
+ * ModuleComplexData extends from {@link ComplexData} and two additional properties mimeType and
+ * obsType
  */
 public class ModuleComplexData extends ComplexData {
 	
+	protected final Log log = LogFactory.getLog(getClass());
+	
 	private static final long serialVersionUID = 1L;
 	
-	private String instruction = ValueComplex.INSTRUCTION_NONE;
+	private String obsType = Constants.MODULE_ID;
 	
-	private String mimeType;
+	private String mimeType = Constants.UNKNOWN_MIME_TYPE;
 	
-	public ModuleComplexData(String title, Object data, String mimeType, String instruction) {
-		super(title, data);
+	/**
+	 * Constructor
+	 * 
+	 * @param fileName String - name of file to be saved
+	 * @param data Object - this is {@link InputStream} in this case
+	 * @param mimeType String - mimeTye of the file
+	 */
+	// TODO: 3/8/2017 Remove mimeType parameter form the signature can be constructed from the file extension
+	// 8
+	public ModuleComplexData(String fileName, Object data, String mimeType) {
+		super(fileName, data);
+		log.error(getClass().getName() + ".ModuleComplexData()");
 		if (!StringUtils.isEmpty(mimeType)) {
-			this.setMimeType(mimeType);
-		} else {
-			this.setMimeType(Constants.UNKNOWN_MIME_TYPE);
+			this.mimeType = mimeType;
 		}
-		if (!StringUtils.isEmpty(instruction))
-			this.instruction = instruction;
+		this.obsType = getObsTypeFromMimeType(mimeType);
 	}
 	
+	// 10
 	public ComplexData asComplexData() {
+		log.error(getClass().getName() + ".asComplexData()");
 		return this;
 	}
 	
-	public String getInstruction() {
-		return instruction;
+	// 12 -> 14
+	public String getObsType() {
+		log.error(getClass().getName() + ".getObsType()");
+		return obsType;
 	}
 	
-	public void setInstruction(String instruction) {
-		this.instruction = instruction;
+	public void setObsType(String obsType) {
+		log.error(getClass().getName() + ".setObsType()");
+		this.obsType = obsType;
 	}
 	
 	public byte[] asByteArray() {
+		log.error(getClass().getName() + ".asByteArray()");
 		return getByteArray(this);
 	}
 	
+	/**
+	 * Generates byte array from complex data
+	 * 
+	 * @param complexData ComplexData object
+	 * @return byte[] of the actual complex data
+	 */
 	public static byte[] getByteArray(ComplexData complexData) {
 		final byte[] emptyContent = new byte[0];
 		
@@ -88,15 +114,25 @@ public class ModuleComplexData extends ComplexData {
 		}
 	}
 	
+	/**
+	 * Returns input stream of complex data
+	 * 
+	 * @return InputStream of complex data
+	 */
 	public InputStream asInputStream() {
+		log.error(getClass().getName() + ".asInputStream()");
 		return (InputStream) this.getData();
 	}
 	
+	// 9
 	public void setMimeType(String mimeType) {
+		log.error(getClass().getName() + ".setMimeType()");
 		this.mimeType = mimeType;
 	}
 	
+	// 16
 	public String getMimeType() {
-		return mimeType;
+		log.error(getClass().getName() + ".getMimeType()");
+		return this.mimeType;
 	}
 }

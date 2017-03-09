@@ -16,21 +16,23 @@ import org.openmrs.Obs;
 import org.openmrs.module.annotation.Constants;
 import org.openmrs.module.annotation.ModuleContext;
 import org.openmrs.module.annotation.obs.data.ModuleComplexData;
-import org.openmrs.module.annotation.obs.data.ValueComplex;
 import org.openmrs.module.webservices.rest.web.RestConstants;
 import org.openmrs.module.webservices.rest.web.v1_0.controller.MainResourceController;
 import org.openmrs.obs.ComplexData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static org.openmrs.module.annotation.ModuleContext.getContentFamily;
-import static org.openmrs.module.annotation.ModuleContext.getExtension;
+import static org.openmrs.module.annotation.Utils.getContentFamily;
+import static org.openmrs.module.annotation.Utils.getExtension;
 
 @Controller
 @RequestMapping(value = "/rest/" + RestConstants.VERSION_1 + "/annotation")

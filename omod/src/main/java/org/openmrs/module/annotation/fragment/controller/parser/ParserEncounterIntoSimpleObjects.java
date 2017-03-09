@@ -98,15 +98,15 @@ public class ParserEncounterIntoSimpleObjects {
 			}
 		});
 		
-		Collections.sort(parsedObs.getDiagnoses(), new Comparator<SimpleObject>() {
-			
-			@Override
-			public int compare(SimpleObject o1, SimpleObject o2) {
-				Integer order1 = (Integer) o1.get("order");
-				Integer order2 = (Integer) o2.get("order");
-				return order1 - order2;
-			}
-		});
+		//		Collections.sort(parsedObs.getDiagnoses(), new Comparator<SimpleObject>() {
+		//
+		//			@Override
+		//			public int compare(SimpleObject o1, SimpleObject o2) {
+		//				Integer order1 = (Integer) o1.get("order");
+		//				Integer order2 = (Integer) o2.get("order");
+		//				return order1 - order2;
+		//			}
+		//		});
 		
 		return parsedObs;
 	}

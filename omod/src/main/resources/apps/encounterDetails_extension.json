@@ -11,9 +11,9 @@
         "43c25184-f41f-11e6-bc64-92361f002671": {
           "icon": "icon-paper-clip",
           "deletable": true,
-          "editable": false,
-          "editUrl": "module/annotation/editDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}",
-          "viewUrl": "module/annotation/viewDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}"
+          "editable": true,
+          "editUrl": "annotation/editDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}",
+          "viewUrl": "annotation/viewDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}"
         }
       }
     }

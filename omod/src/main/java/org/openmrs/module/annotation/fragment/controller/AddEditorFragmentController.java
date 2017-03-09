@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  *  * Controller for a fragment that shows all users  
  */
-public class EditorFragmentController {
+public class AddEditorFragmentController {
 	
 	Log log = LogFactory.getLog(getClass());
 	
@@ -33,7 +33,7 @@ public class EditorFragmentController {
 	        @RequestParam(value = "visitId", required = false) Visit visit, UiSessionContext sessionContext, UiUtils ui,
 	        @InjectBeans ModuleContext moduleContext) throws Exception {
 		
-		log.error("controller triggered");
+		log.error(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("visitId", visit.getId());
 		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());

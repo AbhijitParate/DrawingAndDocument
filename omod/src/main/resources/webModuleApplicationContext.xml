@@ -8,15 +8,7 @@
   		    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <!-- Annotation based controllers -->
-    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
-        <property name="useDefaultSuffixPattern" value="false" />
-    </bean>
-
-    <!--<bean id="viewResolver"-->
-          <!--class="org.springframework.web.servlet.view.InternalResourceViewResolver" >-->
-        <!--<property name="order" value="2" />-->
-        <!--<property name="suffix" value=""/>-->
-    <!--</bean>-->
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
 
     <!-- UI Framework setup -->
 	<bean class="org.openmrs.ui.framework.StandardModuleUiConfiguration">
@@ -27,5 +19,5 @@
 		<property name="maxUploadSize" value="104857600"/>
 	</bean>
 
-    <context:component-scan base-package="org.openmrs.module.annotation" />
+    <context:component-scan base-package="org.openmrs.module.annotation.web.controller" />
 </beans>

@@ -49,72 +49,12 @@ public class AnnotationActivator extends BaseModuleActivator {
 	private void updateConceptsAndEncounters() {
 		
 		// Concepts Complex
-		{
-			final String name = Constants.MODULE_NAME + Constants.ObsType.DEFAULT;
-			final String desc = "Concept complex for 'default' complex obs.";
-			final String uuid = Constants.ConceptUUID.DEFAULT;
-			
-			ConceptService conceptService = Context.getConceptService();
-			
-			if (null == conceptService.getConceptByUuid(uuid)) {
-				ConceptComplex conceptComplex = new ConceptComplex();
-				conceptComplex.setUuid(uuid);
-				conceptComplex.setHandler("defaultObsHandler");
-				ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
-				conceptComplex.setFullySpecifiedName(conceptName);
-				conceptComplex.setPreferredName(conceptName);
-				conceptComplex.setConceptClass(conceptService.getConceptClassByUuid(ConceptClass.QUESTION_UUID));
-				conceptComplex.setDatatype(conceptService.getConceptDatatypeByUuid(ConceptDatatype.COMPLEX_UUID));
-				conceptComplex.addDescription(new ConceptDescription(desc, Locale.ENGLISH));
-				
-				conceptService.saveConcept(conceptComplex);
-			}
-		}
-		{
-			final String name = Constants.MODULE_NAME + Constants.ObsType.IMAGE;
-			final String desc = "Concept complex for 'IMAGE' complex obs.";
-			final String uuid = Constants.ConceptUUID.IMAGE;
-			
-			ConceptService conceptService = Context.getConceptService();
-			
-			if (null == conceptService.getConceptByUuid(uuid)) {
-				
-				ConceptComplex conceptComplex = new ConceptComplex();
-				conceptComplex.setUuid(uuid);
-				conceptComplex.setHandler("imageObsHandler");
-				ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
-				conceptComplex.setFullySpecifiedName(conceptName);
-				conceptComplex.setPreferredName(conceptName);
-				conceptComplex.setConceptClass(conceptService.getConceptClassByUuid(ConceptClass.QUESTION_UUID));
-				conceptComplex.setDatatype(conceptService.getConceptDatatypeByUuid(ConceptDatatype.COMPLEX_UUID));
-				conceptComplex.addDescription(new ConceptDescription(desc, Locale.ENGLISH));
-				
-				conceptService.saveConcept(conceptComplex);
-			}
-		}
-		
-		{
-			final String name = Constants.MODULE_NAME + Constants.ObsType.SVG;
-			final String desc = "Concept complex for 'SVG' complex obs.";
-			final String uuid = Constants.ConceptUUID.SVG;
-			
-			ConceptService conceptService = Context.getConceptService();
-			
-			if (null == conceptService.getConceptByUuid(uuid)) {
-				
-				ConceptComplex conceptComplex = new ConceptComplex();
-				conceptComplex.setUuid(uuid);
-				conceptComplex.setHandler("svgObsHandler");
-				ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
-				conceptComplex.setFullySpecifiedName(conceptName);
-				conceptComplex.setPreferredName(conceptName);
-				conceptComplex.setConceptClass(conceptService.getConceptClassByUuid(ConceptClass.QUESTION_UUID));
-				conceptComplex.setDatatype(conceptService.getConceptDatatypeByUuid(ConceptDatatype.COMPLEX_UUID));
-				conceptComplex.addDescription(new ConceptDescription(desc, Locale.ENGLISH));
-				
-				conceptService.saveConcept(conceptComplex);
-			}
-		}
+		addConcept(Constants.ObsType.FILE, Constants.ConceptUUID.FILE, "defaultObsHandler");
+		addConcept(Constants.ObsType.SVG, Constants.ConceptUUID.SVG, "defaultObsHandler");
+		addConcept(Constants.ObsType.IMAGE, Constants.ConceptUUID.IMAGE, "defaultObsHandler");
+		addConcept(Constants.ObsType.AUDIO, Constants.ConceptUUID.AUDIO, "defaultObsHandler");
+		addConcept(Constants.ObsType.VIDEO, Constants.ConceptUUID.VIDEO, "defaultObsHandler");
+		addConcept(Constants.ObsType.NOTE, Constants.ConceptUUID.NOTE, "defaultObsHandler");
 		
 		// Encounter Type
 		{
@@ -130,6 +70,28 @@ public class AnnotationActivator extends BaseModuleActivator {
 				encounterType.setUuid(uuid);
 				encounterService.saveEncounterType(encounterType);
 			}
+		}
+	}
+	
+	private static void addConcept(String obsType, String uuid, String handler) {
+		final String name = Constants.MODULE_NAME + obsType;
+		final String desc = "Concept complex for " + obsType + " complex obs.";
+		
+		ConceptService conceptService = Context.getConceptService();
+		
+		if (null == conceptService.getConceptByUuid(uuid)) {
+			
+			ConceptComplex conceptComplex = new ConceptComplex();
+			conceptComplex.setUuid(uuid);
+			conceptComplex.setHandler(handler);
+			ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
+			conceptComplex.setFullySpecifiedName(conceptName);
+			conceptComplex.setPreferredName(conceptName);
+			conceptComplex.setConceptClass(conceptService.getConceptClassByUuid(ConceptClass.QUESTION_UUID));
+			conceptComplex.setDatatype(conceptService.getConceptDatatypeByUuid(ConceptDatatype.COMPLEX_UUID));
+			conceptComplex.addDescription(new ConceptDescription(desc, Locale.ENGLISH));
+			
+			conceptService.saveConcept(conceptComplex);
 		}
 	}
 	

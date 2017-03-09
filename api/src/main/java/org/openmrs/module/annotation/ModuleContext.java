@@ -9,8 +9,6 @@
  */
 package org.openmrs.module.annotation;
 
-import org.apache.commons.io.FilenameUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.codehaus.jackson.JsonParser;
@@ -26,8 +24,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
-
-import static org.openmrs.module.annotation.Constants.mimeTypes;
 
 /**
  * Inject this class to access services and global properties.
@@ -48,10 +44,6 @@ public class ModuleContext extends ModuleProperties {
 	@Autowired
 	@Qualifier(Constants.Component.COMPLEX_DATA_HELPER)
 	protected ComplexDataHelper complexDataHelper;
-	
-	/*
-	 * Exposing all needed services through OUR context
-	 */
 	
 	public ConceptService getConceptService() {
 		return conceptService;
@@ -89,7 +81,9 @@ public class ModuleContext extends ModuleProperties {
 		return administrationService;
 	}
 	
+	// 5
 	public ConceptComplex getConceptComplex(Constants.ContentType contentType) {
+		log.error(getClass().getName() + ".getConceptComplex()");
 		Map<String, String> map = getMapByGlobalProperty(Constants.GlobalPropertyPIdentifier.CONCEPT_COMPLEX_UUID_MAP);
 		log.error("Concept Complex Map " + map.toString());
 		Concept concept = getConceptService().getConceptByUuid(map.get(contentType.toString()));
@@ -103,6 +97,7 @@ public class ModuleContext extends ModuleProperties {
 	}
 	
 	public List<String> getConceptComplexList() {
+		log.error(getClass().getName() + ".getConceptComplexList()");
 		List<String> list = Collections.<String> emptyList();
 		final String globalPropertyName = Constants.GlobalPropertyPIdentifier.CONCEPT_COMPLEX_UUID_LIST;
 		String globalProperty = administrationService.getGlobalProperty(globalPropertyName);
@@ -119,6 +114,7 @@ public class ModuleContext extends ModuleProperties {
 	}
 	
 	private ConceptComplex getDefaultConceptComplex() {
+		log.error(getClass().getName() + ".getDefaultConceptComplex()");
 		String globalPropertyName = Constants.GlobalPropertyPIdentifier.DEFAULT_CONCEPT_COMPLEX_UUID;
 		Concept concept = getConceptByGlobalProperty(globalPropertyName);
 		log.error("Default Concept UUID for content type " + concept.getUuid());
@@ -129,7 +125,9 @@ public class ModuleContext extends ModuleProperties {
 		return conceptComplex;
 	}
 	
+	// 6
 	protected Map<String, String> getMapByGlobalProperty(String globalPropertyName) {
+		log.error(getClass().getName() + ".getMapByGlobalProperty()");
 		Map<String, String> map = Collections.<String, String> emptyMap();
 		String globalProperty = administrationService.getGlobalProperty(globalPropertyName);
 		
@@ -145,27 +143,9 @@ public class ModuleContext extends ModuleProperties {
 		return map;
 	}
 	
-	public static Constants.ContentType getContentFamily(String mimeType) {
-		Constants.ContentType contentType = Constants.ContentType.DEFAULT;
-		if (StringUtils.startsWith(mimeType, "image/")) {
-			if (mimeType.contains("svg")) {
-				contentType = Constants.ContentType.SVG;
-			} else {
-				contentType = Constants.ContentType.IMAGE;
-			}
-		} else if (StringUtils.startsWith(mimeType, "video/")) {
-			contentType = Constants.ContentType.VIDEO;
-		} else if (StringUtils.startsWith(mimeType, "audio/")) {
-			contentType = Constants.ContentType.AUDIO;
-		} else if (StringUtils.startsWith(mimeType, "text/")) {
-			contentType = Constants.ContentType.NOTE;
-		} else if (StringUtils.startsWith(mimeType, "application/")) {
-			contentType = Constants.ContentType.FILE;
-		}
-		return contentType;
-	}
-	
+	// 1
 	public Encounter getModuleEncounter(Patient patient, Visit visit, Provider provider) {
+		log.error(getClass().getName() + ".getModuleEncounter()");
 		Encounter encounter = new Encounter();
 		encounter.setVisit(visit);
 		encounter.setEncounterType(getEncounterType());
@@ -177,7 +157,9 @@ public class ModuleContext extends ModuleProperties {
 		return encounter;
 	}
 	
+	// 3
 	private EncounterRole getEncounterRole() {
+		log.error(getClass().getName() + ".getEncounterRole()");
 		EncounterRole unknownRole = getEncounterService().getEncounterRoleByUuid(EncounterRole.UNKNOWN_ENCOUNTER_ROLE_UUID);
 		if (unknownRole == null) {
 			throw new IllegalStateException("No 'Unknown' encounter role with uuid "
@@ -186,28 +168,9 @@ public class ModuleContext extends ModuleProperties {
 		return unknownRole;
 	}
 	
+	// 2
 	private EncounterType getEncounterType() {
+		log.error(getClass().getName() + ".getEncounterType()");
 		return getEncounterTypeByGlobalProperty(Constants.GlobalPropertyPIdentifier.ENCOUNTER_TYPE_UUID);
-	}
-	
-	public static String getExtension(String mimeType) {
-		String ext = "bin";
-		if (mimeTypes.containsKey(mimeType)) {
-			ext = mimeTypes.get(mimeType);
-		}
-		return ext;
-	}
-	
-	public static String getExtension(String fileName, String mimeType) {
-		String ext = FilenameUtils.getExtension(fileName);
-		String extFromMimeType = getExtension(mimeType);
-		if (!org.apache.commons.lang.StringUtils.isEmpty(ext)) {
-			if (ext.length() > 6) { // this is a bit arbitrary, just to discriminate funny named files such as "uiohdz.iuhezuidhuih"
-				ext = extFromMimeType;
-			}
-		} else {
-			ext = extFromMimeType;
-		}
-		return ext;
 	}
 }

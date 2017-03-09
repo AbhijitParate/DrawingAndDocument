@@ -19,7 +19,7 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	
 	protected final Log log = LogFactory.getLog(getClass());
 	
-	private ComplexObsHandler parent;
+	private ComplexObsHandler complexObsHandler;
 	
 	@Autowired
 	@Qualifier(Constants.Component.COMPLEX_DATA_HELPER)
@@ -27,10 +27,12 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	
 	public AbstractComplexObsHandler() {
 		super();
+		log.error(getClass().getName() + ".AbstractComplexObsHandler()");
 		setParentComplexObsHandler();
 	}
 	
 	protected ComplexDataHelper getComplexDataHelper() {
+		log.error(getClass().getName() + ".getComplexDataHelper()");
 		return complexDataHelper;
 	}
 	
@@ -42,34 +44,23 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	
 	abstract protected ValueComplex saveComplexData(Obs obs, ModuleComplexData moduleComplexData);
 	
-	protected void setParent(ComplexObsHandler complexObsHandler) {
-		this.parent = complexObsHandler;
+	protected void setComplexObsHandler(ComplexObsHandler complexObsHandler) {
+		log.error(getClass().getName() + ".setComplexObsHandler()");
+		this.complexObsHandler = complexObsHandler;
 	}
 	
-	final protected ComplexObsHandler getParent() {
-		return parent;
-	}
-	
-	public static ModuleComplexData fetchModuleComplexData(ComplexData complexData) {
-		
-		if (!(complexData instanceof ModuleComplexData)) {
-			return null;
-		}
-		
-		ModuleComplexData moduleComplexData = (ModuleComplexData) complexData;
-		String instruction = moduleComplexData.getInstruction();
-		if (instruction.equals(ValueComplex.INSTRUCTION_NONE)) {
-			return null;
-		}
-		return moduleComplexData;
+	// 14
+	final protected ComplexObsHandler getComplexObsHandler() {
+		log.error(getClass().getName() + ".getComplexObsHandler()");
+		return complexObsHandler;
 	}
 	
 	@Override
 	final public Obs getObs(Obs obs, String view) {
-		
+		log.error(getClass().getName() + ".getObs()");
 		ValueComplex valueComplex = new ValueComplex(obs.getValueComplex());
-		if (!valueComplex.isOwnImplementation()) { // not our implementation
-			return getParent().getObs(obs, view);
+		if (!ValueComplex.isValidModuleValueComplex(valueComplex.getValueComplex())) { // not our implementation
+			return getComplexObsHandler().getObs(obs, view);
 		}
 		
 		ComplexData docData = readComplexData(obs, valueComplex, view);
@@ -79,14 +70,14 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	
 	@Override
 	final public boolean purgeComplexData(Obs obs) {
-		
+		log.error(getClass().getName() + ".purgeComplexData()");
 		ModuleComplexData docData = fetchModuleComplexData(obs.getComplexData());
 		if (docData == null) { // not our implementation
 			if (obs.getComplexData() == null) {
 				log.error("Complex data was null and hence was not purged for OBS_ID='" + obs.getObsId() + "'.");
 				return false;
 			} else {
-				return getParent().purgeComplexData(obs);
+				return getComplexObsHandler().purgeComplexData(obs);
 			}
 		}
 		
@@ -94,20 +85,37 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	}
 	
 	@Override
+	// 11
 	final public Obs saveObs(Obs obs) {
-		
+		log.error(getClass().getName() + ".saveObs()");
+		// get module obs data and cast it to ModuleComplexData
 		ModuleComplexData moduleComplexData = fetchModuleComplexData(obs.getComplexData());
 		if (moduleComplexData == null) { // not our implementation
 			if (obs.getComplexData() == null) {
 				log.error("Complex data was null and hence was not saved for OBS_ID='" + obs.getObsId() + "'.");
 				return obs;
 			} else {
-				return getParent().saveObs(obs);
+				return getComplexObsHandler().saveObs(obs);
 			}
 		}
 		
 		ValueComplex valueComplex = saveComplexData(obs, moduleComplexData);
-		obs.setValueComplex(valueComplex.getValueComplex());
+		log.error(getClass().getSimpleName() + "generated valueComplex -> " + valueComplex.getValueComplex());
+		obs.setValueComplex(valueComplex.toString());
 		return obs;
+	}
+	
+	// 11a
+	public static ModuleComplexData fetchModuleComplexData(ComplexData complexData) {
+		if (!(complexData instanceof ModuleComplexData)) {
+			return null;
+		}
+		
+		ModuleComplexData moduleComplexData = (ModuleComplexData) complexData;
+		String obsType = moduleComplexData.getObsType();
+		if (!obsType.startsWith(Constants.MODULE_ID)) {
+			return null;
+		}
+		return moduleComplexData;
 	}
 }

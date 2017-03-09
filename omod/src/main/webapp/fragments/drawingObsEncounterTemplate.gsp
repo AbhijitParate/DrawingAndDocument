@@ -91,7 +91,7 @@
     </span>
 
     <div id="encounter-summary{{- encounter.encounterId }}" class="collapse">
-        <div class="encounter-details-{{- encounter.encounterId }}" style="padding: 15px; border: 1px solid #ccc; min-height: 30px;">
+        <div class="encounter-details-{{- encounter.encounterId }}" style="padding: 15px; border: 1px solid #ccc; max-height: 400px; overflow: scroll; overflow-x: hidden">
             <p>Observations and details</p>
         </div>
     </div>

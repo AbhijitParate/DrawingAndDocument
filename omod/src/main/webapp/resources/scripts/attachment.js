@@ -1,7 +1,12 @@
 /**
  * Created by abhij on 3/7/2017.
  */
-
+// Attachments related
+let attachmentImage;
+let attachmentVideo;
+let attachmentAudio;
+let attachmentNotes;
+let attachmentFiles;
 let attachments = [];
 
 $(document).ready(function() {
@@ -13,13 +18,6 @@ $(document).ready(function() {
         this.type = type;
         this.data = data;
     }
-
-// Attachments related
-    let attachmentImage;
-    let attachmentVideo;
-    let attachmentAudio;
-    let attachmentNotes;
-    let attachmentFiles;
 
     const body = $("body");
     body.on("click", ".icon", removeFile);
