@@ -10,6 +10,7 @@ $(document).ready(function() {
         // backgroundColor: '#EAEDED',
         preserveObjectStacking: true
     });
+    canvas.zoomToPoint(new fabric.Point(canvas.width / 2, canvas.height / 2), 1.0);
 });
 
 const ERASE = "erase", DRAW = "draw";

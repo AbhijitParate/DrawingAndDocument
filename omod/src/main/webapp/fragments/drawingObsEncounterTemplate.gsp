@@ -4,16 +4,10 @@
     ui.includeCss("annotation", "libs/lightcase.css")
     ui.includeJavascript("annotation", "libs/lightcase.js")
 
+    ui.includeCss("annotation", "drawingObsEncounterTemplate.css")
     ui.includeJavascript("annotation", "drawingObsEncounterTemplate.js")
 %>
-<style>
-.drawing-thumbnails {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-}
-</style>
+
 <div id="annotation-encounter-details">
 <script type="text/template" id="drawingObsEncounterTemplate">
 <li>
@@ -89,9 +83,9 @@
 
         {{  } }}
     </span>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div id="encounter-summary{{- encounter.encounterId }}" class="collapse">
-        <div class="encounter-details-{{- encounter.encounterId }}" style="padding: 15px; border: 1px solid #ccc; max-height: 400px; overflow: scroll; overflow-x: hidden">
+        <div class="encounter-details-{{- encounter.encounterId }}" style="padding: 5px; border: 1px solid #ccc; height: 500px">
             <p>Observations and details</p>
         </div>
     </div>

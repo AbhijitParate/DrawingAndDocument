@@ -38,7 +38,7 @@
 		<appuiVersion>1.7</appuiVersion>
 		<coreappsVersion>1.11.1</coreappsVersion>
 		<idgenVersion>4.4.0</idgenVersion>
-		<htmlformentry>3.3.0</htmlformentry>
+		<htmlformentryVersion>3.3.1</htmlformentryVersion>
 	</properties>
 
 	<dependencyManagement>

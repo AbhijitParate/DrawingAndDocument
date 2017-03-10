@@ -74,10 +74,11 @@ $(function() {
             var html = generateHtml(data);
             encounterDetailsSection.html(html);
             $('.obs-preview').lightcase({
-                maxWidth : 1024,
-                maxHeight: 768,
-                forceWidth: true,
-                forceHeight: true
+                maxWidth : 800,
+                maxHeight : 700,
+                forceWidth:true,
+                forceHeight: true,
+                liveResize:true
             });
             // console.debug(data);
         }).error(function(err){
@@ -88,30 +89,48 @@ $(function() {
     }
 
     function generateHtml(data) {
-        var html = "<div><ul>";
+        var main = $("<div/>").addClass("details");
+        var drawingDiv = createDrawingDiv(data.drawing);
+        var attachmentDiv = createAttachmentsDiv(data.obs);
+        drawingDiv.appendTo(main);
+        attachmentDiv.appendTo(main);
+        return main;
+    }
 
-        data.obs.forEach(function(obs) {
-            if(obs.name.includes("svg")) {
-                html += "<li>"
-                        + "<a class='obs-preview' href='../../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+obs.name +"' " + ">"
-                        + "<img src='../../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+encodeURIComponent(obs.name)+"' alt='"+ obs.name +"' style='width: 100px; height: 100px; margin: 1%'/>"
-                        + "</a>" +
-                        "</li>";
-            } else
-                if(obs.name.includes("jpg")) {
-                html += "<li>"
-                        + "<a class='obs-preview' target='_blank' href='../../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+encodeURIComponent(obs.name) +"'>"
-                        + "<img src='../../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+encodeURIComponent(obs.name)+"' alt='"+ obs.name +"' style='width: 100px; height: 100px; margin: 1%'/>"
-                        + "</a>" +
-                        "</li>";
-            } else {
-                html += "<li><a class='obs-preview' target='_blank' href='../../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+encodeURIComponent(obs.name)+"' " +
-                        "style='width: 100px; height: 100px; margin: 1%'>" + obs.name+
-                        "</a></li>";
-            }
+    function createListItem(obs) {
+        var a = $("<a/>").addClass("attachments-list-item")
+            .attr("href", "../../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+obs.name)
+            .attr("title", obs.name)
+            .text(obs.name).lightcase();
+        return $("<li/>").append(a);
+    }
+
+    function createAttachmentsDiv(obsArray) {
+        var attachmentDiv = $("<div/>").addClass("attachments-container");
+        var icon = $("<i/>").addClass("icon-paper-clip");
+        var ah = $("<h5/>").append(icon).append("Attachments").addClass("header");
+        var list = $("<ul/>").addClass("attachments-list");
+        attachmentDiv.append(ah);
+
+        obsArray.forEach(function (obs) {
+            list.append(createListItem(obs));
         });
-        html += "</ul></div>";
-        return html;
+        attachmentDiv.append(list);
+        return attachmentDiv;
+    }
+
+    function createDrawingDiv(drawing) {
+        var drawingDiv = $("<div/>").addClass("drawing");
+        var heading = $("<h5/>").text("Drawing").addClass("header");
+        var div = $("<div/>").addClass("drawing-container");
+        var a = $("<a/>").attr("href", "../../ws/rest/v1/annotation/obs/" + drawing.uuid +"/"+drawing.name).lightcase();
+        var img = $("<img/>").attr("src", "../../ws/rest/v1/annotation/obs/" + drawing.uuid +"/"+drawing.name)
+                     .attr("width", "450").attr("height", "450");
+        a.append(img);
+        div.append(a);
+        drawingDiv.append(heading);
+        drawingDiv.append(div);
+        return drawingDiv;
     }
 
     var editPatientIdentifierDialog = null;

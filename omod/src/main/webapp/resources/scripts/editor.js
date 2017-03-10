@@ -5,8 +5,6 @@
 
 $(document).ready(function() {
 
-    canvas.zoomToPoint(new fabric.Point(canvas.width / 2, canvas.height / 2), 1.0);
-
     // Image
     fabric.Object.prototype.setOriginToCenter = function () {
         this._originalOriginX = this.originX;

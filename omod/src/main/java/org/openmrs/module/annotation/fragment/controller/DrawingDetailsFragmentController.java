@@ -11,14 +11,14 @@ import org.openmrs.ui.framework.UiUtils;
 import org.openmrs.ui.framework.annotation.SpringBean;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.List;
-
 /**
  * Created by abhij on 2/23/2017.
  */
 public class DrawingDetailsFragmentController {
 	
 	public static final String OBSERVATIONS = "obs";
+	
+	public static final String DRAWING = "drawing";
 	
 	public SimpleObject getEncounterDetails(@RequestParam("encounterId") Encounter encounter,
 	        @SpringBean("emrApiProperties") EmrApiProperties emrApiProperties,
@@ -30,7 +30,7 @@ public class DrawingDetailsFragmentController {
 		
 		ParsedObs parsedObs = parserEncounter.parseObservations(uiUtils.getLocale());
 		
-		return SimpleObject.create(OBSERVATIONS, parsedObs.getObs());
+		return SimpleObject.create(DRAWING, parsedObs.getDrawing(), OBSERVATIONS, parsedObs.getObs());
 	}
 	
 }

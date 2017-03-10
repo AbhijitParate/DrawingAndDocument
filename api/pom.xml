@@ -50,22 +50,22 @@
         <dependency>
             <groupId>org.openmrs.module</groupId>
             <artifactId>htmlformentry-api</artifactId>
-            <version>RELEASE</version>
+            <version>${htmlformentryVersion}</version>
         </dependency>
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>coreapps-api</artifactId>
-			<version>RELEASE</version>
+			<version>${coreappsVersion}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>emrapi-api</artifactId>
-			<version>RELEASE</version>
+			<version>${emrapiVersion}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>uiframework-api</artifactId>
-			<version>3.6</version>
+			<version>${uiframeworkVersion}</version>
 		</dependency>
 
 		<!-- End OpenMRS core -->

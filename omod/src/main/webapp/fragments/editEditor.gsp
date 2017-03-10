@@ -37,7 +37,6 @@
     var returnlink = "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patientid;
 </script>
 <h2>Edit Drawing</h2>
-<!-- todo: Customize for editing encounter -->
 ${ui.includeFragment("annotation", "statusBar", [ mode: "edit" ])}
 <div id="mainContainer" class="outerContainer">
     ${ui.includeFragment("annotation", "actions_panel")}

@@ -20,9 +20,8 @@
         </svg>
         Attachments
     </button>
+    <p>Mode : ${mode} </p>
 </div>
-
-<p>Mode : ${mode} </p>
 <!--
 <div id="status-bar">
     <div>

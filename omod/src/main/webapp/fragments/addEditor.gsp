@@ -38,7 +38,7 @@
     var returnlink ="${ ui.format(returnUrl) }";
 </script>
 <h2>Add Drawing</h2>
-${ui.includeFragment("annotation", "statusBar", [ mode: "edit" ])}
+${ui.includeFragment("annotation", "statusBar", [ mode: "add" ])}
 <div id="mainContainer" class="outerContainer">
     ${ui.includeFragment("annotation", "actions_panel")}
     ${ui.includeFragment("annotation", "canvas")}

@@ -9,9 +9,11 @@ public class ParsedObs {
 	
 	private List<SimpleObject> obs = new ArrayList<SimpleObject>();
 	
-	private List<SimpleObject> diagnoses = new ArrayList<SimpleObject>();
+	private SimpleObject drawing;
 	
-	private List<SimpleObject> dispositions = new ArrayList<SimpleObject>();
+	//	private List<SimpleObject> diagnoses = new ArrayList<SimpleObject>();
+	
+	//	private List<SimpleObject> dispositions = new ArrayList<SimpleObject>();
 	
 	public ParsedObs() {
 		
@@ -21,24 +23,28 @@ public class ParsedObs {
 		return obs;
 	}
 	
-	public void setObs(List<SimpleObject> obs) {
-		this.obs = obs;
+	public SimpleObject getDrawing() {
+		return drawing;
 	}
 	
-	public List<SimpleObject> getDiagnoses() {
-		return diagnoses;
+	public void setDrawing(SimpleObject drawing) {
+		this.drawing = drawing;
 	}
 	
-	public void setDiagnoses(List<SimpleObject> diagnoses) {
-		this.diagnoses = diagnoses;
-	}
+	//	public List<SimpleObject> getDiagnoses() {
+	//		return diagnoses;
+	//	}
 	
-	public List<SimpleObject> getDispositions() {
-		return dispositions;
-	}
-	
-	public void setDispositions(List<SimpleObject> dispositions) {
-		this.dispositions = dispositions;
-	}
+	//	public void setDiagnoses(List<SimpleObject> diagnoses) {
+	//		this.diagnoses = diagnoses;
+	//	}
+	//
+	//	public List<SimpleObject> getDispositions() {
+	//		return dispositions;
+	//	}
+	//
+	//	public void setDispositions(List<SimpleObject> dispositions) {
+	//		this.dispositions = dispositions;
+	//	}
 	
 }
