@@ -687,9 +687,4 @@ $(document).ready(function() {
             }
         }
     });
-
-    // Show list of attachments on click
-    $("#status-view-attachments").click(function () {
-        $("#dialog-attachment").dialog("open");
-    });
 });

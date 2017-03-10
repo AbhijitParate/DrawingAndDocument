@@ -37,9 +37,14 @@
     var returnlink = "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patientid;
 </script>
 <h2>Edit Drawing</h2>
-${ui.includeFragment("annotation", "statusBar", [ mode: "edit" ])}
-<div id="mainContainer" class="outerContainer">
-    ${ui.includeFragment("annotation", "actions_panel")}
-    ${ui.includeFragment("annotation", "canvas")}
+<div id="drawing-and-attachments">
+    ${ui.includeFragment("annotation", "statusBar", [ mode: "edit" ])}
+    <div id="main-container" class="outerContainer">
+        ${ui.includeFragment("annotation", "actions_panel")}
+        ${ui.includeFragment("annotation", "canvas")}
+        ${ui.includeFragment("annotation", "modals")}
+    </div>
+    <div id="progress-container" hidden>
+
+    </div>
 </div>
-${ui.includeFragment("annotation", "modals")}

@@ -38,9 +38,14 @@
     var returnlink ="${ ui.format(returnUrl) }";
 </script>
 <h2>Add Drawing</h2>
-${ui.includeFragment("annotation", "statusBar", [ mode: "add" ])}
-<div id="mainContainer" class="outerContainer">
-    ${ui.includeFragment("annotation", "actions_panel")}
-    ${ui.includeFragment("annotation", "canvas")}
+<div id="drawing-and-attachments">
+    ${ui.includeFragment("annotation", "statusBar", [ mode: "add" ])}
+    <div id="main-container" class="outerContainer">
+        ${ui.includeFragment("annotation", "actions_panel")}
+        ${ui.includeFragment("annotation", "canvas")}
+        ${ui.includeFragment("annotation", "modals")}
+    </div>
+    <div id="progress-container" hidden>
+
+    </div>
 </div>
-${ui.includeFragment("annotation", "modals")}

@@ -153,14 +153,3 @@
         <input id="attachmentFiles" type="file" name="files[]" accept="*/*"  hidden>
     </div>
 </div>
-
-<div id="dialog-confirm" title="Save data?">
-    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>
-        Are you sure you want to save the data
-    </p>
-</div>
-
-<div id="dialog-upload-progress" title="Saving data...">
-    <div class="progress-label">Uploading data...</div>
-    <div id="progressbar"></div>
-</div>

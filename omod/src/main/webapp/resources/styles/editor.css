@@ -1,16 +1,16 @@
 /*Container for the whole page*/
 
 .outerContainer {
-    height: 700px;
+    height: 817px;
     border: solid dimgrey 2px;
-    }
+}
 
 .controlsContainer {
     float: left;
     width: 16%;
     height: 98%;
     margin: 0.5%;
-    }
+}
 
 .canvasContainer {
     float: left;
