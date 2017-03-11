@@ -35,17 +35,17 @@ $(document).ready(function() {
     };
 
     // Edit
-    canvas.counter = 0;
+    // canvas.counter = 0;
     let newleft = 0;
 
     let canvasState = [];
     let mods = 0;
-    canvas.on('object:modified', function () {
-        updateModifications(true);
-    });
-    canvas.on('object:added', function () {
-        updateModifications(true);
-    });
+    // canvas.on('object:modified', function () {
+    //     updateModifications(true);
+    // });
+    // canvas.on('object:added', function () {
+    //     updateModifications(true);
+    // });
     function updateModifications(savehistory) {
         if (savehistory === true) {
             let myjson = JSON.stringify(canvas.toDatalessJSON());

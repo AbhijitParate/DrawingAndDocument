@@ -37,8 +37,8 @@
     var providerid = ${ providerId };
     var returnlink ="${ ui.format(returnUrl) }";
 </script>
-<h2>Add Drawing</h2>
 <div id="drawing-and-attachments">
+    <h2 style="margin:0;">Add Drawing</h2>
     ${ui.includeFragment("annotation", "statusBar", [ mode: "add" ])}
     <div id="main-container" class="outerContainer">
         ${ui.includeFragment("annotation", "actions_panel")}

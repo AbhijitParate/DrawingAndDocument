@@ -26,6 +26,8 @@
 
     ui.includeJavascript("annotation", "libs/blob-util.min.js")
 
+    ui.includeJavascript("uicommons", "services/obsService.js")
+
     ui.includeCss("annotation", "editor.css")
     ui.includeCss("annotation", "controls.css")
 
@@ -33,11 +35,12 @@
 %>
 <script>
     var patientid =${ patientId };
-    var encounter = ${ encounter };
+    var encounterId = ${ encounter };
     var returnlink = "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patientid;
+    console.debug(encounterId);
 </script>
-<h2>View Drawing</h2>
 <div id="drawing-and-attachments">
+    <h2 style="margin:0;">View Drawing</h2>
     ${ui.includeFragment("annotation", "statusBar", [ mode: "view" ])}
     <div id="main-container" class="outerContainer">
         ${ui.includeFragment("annotation", "actions_panel")}

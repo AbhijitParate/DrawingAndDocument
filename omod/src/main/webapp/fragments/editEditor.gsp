@@ -36,8 +36,8 @@
     var encounterid = ${ encounter.id };
     var returnlink = "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patientid;
 </script>
-<h2>Edit Drawing</h2>
 <div id="drawing-and-attachments">
+    <h2 style="margin:0;">Edit Drawing</h2>
     ${ui.includeFragment("annotation", "statusBar", [ mode: "edit" ])}
     <div id="main-container" class="outerContainer">
         ${ui.includeFragment("annotation", "actions_panel")}

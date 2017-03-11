@@ -79,7 +79,10 @@
         {{ } }}
         {{ if ( encounter.canDelete ) { }}
 
-        <i class="deleteEncounterId delete-item icon-remove" data-visit-id="{{- encounter.visitId }}" data-encounter-id="{{- encounter.encounterId }}" title="${ ui.message("coreapps.delete") }"></i>
+            <i class="deleteEncounterId delete-item icon-remove"
+               data-visit-id="{{- encounter.visitId }}"
+               data-encounter-id="{{- encounter.encounterId }}"
+               title="${ ui.message("coreapps.delete") }"></i>
 
         {{  } }}
     </span>

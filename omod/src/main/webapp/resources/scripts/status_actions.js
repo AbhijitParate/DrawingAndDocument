@@ -2,13 +2,80 @@
  * Created by abhij on 3/7/2017.
  *
  */
-$(document).ready(function() {
+
+$(document).ready(function () {
+
+    console.info(pageMode);
 
     var progressLabel, progressBar;
 
+    if(pageMode == "view"){
+        $("#status-save").hide();
+        loadDataFromEncounter();
+    } else if (pageMode == "edit"){
+        loadDataFromEncounter();
+    }
+
+    var previousAttachments;
+
+    function loadDataFromEncounter() {
+        console.debug("EcnounterId : " + encounterId);
+
+        $.getJSON(emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: encounterId }),
+            function success(data) {
+                recreateCanvas(data.drawing);
+                if(data.obs.length > 0) {
+                    previousAttachments = data.obs;
+                }
+            })
+            .fail(function() {
+                console.log( "error" );
+                emr.errorMessage("Failed to load Encounter!");
+            })
+            .always(function() {
+                console.log( "complete" );
+                emr.successMessage("Encounter loaded successfully!");
+            });
+    }
+
+    function recreateCanvas(drawing) {
+        console.debug(drawing);
+        fabric.loadSVGFromURL("../ws/rest/v1/annotation/obs/" + drawing.uuid +"/"+drawing.name, function(objects, options) {
+            var obj = fabric.util.groupSVGElements(objects, options);
+            canvas.add(obj).renderAll();
+        });
+    }
+
+    function recreateAttachments(obsArray) {
+        console.debug(obsArray);
+        var attachmentDiv = $("<div/>");
+        var list = $("<ul/>").addClass("attachments-list");
+
+        obsArray.forEach(function (obs) {
+            list.append(createListItem(obs));
+        });
+        attachmentDiv.append(list);
+        return attachmentDiv;
+    }
+
+    function createListItem(obs) {
+        var a = $("<a/>").addClass("attachments-list-item")
+            .attr("href", "../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+obs.name)
+            .attr("title", obs.name)
+            .text(obs.name).lightcase();
+        return $("<li/>").append(a);
+    }
+
     // Show list of attachments on click
     $("#status-view-attachments").click(function () {
-        $("#dialog-attachment").dialog("open");
+        if(previousAttachments){
+            var dom = recreateAttachments(previousAttachments);
+            $("<div/>").attr("title", "Attachments").append(dom).dialog({
+                closeText: "hide"
+            }).dialog( "open" );
+        } else {
+            $("#dialog-attachment").dialog("open");
+        }
     });
 
     // Show list of attachments on click

@@ -56,9 +56,9 @@ $(function() {
 
     function getEncounterDetails(encounterId, dataTarget, templateId) {
 
-    console.debug("encounterId ->" + encounterId);
-    console.debug("dataTarget -> " + dataTarget);
-    console.debug("displayTemplateId ->" + templateId);
+    // console.debug("encounterId ->" + encounterId);
+    // console.debug("dataTarget -> " + dataTarget);
+    // console.debug("displayTemplateId ->" + templateId);
 
     var encounterDetailsSection = $(" .encounter-details-" + encounterId);
 
@@ -108,9 +108,9 @@ $(function() {
     function createAttachmentsDiv(obsArray) {
         var attachmentDiv = $("<div/>").addClass("attachments-container");
         var icon = $("<i/>").addClass("icon-paper-clip");
-        var ah = $("<h5/>").append(icon).append("Attachments").addClass("header");
+        var heading = $("<h5/>").append(icon).append("Attachments").addClass("header");
         var list = $("<ul/>").addClass("attachments-list");
-        attachmentDiv.append(ah);
+        attachmentDiv.append(heading);
 
         obsArray.forEach(function (obs) {
             list.append(createListItem(obs));
@@ -121,7 +121,8 @@ $(function() {
 
     function createDrawingDiv(drawing) {
         var drawingDiv = $("<div/>").addClass("drawing");
-        var heading = $("<h5/>").text("Drawing").addClass("header");
+        var icon = $("<i/>").addClass("icon-picture");
+        var heading = $("<h5/>").append(icon).append("Drawing").addClass("header");
         var div = $("<div/>").addClass("drawing-container");
         var a = $("<a/>").attr("href", "../../ws/rest/v1/annotation/obs/" + drawing.uuid +"/"+drawing.name).lightcase();
         var img = $("<img/>").attr("src", "../../ws/rest/v1/annotation/obs/" + drawing.uuid +"/"+drawing.name)

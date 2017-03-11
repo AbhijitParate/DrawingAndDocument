@@ -63,7 +63,7 @@ public class DownloadController extends MainResourceController {
 		
 		String mimeType = moduleComplexData.getMimeType();
 		if (moduleComplexData.getTitle().contains("svg"))
-			mimeType = "image/svg+xml";
+			mimeType = Constants.contentTypes.get(".svg");
 		try {
 			// The document meta data is sent as HTTP headers.
 			response.setContentType(mimeType);
@@ -72,14 +72,9 @@ public class DownloadController extends MainResourceController {
 			response.addHeader("File-Ext", getExtension(moduleComplexData.getTitle(), mimeType)); // custom header
 			response.addHeader("ObsId", obsUuid); // custom header
 			response.addHeader("FileName", fileName); // custom header
-			switch (getContentFamily(mimeType)) {
-				default:
-					InputStream is = moduleComplexData.asInputStream();
-					IOUtils.copy(is, response.getOutputStream());
-					response.flushBuffer();
-					//					response.getOutputStream().write(moduleComplexData.asByteArray());
-					break;
-			}
+            InputStream is = moduleComplexData.asInputStream();
+            IOUtils.copy(is, response.getOutputStream());
+            response.flushBuffer();
 		}
 		catch (IOException e) {
 			response.setStatus(500);
