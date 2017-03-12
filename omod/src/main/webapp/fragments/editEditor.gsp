@@ -33,7 +33,9 @@
 %>
 <script>
     var patientid =${ patientId };
-    var encounterid = ${ encounter.id };
+    var encounterId = ${ encounter.id };
+    var visitid = ${ visitId };
+    var providerid = ${ providerId };
     var returnlink = "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patientid;
 </script>
 <div id="drawing-and-attachments">

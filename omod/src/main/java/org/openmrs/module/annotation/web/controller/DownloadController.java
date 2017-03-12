@@ -1,12 +1,3 @@
-/**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0. If a copy of the MPL was not distributed with this file, You can
- * obtain one at http://mozilla.org/MPL/2.0/. OpenMRS is also distributed under
- * the terms of the Healthcare Disclaimer located at http://openmrs.org/license.
- *
- * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
- * graphic logo is a trademark of OpenMRS Inc.
- */
 package org.openmrs.module.annotation.web.controller;
 
 import org.apache.commons.io.IOUtils;
@@ -31,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static org.openmrs.module.annotation.Utils.getContentFamily;
+import static org.openmrs.module.annotation.Utils.getContentType;
 import static org.openmrs.module.annotation.Utils.getExtension;
 
 @Controller
@@ -67,14 +58,14 @@ public class DownloadController extends MainResourceController {
 		try {
 			// The document meta data is sent as HTTP headers.
 			response.setContentType(mimeType);
-			response.addHeader("Content-Family", getContentFamily(mimeType).name()); // custom header
+			response.addHeader("Content-Family", getContentType(mimeType).name()); // custom header
 			response.addHeader("File-Name", moduleComplexData.getTitle()); // custom header
 			response.addHeader("File-Ext", getExtension(moduleComplexData.getTitle(), mimeType)); // custom header
 			response.addHeader("ObsId", obsUuid); // custom header
 			response.addHeader("FileName", fileName); // custom header
-            InputStream is = moduleComplexData.asInputStream();
-            IOUtils.copy(is, response.getOutputStream());
-            response.flushBuffer();
+			InputStream is = moduleComplexData.asInputStream();
+			IOUtils.copy(is, response.getOutputStream());
+			response.flushBuffer();
 		}
 		catch (IOException e) {
 			response.setStatus(500);

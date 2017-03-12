@@ -1,5 +1,5 @@
 $(function() {
-    $(document).on('click','.view-details.collapsed', function(event){
+    $(document).on('click','.drawing-details.collapsed', function(event){
         var jqTarget = $(event.currentTarget);
         var encounterId = jqTarget.data("encounter-id");
         var displayWithHtmlForm = jqTarget.data("encounter-form") && jqTarget.data("display-with-html-form");
@@ -30,22 +30,11 @@ $(function() {
 
         var encounterId = $(event.target).attr("data-encounter-id");
         var patientId = $(event.target).attr("data-patient-id");
-        // var viewUrl = $(event.target).attr("data-view-url");
+        var visitId = $(event.target).attr("data-visit-id");
         var editUrl = $(event.target).attr("data-edit-url");
-        // var dataMode = $(event.target).attr("data-mode");
-        //
-        // // if (dataMode == "edit" && editUrl) {
-        //     console.debug("Mode edit");
-            editUrl = editUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
-                .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
-        //     emr.navigateTo({ applicationUrl: editUrl });
-        // // } else if(dataMode == "view" && viewUrl){
-        // //     console.debug("Mode view");
-        //     viewUrl = viewUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
-        //         .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
-
-        // // }
-
+        editUrl = editUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
+            .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
+        editUrl += "&visitId=" + visitId;
         console.debug(editUrl);
         emr.navigateTo({ applicationUrl: editUrl });
     });

@@ -28,11 +28,9 @@ public class AddEditorFragmentController {
 	
 	Log log = LogFactory.getLog(getClass());
 	
-	public void controller(PageRequest pageRequest, FragmentModel model,
-	        @RequestParam(value = "patientId", required = false) Patient patient,
-	        @RequestParam(value = "visitId", required = false) Visit visit, UiSessionContext sessionContext, UiUtils ui,
+	public void controller(PageRequest pageRequest, FragmentModel model, @RequestParam(value = "patientId") Patient patient,
+	        @RequestParam(value = "visitId") Visit visit, UiSessionContext sessionContext, UiUtils ui,
 	        @InjectBeans ModuleContext moduleContext) throws Exception {
-		
 		log.error(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("visitId", visit.getId());

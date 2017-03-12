@@ -39,7 +39,7 @@
         </li>
         <li>
             <div class="details-action">
-                <a class="view-details collapsed"
+                <a class="view-details collapsed drawing-details"
                    href='javascript:void(0);'
                    data-encounter-id="{{- encounter.encounterId }}"
                    data-encounter-form="{{- encounter.form != null}}"
@@ -69,6 +69,7 @@
 
          <i id="drawing-edit-encounter" class="delete-item icon-pencil" style="vertical-align: top"
             data-mode="edit"
+            data-visit-id="{{- encounter.visitId }}"
             data-patient-id="{{- patient.id }}"
             data-encounter-id="{{- encounter.encounterId }}"
             {{ if (config.editUrl) { }}

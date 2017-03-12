@@ -26,7 +26,7 @@ public class Utils {
 		return mimeType;
 	}
 	
-	public static Constants.ContentType getContentFamily(String mimeType) {
+	public static Constants.ContentType getContentType(String mimeType) {
 		
 		Constants.ContentType contentType = Constants.ContentType.FILE;
 		if (StringUtils.startsWith(mimeType, "image/")) {

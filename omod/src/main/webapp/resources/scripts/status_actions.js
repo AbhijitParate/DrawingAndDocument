@@ -62,7 +62,9 @@ $(document).ready(function () {
         var a = $("<a/>").addClass("attachments-list-item")
             .attr("href", "../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+obs.name)
             .attr("title", obs.name)
-            .text(obs.name).lightcase();
+            .text(obs.name)
+            .css({ display: "block" })
+            .lightcase();
         return $("<li/>").append(a);
     }
 
@@ -113,6 +115,7 @@ $(document).ready(function () {
         prepareForm();
         saveSVG(formData);
         saveAttachments(formData);
+        savePreviousObs();
         uploadData();
     }
 
@@ -133,6 +136,15 @@ $(document).ready(function () {
             formData.append("files[]", attachedFile.data);
             formData.append("filenames[]", attachedFile.name);
             progressBar.progressbar( "value", i);
+        }
+    }
+
+    function savePreviousObs() {
+        if(previousAttachments) {
+            for (let i = 0; i < previousAttachments.length; i++) {
+                var obs = previousAttachments[i];
+                formData.append("obs[]", obs.uuid);
+            }
         }
     }
 

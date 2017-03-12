@@ -59,8 +59,10 @@ public class UploadController {
 	@RequestMapping(method = RequestMethod.POST)
 	@ResponseBody
 	public String onPost(HttpServletRequest request, @RequestParam("files[]") String[] files,
-	        @RequestParam("filenames[]") String[] fileNames, @RequestParam("patientid") Patient patient,
-	        @RequestParam("visitid") Visit visit, @RequestParam("providerid") String providerId) throws Exception {
+	        @RequestParam("filenames[]") String[] fileNames,
+	        @RequestParam(value = "obs[]", required = false) String[] previousObs,
+	        @RequestParam("patientid") Patient patient, @RequestParam("visitid") Visit visit,
+	        @RequestParam("providerid") String providerId) throws Exception {
 		
 		log.debug(getClass().getName() + " Request received with " + files.length + " files.");
 		log.error(getClass().getName() + " filename received : " + fileNames.length);
@@ -73,8 +75,12 @@ public class UploadController {
 		
 		for (int i = 0; i < files.length; i++) {
 			File dataFile = getFile(fileNames[i], files[i].substring(files[i].indexOf(",") + 1));
-			observationSaver.saveObservation(patient, encounter, dataFile);
+			observationSaver.saveObservationFromFile(patient, encounter, dataFile);
 			dataFile.delete();
+		}
+		if (previousObs != null && previousObs.length > 0) {
+			for (String obsUuid : previousObs)
+				observationSaver.saveObservationFromUuid(patient, encounter, obsUuid);
 		}
 		return new JSONObject().put("result", "success").toString();
 	}
