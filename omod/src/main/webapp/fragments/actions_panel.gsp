@@ -3,6 +3,11 @@
    ui.includeJavascript("annotation", "keyboard.js")
    ui.includeJavascript("annotation", "import.js")
    ui.includeJavascript("annotation", "attachment.js")
+   ui.includeJavascript("annotation", "attachments/attachment-audio.js")
+   ui.includeJavascript("annotation", "attachments/attachment-file.js")
+   ui.includeJavascript("annotation", "attachments/attachment-image.js")
+   ui.includeJavascript("annotation", "attachments/attachment-notes.js")
+   ui.includeJavascript("annotation", "attachments/attachment-video.js")
    ui.includeJavascript("annotation", "editor.js")
 %>
 
@@ -15,7 +20,7 @@
                     <path fill="#000000" d="M16.84,2.73C16.45,2.73 16.07,2.88 15.77,3.17L13.65,5.29L18.95,10.6L21.07,8.5C21.67,7.89 21.67,6.94 21.07,6.36L17.9,3.17C17.6,2.88 17.22,2.73 16.84,2.73M12.94,6L4.84,14.11L7.4,14.39L7.58,16.68L9.86,16.85L10.15,19.41L18.25,11.3M4.25,15.04L2.5,21.73L9.2,19.94L8.96,17.78L6.65,17.61L6.47,15.29" ></path>
                 </svg>
             </button>
-            <button type="button" id="erase" class="button-regular not-available ui-widget ui-corner-all" title="Eraser">
+            <button type="button" id="erase" class="button-regular ui-button ui-widget ui-corner-all" title="Eraser">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M15.14,3C14.63,3 14.12,3.2 13.73,3.59L2.59,14.73C1.81,15.5 1.81,16.77 2.59,17.56L5.03,20H12.69L21.41,11.27C22.2,10.5 22.2,9.23 21.41,8.44L16.56,3.59C16.17,3.2 15.65,3 15.14,3M17,18L15,20H22V18" ></path>
                 </svg>
@@ -231,12 +236,12 @@
             <button type="button" id="save-png" class="button-regular ui-button ui-widget ui-corner-all" title="Save as PNG">
                 png
             </button>
-            <!--<button type="button" id="save-json" class="button-small not-available ui-widget ui-corner-all">-->
-            <!--.json-->
-            <!--</button>-->
-            <!--<button type="button" id="save-svg" class="button-small not-available ui-widget ui-corner-all">-->
-            <!--.svg-->
-            <!--</button>-->
+            <button type="button" id="save-json" class="button-regular ui-widget ui-corner-all">
+                json
+            </button>
+            <button type="button" id="save-svg" class="button-regular ui-widget ui-corner-all">
+                svg
+            </button>
         </div>
     </div>
 </div>

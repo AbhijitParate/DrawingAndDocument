@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{jquery-ui}" />
+    <file url="PROJECT" libraries="{Blob-Util, RecordRTC.min.js, fabric.min.js, jQuery 1.1., jquery-ui, jquery.ui-contextmenu.min.js, jquery.webui-popover.min.js, jspdf.min.js, lightcase.js, spectrum.min.js, video.min.js, videojs.record.min.js, videojs.wavesurfer.min.js, wavesurfer.microphone.min.js, wavesurfer.min.js, webcam.min.js}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
   </component>
 </project>

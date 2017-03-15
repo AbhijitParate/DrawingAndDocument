@@ -1,5 +1,6 @@
 /**
  * Created by abhij on 3/7/2017.
+ *
  */
 $(document).ready(function() {
 
@@ -8,6 +9,11 @@ $(document).ready(function() {
     let dialogTemplate = $("#dialog-upload");
     dialogTemplate.dialog({
         resizable: false,
+        position: {
+            of: "#canvasWrapper",
+            at: "center center",
+            my: "center center"
+        },
         height: "auto",
         width: "auto",
         modal: true,
@@ -15,25 +21,69 @@ $(document).ready(function() {
         buttons: {
             "Use selected image": function () {
                 $(this).dialog("close");
-                fabric.Image.fromURL(
-                    imagePath,
-                    function(oImg) {
-                        oImg.scale(1);
-                        oImg.set({
-                            'top': 100, 'left': 100, width:200, height:200
-                        });
-                        canvas.centerObject(oImg);
-                        canvas.add(oImg);
-                    }
-                );
+                blobUtil.imgSrcToDataURL(imagePath, 'image/jpeg').then(function (dataUrl) {
+                    // success
+                    fabric.Image.fromURL(
+                        dataUrl,
+                        function(oImg) {
+                            oImg.scale(1);
+                            oImg.set({'top': 100, 'left': 100});
+                            canvas.centerObject(oImg);
+                            canvas.add(oImg);
+                        }
+                    );
+                });
             },
             "Cancel": function () {
                 $(this).dialog("close");
             }
+        },
+        open : function () {
+            $(".ui-dialog-buttonpane button:contains('Use selected')")
+                .button("disable");
         }
     });
+
+    $("#webcam-size").change(function () {
+        console.info($(this).val());
+        let size = $(this).val();
+        switch (size){
+            case "1":
+                console.info("1");
+                Webcam.reset();
+                Webcam.set({
+                    width: 320,
+                    height: 240,
+                    dest_width: 320,
+                    dest_height: 240,
+                });
+                break;
+            case "2":
+                console.info("2");
+                Webcam.reset();
+                Webcam.set({
+                    width: 640,
+                    height: 480,
+                    dest_width: 640,
+                    dest_height: 480,
+                });
+                break;
+            case "3":
+                console.info("3");
+                Webcam.reset();
+                Webcam.set({
+                    width: 1280,
+                    height: 720,
+                    dest_width: 1280,
+                    dest_height: 720,
+                });
+                break;
+        }
+        Webcam.attach("#front-cam");
+    });
+
     //http://localhost:8080/openmrs/ms/uiframework/resource/annotation/images/no-preview.jpg
-    $("#template-select").change(function () {
+    $("#template-select").on("change" ,function () {
         imagePath = "./../ms/uiframework/resource/annotation/images/templates/" + $(this).val() + ".jpg";
         console.info(imagePath);
         $("#preview-image").attr('src', imagePath);
@@ -45,6 +95,8 @@ $(document).ready(function() {
         xhr.onload = function () {
             blob = xhr.response;
             uploadImage = URL.createObjectURL(this.response);
+            $(".ui-dialog-buttonpane button:contains('Use selected')")
+                .button("enable");
         };
         xhr.send();
     });
@@ -59,6 +111,12 @@ $(document).ready(function() {
         height: "auto",
         width: "auto",
         open: function () {
+            Webcam.set({
+                width: 640,
+                height: 480,
+                dest_width: 640,
+                dest_height: 480,
+            });
             Webcam.attach("#front-cam");
             $(".ui-dialog-buttonpane button:contains('Use')").button("disable");
         },
@@ -88,16 +146,18 @@ $(document).ready(function() {
             "Use"  : function () {
                 $(this).dialog("close");
                 Webcam.reset();
-                fabric.Image.fromURL(
-                    imagePath,
-                    function (oImg) {
-                        oImg.scale(1);
-                        oImg.set({
-                            'top': 100, 'left': 100
-                        });
-                        canvas.centerObject(oImg);
-                        canvas.add(oImg);
-                    });
+                blobUtil.imgSrcToDataURL(imagePath, 'image/jpeg').then(function (dataUrl) {
+                    // success
+                    fabric.Image.fromURL(
+                        dataUrl,
+                        function(oImg) {
+                            oImg.scale(1);
+                            oImg.set({'top': 100, 'left': 100});
+                            canvas.centerObject(oImg);
+                            canvas.add(oImg);
+                        }
+                    );
+                });
             },
             "Cancel": function () {
                 $(this).dialog("close");
@@ -125,9 +185,7 @@ $(document).ready(function() {
                     uploadImage,
                     function (oImg) {
                         oImg.scale(1);
-                        oImg.set({
-                            'top': 100, 'left': 100, width:200, height:200
-                        });
+                        oImg.set({'top': 100, 'left': 100});
                         canvas.centerObject(oImg);
                         canvas.add(oImg);
                     });

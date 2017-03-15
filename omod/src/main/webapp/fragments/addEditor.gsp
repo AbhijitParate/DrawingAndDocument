@@ -11,6 +11,7 @@
     ui.includeJavascript("annotation", "libs/jquery.webui-popover.min.js")
 
     ui.includeJavascript("annotation", "libs/jquery.ui-contextmenu.min.js")
+    ui.includeJavascript("annotation", "libs/FileSaver.min.js")
     ui.includeJavascript("annotation", "libs/jspdf.min.js")
     ui.includeJavascript("annotation", "libs/fabric.min.js")
 

@@ -5,6 +5,13 @@
 // Fabric.js Canvas object
 let canvas;
 
+let CANVAS_CURRENT;
+let CANVAS_STACK = [];
+let CANVAS_REDO_STACK = [];
+
+// Used in object:added and object:modified to control undo and redo stack update
+let updateFlag = true;
+
 $(document).ready(function() {
     canvas = window._canvas = new fabric.Canvas('canvas', {
         selection: true,
@@ -12,14 +19,74 @@ $(document).ready(function() {
         preserveObjectStacking: true
     });
     canvas.zoomToPoint(new fabric.Point(canvas.width / 2, canvas.height / 2), 1.0);
+
+    canvas.on("object:added", function (e) {
+        if(updateFlag) {
+            var object = e.target;
+            console.log('object:added');
+            updateStack();
+        }
+    });
+
+    canvas.on("object:modified", function (e) {
+        if(updateFlag) {
+            var object = e.target;
+            console.log('object:modified');
+            updateStack();
+        }
+    });
+
+    canvas.on("object:removed", function (e) {
+        if(updateFlag) {
+            var object = e.target;
+            console.log('object:removed');
+            updateStack();
+        }
+    });
+
+    CANVAS_CURRENT = JSON.stringify(canvas);
 });
+
+function updateStack() {
+    console.log('stack updated');
+    CANVAS_STACK.push(CANVAS_CURRENT);
+    CANVAS_CURRENT = JSON.stringify(canvas);
+}
+
+function undo() {
+    if(CANVAS_STACK.length > 0) {
+        console.log("Undo");
+        updateFlag = false;
+        canvas.clear().renderAll();
+        CANVAS_REDO_STACK.push(CANVAS_CURRENT);
+        CANVAS_CURRENT = CANVAS_STACK.pop();
+        canvas.loadFromJSON(CANVAS_CURRENT);
+        canvas.renderAll();
+        updateFlag = true;
+    } else {
+        console.log("Undo stack empty");
+    }
+}
+
+function redo() {
+    if(CANVAS_REDO_STACK.length > 0) {
+        console.log("Redo");
+        updateFlag = false;
+        canvas.clear().renderAll();
+        CANVAS_STACK.push(CANVAS_CURRENT);
+        CANVAS_CURRENT = CANVAS_REDO_STACK.pop();
+        canvas.loadFromJSON(CANVAS_CURRENT);
+        canvas.renderAll();
+        updateFlag = true;
+    } else {
+        console.log("Redo stack empty");
+    }
+}
 
 const ERASE = "erase", DRAW = "draw";
 
 // let FILL_COLOR, BACK_COLOR, STROKE_COLOR;
 let DRAW_MODE = DRAW;
-
-let UNDO_STACK = [], REDO_STACK = [], CURRENT_STATE;
 
 function clearCanvas() {
     canvas.clear();
@@ -154,4 +221,14 @@ function rotateObject(angleOffset) {
     }
 
     canvas.renderAll();
+}
+
+function getTimeStamp() {
+    let currentDate = new Date();
+    return currentDate.getDate() + "-"
+        + (currentDate.getMonth()+1) + "-"
+        + currentDate.getFullYear() + "_"
+        + currentDate.getHours() + "_"
+        + currentDate.getMinutes() + "_"
+        + currentDate.getSeconds();
 }

@@ -1,5 +1,6 @@
 /**
  * Created by abhij on 3/7/2017.
+ *
  */
 $(document).ready(function() {
 
@@ -439,8 +440,8 @@ $(document).ready(function() {
 
 //9.Export
     $("#save-pdf").click(function () {
-        let imgData = canvas.toDataURL({
-            format: 'jpeg',
+        let image = canvas.toDataURL({
+            format: 'png',
             quality: 0.8,
             multiplier: 1
         });
@@ -451,27 +452,17 @@ $(document).ready(function() {
             format: [canvas.width, canvas.height]
         });
 
-        pdf.addImage(imgData, 'JPEG', 0, 0, canvas.width, canvas.height);
-        let date = new Date();
-        let timeStamp = date.toDateString();
-        // pdf.autoPrint();
-        pdf.save(timeStamp + ".pdf");
+        pdf.addImage(image, 'PNG', 0, 0, 580, 580);
+        pdf.save(getTimeStamp() + ".pdf");
     });
 
     $("#save-jpg").click(function () {
-        let image = canvas.toDataURL({
-            format: 'jpeg',
-            quality: 0.8,
-            multiplier: 1
-        });
-        let link = document.createElement("a");
-        let date = new Date();
-        let timeStamp = date.toDateString();
-        link.download = timeStamp + ".jpg";
-        link.href = image;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        canvas.setBackgroundColor('rgba(255, 255, 255, 1)', canvas.renderAll.bind(canvas));
+        let image = canvas.toDataURL({format: 'jpeg'});
+        canvas.setBackgroundColor('rgba(0, 0, 0, 0)', canvas.renderAll.bind(canvas));
+        let imageBlob = dataURItoBlob(image);
+        // console.info(imageBlob);
+        saveAs(imageBlob, getTimeStamp() + ".jpg", "image/jpeg");
     });
 
     $("#save-png").click(function () {
@@ -480,13 +471,46 @@ $(document).ready(function() {
             quality: 0.8,
             multiplier: 1
         });
-        let link = document.createElement("a");
-        let date = new Date();
-        let timeStamp = date.toDateString();
-        link.download = timeStamp + ".png";
-        link.href = image;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+
+        let imageBlob = dataURItoBlob(image);
+        // console.info(imageBlob);
+
+        saveAs(imageBlob, getTimeStamp() + ".png", "image/png");
     });
+
+    $("#save-json").click(function () {
+        let json = JSON.stringify(canvas);
+        let jsonBlob = new Blob([json], {type: 'text/json'});
+        saveAs(jsonBlob, getTimeStamp() + ".json", "text/json");
+    });
+
+    $("#save-svg").click(function () {
+        let svg = canvas.toSVG({
+            viewBox: {
+                x: 0,
+                y: 0,
+                width: 800,
+                height: 800
+            }
+        });
+        let svgBlob = new Blob([svg], {type: 'image/svg+xml'});
+        saveAs(svgBlob, getTimeStamp() + ".svg", "image/svg+xml");
+    });
+
+    function dataURItoBlob(dataURI) {
+        // convert base64 to raw binary data held in a string
+        // doesn't handle URLEncoded DataURIs - see SO answer #6850276 for code that does this
+        let byteString = atob(dataURI.split(',')[1]);
+
+        // separate out the mime component
+        let mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+
+        // write the bytes of the string to an ArrayBuffer
+        let ab = new ArrayBuffer(byteString.length);
+        let ia = new Uint8Array(ab);
+        for (let i = 0; i < byteString.length; i++) {
+            ia[i] = byteString.charCodeAt(i);
+        }
+        return new Blob([ab], {type: mimeString});
+    }
 });
