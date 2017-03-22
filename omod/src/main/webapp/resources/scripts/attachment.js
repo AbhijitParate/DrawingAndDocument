@@ -11,6 +11,7 @@ function Attachment(name, type, data) {
     this.type = type;
     this.data = data;
 }
+
 $(document).ready(function() {
 
     let currentPreviewFile;

@@ -30,11 +30,11 @@ $(document).ready(function($) {
         dialog.attr("title", "Attach Notes");
         let inputTag = getInputTag(dialog);
         inputTag.appendTo(dialog);
-        $("<button />").text("Upload from device").button().on("click", function () {
+        $("<button />").css('margin', '10px').text("Upload from device").button().on("click", function () {
             inputTag.click();
         }).appendTo(dialog);
         $("<p />").appendTo(dialog);
-        $("<button />").text("Create new note").button().on("click", function () {
+        $("<button />").css('margin', '10px').text("Create new note").button().on("click", function () {
             createNewNoteDialog();
             dialog.dialog("destroy");
         }).appendTo(dialog);

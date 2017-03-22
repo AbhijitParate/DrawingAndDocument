@@ -5,7 +5,7 @@
     ui.includeCss("annotation", "libs/lightcase.css")
     ui.includeJavascript("annotation", "libs/lightcase.js")
 
-    ui.includeCss("annotation", "drawingObsEncounterTemplate.css")
+    ui.includeCss("annotation", "attachment.css")
     ui.includeJavascript("annotation", "status_actions.js")
 %>
 <div id="status-bar" style="margin: 2px; height: 45px;" >

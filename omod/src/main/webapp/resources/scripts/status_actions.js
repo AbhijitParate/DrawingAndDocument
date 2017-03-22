@@ -48,38 +48,46 @@ $(document).ready(function () {
 
     function recreateAttachments(obsArray) {
         console.debug(obsArray);
-        var attachmentDiv = $("<div/>");
-        var list = $("<ul/>").addClass("attachments-list");
+        // var attachmentDiv = $("<div/>").css('width','100%');;
+        var list = $("<ul/>").css('width','100%');
 
         obsArray.forEach(function (obs) {
             list.append(createListItem(obs));
         });
-        attachmentDiv.append(list);
-        return attachmentDiv;
+        // attachmentDiv.append(list);
+        return list;
     }
 
     function createListItem(obs) {
-        var a = $("<a/>").addClass("attachments-list-item")
+        let listItem = $("<li/>").addClass('attachment-list-item');
+        let div = $("<div />").appendTo(listItem);
+        let span = $("<span />");
+
+        let icon = $("<i/>");
+        icon.addClass("icon-remove");
+        icon.attr("data-file", obs.uuid);
+        icon.click(function (){
+            // todo: remove previous attachment
+            // removeAttachment(attachment.id);
+            listItem.remove();
+        });
+        icon.appendTo(span);
+
+        span.appendTo(div);
+
+        let a_view = $("<a/>")
             .attr("href", "../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+obs.name)
+            .attr("data-id", obs.uuid)
             .attr("title", obs.name)
             .text(obs.name)
-            .css({ display: "block" })
             .lightcase();
-        return $("<li/>").append(a);
+        a_view.appendTo(div);
+        return listItem;
     }
 
-
-    // todo : Combine attachments list
     // Show list of attachments on click
     $("#status-view-attachments").click(function () {
-        // if(previousAttachments){
-        //     var dom = recreateAttachments(previousAttachments);
-        //     $("<div/>").attr("title", "Attachments").append(dom).dialog({
-        //         closeText: "hide"
-        //     }).dialog( "open" );
-        // } else {
             createAttachmentDialog();
-        // }
     });
 
     function removeAttachment(id) {
@@ -93,15 +101,9 @@ $(document).ready(function () {
     }
 
     function createLocalAttachmentItem(attachment) {
-        let listItem = $("<li/>").css({"list-style":"none"});
+        let listItem = $("<li/>").addClass('attachment-list-item');
         let div = $("<div />").appendTo(listItem);
-        div.css({display:"inline-flex", margin:"5px"});
         let span = $("<span />");
-        span.css({
-            color:"red",
-            "font-size":"20px",
-            "margin-right":"15px"
-        });
 
         let icon = $("<i/>");
         icon.addClass("icon-remove");
@@ -115,55 +117,160 @@ $(document).ready(function () {
         span.appendTo(div);
 
         let a_view = $("<a/>")
-            .addClass("attachments-list-item")
             .attr("href","#")
-            .attr("data-url", attachment.data)
+            .attr("data-id", attachment.id)
             .attr("title", attachment.name)
-            .text(attachment.name)
-            .css({ display: "block", "font-size":"20px" })
-            .lightcase();
+            .text(attachment.name);
+        a_view.click(function () {
+            console.info("Attachment ID: " + $(this).attr("data-id"));
+            $("#attachmentPreview").empty();
+            $("#attachmentPreview").append(getPreviewAttachment($(this).attr("data-id")));
+            if(!expanded) expand();
+        });
         a_view.appendTo(div);
         return listItem;
     }
 
+    // For reference
+    function getPreviewAttachment(id) {
+
+        console.info(id + " clicked.");
+
+        for (let i = 0; i < attachments.length; i++) {
+            let attachment = attachments[i];
+            console.info("before if " + attachment.id);
+            console.info(attachment.id === id);
+            if (""+attachment.id === id+"") {
+                console.info(attachment.type);
+                switch (attachment.type) {
+                    case "image":
+                        console.info("Image file");
+                        return $('<img class="previewWindow" src=' + attachment.data + '>');
+                    case "video":
+                        console.info("Video file");
+                        if (attachment.data instanceof Blob) {
+                            let videoReader = new FileReader();
+                            videoReader.onloadend = (function (e) {
+                                let video = $('<video class="video-js vjs-default-skin previewWindow" controls autoplay>');
+                                $('<source src=' + e.target.result + '>').appendTo(video);
+                                return video;
+                            });
+                            videoReader.readAsDataURL(attachment.data);
+                        } else {
+                            let video = $('<video class="video-js vjs-default-skin previewWindow" controls autoplay>');
+                            $('<source src=' + attachment.data + '>').appendTo(video);
+                            return video;
+                        }
+
+                        console.info("Video data-> " + attachment.data);
+                        break;
+                    case "audio":
+                        console.info("Audio file");
+                        if (attachment.data instanceof Blob) {
+                            let audioReader = new FileReader();
+                            audioReader.onloadend = (function (e) {
+                                let audio = $('<audio class="video-js vjs-default-skin previewWindow" controls autoplay>');
+                                $('<source src=' + e.target.result + '>').appendTo(audio);
+                                return audio;
+                            });
+                            audioReader.readAsDataURL(attachment.data);
+                        } else {
+                            let audio = $('<audio class="video-js vjs-default-skin previewWindow" controls autoplay>');
+                            $('<source src=' + attachment.data + '>').appendTo(audio);
+                            return audio;
+                        }
+
+                        console.info("Audio data-> " + attachment.data);
+                        break;
+                    case "note":
+                        console.info("Text file");
+                        return $('<textarea class="previewWindow" title="Preview Text" disabled>')
+                        .text(atob(attachment.data.replace("data:text/plain;base64,", "")));
+                    default:
+                        console.info("File attachment");
+                        return $('<img class="previewWindow" width="550" height="500" '
+                            + 'src="./../ms/uiframework/resource/annotation/images/no-preview.jpg" />');
+                }
+            }
+        }
+    }
+
     function recreateLocalAttachments() {
-        console.debug(attachments);
-        var attachmentDiv = $("<div/>");
-        var list = $("<ul/>").addClass("attachments-list")
-            .css({"margin":"5px"});
+        var list = $("<ul/>")
+            .css({
+            });
 
         attachments.forEach(function (attachment) {
             list.append(createLocalAttachmentItem(attachment));
         });
-        attachmentDiv.append(list);
-        return attachmentDiv;
+        return list;
+    }
+
+    let expanded = false;
+
+    function expand() {
+        let uiDialog = $('.ui-dialog');
+        uiDialog.animate({width: '950px'});
+        $("#expandButton").empty().append($("<i class='icon-chevron-left'/>"));
+        $("#attachmentPreview").css('display','block');
+        expanded = true;
+    }
+
+    function collapse() {
+        let uiDialog = $('.ui-dialog');
+        uiDialog.animate({width: '500px'});
+        $("#expandButton").empty().append($("<i class='icon-chevron-right'/>"));
+        $("#attachmentPreview").css('display','none');
+        expanded = false;
     }
 
     function createAttachmentDialog() {
         let dialog = $("<div/>");
-        if(previousAttachments){
-            $("<h4 />").text("Previous attachments").appendTo(dialog);
-            let prevAttachDiv = recreateAttachments(previousAttachments);
-            prevAttachDiv.appendTo(dialog);
-        }
+        let previewDiv;
+        $("<button id='expandButton' />").append($("<i class='icon-chevron-right'/>"))
+        .click(function () {
+            if (expanded) {
+                collapse();
+            } else {
+                expand();
+            }
+        })
+        .appendTo(dialog);
+
+        let attachmentDiv = $("<div />").attr("id","attachmentDiv")
+            .appendTo(dialog);
+
         if(attachments != null && attachments.length > 0){
-            $("<h4 />").text("New attachments").appendTo(dialog);
+            $("<h4 />").text("New attachments").appendTo(attachmentDiv);
             let localAttachDiv = recreateLocalAttachments();
-            localAttachDiv.appendTo(dialog);
+            localAttachDiv.appendTo(attachmentDiv);
         }
+
+        if(previousAttachments){
+            $("<h4 />").text("Previous attachments").appendTo(attachmentDiv);
+            let prevAttachDiv = recreateAttachments(previousAttachments);
+            prevAttachDiv.appendTo(attachmentDiv);
+        }
+
+        previewDiv = $("<div />").attr("id","attachmentPreview")
+            .appendTo(dialog);
+        $("<img src='./../ms/uiframework/resource/annotation/images/no-preview.jpg' " +
+            "width='550' height='500' />").appendTo(previewDiv);
+
         dialog.attr("title", "Attachments");
         dialog.dialog({
+            width: 500,
+            height: 700,
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                // of: "#canvasWrapper",
                 at: "center center",
                 my: "center center"
             },
-            height: "auto",
-            width: "auto",
             open: function () {
                 console.info("Attachments dialog opened");
+                if(expanded) expand();
             },
             close: function () {
                 console.info("Attachments dialog closed");
@@ -280,7 +387,7 @@ $(document).ready(function () {
         request.send(formData);
 
         request.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
+            if (this.readyState === 4 && this.status === 200) {
                 // progressBar.hide();
                 console.info( "success: Upload succeeded");
                 console.info( "success: Upload response : " + request.responseText);

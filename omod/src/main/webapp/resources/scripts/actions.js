@@ -2,14 +2,30 @@
  * Created by abhij on 3/7/2017.
  *
  */
+
+let drawColor = "#000", fillColor;
+
 $(document).ready(function() {
+
+    function enableSelect() {
+        EDITOR_MODE = SELECT;
+        canvas.isDrawingMode = false;
+        canvas.selection = true;
+        canvas.hoverCursor = 'move';
+    }
+
+    function enablePencil() {
+        EDITOR_MODE = DRAW;
+        canvas.isDrawingMode = true;
+        canvas.freeDrawingBrush.color = drawColor;
+        canvas.selection = false;
+        canvas.hoverCursor = 'crosshair';
+    }
 
 //1.Draw
     // 1.Pencil
     $("#pencil").click(function () {
-        canvas.isDrawingMode = true;
-        DRAW_MODE = DRAW;
-        canvas.freeDrawingBrush.color = 'black';
+        enablePencil();
     });
     // 1a.Slider
     let handle = $("#custom-handle");
@@ -28,23 +44,25 @@ $(document).ready(function() {
         },
         change: function (event, ui) {
             canvas.freeDrawingBrush.width = parseInt(ui.value, 10) || 1;
+            enablePencil();
         }
     });
     // 2.Erase
     $("#erase").click(function () {
-        canvas.isDrawingMode = true;
-        DRAW_MODE = ERASE;
+        enablePencil();
+        EDITOR_MODE = ERASE;
         canvas.freeDrawingBrush.color = 'white';
     });
 
     // 3.Shapes
     // 3a.Line
     $("#shape-line").click(function() {
+        enableSelect();
         let line = new fabric.Line([100, 100, 200, 200], {
             left: 100,
             top: 100,
             fill: 'rgba(0,0,0,0)',
-            stroke: 'rgba(0,0,0,1)',
+            stroke: canvas.freeDrawingBrush.color,
             strokeWidth: 1
         });
         canvas.add(line);
@@ -53,17 +71,76 @@ $(document).ready(function() {
 
     // 3b.Arrow
     $("#shape-arrow").click(function () {
+        enableSelect();
         drawArrow(400,400,200,200);
     });
 
+    function drawArrow(fromx, fromy, tox, toy) {
+
+        var angle = Math.atan2(toy - fromy, tox - fromx);
+
+        var headlen = 10;  // arrow head size
+
+        // bring the line end back some to account for arrow head.
+        tox = tox - (headlen) * Math.cos(angle);
+        toy = toy - (headlen) * Math.sin(angle);
+
+        // calculate the points.
+        var points = [
+            {
+                x: fromx,  // start point
+                y: fromy
+            }, {
+                x: fromx - (headlen / 4) * Math.cos(angle - Math.PI / 2),
+                y: fromy - (headlen / 4) * Math.sin(angle - Math.PI / 2)
+            },{
+                x: tox - (headlen / 4) * Math.cos(angle - Math.PI / 2),
+                y: toy - (headlen / 4) * Math.sin(angle - Math.PI / 2)
+            }, {
+                x: tox - (headlen) * Math.cos(angle - Math.PI / 2),
+                y: toy - (headlen) * Math.sin(angle - Math.PI / 2)
+            },{
+                x: tox + (headlen) * Math.cos(angle),  // tip
+                y: toy + (headlen) * Math.sin(angle)
+            }, {
+                x: tox - (headlen) * Math.cos(angle + Math.PI / 2),
+                y: toy - (headlen) * Math.sin(angle + Math.PI / 2)
+            }, {
+                x: tox - (headlen / 4) * Math.cos(angle + Math.PI / 2),
+                y: toy - (headlen / 4) * Math.sin(angle + Math.PI / 2)
+            }, {
+                x: fromx - (headlen / 4) * Math.cos(angle + Math.PI / 2),
+                y: fromy - (headlen / 4) * Math.sin(angle + Math.PI / 2)
+            },{
+                x: fromx,
+                y: fromy
+            }
+        ];
+
+        var arrow = new fabric.Polyline(points, {
+            fill: 'rgba(0,0,0,0)',
+            stroke: canvas.freeDrawingBrush.color,
+            opacity: 1,
+            strokeWidth: 1,
+            originX: 'left',
+            originY: 'top',
+            selectable: true
+        });
+
+        canvas.add(arrow);
+
+        canvas.renderAll();
+    }
+
     // 3c. Circle
     $("#shape-circle").click(function () {
+        enableSelect();
         let circle=new fabric.Circle({
             left:100,
             top:100,
             radius:100,
             fill: 'rgba(0,0,0,0)',
-            stroke: 'rgba(0,0,0,1)',
+            stroke: canvas.freeDrawingBrush.color,
             strokeWidth: 1
         });
         canvas.add(circle);
@@ -71,13 +148,14 @@ $(document).ready(function() {
     });
     // 3d. Rectangle
     $("#shape-rectangle").click(function () {
+        enableSelect();
         let rect = new fabric.Rect({
             width: 100,
             height: 100,
             top: 100,
             left: 100,
             fill: 'rgba(0,0,0,0)',
-            stroke: 'rgba(0,0,0,1)',
+            stroke: canvas.freeDrawingBrush.color,
             strokeWidth: 1
         });
         canvas.add(rect);
@@ -86,13 +164,14 @@ $(document).ready(function() {
 
     // 3e. Triangle
     $("#shape-triangle").click(function () {
+        enableSelect();
         let tri = new fabric.Triangle({
             width: 100,
             height: 100,
             top: 100,
             left: 100,
             fill: 'rgba(0,0,0,0)',
-            stroke: 'rgba(0,0,0,1)',
+            stroke: canvas.freeDrawingBrush.color,
             strokeWidth: 1
         });
         canvas.add(tri);
@@ -101,6 +180,7 @@ $(document).ready(function() {
 
     // 3f. Polygon
     $("#shape-polygon").click(function () {
+        enableSelect();
         let pol = new fabric.Polygon([
             {x: 200, y: 0},
             {x: 250, y: 50},
@@ -111,7 +191,7 @@ $(document).ready(function() {
             top: 100,
             angle: 0,
             fill: 'rgba(0,0,0,0)',
-            stroke: 'rgba(0,0,0,1)',
+            stroke: canvas.freeDrawingBrush.color,
             strokeWidth: 1
         });
         canvas.add(pol);
@@ -125,6 +205,7 @@ $(document).ready(function() {
 
     // 5.Text
     $("#text").click(function () {
+        enableSelect();
         let text = new fabric.IText('Double click to type here...', {
             fontFamily: 'arial black',
             left: 100,
@@ -135,7 +216,7 @@ $(document).ready(function() {
     });
 
     // 6.Color Picker
-    $("#color-picker").spectrum({
+    $("#draw-color-picker").spectrum({
         showPaletteOnly: true,
         togglePaletteOnly: true,
         togglePaletteMoreText: 'more',
@@ -152,14 +233,38 @@ $(document).ready(function() {
             ["#600", "#783f04", "#7f6000", "#274e13", "#0c343d", "#073763", "#20124d", "#4c1130"]
         ],
         change: function (color) {
-            canvas.freeDrawingBrush.color = color;
+            drawColor = canvas.freeDrawingBrush.color = color.toHexString(true);
+        }
+    });
+
+    // 6.Color Picker
+    $("#fill-color-picker").spectrum({
+        showPaletteOnly: true,
+        togglePaletteOnly: true,
+        togglePaletteMoreText: 'more',
+        togglePaletteLessText: 'less',
+        color: 'black',
+        palette: [
+            ["#000", "#444", "#666", "#999", "#ccc", "#eee", "#f3f3f3", "#fff"],
+            ["#f00", "#f90", "#ff0", "#0f0", "#0ff", "#00f", "#90f", "#f0f"],
+            ["#f4cccc", "#fce5cd", "#fff2cc", "#d9ead3", "#d0e0e3", "#cfe2f3", "#d9d2e9", "#ead1dc"],
+            ["#ea9999", "#f9cb9c", "#ffe599", "#b6d7a8", "#a2c4c9", "#9fc5e8", "#b4a7d6", "#d5a6bd"],
+            ["#e06666", "#f6b26b", "#ffd966", "#93c47d", "#76a5af", "#6fa8dc", "#8e7cc3", "#c27ba0"],
+            ["#c00", "#e69138", "#f1c232", "#6aa84f", "#45818e", "#3d85c6", "#674ea7", "#a64d79"],
+            ["#900", "#b45f06", "#bf9000", "#38761d", "#134f5c", "#0b5394", "#351c75", "#741b47"],
+            ["#600", "#783f04", "#7f6000", "#274e13", "#0c343d", "#073763", "#20124d", "#4c1130"]
+        ],
+        change: function (color) {
+            fillColor = color.toHexString(true);
+            canvas.deactivateAllWithDispatch().renderAll();
+            canvas.hoverCursor = 'pointer';
+            EDITOR_MODE = FILL;
         }
     });
 
     // 7.Select
     $("#select").click(function () {
-        canvas.isDrawingMode = false;
-        canvas.selection = true;
+        enableSelect();
     });
 
 // 2.Transform
@@ -348,24 +453,9 @@ $(document).ready(function() {
     $("#clear").click(function () {
         clearCanvas();
     });
-    let canvasHiddenFlag = false;
-    $("#hide").click(function () {
 
-        if(canvasHiddenFlag === true){
-            canvas.interactive = true;
-            // canvas.getObjects().forEach(function(o) {
-            //     o.selectable = true;
-            // });
-            // $("#canvas").show();
-            canvasHiddenFlag = false;
-        } else {
-            canvas.interactive = false;
-            // canvas.getObjects().forEach(function(o) {
-            //     o.selectable = false;
-            // });
-            // $("#canvas").hide();
-            canvasHiddenFlag = true;
-        }
+    $("#hide").click(function () {
+        $("#canvasWrapper").toggle("display");
     });
 
 //Zoom
@@ -418,24 +508,25 @@ $(document).ready(function() {
 //8.Print
     $("#print").click(function () {
         let dataUrl = canvas.toDataURL({
-            format: 'jpeg',
+            format: 'png',
             quality: 0.8,
-            multiplier: 0.4
+            multiplier: 1
         });
         let windowContent = '<!DOCTYPE html>';
-        windowContent += '<html>';
-        windowContent += '<head><title>Print canvas</title></head>';
-        windowContent += '<body>';
-        windowContent += '<img src="' + dataUrl + '">';
-        windowContent += '</body>';
-        windowContent += '</html>';
-        let printWin = window.open('','','width=1024,height=720');
+        windowContent += "<html>";
+        windowContent += "<head><title>Print canvas</title></head>";
+        windowContent += "<body>";
+        windowContent += "<img src='" + dataUrl + "' width='800' height='800' />";
+        windowContent += "</body>";
+        windowContent += "</html>";
+
+        let printWin = window.open();
         printWin.document.open();
         printWin.document.write(windowContent);
         printWin.document.close();
         printWin.focus();
         printWin.print();
-        printWin.close();
+        // printWin.close();
     });
 
 //9.Export
@@ -447,12 +538,12 @@ $(document).ready(function() {
         });
         //noinspection JSUnresolvedFunction
         let pdf = new jsPDF({
-            orientation: 'landscape',
+            orientation: 'p',
             unit: 'mm',
-            format: [canvas.width, canvas.height]
+            format: 'a4'
         });
 
-        pdf.addImage(image, 'PNG', 0, 0, 580, 580);
+        pdf.addImage(image, 'PNG', 10, 10, 580, 580);
         pdf.save(getTimeStamp() + ".pdf");
     });
 

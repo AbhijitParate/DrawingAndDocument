@@ -6,7 +6,6 @@ $(document).ready(function($) {
 
     //Attach -> image
     $("#attachAudio").click(function () {
-        // $("#attachmentInput").click();
         createDialog();
 
     });
@@ -32,11 +31,11 @@ $(document).ready(function($) {
         dialog.attr("title", "Attach Audio");
         let inputTag = getInputTag(dialog);
         inputTag.appendTo(dialog);
-        $("<button />").text("Upload from device").button().on("click", function () {
+        $("<button />").css('margin', '10px').text("Upload from device").button().on("click", function () {
             inputTag.click();
         }).appendTo(dialog);
         $("<p />").appendTo(dialog);
-        $("<button />").text("Record using microphone").button().on("click", function () {
+        $("<button />").css('margin', '10px').text("Record using microphone").button().on("click", function () {
             createRecordDialog();
             dialog.dialog("destroy");
         }).appendTo(dialog);

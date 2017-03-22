@@ -40,14 +40,19 @@
                     <path fill="#000000" d="M3,3H16V6H11V18H8V6H3V3M12,7H14V9H12V7M15,7H17V9H15V7M18,7H20V9H18V7M12,10H14V12H12V10M12,13H14V15H12V13M12,16H14V18H12V16M12,19H14V21H12V19Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="color-picker" class="button-regular ui-button ui-widget ui-corner-all" title="Color Palette">
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M19,11.5C19,11.5 17,13.67 17,15A2,2 0 0,0 19,17A2,2 0 0,0 21,15C21,13.67 19,11.5 19,11.5M5.21,10L10,5.21L14.79,10M16.56,8.94L7.62,0L6.21,1.41L8.59,3.79L3.44,8.94C2.85,9.5 2.85,10.47 3.44,11.06L8.94,16.56C9.23,16.85 9.62,17 10,17C10.38,17 10.77,16.85 11.06,16.56L16.56,11.06C17.15,10.47 17.15,9.5 16.56,8.94Z" ></path>
-                </svg>
-            </button>
             <button type="button" id="select" class="button-regular ui-button ui-widget ui-corner-all" title="Select">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M13.64,21.97C13.14,22.21 12.54,22 12.31,21.5L10.13,16.76L7.62,18.78C7.45,18.92 7.24,19 7,19A1,1 0 0,1 6,18V3A1,1 0 0,1 7,2C7.24,2 7.47,2.09 7.64,2.23L7.65,2.22L19.14,11.86C19.57,12.22 19.62,12.85 19.27,13.27C19.12,13.45 18.91,13.57 18.7,13.61L15.54,14.23L17.74,18.96C18,19.46 17.76,20.05 17.26,20.28L13.64,21.97Z" ></path>
+                </svg>
+            </button>
+            <button type="button" id="draw-color-picker" class="button-regular ui-button ui-widget ui-corner-all" title="Draw Color">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#000000" d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" ></path>
+                </svg>
+            </button>
+            <button type="button" id="fill-color-picker" class="button-regular ui-button ui-widget ui-corner-all" title="Fill Color">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#000000" d="M19,11.5C19,11.5 17,13.67 17,15A2,2 0 0,0 19,17A2,2 0 0,0 21,15C21,13.67 19,11.5 19,11.5M5.21,10L10,5.21L14.79,10M16.56,8.94L7.62,0L6.21,1.41L8.59,3.79L3.44,8.94C2.85,9.5 2.85,10.47 3.44,11.06L8.94,16.56C9.23,16.85 9.62,17 10,17C10.38,17 10.77,16.85 11.06,16.56L16.56,11.06C17.15,10.47 17.15,9.5 16.56,8.94Z" ></path>
                 </svg>
             </button>
         </div>
@@ -186,6 +191,9 @@
                 </svg>
             </button>
             <input  id="import-upload-input" type="file" accept="image/*" hidden>
+            <button type="button" id="import-svg" class="button-regular ui-button ui-widget ui-corner-all" title="Import canvas from svg file">
+                SVG
+            </button>
         </div>
         <h3 class="control-header">Attach</h3>
         <div style="padding: 1%;">
@@ -236,10 +244,10 @@
             <button type="button" id="save-png" class="button-regular ui-button ui-widget ui-corner-all" title="Save as PNG">
                 png
             </button>
-            <button type="button" id="save-json" class="button-regular ui-widget ui-corner-all">
+            <button type="button" id="save-json" class="button-regular ui-button ui-widget ui-corner-all" title="Save as JSON">
                 json
             </button>
-            <button type="button" id="save-svg" class="button-regular ui-widget ui-corner-all">
+            <button type="button" id="save-svg" class="button-regular ui-button ui-widget ui-corner-all" title="Save as SVG">
                 svg
             </button>
         </div>

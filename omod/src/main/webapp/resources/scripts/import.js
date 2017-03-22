@@ -26,7 +26,12 @@ $(document).ready(function() {
                     fabric.Image.fromURL(
                         dataUrl,
                         function(oImg) {
-                            oImg.scale(1);
+                            if(oImg.width > 600){
+                                oImg.setWidth(600);
+                            }
+                            if(oImg.height > 600){
+                                oImg.setHeight(600);
+                            }
                             oImg.set({'top': 100, 'left': 100});
                             canvas.centerObject(oImg);
                             canvas.add(oImg);
@@ -107,7 +112,7 @@ $(document).ready(function() {
     // WebCam
     let dialogWebcam = $("#dialog-webcam") , reset = false;
     dialogWebcam.dialog({
-        resizable: false,
+        resizable: true,
         height: "auto",
         width: "auto",
         open: function () {
@@ -151,7 +156,13 @@ $(document).ready(function() {
                     fabric.Image.fromURL(
                         dataUrl,
                         function(oImg) {
-                            oImg.scale(1);
+                            if(oImg.width > 600){
+                                oImg.setWidth(600);
+                            }
+                            if(oImg.height > 600){
+                                oImg.setHeight(600);
+                            }
+                            // oImg.scale(1);
                             oImg.set({'top': 100, 'left': 100});
                             canvas.centerObject(oImg);
                             canvas.add(oImg);
@@ -184,7 +195,12 @@ $(document).ready(function() {
                 fabric.Image.fromURL(
                     uploadImage,
                     function (oImg) {
-                        oImg.scale(1);
+                        if(oImg.width > 600){
+                            oImg.setWidth(600);
+                        }
+                        if(oImg.height > 600){
+                            oImg.setHeight(600);
+                        }
                         oImg.set({'top': 100, 'left': 100});
                         canvas.centerObject(oImg);
                         canvas.add(oImg);
@@ -198,6 +214,77 @@ $(document).ready(function() {
 
     $("#import-upload").click(function () {
         fileUploadInput.click();
+    });
+
+    $("#import-svg").on('click', function () {
+        let input = $("<input />").attr("type", "file").attr("accept","image/svg+xml");
+        input.change(function (e) {
+            let div = $("<div />");
+            $("<img src='./../ms/uiframework/resource/annotation/images/loading.gif' width='100' height='100' />").appendTo(div);
+            div.dialog({
+                title: 'Loading...',
+                resizable: false,
+                position: {
+                    of: "#canvasWrapper",
+                    at: "center center",
+                    my: "center center"
+                },
+                height: "180",
+                width: "100",
+                icon: hide
+            });
+            let image = e.target.files[0];
+            let reader = new FileReader();
+            reader.onload = (function (e) {
+                let img = e.target.result;
+                fabric.loadSVGFromURL(img, function(objects, options) {
+                    // var obj = fabric.util.groupSVGElements(objects, options);
+                    // canvas.add(obj).renderAll();
+                    console.log(objects);
+                    // objects.forEach(function(obj) {
+                    let mediaobjs = [];
+                    for(let i = 0; i < objects.length; i++) {
+                        // console.log("Type : " + obj.get("stroke"));
+                        let obj = objects[i];
+                        console.log(obj);
+                        // for our implementation
+                        let data = obj.get('preserveAspectRatio');
+                        if (data && data.substring(0,4) === "data") {
+                            let newObj = new Media(data,                                {
+                                top: obj.transformMatrix[5],
+                                left: obj.transformMatrix[4],
+                            });
+                            mediaobjs.push(newObj);
+                            canvas.add(newObj);
+                            newObj.on('image:loaded', function () {
+                                canvas.renderAll.bind(canvas);
+                                canvas.moveTo(newObj, 999);
+                            });
+                        } else if (obj.type === "image") {
+                            fabric.Image.fromURL(obj.get("xlink:href"),
+                                function (imgObj) {
+                                    canvas.add(imgObj)
+                                }, {
+                                    top: (canvas.height / 2) + obj.top,
+                                    left: (canvas.height / 2) + obj.left,
+                                    width: obj.get('width'),
+                                    height: obj.get('height')
+                                }
+                            );
+                        } else {
+                            canvas.add(obj);
+                        }
+                    }
+
+                    canvas.renderAll();
+                    div.dialog('destroy');
+
+                });
+            });
+            reader.readAsDataURL(image);
+
+        });
+        input.click();
     });
 
 });

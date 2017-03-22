@@ -1,6 +1,6 @@
 [
     {
-        "id": "${project.parent.artifactId}",
+        "id": "${project.parent.artifactId}.drawing",
         "extensionPointId": "patientDashboard.visitActions",
         "type": "link",
         "label": "Add Drawing",

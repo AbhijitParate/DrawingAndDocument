@@ -32,11 +32,11 @@ $(document).ready(function($) {
         dialog.attr("title", "Attach Video");
         let input = getInputTag(dialog);
         input.appendTo(dialog);
-        $("<button />").text("Upload from device").button().on("click", function () {
+        $("<button />").css('margin', '10px').text("Upload from device").button().on("click", function () {
             input.click();
         }).appendTo(dialog);
         $("<p />").appendTo(dialog);
-        $("<button />").text("Capture using web-cam").button().on("click", function () {
+        $("<button />").css('margin', '10px').text("Capture using web-cam").button().on("click", function () {
             createWebcamDialog();
             dialog.dialog("destroy");
         }).appendTo(dialog);
@@ -144,7 +144,7 @@ $(document).ready(function($) {
         });
         input.appendTo(dialog);
 
-        let selectDiv = $("<div/>").css("height", "25px").appendTo(dialog);
+        let selectDiv = $("<div/>").css("height", "35px").appendTo(dialog);
         let select = $("<select/>").css("float","right").appendTo(selectDiv);
         $("<option/>").attr("value", "1").text("320×240").appendTo(select);
         $("<option/>").attr("value", "2").attr('selected','selected').text("640×480").appendTo(select);
@@ -412,6 +412,26 @@ $(document).ready(function($) {
                     player.reset();
                     break;
             }
+            // snapshot is available
+            player.on('finishRecord', function() {
+                // the blob object contains the image data that
+                // can be downloaded by the user, stored on server etc.
+                // console.log('snapshot ready: ', player.recordedData);
+                // attachBtn.text('Capture');
+                console.info("finished recording");
+                let data = player.recordedData;
+
+                let fr = new FileReader();
+                fr.onload = function(e) {
+                    attachmentImage = new Attachment("video_"+getTimeStamp()+".webm", "video", e.target.result );
+                };     // data-URI of blob
+                fr.readAsDataURL(data);
+
+                attachBtn.button("enable");
+                retryBtn.button("enable")
+            });
+            attachBtn.button("disable");
+            retryBtn.button("disable");
             $(".vjs-device-button.vjs-control.vjs-icon-device-perm").click();
         });
         $(".vjs-device-button.vjs-control.vjs-icon-device-perm").click();
