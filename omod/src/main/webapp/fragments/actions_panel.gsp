@@ -68,9 +68,9 @@
                     <path fill="#000000" d="M4,2H7A2,2 0 0,1 9,4V20A2,2 0 0,1 7,22H4A2,2 0 0,1 2,20V4A2,2 0 0,1 4,2M20,15A2,2 0 0,1 22,17V20A2,2 0 0,1 20,22H11V15H20M14,4A8,8 0 0,1 22,12L21.94,13H19.92L20,12A6,6 0 0,0 14,6V9L10,5L14,1V4Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="crop" class="button-regular not-available ui-widget ui-corner-all" title="Crop">
+            <button type="button" id="fit" class="button-regular ui-button ui-widget ui-corner-all" title="Fit size">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M7,17V1H5V5H1V7H5V17A2,2 0 0,0 7,19H17V23H19V19H23V17M17,15H19V7C19,5.89 18.1,5 17,5H9V7H17V15Z" ></path>
+                    <path fill="#000000" d="M19,3H15V5H19V9H21V5C21,3.89 20.1,3 19,3M19,19H15V21H19A2,2 0 0,0 21,19V15H19M5,15H3V19A2,2 0 0,0 5,21H9V19H5M3,5V9H5V5H9V3H5A2,2 0 0,0 3,5Z" ></path>
                 </svg>
             </button>
             <button type="button" id="flip-horizontal" class="button-regular ui-button ui-widget ui-corner-all" title="Flip Horizontally">
@@ -83,9 +83,9 @@
                     <path fill="#000000" d="M10,4V1L14,5L10,9V6A6,6 0 0,0 4,12L4.08,13H2.06L2,12A8,8 0 0,1 10,4M17,2H20A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H17A2,2 0 0,1 15,20V4A2,2 0 0,1 17,2M4,15H13V22H4A2,2 0 0,1 2,20V17A2,2 0 0,1 4,15Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="fit" class="button-regular not-available ui-widget ui-corner-all" title="Fit size">
+            <button type="button" id="crop" class="button-regular ui-button ui-widget ui-corner-all" title="Crop">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M19,3H15V5H19V9H21V5C21,3.89 20.1,3 19,3M19,19H15V21H19A2,2 0 0,0 21,19V15H19M5,15H3V19A2,2 0 0,0 5,21H9V19H5M3,5V9H5V5H9V3H5A2,2 0 0,0 3,5Z" ></path>
+                    <path fill="#000000" d="M7,17V1H5V5H1V7H5V17A2,2 0 0,0 7,19H17V23H19V19H23V17M17,15H19V7C19,5.89 18.1,5 17,5H9V7H17V15Z" ></path>
                 </svg>
             </button>
         </div>

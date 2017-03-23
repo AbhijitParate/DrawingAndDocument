@@ -42,7 +42,7 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
@@ -87,7 +87,7 @@ $(document).ready(function($) {
         noteInput.appendTo(noteLabel);
 
         let noteTextArea = $("<textarea />");
-        noteTextArea.css({"height":"400", "width":"500", "float":"left"});
+        noteTextArea.css({"height":"400", "width":"500", "float":"left","margin-top": "10px"});
         noteTextArea.attr("title","Preview Text");
         noteTextArea.appendTo(wrapperDiv);
         noteTextArea.prop('readonly', true);
@@ -153,7 +153,9 @@ $(document).ready(function($) {
         let inputTag = getInputTag(dialog);
         inputTag.appendTo(dialog);
 
-        let wrapperDiv = $("<div />");
+        let wrapperDiv = $("<div />").css({
+            margin:'5px',
+        });
 
         let noteLabel = $("<label />");
         noteLabel.text("Name:");
@@ -165,7 +167,7 @@ $(document).ready(function($) {
         noteInput.appendTo(noteLabel);
 
         let noteTextArea = $("<textarea />");
-        noteTextArea.css({"height":"400", "width":"500", "float":"left"});
+        noteTextArea.css({"height":"400", "width":"500", "float":"left","margin-top": "10px"});
         noteTextArea.attr("title","Preview Text");
         noteTextArea.appendTo(wrapperDiv);
 
@@ -191,7 +193,7 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
@@ -225,7 +227,10 @@ $(document).ready(function($) {
                     console.info("Attach clicked");
                     saveAttachment();
                     $(this).dialog("close");
-                }
+                },
+                "Cancel": function () {
+                    $(this).dialog("close");
+                },
             }
         });
 

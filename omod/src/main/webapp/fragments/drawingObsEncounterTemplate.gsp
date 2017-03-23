@@ -77,6 +77,16 @@
             {{ } }}
             title="${ ui.message("coreapps.edit") }"></i>
 
+        <i id="drawing-popup-encounter" class="delete-item icon-external-link" style="vertical-align: top"
+           data-mode="popup"
+           data-visit-id="{{- encounter.visitId }}"
+           data-patient-id="{{- patient.id }}"
+           data-encounter-id="{{- encounter.encounterId }}"
+           {{ if (config.viewUrl) { }}
+                data-popup-url="{{- config.popupUrl }}"
+           {{ } }}
+           title="Popup view"></i>
+
         {{ } }}
         {{ if ( encounter.canDelete ) { }}
 

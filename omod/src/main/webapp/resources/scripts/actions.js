@@ -298,7 +298,16 @@ $(document).ready(function() {
     });
     // 6. Fit
     $("#fit").click(function () {
+        console.info("Fit to size");
+        let object  = canvas.getActiveObject();
+        if( object &&  object.type === 'image') {
+            object.setWidth(700);
+            object.setHeight(700);
+            object.setTop(50);
+            object.setLeft(50);
 
+            canvas.renderAll();
+        }
     });
 
 // 3. Position

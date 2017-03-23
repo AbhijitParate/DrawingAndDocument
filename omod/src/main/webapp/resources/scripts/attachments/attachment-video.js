@@ -1,5 +1,6 @@
 /**
  * Created by abhij on 3/12/2017.
+ *
  */
 
 $(document).ready(function($) {
@@ -8,7 +9,6 @@ $(document).ready(function($) {
     $("#attachVideo").click(function () {
         // $("#attachmentInput").click();
         createDialog();
-
     });
 
     function getInputTag(dialog) {
@@ -44,7 +44,7 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
@@ -92,7 +92,7 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
@@ -103,6 +103,7 @@ $(document).ready(function($) {
             },
             close: function () {
                 console.info("Upload video dialog closed");
+                $(this).dialog("destroy");
             },
             autoOpen: false,
             buttons: {
@@ -153,7 +154,7 @@ $(document).ready(function($) {
         let label = $("<label/>").css("float","right");
         label.text("Image size : ");
         label.appendTo(selectDiv);
-        let imageDiv = $("<div/>").appendTo(dialog);
+        let imageDiv = $("<div/>").css('text-align', '-webkit-center').appendTo(dialog);
         let video = $("<video/>").addClass("video-js vjs-default-skin");
         video.attr("id","myVideo");
         video.appendTo(imageDiv);
@@ -164,7 +165,7 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
@@ -212,10 +213,6 @@ $(document).ready(function($) {
                 });
                 // snapshot is available
                 player.on('finishRecord', function() {
-                    // the blob object contains the image data that
-                    // can be downloaded by the user, stored on server etc.
-                    // console.log('snapshot ready: ', player.recordedData);
-                    // attachBtn.text('Capture');
                     console.info("finished recording");
                     let data = player.recordedData;
 
@@ -313,6 +310,11 @@ $(document).ready(function($) {
                             }
                         }
                     });
+                    player.reset();
+                    dialog.dialog({
+                        width: 477,
+                        height: 240 + 180,
+                    });
                     break;
                 case "2":
                     console.info("2");
@@ -345,6 +347,11 @@ $(document).ready(function($) {
                             }
                         }
                     });
+                    player.reset();
+                    dialog.dialog({
+                        width: 640+33,
+                        height: 480 + 180,
+                    });
                     break;
                 case "3":
                     console.info("3");
@@ -376,6 +383,11 @@ $(document).ready(function($) {
                                 frameHeight: 768
                             }
                         }
+                    });
+                    player.reset();
+                    dialog.dialog({
+                        width: 1024+33,
+                        height: 768 + 180,
                     });
                     break;
                 case "4":
@@ -410,6 +422,10 @@ $(document).ready(function($) {
                         }
                     });
                     player.reset();
+                    dialog.dialog({
+                        width: 1280+33,
+                        height: 720 + 180,
+                    });
                     break;
             }
             // snapshot is available

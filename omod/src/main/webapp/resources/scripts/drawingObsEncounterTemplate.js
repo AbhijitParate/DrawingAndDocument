@@ -39,6 +39,21 @@ $(function() {
         emr.navigateTo({ applicationUrl: editUrl });
     });
 
+    $(document).on('click', '#drawing-popup-encounter', function(event) {
+        console.debug("Edit encounter");
+
+        var encounterId = $(event.target).attr("data-encounter-id");
+        var patientId = $(event.target).attr("data-patient-id");
+        var visitId = $(event.target).attr("data-visit-id");
+        var popupUrl = $(event.target).attr("data-popup-url");
+        popupUrl = popupUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
+            .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
+        popupUrl += "&visitId=" + visitId;
+        console.debug(popupUrl + " clicked");
+        // emr.navigateTo({ applicationUrl: popupUrl });
+        window.open("../../"+popupUrl, 'Drawing popup', 'window settings');
+    });
+
     // //We cannot assign it here due to Jasmine failure:
     // //net.sourceforge.htmlunit.corejs.javascript.EcmaError: TypeError: Cannot call method "replace" of undefined
     var detailsTemplates = {};
@@ -63,11 +78,17 @@ $(function() {
             var html = generateHtml(data);
             encounterDetailsSection.html(html);
             $('.obs-preview').lightcase({
+                shrinkFactor:0.5,
                 maxWidth : 800,
-                maxHeight : 700,
+                maxHeight : 800,
                 forceWidth:true,
                 forceHeight: true,
-                liveResize:true
+                liveResize:true,
+                type:'iframe',
+                iframe : {
+                    width : 800,
+                    height :800,
+                }
             });
             // console.debug(data);
         }).error(function(err){

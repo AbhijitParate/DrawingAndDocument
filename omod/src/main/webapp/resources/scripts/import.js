@@ -10,7 +10,7 @@ $(document).ready(function() {
     dialogTemplate.dialog({
         resizable: false,
         position: {
-            of: "#canvasWrapper",
+            of: window,
             at: "center center",
             my: "center center"
         },
@@ -62,6 +62,10 @@ $(document).ready(function() {
                     dest_width: 320,
                     dest_height: 240,
                 });
+                dialogWebcam.dialog({
+                    width: 320 + 33,
+                    height: 240 + 180,
+                });
                 break;
             case "2":
                 console.info("2");
@@ -72,6 +76,10 @@ $(document).ready(function() {
                     dest_width: 640,
                     dest_height: 480,
                 });
+                dialogWebcam.dialog({
+                    width: 640 + 33,
+                    height: 480 + 180,
+                });
                 break;
             case "3":
                 console.info("3");
@@ -81,6 +89,10 @@ $(document).ready(function() {
                     height: 720,
                     dest_width: 1280,
                     dest_height: 720,
+                });
+                dialogWebcam.dialog({
+                    width: 1280 + 33,
+                    height: 720 + 180,
                 });
                 break;
         }
@@ -113,8 +125,13 @@ $(document).ready(function() {
     let dialogWebcam = $("#dialog-webcam") , reset = false;
     dialogWebcam.dialog({
         resizable: true,
-        height: "auto",
-        width: "auto",
+        position: {
+            of: window,
+            at: "center center",
+            my: "center center"
+        },
+        width: 640 + 33,
+        height: 480 + 180,
         open: function () {
             Webcam.set({
                 width: 640,
@@ -225,7 +242,7 @@ $(document).ready(function() {
                 title: 'Loading...',
                 resizable: false,
                 position: {
-                    of: "#canvasWrapper",
+                    of: window,
                     at: "center center",
                     my: "center center"
                 },

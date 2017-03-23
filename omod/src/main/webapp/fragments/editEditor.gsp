@@ -17,6 +17,7 @@
     ui.includeJavascript("annotation", "libs/webcam.min.js")
 
     ui.includeCss("annotation", "libs/video-js.min.css")
+    ui.includeCss("annotation", "libs/videojs.record.css")
     ui.includeJavascript("annotation", "libs/video.min.js")
     ui.includeJavascript("annotation", "libs/videojs.record.min.js")
     ui.includeJavascript("annotation", "libs/wavesurfer.min.js")

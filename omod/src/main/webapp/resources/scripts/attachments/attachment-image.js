@@ -40,7 +40,7 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
@@ -97,7 +97,7 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
@@ -169,12 +169,12 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
-            height: "auto",
-            width: "auto",
+            height: 650,
+            width: 680,
             open: function () {
                 console.info("Webcam dialog opened");
                 player = videojs("myCamera", {
@@ -288,6 +288,11 @@ $(document).ready(function($) {
                             }
                         }
                     });
+                    player.reset();
+                    dialog.dialog({
+                        width: 320 + 33,
+                        height: 680,
+                    });
                     break;
                 case "2":
                     console.info("2");
@@ -312,6 +317,11 @@ $(document).ready(function($) {
                             }
                         }
                     });
+                    player.reset();
+                    dialog.dialog({
+                        height: 650,
+                        width: 680,
+                    });
                     break;
                 case "3":
                     console.info("3");
@@ -335,6 +345,11 @@ $(document).ready(function($) {
                                 debug: true
                             }
                         }
+                    });
+                    player.reset();
+                    dialog.dialog({
+                        width: 1024+33,
+                        height: 768 + 180,
                     });
                     break;
                 case "4":
@@ -361,6 +376,10 @@ $(document).ready(function($) {
                         }
                     });
                     player.reset();
+                    dialog.dialog({
+                        width: 1313,
+                        height: 900,
+                    });
                     break;
             }
             // snapshot is available

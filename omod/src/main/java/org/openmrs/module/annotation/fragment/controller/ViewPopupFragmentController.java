@@ -25,19 +25,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  *  * Controller for a fragment that shows all users  
  */
-public class ViewEditorFragmentController {
+public class ViewPopupFragmentController {
 	
 	Log log = LogFactory.getLog(getClass());
-	
-	// TODO: 3/9/2017 Customize for view only
+
 	public void controller(PageRequest pageRequest, FragmentModel model,
 	        @RequestParam(value = "patientId", required = false) Patient patient,
-	        @RequestParam(value = "encounterId", required = false) Encounter encounter, UiSessionContext sessionContext,
+	        @RequestParam(value = "encounterId", required = false) Encounter encounter,
+	        @RequestParam(value = "drawingUuid", required = false) String drawingUuid, UiSessionContext sessionContext,
 	        UiUtils ui, @InjectBeans ModuleContext moduleContext) throws Exception {
 		log.error(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("encounterId", encounter.getId());
 		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());
+		model.addAttribute("drawingUuid", drawingUuid);
 		model.addAttribute("returnUrl",
 		    "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patient.getId());
 	}

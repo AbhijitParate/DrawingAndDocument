@@ -43,7 +43,7 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
@@ -93,7 +93,7 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
@@ -145,12 +145,12 @@ $(document).ready(function($) {
             modal:true,
             resizable: true,
             position: {
-                of: "#canvasWrapper",
+                of: window,
                 at: "center center",
                 my: "center center"
             },
-            height: "auto",
-            width: "auto",
+            width: 633,
+            height: 450,
             open: function () {
                 console.info("Record audio dialog opened");
                 attachBtn = $(".ui-dialog-buttonpane button:contains('Attach')");

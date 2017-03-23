@@ -13,7 +13,8 @@
           "deletable": true,
           "editable": true,
           "editUrl": "annotation/editDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}",
-          "viewUrl": "annotation/viewDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}"
+          "viewUrl": "annotation/viewDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}",
+          "popupUrl": "annotation/viewDrawingPopup.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}"
         }
       }
     }
