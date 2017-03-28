@@ -9,7 +9,7 @@ $(document).ready(function() {
         $.getJSON(
             emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: encounterId })
         ).success(function(data){
-            $("#drawing").attr("src", "../../ws/rest/v1/annotation/obs/" + data.drawing.uuid + "/drawing.svg");
+            $("#drawing").attr("src", "../ws/rest/v1/annotation/obs/" + data.drawing.uuid + "/drawing.svg");
         });
     });
 } );

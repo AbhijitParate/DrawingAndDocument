@@ -87,7 +87,7 @@
 
     <globalProperty>
         <property>${project.parent.artifactId}.defaultConceptComplexUuid</property>
-        <defaultValue>5118786a-f41d-11e6-bc64-92361f002671</defaultValue>
+        <defaultValue>5118810c-f41d-11e6-bc64-92361f002671</defaultValue>
         <description>
             UUID of the (question) concept complex for 'other' patient files,
             this is used as the default when the MIME type is not matched
@@ -97,7 +97,7 @@
     <globalProperty>
         <property>${project.parent.artifactId}.conceptComplexUuidList</property>
         <defaultValue>
-            [   "5118786a-f41d-11e6-bc64-92361f002671",
+            [
                 "51187acc-f41d-11e6-bc64-92361f002671",
                 "51187bc6-f41d-11e6-bc64-92361f002671",
                 "51187c98-f41d-11e6-bc64-92361f002671",
@@ -123,8 +123,7 @@
     <globalProperty>
         <property>${project.parent.artifactId}.conceptComplexUuidMap</property>
         <defaultValue>
-            {   "DEFAULT":  "5118786a-f41d-11e6-bc64-92361f002671",
-                "SVG":      "51187acc-f41d-11e6-bc64-92361f002671",
+            {   "SVG":      "51187acc-f41d-11e6-bc64-92361f002671",
                 "IMAGE":    "51187bc6-f41d-11e6-bc64-92361f002671",
                 "VIDEO":    "51187c98-f41d-11e6-bc64-92361f002671",
                 "NOTE":     "51187d6a-f41d-11e6-bc64-92361f002671",

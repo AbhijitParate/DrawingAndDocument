@@ -12,6 +12,11 @@ import java.io.File;
 /**
  * Created by abhijit on 2/16/17.
  */
+
+/**
+ * De
+ */
+@Deprecated
 public class ImageObsHandler extends AbstractComplexObsHandler {
 	
 	public ImageObsHandler() {

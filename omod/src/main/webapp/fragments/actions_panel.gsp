@@ -152,12 +152,12 @@
         </div>
         <h3 class="control-header">Edit</h3>
         <div style="padding: 1%;">
-            <button type="button" id="undo" class="button-regular not-available ui-widget ui-corner-all" title="Undo">
+            <button type="button" id="undo" class="button-regular ui-button ui-widget ui-corner-all" title="Undo">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M12.5,8C9.85,8 7.45,9 5.6,10.6L2,7V16H11L7.38,12.38C8.77,11.22 10.54,10.5 12.5,10.5C16.04,10.5 19.05,12.81 20.1,16L22.47,15.22C21.08,11.03 17.15,8 12.5,8Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="hide" class="button-regular not-available ui-widget ui-corner-all" title="Hide">
+            <button type="button" id="hide" class="button-regular ui-button ui-widget ui-corner-all" title="Hide">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M11.83,9L15,12.16C15,12.11 15,12.05 15,12A3,3 0 0,0 12,9C11.94,9 11.89,9 11.83,9M7.53,9.8L9.08,11.35C9.03,11.56 9,11.77 9,12A3,3 0 0,0 12,15C12.22,15 12.44,14.97 12.65,14.92L14.2,16.47C13.53,16.8 12.79,17 12,17A5,5 0 0,1 7,12C7,11.21 7.2,10.47 7.53,9.8M2,4.27L4.28,6.55L4.73,7C3.08,8.3 1.78,10 1,12C2.73,16.39 7,19.5 12,19.5C13.55,19.5 15.03,19.2 16.38,18.66L16.81,19.08L19.73,22L21,20.73L3.27,3M12,7A5,5 0 0,1 17,12C17,12.64 16.87,13.26 16.64,13.82L19.57,16.75C21.07,15.5 22.27,13.86 23,12C21.27,7.61 17,4.5 12,4.5C10.6,4.5 9.26,4.75 8,5.2L10.17,7.35C10.74,7.13 11.35,7 12,7Z" ></path>
                 </svg>
@@ -167,7 +167,7 @@
                     <path fill="#000000" d="M20,4C21.11,4 22,4.89 22,6V18C22,19.11 21.11,20 20,20H4C2.89,20 2,19.11 2,18V6C2,4.89 2.89,4 4,4H20M8.5,15V9H7.25V12.5L4.75,9H3.5V15H4.75V11.5L7.3,15H8.5M13.5,10.26V9H9.5V15H13.5V13.75H11V12.64H13.5V11.38H11V10.26H13.5M20.5,14V9H19.25V13.5H18.13V10H16.88V13.5H15.75V9H14.5V14A1,1 0 0,0 15.5,15H19.5A1,1 0 0,0 20.5,14Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="redo" class="button-regular not-available ui-widget ui-corner-all" title="Redo">
+            <button type="button" id="redo" class="button-regular ui-button ui-widget ui-corner-all" title="Redo">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M18.4,10.6C16.55,9 14.15,8 11.5,8C6.85,8 2.92,11.03 1.54,15.22L3.9,16C4.95,12.81 7.95,10.5 11.5,10.5C13.45,10.5 15.23,11.22 16.62,12.38L13,16H22V7L18.4,10.6Z" ></path>
                 </svg>

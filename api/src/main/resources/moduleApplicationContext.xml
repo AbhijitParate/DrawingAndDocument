@@ -30,16 +30,20 @@
     <bean parent="obsServiceTarget">
         <property name="handlers">
             <map>
-                <entry key="DefaultObsHandler">
-                    <bean class="org.openmrs.module.annotation.obs.handler.DefaultObsHandler" />
+                <entry key="DrawingAndDocObsHandler">
+                    <bean class="org.openmrs.module.annotation.obs.handler.DrawingAndDocObsHandler" />
                 </entry>
-                <entry key="ImageObsHandler">
-                    <bean class="org.openmrs.module.annotation.obs.handler.ImageObsHandler" />
-                </entry>
-                <entry key="SvgObsHandler">
-                    <bean class="org.openmrs.module.annotation.obs.handler.SvgObsHandler" />
-                </entry>
+                <!--<entry key="DefaultObsHandler">-->
+                    <!--<bean class="org.openmrs.module.annotation.obs.handler.DefaultObsHandler" />-->
+                <!--</entry>-->
+                <!--<entry key="ImageObsHandler">-->
+                    <!--<bean class="org.openmrs.module.annotation.obs.handler.ImageObsHandler" />-->
+                <!--</entry>-->
+                <!--<entry key="SvgObsHandler">-->
+                    <!--<bean class="org.openmrs.module.annotation.obs.handler.SvgObsHandler" />-->
+                <!--</entry>-->
             </map>
         </property>
     </bean>
+
 </beans>

@@ -33,14 +33,19 @@
     ui.includeJavascript("annotation", "ui.js")
 %>
 <script>
-    var patientid =${ patientId };
-    var encounterId = ${ encounter.id };
-    var visitid = ${ visitId };
-    var providerid = ${ providerId };
-    var returnlink = "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patientid;
+    var patientid   = ${ patientId };
+    var encounterId = ${ encounterId };
+    var visitid     = ${ visitId };
+    var providerid  = ${ providerId };
+    var returnlink  = "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patientid;
 </script>
 <div id="drawing-and-attachments">
     <h2 style="margin:0;">Edit Drawing</h2>
+    <div class="encounter-date">
+        <i class="icon-time"></i>
+        <strong id="encounter-time">${ ui.format(encounterTime) }</strong>
+        <span id="encounter-date">${ ui.format(encounterDate) }</span>
+    </div>
     ${ui.includeFragment("annotation", "statusBar", [ mode: "edit" ])}
     <div id="main-container" class="outerContainer">
         ${ui.includeFragment("annotation", "actions_panel")}

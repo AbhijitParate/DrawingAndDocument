@@ -9,15 +9,8 @@ import org.openmrs.obs.handler.BinaryStreamHandler;
 
 import java.io.File;
 
+@Deprecated
 public class DefaultObsHandler extends AbstractComplexObsHandler {
-	
-	//	protected final Log log = LogFactory.getLog(getClass());
-	
-	/** The Constant HANDLER_TYPE. Used to differentiate between handler types */
-	public static final String HANDLER_TYPE = "DefaultObsHandler";
-	
-	/** The Constant DISPLAY_LINK. Used as a link to display the selected patient */
-	public static final String DISPLAY_LINK = "/patientDashboard.form?patientId=";
 	
 	public DefaultObsHandler() {
 		super();

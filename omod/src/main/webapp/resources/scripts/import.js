@@ -145,6 +145,7 @@ $(document).ready(function() {
         close: function () {
             Webcam.reset();
             $(".ui-dialog-buttonpane button:contains('Reset')").text('Capture');
+            $(this).dialog("destroy");
         },
         modal: true,
         autoOpen: false,

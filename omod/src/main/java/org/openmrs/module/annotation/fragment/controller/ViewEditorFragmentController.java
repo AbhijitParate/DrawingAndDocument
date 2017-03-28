@@ -22,6 +22,8 @@ import org.openmrs.ui.framework.fragment.FragmentModel;
 import org.openmrs.ui.framework.page.PageRequest;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.text.SimpleDateFormat;
+
 /**
  *  * Controller for a fragment that shows all users  
  */
@@ -37,6 +39,10 @@ public class ViewEditorFragmentController {
 		log.error(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("encounterId", encounter.getId());
+		SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");
+		model.addAttribute("encounterTime", sdf.format(encounter.getEncounterDatetime()));
+		sdf = new SimpleDateFormat("EEE, d MMM yyyy");
+		model.addAttribute("encounterDate", sdf.format(encounter.getEncounterDatetime()));
 		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());
 		model.addAttribute("returnUrl",
 		    "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patient.getId());

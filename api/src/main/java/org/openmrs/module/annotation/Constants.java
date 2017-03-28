@@ -29,13 +29,19 @@ public class Constants {
 	
 	public static class ObsType {
 		
-		public static final String DEFAULT  = "." + MODULE_ID + ".Module.DEFAULT";
-		public static final String SVG      = "." + MODULE_ID + ".Module.SVG";
-		public static final String IMAGE    = "." + MODULE_ID + ".Module.IMAGE";
-		public static final String VIDEO    = "." + MODULE_ID + ".Module.VIDEO";
-		public static final String NOTE     = "." + MODULE_ID + ".Module.NOTE";
-		public static final String AUDIO    = "." + MODULE_ID + ".Module.AUDIO";
-		public static final String FILE     = "." + MODULE_ID + ".Module.FILE";
+		public static final String PREFIX = "Drawing and Document Annotation Module";
+		
+		public static final String SVG = " SVG";
+		
+		public static final String IMAGE = " IMAGE";
+		
+		public static final String VIDEO = " VIDEO";
+		
+		public static final String NOTE = " NOTE";
+		
+		public static final String AUDIO = " AUDIO";
+		
+		public static final String FILE = " FILE";
 	}
 	
 	public static final String ENCOUNTER_TYPE = "Drawings & Docs";

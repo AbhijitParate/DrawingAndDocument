@@ -49,12 +49,12 @@ public class AnnotationActivator extends BaseModuleActivator {
 	private void updateConceptsAndEncounters() {
 		
 		// Concepts Complex
-		addConcept(Constants.ObsType.FILE, Constants.ConceptUUID.FILE, "defaultObsHandler");
-		addConcept(Constants.ObsType.SVG, Constants.ConceptUUID.SVG, "defaultObsHandler");
-		addConcept(Constants.ObsType.IMAGE, Constants.ConceptUUID.IMAGE, "defaultObsHandler");
-		addConcept(Constants.ObsType.AUDIO, Constants.ConceptUUID.AUDIO, "defaultObsHandler");
-		addConcept(Constants.ObsType.VIDEO, Constants.ConceptUUID.VIDEO, "defaultObsHandler");
-		addConcept(Constants.ObsType.NOTE, Constants.ConceptUUID.NOTE, "defaultObsHandler");
+		addConcept(Constants.ObsType.FILE, Constants.ConceptUUID.FILE);
+		addConcept(Constants.ObsType.SVG, Constants.ConceptUUID.SVG);
+		addConcept(Constants.ObsType.IMAGE, Constants.ConceptUUID.IMAGE);
+		addConcept(Constants.ObsType.AUDIO, Constants.ConceptUUID.AUDIO);
+		addConcept(Constants.ObsType.VIDEO, Constants.ConceptUUID.VIDEO);
+		addConcept(Constants.ObsType.NOTE, Constants.ConceptUUID.NOTE);
 		
 		// Encounter Type
 		{
@@ -73,8 +73,8 @@ public class AnnotationActivator extends BaseModuleActivator {
 		}
 	}
 	
-	private static void addConcept(String obsType, String uuid, String handler) {
-		final String name = Constants.MODULE_NAME + obsType;
+	private static void addConcept(String obsType, String uuid) {
+		final String name = Constants.ObsType.PREFIX + obsType;
 		final String desc = "Concept complex for " + obsType + " complex obs.";
 		
 		ConceptService conceptService = Context.getConceptService();
@@ -83,7 +83,7 @@ public class AnnotationActivator extends BaseModuleActivator {
 			
 			ConceptComplex conceptComplex = new ConceptComplex();
 			conceptComplex.setUuid(uuid);
-			conceptComplex.setHandler(handler);
+			conceptComplex.setHandler("DrawingAndDocObsHandler");
 			ConceptName conceptName = new ConceptName(name, Locale.ENGLISH);
 			conceptComplex.setFullySpecifiedName(conceptName);
 			conceptComplex.setPreferredName(conceptName);

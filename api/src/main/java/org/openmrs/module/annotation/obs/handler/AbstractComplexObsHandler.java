@@ -95,13 +95,14 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 				log.error("Complex data was null and hence was not saved for OBS_ID='" + obs.getObsId() + "'.");
 				return obs;
 			} else {
+				log.error("Complex data was not null.");
 				return getComplexObsHandler().saveObs(obs);
 			}
 		}
 		
 		ValueComplex valueComplex = saveComplexData(obs, moduleComplexData);
 		log.error(getClass().getSimpleName() + "generated valueComplex -> " + valueComplex.getValueComplex());
-		obs.setValueComplex(valueComplex.toString());
+		obs.setValueComplex(valueComplex.getValueComplex());
 		return obs;
 	}
 	
@@ -112,10 +113,10 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 		}
 		
 		ModuleComplexData moduleComplexData = (ModuleComplexData) complexData;
-		String obsType = moduleComplexData.getObsType();
-		if (!obsType.startsWith(Constants.MODULE_ID)) {
-			return null;
-		}
+		//		String obsType = moduleComplexData.getObsType();
+		//		if (!obsType.startsWith(Constants.ObsType.)) {
+		//			return null;
+		//		}
 		return moduleComplexData;
 	}
 }

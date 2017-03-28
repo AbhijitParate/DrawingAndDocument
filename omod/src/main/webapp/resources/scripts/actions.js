@@ -206,8 +206,7 @@ $(document).ready(function() {
     // 5.Text
     $("#text").click(function () {
         enableSelect();
-        let text = new fabric.IText('Double click to type here...', {
-            fontFamily: 'arial black',
+        let text = new fabric.IText('Type here...', {
             left: 100,
             top: 100,
         });

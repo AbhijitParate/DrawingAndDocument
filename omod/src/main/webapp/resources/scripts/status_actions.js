@@ -39,11 +39,67 @@ $(document).ready(function () {
     }
 
     function recreateCanvas(drawing) {
-        console.debug(drawing);
-        fabric.loadSVGFromURL("../ws/rest/v1/annotation/obs/" + drawing.uuid +"/"+drawing.name, function(objects, options) {
-            var obj = fabric.util.groupSVGElements(objects, options);
-            canvas.add(obj).renderAll();
+
+        let div = $("<div />");
+        $("<img src='./../ms/uiframework/resource/annotation/images/loading.gif' width='100' height='100' />").appendTo(div);
+        div.dialog({
+            title: 'Loading...',
+            resizable: false,
+            position: {
+                of: window,
+                at: "center center",
+                my: "center center"
+            },
+            height: "180",
+            width: "100",
+            icon: hide
         });
+
+        console.debug(drawing);
+        fabric.loadSVGFromURL("../ws/rest/v1/annotation/obs/" + drawing.uuid +"/"+drawing.name,
+            function(objects, options) {
+                console.log(objects);
+                let mediaobjs = [];
+                for(let i = 0; i < objects.length; i++) {
+                    let obj = objects[i];
+                    console.log(obj);
+                    // for our implementation
+                    let data = obj.get('preserveAspectRatio');
+                    if (data && data.substring(0,4) === "data") {
+                        let newObj = new Media(data,{
+                            top: obj.transformMatrix[5],
+                            left: obj.transformMatrix[4],
+                        });
+                        mediaobjs.push(newObj);
+                        canvas.add(newObj);
+                        newObj.on('image:loaded', function () {
+                            canvas.renderAll.bind(canvas);
+                            canvas.moveTo(newObj, 999);
+                        });
+                    }
+                    // todo: recreate image is buggy, size of image is inconsistent
+                    else if (obj.type === "image") {
+                        fabric.Image.fromURL(obj.get("xlink:href"),
+                            function (imgObj) {
+                                canvas.add(imgObj)
+                            }, {
+                                top: (canvas.height / 2) + obj.top,
+                                left: (canvas.height / 2) + obj.left,
+                                width: obj.get('width'),
+                                height: obj.get('height')
+                            }
+                        );
+                    }
+                    // todo: recreate text from svg
+                    else {
+                        canvas.add(obj);
+                    }
+                }
+
+                canvas.renderAll();
+                div.dialog('destroy');
+
+            });
     }
 
     function recreateAttachments(obsArray) {

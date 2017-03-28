@@ -20,9 +20,6 @@ import java.util.Date;
 
 import static org.openmrs.module.annotation.Utils.*;
 
-/**
- * Created by abhij on 2/17/2017.
- */
 @Component(Constants.Component.OBSERVATION_SAVER)
 public class ObservationSaver {
 	

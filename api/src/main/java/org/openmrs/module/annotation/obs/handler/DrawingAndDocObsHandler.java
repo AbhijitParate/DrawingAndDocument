@@ -9,40 +9,30 @@ import org.openmrs.obs.handler.BinaryStreamHandler;
 
 import java.io.File;
 
-/**
- * Created by abhijit on 2/16/17.
- */
-@Deprecated
-public class SvgObsHandler extends AbstractComplexObsHandler {
+public class DrawingAndDocObsHandler extends AbstractComplexObsHandler {
 	
-	//	protected final Log log = LogFactory.getLog(getClass());
-	
-	public SvgObsHandler() {
+	public DrawingAndDocObsHandler() {
 		super();
-		log.error(getClass().getName() + ".SvgObsHandler()");
+		log.error(getClass().getName() + ".DrawingAndDocObsHandler()");
 	}
 	
 	@Override
 	protected void setParentComplexObsHandler() {
-		setComplexObsHandler(new BinaryStreamHandler());
 		log.error(getClass().getName() + ".setParentComplexObsHandler()");
+		setComplexObsHandler(new BinaryStreamHandler());
 	}
 	
 	@Override
 	protected ComplexData readComplexData(Obs obs, ValueComplex valueComplex, String view) {
 		log.error(getClass().getName() + ".readComplexData()");
-		String fileName = valueComplex.getFileName();
-		//        if (view.equals(VisitDocumentsConstants.DOC_VIEW_THUMBNAIL)) {
-		//            fileName = buildThumbnailFileName(fileName);
-		//        }
-		
 		// We invoke the parent to inherit from the file reading routines.
 		Obs tmpObs = new Obs();
-		tmpObs.setValueComplex(fileName); // Temp obs used as a safety
-		tmpObs = getComplexObsHandler().getObs(tmpObs, "RAW_VIEW"); // ImageHandler doesn't handle several views
-		ComplexData complexData = tmpObs.getComplexData();
+		tmpObs.setValueComplex(valueComplex.getFileName());
 		
-		// Then we build our own custom complex data
+		ComplexData complexData;
+		tmpObs = getComplexObsHandler().getObs(tmpObs, "RAW_VIEW");
+		complexData = tmpObs.getComplexData();
+		
 		return getComplexDataHelper().build(complexData.getTitle(), complexData.getData(), valueComplex.getMimeType())
 		        .asComplexData();
 	}
@@ -50,29 +40,19 @@ public class SvgObsHandler extends AbstractComplexObsHandler {
 	@Override
 	protected boolean deleteComplexData(Obs obs, ModuleComplexData moduleComplexData) {
 		log.error(getClass().getName() + ".deleteComplexData()");
-		// We use a temp obs whose complex data points to the file names
-		String fileName = moduleComplexData.getTitle();
-		//        String thumbnailFileName = buildThumbnailFileName(fileName);
-		
+		// We use a temp obs whose value complex points to the file name
 		Obs tmpObs = new Obs();
-		//        tmpObs.setValueComplex(thumbnailFileName);
-		//        boolean isThumbNailPurged = getComplexObsHandler().purgeComplexData(tmpObs);
-		tmpObs.setValueComplex(fileName);
+		tmpObs.setValueComplex(moduleComplexData.asComplexData().getTitle()); // Temp obs used as a safety
 		return getComplexObsHandler().purgeComplexData(tmpObs);
-		//        boolean isImagePurged = getComplexObsHandler().purgeComplexData(tmpObs);
-		
-		//        return isThumbNailPurged && isImagePurged;
 	}
 	
 	@Override
-	// 13
 	protected ValueComplex saveComplexData(Obs obs, ModuleComplexData moduleComplexData) {
 		log.error(getClass().getName() + ".saveComplexData()");
 		// We invoke the parent to inherit from the file saving routines.
 		obs = getComplexObsHandler().saveObs(obs);
 		
 		File savedFile = AbstractHandler.getComplexDataFile(obs);
-		log.error("File saved" + savedFile.getName());
 		String savedFileName = savedFile.getName();
 		
 		return new ValueComplex(moduleComplexData.getObsType(), savedFileName, moduleComplexData.getMimeType());
