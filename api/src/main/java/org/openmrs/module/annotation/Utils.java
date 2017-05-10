@@ -96,4 +96,13 @@ public class Utils {
 	public static boolean isValidMimeType(String mimeType) {
 		return Constants.mimeTypes.containsKey(mimeType);
 	}
+	
+	public static boolean isImage(String fileName) {
+		String extension = getExtension(fileName);
+		for (String s : Constants.TEMPLATE_EXTENSIONS)
+			if (extension.toUpperCase().equals(s))
+				return true;
+		
+		return false;
+	}
 }

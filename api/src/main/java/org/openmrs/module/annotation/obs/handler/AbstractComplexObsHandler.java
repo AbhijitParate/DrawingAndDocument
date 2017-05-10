@@ -27,12 +27,12 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	
 	public AbstractComplexObsHandler() {
 		super();
-		log.error(getClass().getName() + ".AbstractComplexObsHandler()");
+		log.info(getClass().getName() + ".AbstractComplexObsHandler()");
 		setParentComplexObsHandler();
 	}
 	
 	protected ComplexDataHelper getComplexDataHelper() {
-		log.error(getClass().getName() + ".getComplexDataHelper()");
+		log.info(getClass().getName() + ".getComplexDataHelper()");
 		return complexDataHelper;
 	}
 	
@@ -45,19 +45,19 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	abstract protected ValueComplex saveComplexData(Obs obs, ModuleComplexData moduleComplexData);
 	
 	protected void setComplexObsHandler(ComplexObsHandler complexObsHandler) {
-		log.error(getClass().getName() + ".setComplexObsHandler()");
+		log.info(getClass().getName() + ".setComplexObsHandler()");
 		this.complexObsHandler = complexObsHandler;
 	}
 	
 	// 14
 	final protected ComplexObsHandler getComplexObsHandler() {
-		log.error(getClass().getName() + ".getComplexObsHandler()");
+		log.info(getClass().getName() + ".getComplexObsHandler()");
 		return complexObsHandler;
 	}
 	
 	@Override
 	final public Obs getObs(Obs obs, String view) {
-		log.error(getClass().getName() + ".getObs()");
+		log.info(getClass().getName() + ".getObs()");
 		ValueComplex valueComplex = new ValueComplex(obs.getValueComplex());
 		if (!ValueComplex.isValidModuleValueComplex(valueComplex.getValueComplex())) { // not our implementation
 			return getComplexObsHandler().getObs(obs, view);
@@ -70,7 +70,7 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	
 	@Override
 	final public boolean purgeComplexData(Obs obs) {
-		log.error(getClass().getName() + ".purgeComplexData()");
+		log.info(getClass().getName() + ".purgeComplexData()");
 		ModuleComplexData docData = fetchModuleComplexData(obs.getComplexData());
 		if (docData == null) { // not our implementation
 			if (obs.getComplexData() == null) {
@@ -85,9 +85,8 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	}
 	
 	@Override
-	// 11
 	final public Obs saveObs(Obs obs) {
-		log.error(getClass().getName() + ".saveObs()");
+		log.info(getClass().getName() + ".saveObs()");
 		// get module obs data and cast it to ModuleComplexData
 		ModuleComplexData moduleComplexData = fetchModuleComplexData(obs.getComplexData());
 		if (moduleComplexData == null) { // not our implementation
@@ -101,7 +100,7 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 		}
 		
 		ValueComplex valueComplex = saveComplexData(obs, moduleComplexData);
-		log.error(getClass().getSimpleName() + "generated valueComplex -> " + valueComplex.getValueComplex());
+		log.info(getClass().getSimpleName() + "generated valueComplex -> " + valueComplex.getValueComplex());
 		obs.setValueComplex(valueComplex.getValueComplex());
 		return obs;
 	}

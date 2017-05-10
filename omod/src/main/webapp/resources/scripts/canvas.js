@@ -23,7 +23,14 @@ $(document).ready(function() {
         preserveObjectStacking: true
     });
 
-    canvas.zoomToPoint(new fabric.Point(canvas.width / 2, canvas.height / 2), 1.0);
+    fabric.Object.prototype.set({
+        transparentCorners: false,
+        cornerColor: "grey",
+        cornerSize: 12,
+        padding: 2
+    });
+
+    // canvas.zoomToPoint(new fabric.Point(canvas.width / 2, canvas.height / 2), 1.0);
 
     canvas.freeDrawingBrush.color = 'black';
 
@@ -72,10 +79,13 @@ $(document).ready(function() {
         // console.log('3 event:mouse:up - X: ' + event.e.offsetX + ' Y: ' + event.e.offsetY);
             if(selectState.isFirstClick === true){
                 if(canvas.getActiveObject())
-                    if(selectState.object.tag === "media" && isEventWithinObject(event.e, selectState.object)) {
+                    if(selectState.object.tag && selectState.object.tag === "media" && isEventWithinObject(event.e, selectState.object)) {
                         console.log('object:double-clicked');
                         selectState.object.show();
                         selectState.isFirstClick = false;
+                    } else if (selectState.object.type === "text" && isEventWithinObject(event.e, selectState.object)){
+                        console.info("Text double clicked.");
+                        createDialogForText(selectState.object);
                     }
             } else {
                 selectState = new SelectState(true, canvas.getActiveObject());
@@ -98,6 +108,93 @@ $(document).ready(function() {
     CANVAS_CURRENT = JSON.stringify(canvas);
 
 });
+
+function createDialogForText(object) {
+    console.info(object);
+    let dialog = $("<div/>");
+    dialog.attr("title", "Annotation");
+
+    let wrapperDiv = $("<div />").css({
+        margin:'5px',
+    });
+
+    let noteTextArea = $("<textarea />");
+    noteTextArea.css({"height":"200", "width":"400", "float":"left","margin-top": "10px"});
+    noteTextArea.attr("title","Annotation");
+    noteTextArea.appendTo(wrapperDiv);
+
+    object?noteTextArea.val(object.text):false;
+
+    var attachBtn, clearBtn, uploadBtn;
+
+    let validate = function () {
+        if(noteTextArea.val() !== ""){
+            attachBtn.button("enable");
+            clearBtn.button("enable");
+        } else {
+            attachBtn.button("disable");
+            clearBtn.button("disable");
+        }
+    };
+
+    noteTextArea.on("change keyup paste", validate);
+
+    wrapperDiv.appendTo(dialog);
+
+    dialog.dialog({
+        modal:true,
+        resizable: true,
+        position: {
+            of: window,
+            at: "center center",
+            my: "center center"
+        },
+        height: "auto",
+        width: "460",
+        open: function () {
+
+            attachBtn = $(".ui-dialog-buttonpane button:contains('Add')");
+            clearBtn = $(".ui-dialog-buttonpane button:contains('Clear')");
+            uploadBtn = $(".ui-dialog-buttonpane button:contains('Upload')");
+
+            !object ? attachBtn.button("disable") : false;
+            !object ? clearBtn.button("disable") : false;
+
+        },
+        close: function () {
+            $(this).dialog("destroy");
+        },
+        autoOpen: false,
+        buttons: {
+            "Clear": function () {
+                console.info("Retry clicked");
+                noteTextArea.val("");
+                attachBtn.button("disable");
+                clearBtn.button("disable");
+            },
+            "Add": function () {
+                console.info("Attach clicked");
+                console.info(noteTextArea.val().replace(/\n/g," "));
+                canvas.remove(object);
+                let text = new fabric.Text(noteTextArea.val().replace(/\n/g," "), {
+                    fontFamily: "sans-serif",
+                    textAlign: "left",
+                    left: object?object.left:100,
+                    top: object?object.top:100,
+                    fill: "black",
+                    charSpacing : 0
+                });
+                canvas.add(text);
+                canvas.renderAll();
+                $(this).dialog("close");
+            },
+            "Cancel": function () {
+                $(this).dialog("close");
+            },
+        }
+    });
+    dialog.dialog("open");
+}
 
 function State(data) {
     this.data = data;

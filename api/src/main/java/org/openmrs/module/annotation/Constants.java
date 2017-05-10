@@ -7,9 +7,13 @@ public class Constants {
 	
 	public static final String MODULE_NAME = "DrawingAndDocs";
 	
+	public static final String DRAWING_TEMPLATES_DIR = "DrawingTemplates";
+	
 	public static final String MODULE_ID = "annotation";
 	
 	public static final String UNKNOWN_MIME_TYPE = "application/octet-stream";
+	
+	public static final String[] TEMPLATE_EXTENSIONS = { "JPEG", "JPG", "PNG" };
 	
 	public static class Component {
 		

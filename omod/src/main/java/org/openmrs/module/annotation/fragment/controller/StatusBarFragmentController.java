@@ -5,9 +5,6 @@ import org.apache.commons.logging.LogFactory;
 import org.openmrs.ui.framework.annotation.FragmentParam;
 import org.openmrs.ui.framework.fragment.FragmentModel;
 
-/**
- * Created by abhij on 3/9/2017.
- */
 public class StatusBarFragmentController {
 	
 	Log log = LogFactory.getLog(getClass());

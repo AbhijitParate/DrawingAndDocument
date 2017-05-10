@@ -6,33 +6,33 @@
 $(document).ready(function() {
 
     // Image
-    fabric.Object.prototype.setOriginToCenter = function () {
-        this._originalOriginX = this.originX;
-        this._originalOriginY = this.originY;
+    // fabric.Object.prototype.setOriginToCenter = function () {
+    //     this._originalOriginX = this.originX;
+    //     this._originalOriginY = this.originY;
+    //
+    //     let center = this.getCenterPoint();
+    //
+    //     this.set({
+    //         originX: 'center',
+    //         originY: 'center',
+    //         left: center.x,
+    //         top: center.y
+    //     });
+    // };
 
-        let center = this.getCenterPoint();
-
-        this.set({
-            originX: 'center',
-            originY: 'center',
-            left: center.x,
-            top: center.y
-        });
-    };
-
-    fabric.Object.prototype.setCenterToOrigin = function () {
-        let originPoint = this.translateToOriginPoint(
-            this.getCenterPoint(),
-            this._originalOriginX,
-            this._originalOriginY);
-
-        this.set({
-            originX: this._originalOriginX,
-            originY: this._originalOriginY,
-            left: originPoint.x,
-            top: originPoint.y
-        });
-    };
+    // fabric.Object.prototype.setCenterToOrigin = function () {
+    //     let originPoint = this.translateToOriginPoint(
+    //         this.getCenterPoint(),
+    //         this._originalOriginX,
+    //         this._originalOriginY);
+    //
+    //     this.set({
+    //         originX: this._originalOriginX,
+    //         originY: this._originalOriginY,
+    //         left: originPoint.x,
+    //         top: originPoint.y
+    //     });
+    // };
 
     // Edit
     // canvas.counter = 0;

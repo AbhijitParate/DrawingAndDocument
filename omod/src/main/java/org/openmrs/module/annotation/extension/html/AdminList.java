@@ -43,12 +43,7 @@ public class AdminList extends AdministrationSectionExt {
 		
 		Map<String, String> map = new HashMap<String, String>();
 		
-		map.put("module/annotation/annotation.form", "annotation.title");
-		map.put("module/annotation/upload.form", "Upload");
-		map.put("module/annotation/download.form", "Download");
-		map.put("annotation/annotation.page", "annotation.refapp.title");
-		map.put("annotation/annotation_demo.page", "Annotation Demo");
-		map.put("annotation/drawing_editor.page", "Annotation Demo 2");
+		map.put("annotation/templates.page", "Manage Templates");
 		
 		return map;
 	}

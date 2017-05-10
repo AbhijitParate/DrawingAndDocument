@@ -33,11 +33,11 @@
     ui.includeJavascript("annotation", "ui.js")
 %>
 <script>
-    var patientid   = ${ patientId };
+    var patientId   = ${ patientId };
     var encounterId = ${ encounterId };
-    var visitid     = ${ visitId };
-    var providerid  = ${ providerId };
-    var returnlink  = "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patientid;
+    var visitId     = ${ visitId };
+    var providerId  = ${ providerId };
+    var returnlink  = "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patientId;
 </script>
 <div id="drawing-and-attachments">
     <h2 style="margin:0;">Edit Drawing</h2>
@@ -48,9 +48,9 @@
     </div>
     ${ui.includeFragment("annotation", "statusBar", [ mode: "edit" ])}
     <div id="main-container" class="outerContainer">
-        ${ui.includeFragment("annotation", "actions_panel")}
-        ${ui.includeFragment("annotation", "canvas")}
-        ${ui.includeFragment("annotation", "modals")}
+        ${ui.includeFragment("annotation", "includes/actions_panel")}
+        ${ui.includeFragment("annotation", "includes/canvas")}
+        ${ui.includeFragment("annotation", "includes/modals")}
     </div>
     <div id="progress-container" hidden>
 

@@ -40,20 +40,16 @@
 			org.openmrs.module.emrapi
 		</require_module>
 	</require_modules>
-
-    <welcome-file-list>
-        <welcome-file> </welcome-file>
-    </welcome-file-list>
 	
 	<!-- Extensions -->
-	<!--<extension>-->
-		<!--<point>org.openmrs.admin.list</point>-->
-		<!--<class>org.openmrs.module.annotation.extension.html.AdminList</class>-->
-	<!--</extension>-->
+	<extension>
+		<point>org.openmrs.admin.list</point>
+		<class>org.openmrs.module.annotation.extension.html.AdminList</class>
+	</extension>
 
-	<!--<aware_of_modules>-->
-		<!--<aware_of_module>org.openmrs.module.legacyui</aware_of_module>-->
-	<!--</aware_of_modules>-->
+	<aware_of_modules>
+		<aware_of_module>org.openmrs.module.legacyui</aware_of_module>
+	</aware_of_modules>
 	
 	
 	<!-- AOP
@@ -172,13 +168,13 @@
 		<file>messages.properties</file>
 	</messages>
 	<messages>
-		<lang>fr</lang>
-		<file>messages_fr.properties</file>
-	</messages>
-	<messages>
 		<lang>es</lang>
 		<file>messages_es.properties</file>
 	</messages>
+    <messages>
+        <lang>fr</lang>
+        <file>messages_fr.properties</file>
+    </messages>
 	<!-- /Internationalization -->
 	
 </module>

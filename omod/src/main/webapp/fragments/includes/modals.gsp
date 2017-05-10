@@ -53,11 +53,7 @@
         <div id="dialog-controls" style="width: 30%">
             <label for="template-select" style="float: left"> Templates </label>
             <select id="template-select" size="6" style="width: 200px;float: left;">
-                <option value="template-1">Template 1</option>
-                <option value="template-2">Template 2</option>
-                <option value="template-3">Template 3</option>
-                <option value="template-4">Template 4</option>
-                <option value="template-5">Template 5</option>
+
             </select>
         </div>
         <div id="preview" style="float: right; width: 70%">

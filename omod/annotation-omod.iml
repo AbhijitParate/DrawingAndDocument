@@ -12,6 +12,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="fabric.min.js" level="application" />
+    <orderEntry type="library" name="spectrum.min.js" level="project" />
+    <orderEntry type="library" name="video.min.js" level="project" />
+    <orderEntry type="library" name="videojs.record.min.js" level="project" />
+    <orderEntry type="library" name="webcam.min.js" level="project" />
+    <orderEntry type="library" name="lightcase.js" level="project" />
     <orderEntry type="module" module-name="annotation-api" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.api:openmrs-api:1.11.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
@@ -154,6 +160,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpclient:4.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpcore:4.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:coreapps-api:1.11.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:legacyui-omod:1.2.4-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:legacyui-api:1.2.4-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:webservices.rest-omod:2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:webservices.rest-omod-common:2.14" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.atteo:evo-inflector:1.2.1" level="project" />
@@ -178,11 +186,5 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-reflect:1.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-api-mockito:1.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-api-support:1.5" level="project" />
-    <orderEntry type="library" name="fabric.min.js" level="application" />
-    <orderEntry type="library" name="spectrum.min.js" level="project" />
-    <orderEntry type="library" name="video.min.js" level="project" />
-    <orderEntry type="library" name="videojs.record.min.js" level="project" />
-    <orderEntry type="library" name="webcam.min.js" level="project" />
-    <orderEntry type="library" name="lightcase.js" level="project" />
   </component>
 </module>

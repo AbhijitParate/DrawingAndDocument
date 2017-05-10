@@ -62,7 +62,6 @@ $(document).ready(function () {
                 let mediaobjs = [];
                 for(let i = 0; i < objects.length; i++) {
                     let obj = objects[i];
-                    console.log(obj);
                     // for our implementation
                     let data = obj.get('preserveAspectRatio');
                     if (data && data.substring(0,4) === "data") {
@@ -79,18 +78,25 @@ $(document).ready(function () {
                     }
                     // todo: recreate image is buggy, size of image is inconsistent
                     else if (obj.type === "image") {
-                        fabric.Image.fromURL(obj.get("xlink:href"),
-                            function (imgObj) {
-                                canvas.add(imgObj)
-                            }, {
-                                top: (canvas.height / 2) + obj.top,
-                                left: (canvas.height / 2) + obj.left,
-                                width: obj.get('width'),
-                                height: obj.get('height')
-                            }
-                        );
+                        console.log("Image ->");
+                        console.log(obj);
+                        console.log("<- Image");
+                        obj.setTop((canvas.height / 2) + obj.top);
+                        obj.setLeft((canvas.width / 2) + obj.left);
+                        obj.setTransformMatrix(null);
+                        canvas.add(obj);
                     }
                     // todo: recreate text from svg
+                    else if (obj.type === "text") {
+                        console.log("Text ->");
+                        console.log(obj);
+                        console.log("<- Text");
+                        let text = new fabric.Text(obj.text, {
+                            top: obj.transformMatrix[5],
+                            left: obj.transformMatrix[4],
+                        });
+                        canvas.add(text);
+                    }
                     else {
                         canvas.add(obj);
                     }
@@ -380,9 +386,9 @@ $(document).ready(function () {
     }
 
     function prepareForm() {
-        formData.append("patientid", patientid);
-        formData.append("visitid", visitid);
-        formData.append("providerid", providerid);
+        formData.append("patientid", patientId);
+        formData.append("visitid", visitId);
+        formData.append("providerid", providerId);
     }
 
     function saveSVG() {
@@ -434,7 +440,7 @@ $(document).ready(function () {
         });
 
         //open the request
-        request.open("POST","upload.form");
+        request.open("POST","../ws/rest/v1/annotation/upload");
 
         //set the request header for no caching
         request.setRequestHeader("Cache-Control","no-cache");

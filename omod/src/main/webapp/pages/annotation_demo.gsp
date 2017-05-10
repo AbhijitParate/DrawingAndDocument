@@ -1,1 +1,0 @@
-${ui.includeFragment("annotation", "header")}

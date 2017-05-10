@@ -206,12 +206,7 @@ $(document).ready(function() {
     // 5.Text
     $("#text").click(function () {
         enableSelect();
-        let text = new fabric.IText('Type here...', {
-            left: 100,
-            top: 100,
-        });
-        canvas.add(text);
-        canvas.renderAll();
+        createDialogForText();
     });
 
     // 6.Color Picker

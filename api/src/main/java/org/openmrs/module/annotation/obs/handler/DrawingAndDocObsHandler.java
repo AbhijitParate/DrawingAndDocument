@@ -13,7 +13,7 @@ public class DrawingAndDocObsHandler extends AbstractComplexObsHandler {
 	
 	public DrawingAndDocObsHandler() {
 		super();
-		log.error(getClass().getName() + ".DrawingAndDocObsHandler()");
+		log.info(getClass().getName() + ".DrawingAndDocObsHandler()");
 	}
 	
 	@Override
@@ -24,7 +24,7 @@ public class DrawingAndDocObsHandler extends AbstractComplexObsHandler {
 	
 	@Override
 	protected ComplexData readComplexData(Obs obs, ValueComplex valueComplex, String view) {
-		log.error(getClass().getName() + ".readComplexData()");
+		log.info(getClass().getName() + ".readComplexData()");
 		// We invoke the parent to inherit from the file reading routines.
 		Obs tmpObs = new Obs();
 		tmpObs.setValueComplex(valueComplex.getFileName());
@@ -39,7 +39,7 @@ public class DrawingAndDocObsHandler extends AbstractComplexObsHandler {
 	
 	@Override
 	protected boolean deleteComplexData(Obs obs, ModuleComplexData moduleComplexData) {
-		log.error(getClass().getName() + ".deleteComplexData()");
+		log.info(getClass().getName() + ".deleteComplexData()");
 		// We use a temp obs whose value complex points to the file name
 		Obs tmpObs = new Obs();
 		tmpObs.setValueComplex(moduleComplexData.asComplexData().getTitle()); // Temp obs used as a safety
@@ -48,7 +48,7 @@ public class DrawingAndDocObsHandler extends AbstractComplexObsHandler {
 	
 	@Override
 	protected ValueComplex saveComplexData(Obs obs, ModuleComplexData moduleComplexData) {
-		log.error(getClass().getName() + ".saveComplexData()");
+		log.info(getClass().getName() + ".saveComplexData()");
 		// We invoke the parent to inherit from the file saving routines.
 		obs = getComplexObsHandler().saveObs(obs);
 		

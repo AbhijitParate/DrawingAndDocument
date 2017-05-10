@@ -39,6 +39,7 @@
 		<coreappsVersion>1.11.1</coreappsVersion>
 		<idgenVersion>4.4.0</idgenVersion>
 		<htmlformentryVersion>3.3.1</htmlformentryVersion>
+		<legacyUiVersion>1.2.4-SNAPSHOT</legacyUiVersion>
 	</properties>
 
 	<dependencyManagement>
@@ -146,6 +147,13 @@
 				<scope>provided</scope>
 			</dependency>
 
+            <dependency>
+                <groupId>org.openmrs.module</groupId>
+                <artifactId>legacyui-omod</artifactId>
+                <version>${legacyUiVersion}</version>
+                <scope>provided</scope>
+            </dependency>
+
 			<!-- End OpenMRS modules -->
 
 			<!-- Importing versions from refapp distro -->
@@ -172,6 +180,7 @@
 			<url>http://repo1.maven.org/maven2</url>
 		</repository>
 	</repositories>
+
 	<pluginRepositories>
 		<pluginRepository>
 			<id>openmrs-repo</id>

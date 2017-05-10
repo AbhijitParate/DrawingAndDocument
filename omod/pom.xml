@@ -118,6 +118,13 @@
 			<scope>provided</scope>
 		</dependency>
 
+        <dependency>
+            <groupId>org.openmrs.module</groupId>
+            <artifactId>legacyui-omod</artifactId>
+            <version>${legacyUiVersion}</version>
+            <scope>provided</scope>
+        </dependency>
+
 		<!--End Ui Framework-->
 
         <!--Rest WebService-->

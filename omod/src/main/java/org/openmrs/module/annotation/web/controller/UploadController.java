@@ -20,6 +20,7 @@ import org.openmrs.Visit;
 import org.openmrs.module.annotation.Constants;
 import org.openmrs.module.annotation.ModuleContext;
 import org.openmrs.module.annotation.ObservationSaver;
+import org.openmrs.module.webservices.rest.web.RestConstants;
 import org.openmrs.util.OpenmrsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -37,7 +38,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 @Controller("${rootArtifactId}.UploadController")
-@RequestMapping(value = "annotation/upload.form")
+@RequestMapping(value = "/rest/" + RestConstants.VERSION_1 + "/annotation/upload")
 public class UploadController {
 	
 	protected final Log log = LogFactory.getLog(getClass());

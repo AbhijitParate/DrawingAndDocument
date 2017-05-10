@@ -44,6 +44,21 @@ $(document).ready(function() {
             }
         },
         open : function () {
+
+            $.ajax({
+                type: "GET",
+                url: "/openmrs/ws/rest/v1/annotation/template/all",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(data){
+                    $("#template-select").empty();
+                    $.each(data, function (i) {
+                        console.log(data[i]);
+                        var option = $("<option />").attr('value',data[i]).text(data[i]).appendTo("#template-select");
+                    });
+                }
+            });
+
             $(".ui-dialog-buttonpane button:contains('Use selected')")
                 .button("disable");
         }
@@ -101,7 +116,7 @@ $(document).ready(function() {
 
     //http://localhost:8080/openmrs/ms/uiframework/resource/annotation/images/no-preview.jpg
     $("#template-select").on("change" ,function () {
-        imagePath = "./../ms/uiframework/resource/annotation/images/templates/" + $(this).val() + ".jpg";
+        imagePath = "/openmrs/ws/rest/v1/annotation/template/get/" + $(this).val();
         console.info(imagePath);
         $("#preview-image").attr('src', imagePath);
 
