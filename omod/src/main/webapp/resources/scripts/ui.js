@@ -10,8 +10,20 @@ $(document).ready(function() {
     let pencil = $("#pencil");
     pencil.webuiPopover({
         placement: 'bottom-right',
-        title: 'Line-width',
-        url: '#slider-container',
+        title: 'Pencil thickness',
+        type: 'html',
+        url: "#pencil-slider-container",
+        width: 150,
+        trigger: 'hover',
+        dismissible:true,
+    });
+
+    let eraser = $("#erase");
+    eraser.webuiPopover({
+        placement: 'bottom-right',
+        title: 'Pencil thickness',
+        type: 'html',
+        url: "#eraser-slider-container",
         width: 150,
         trigger: 'hover',
         dismissible:true,

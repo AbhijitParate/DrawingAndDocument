@@ -5,51 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36e80d1b-bbfd-4c70-bb1e-2f046640a285" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/templates/template-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/templates/template-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/templates/template-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/templates/template-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/templates/template-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ExtensionFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/TemplateUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/TemplatesController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/templates.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/manage_templates.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/editor_old.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/encounterDetails.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/users.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/annotation_demo.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/annotation_preview.gsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/actions_panel.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/actions_panel.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/canvas.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/canvas.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/header.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/header.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/modals.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/actions_panel.gsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Utils.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/AbstractComplexObsHandler.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/AbstractComplexObsHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/DrawingAndDocObsHandler.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/DrawingAndDocObsHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/resources/messages.properties" afterPath="$PROJECT_DIR$/api/src/main/resources/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/annotation-omod.iml" afterPath="$PROJECT_DIR$/omod/annotation-omod.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/pom.xml" afterPath="$PROJECT_DIR$/omod/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/extension/html/AdminList.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/extension/html/AdminList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/StatusBarFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/StatusBarFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/UploadController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/UploadController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/resources/config.xml" afterPath="$PROJECT_DIR$/omod/src/main/resources/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/editDrawing.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/editDrawing.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawing.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawing.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawingPopup.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawingPopup.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/canvas.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/canvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/editor.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/keyboard.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/keyboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js" />
     </list>
     <ignored path="api/target/" />
     <ignored path="omod/target/" />
@@ -123,70 +90,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TemplatesController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/TemplatesController.java">
+      <file leaf-file-name="addEditor.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="62" column="71" lean-forward="false" selection-start-line="62" selection-start-column="71" selection-end-line="62" selection-end-column="71" />
+            <state relative-caret-position="-11">
+              <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="templates.gsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/templates.gsp">
+      <file leaf-file-name="statusBar.gsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/UploadController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="77" column="95" lean-forward="false" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="95" />
+            <state relative-caret-position="440">
+              <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_templates.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/manage_templates.js">
+      <file leaf-file-name="viewEditor.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="120" column="63" lean-forward="false" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="63" />
+            <state relative-caret-position="-11">
+              <caret line="50" column="67" lean-forward="false" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="import.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js">
+      <file leaf-file-name="editEditor.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="53" column="50" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+            <state relative-caret-position="-11">
+              <caret line="50" column="67" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="67" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modals.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="54" column="49" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="49" />
-              <folding>
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -253,11 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/omod/src/main/resources/apps/encounterDetails_extension.json" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/styles/editor.css" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/actions_panel.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/AnnotationResourceController.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/data/ModuleComplexData.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/datahelper/ComplexDataHelper.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationActivator.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ModuleContext.java" />
@@ -285,15 +219,10 @@
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/UploadController.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/StatusBarFragmentController.java" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/statusBar.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/editor.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/canvas.js" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/DrawingAndDocObsHandler.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/extension/html/AdminList.java" />
         <option value="$PROJECT_DIR$/omod/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -301,9 +230,19 @@
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/AbstractComplexObsHandler.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/TemplatesController.java" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/manage_templates.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/templates.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions2.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/actions_panel.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/keyboard.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp" />
       </list>
     </option>
   </component>
@@ -463,112 +402,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="webapp">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="templates">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="annotation-omod">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="omod">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="webapp">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="resources">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="annotation-omod">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="omod">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="webapp">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="resources">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="scripts">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="annotation-omod">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="omod">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="webapp">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="resources">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="scripts">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="attachments">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -783,6 +616,10 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="org/openmrs/module/annotation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="fragment/controller">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -1545,7 +1382,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/FileSaver.min.js" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3034483" />
@@ -1561,16 +1398,16 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\fragments" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\fragments\includes" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts\libs" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\styles\libs" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\styles\font" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="org.openmrs.module.annotation" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\pages" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\resources\templates" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\fragments" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts\attachments" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.openmrs.module.annotation.obs.handler" />
@@ -1579,12 +1416,12 @@
       <recent name="org.openmrs.module.annotation.obs.data" />
       <recent name="org.openmrs.module.annotation" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\pages" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\resources\templates" />
       <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\fragments" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\fragments\includes" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts\libs" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\styles\libs" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\styles\font" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts\attachments" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.Run">
@@ -2164,7 +2001,7 @@
       <workItem from="1494376382256" duration="6647000" />
       <workItem from="1494386381548" duration="241000" />
       <workItem from="1494386660109" duration="13702000" />
-      <workItem from="1494442866189" duration="5809000" />
+      <workItem from="1494442866189" duration="11342000" />
     </task>
     <task id="LOCAL-00001" summary="New Start on Windows">
       <created>1487360554989</created>
@@ -2285,11 +2122,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490736423901</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added manage template page in admin dashboard">
+      <created>1494448758554</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1494448758554</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="576571000" />
+    <option name="totallyTimeSpent" value="582104000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2327,6 +2171,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24400958" sideWeight="0.49433428" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16950959" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32564104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21845049" sideWeight="0.5056657" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2336,7 +2181,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="91" y="91" width="2378" height="1220" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32564104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2419,7 +2263,8 @@
     <MESSAGE value="Added popup view in patient dashboard" />
     <MESSAGE value="Removed multiple ObsHandlers&#10;Renamed ObsTypes and Descriptions" />
     <MESSAGE value="Added date to view, edit , popup encounter." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added date to view, edit , popup encounter." />
+    <MESSAGE value="Added manage template page in admin dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added manage template page in admin dashboard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2432,27 +2277,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/drawingObsEncounterTemplate.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/compareObservations.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawingPopup.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawing.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -2523,35 +2347,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/keyboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2586,20 +2382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/AddEditorFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EditEditorFragmentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -2607,17 +2389,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="153" column="39" lean-forward="true" selection-start-line="153" selection-start-column="39" selection-end-line="153" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2648,6 +2424,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2655,13 +2432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -2876,22 +2646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/TemplatesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="62" column="71" lean-forward="false" selection-start-line="62" selection-start-column="71" selection-end-line="62" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-672">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/manage_templates.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -2908,13 +2662,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="54" column="49" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="49" />
+        <state relative-caret-position="250">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="190" column="22" lean-forward="true" selection-start-line="190" selection-start-column="22" selection-end-line="190" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15500">
+          <caret line="620" column="81" lean-forward="false" selection-start-line="620" selection-start-column="81" selection-end-line="620" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2929,6 +2733,62 @@
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/TemplatesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="62" column="71" lean-forward="false" selection-start-line="62" selection-start-column="71" selection-end-line="62" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="50" column="67" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="50" column="67" lean-forward="false" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/AddEditorFragmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

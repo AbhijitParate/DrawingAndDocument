@@ -2,24 +2,38 @@
  * Created by abhij on 3/7/2017.
  *
  */
-
-let drawColor = "#000", fillColor;
+let fillColor;
 
 $(document).ready(function() {
 
+    let DRAW_COLOR = 'BLACK';
+
+    var PENCIL_SIZE = 10, ERASE_SIZE = 10;
+
     function enableSelect() {
-        EDITOR_MODE = SELECT;
         canvas.isDrawingMode = false;
         canvas.selection = true;
         canvas.hoverCursor = 'move';
     }
 
     function enablePencil() {
-        EDITOR_MODE = DRAW;
+        console.debug(PENCIL_SIZE);
+        canvas.freeDrawingBrush.width = PENCIL_SIZE;
+        canvas.freeDrawingBrush.color = DRAW_COLOR;
         canvas.isDrawingMode = true;
-        canvas.freeDrawingBrush.color = drawColor;
         canvas.selection = false;
         canvas.hoverCursor = 'crosshair';
+        EDITOR_MODE = DRAW;
+    }
+
+    function enableEraser() {
+        console.debug(ERASE_SIZE);
+        canvas.freeDrawingBrush.width = ERASE_SIZE;
+        canvas.freeDrawingBrush.color = 'white';
+        canvas.isDrawingMode = true;
+        canvas.selection = false;
+        canvas.hoverCursor = 'crosshair';
+        EDITOR_MODE = ERASE;
     }
 
 //1.Draw
@@ -27,31 +41,53 @@ $(document).ready(function() {
     $("#pencil").click(function () {
         enablePencil();
     });
+
     // 1a.Slider
-    let handle = $("#custom-handle");
-    $("#size").slider({
+    let pencil_handle = $("#pencil-handle");
+    $("#pencil-size").slider({
         value: 10,
         min: 1,
         max: 99,
         step: 1,
         create: function() {
-            handle.text(
+            pencil_handle.text(
                 $(this).slider("value")
             );
         },
         slide: function( event, ui ) {
-            handle.text( ui.value );
+            pencil_handle.text( ui.value );
         },
         change: function (event, ui) {
-            canvas.freeDrawingBrush.width = parseInt(ui.value, 10) || 1;
+            PENCIL_SIZE =  parseInt(ui.value, 10) || 1;
+            canvas.freeDrawingBrush.width = PENCIL_SIZE;
             enablePencil();
         }
     });
+
     // 2.Erase
     $("#erase").click(function () {
-        enablePencil();
-        EDITOR_MODE = ERASE;
-        canvas.freeDrawingBrush.color = 'white';
+        enableEraser();
+    });
+
+    let eraser_handle = $("#eraser-handle");
+    $("#eraser-size").slider({
+        value: 10,
+        min: 1,
+        max: 99,
+        step: 1,
+        create: function() {
+            eraser_handle.text(
+                $(this).slider("value")
+            );
+        },
+        slide: function( event, ui ) {
+            eraser_handle.text( ui.value );
+        },
+        change: function (event, ui) {
+            ERASE_SIZE = parseInt(ui.value, 10) || 1;
+            canvas.freeDrawingBrush.width = ERASE_SIZE;
+            enableEraser();
+        }
     });
 
     // 3.Shapes
@@ -227,7 +263,8 @@ $(document).ready(function() {
             ["#600", "#783f04", "#7f6000", "#274e13", "#0c343d", "#073763", "#20124d", "#4c1130"]
         ],
         change: function (color) {
-            drawColor = canvas.freeDrawingBrush.color = color.toHexString(true);
+            DRAW_COLOR = color.toHexString(true);
+            canvas.freeDrawingBrush.color = DRAW_COLOR;
         }
     });
 

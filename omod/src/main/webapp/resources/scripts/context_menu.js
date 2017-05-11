@@ -618,6 +618,7 @@ $(document).ready(function() {
             createCamcorderDialog();
             dialog.dialog("destroy");
         }).appendTo(dialog);
+        $("<p />").text("Supported formats: MP4, Webm or 3GP ").appendTo(dialog);
         dialog.dialog({
             modal:true,
             resizable: true,

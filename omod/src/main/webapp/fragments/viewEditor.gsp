@@ -48,7 +48,7 @@
     </div>
     ${ui.includeFragment("annotation", "statusBar", [ mode: "view" ])}
     <div id="main-container" class="outerContainer">
-        ${ui.includeFragment("annotation", "includes/actions_panel")}
+        ${ui.includeFragment("annotation", "includes/editor_actions")}
         ${ui.includeFragment("annotation", "includes/canvas")}
         ${ui.includeFragment("annotation", "includes/modals")}
     </div>

@@ -1,6 +1,12 @@
-<div id="slider-container" class="webui-popover-content">
-    <div id="size" >
-        <div id="custom-handle" class="ui-slider-handle"></div>
+<div id="pencil-slider-container" class="webui-popover-content">
+    <div id="pencil-size" >
+        <div id="pencil-handle" class="ui-slider-handle"></div>
+    </div>
+</div>
+
+<div id="eraser-slider-container" class="webui-popover-content">
+    <div id="eraser-size" >
+        <div id="eraser-handle" class="ui-slider-handle"></div>
     </div>
 </div>
 

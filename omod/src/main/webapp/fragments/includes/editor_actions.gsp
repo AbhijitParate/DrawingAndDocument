@@ -173,7 +173,7 @@
                 </svg>
             </button>
         </div>
-        <h3 class="control-header">Import</h3>
+        <h3 class="control-header">Import to canvas</h3>
         <div style="padding: 1%;">
             <button type="button" id="import-camera" class="button-regular ui-button ui-widget ui-corner-all" title="Import image using camera">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -195,7 +195,7 @@
                 SVG
             </button>
         </div>
-        <h3 class="control-header">Attach</h3>
+        <h3 class="control-header">Attach files</h3>
         <div style="padding: 1%;">
             <button type="button" id="attachImage" class="button-regular ui-button ui-widget ui-corner-all" title="Attach image">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
