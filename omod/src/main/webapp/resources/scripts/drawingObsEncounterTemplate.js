@@ -69,9 +69,13 @@ $(function() {
         if(encounterDetailsSection.html() == "") {
             encounterDetailsSection.html("<i class=\"icon-spinner icon-spin icon-2x pull-left\"></i>");
         }
+
+        var url = "/openmrs/ws/rest/v1/annotation/encounter/get?encounterid="+encounterId;
         $.getJSON(
             //emr.fragmentActionLink("[module name]", "[lower(c)ontroller name]FragmentController", "[function name]", { [parameter name]: [parameter value] })
-            emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: encounterId })
+            // emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: encounterId })
+            url
+
         ).success(function(data){
             // this is where data is received from DrawingDetailsFragmentController#getEncounterDetails as json
 

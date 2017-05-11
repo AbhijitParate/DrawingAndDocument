@@ -21,7 +21,12 @@ $(document).ready(function () {
     function loadDataFromEncounter() {
         console.debug("EcnounterId : " + encounterId);
 
-        $.getJSON(emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: encounterId }),
+        // var url = emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: encounterId });
+        var url = "/openmrs/ws/rest/v1/annotation/encounter/get?encounterid="+encounterId;
+
+        console.debug(url);
+
+        $.getJSON(url,
             function success(data) {
                 recreateCanvas(data.drawing);
                 if(data.obs.length > 0) {

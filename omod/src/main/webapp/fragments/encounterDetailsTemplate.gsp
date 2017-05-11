@@ -9,7 +9,7 @@
 %>
 
 <div id="annotation-encounter-details">
-<script type="text/template" id="drawingObsEncounterTemplate">
+<script type="text/template" id="encounterDetailsTemplate">
 <li>
     <div class="encounter-date">
         <i class="icon-time"></i>

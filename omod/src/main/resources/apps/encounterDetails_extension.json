@@ -4,9 +4,9 @@
     "extensionPointId": "org.openmrs.referenceapplication.encounterTemplate",
     "type": "fragment",
     "extensionParams": {
-      "templateId": "drawingObsEncounterTemplate",
+      "templateId": "encounterDetailsTemplate",
       "templateFragmentProviderName": "annotation",
-      "templateFragmentId": "drawingObsEncounterTemplate",
+      "templateFragmentId": "encounterDetailsTemplate",
       "supportedEncounterTypes": {
         "43c25184-f41f-11e6-bc64-92361f002671": {
           "icon": "icon-paper-clip",

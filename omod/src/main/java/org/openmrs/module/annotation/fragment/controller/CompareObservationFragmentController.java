@@ -4,7 +4,7 @@ import org.openmrs.Encounter;
 import org.openmrs.Patient;
 import org.openmrs.Visit;
 import org.openmrs.api.VisitService;
-import org.openmrs.module.annotation.fragment.controller.parser.Parser;
+import org.openmrs.module.annotation.web.controller.parser.Parser;
 import org.openmrs.ui.framework.SimpleObject;
 import org.openmrs.ui.framework.annotation.SpringBean;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * Created by abhij on 2/23/2017.
  */
+@Deprecated
 public class CompareObservationFragmentController {
 	
 	public static final String VISIT = "visits";

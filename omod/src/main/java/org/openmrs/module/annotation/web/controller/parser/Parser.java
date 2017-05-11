@@ -1,4 +1,4 @@
-package org.openmrs.module.annotation.fragment.controller.parser;
+package org.openmrs.module.annotation.web.controller.parser;
 
 import org.openmrs.Encounter;
 import org.openmrs.Obs;
