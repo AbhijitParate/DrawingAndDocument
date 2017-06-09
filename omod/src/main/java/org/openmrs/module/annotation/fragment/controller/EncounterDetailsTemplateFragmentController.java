@@ -23,7 +23,7 @@ public class EncounterDetailsTemplateFragmentController {
 	        @SpringBean("encounterService") EncounterService encounterService) {
 		
 		//		model.addAttribute("patient", patient);
-		log.error("EncounterDetailsTemplateFragmentController called");
+		log.debug("EncounterDetailsTemplateFragmentController called");
 		model.put("patient", patient);
 		model.put("visit", visit);
 		model.put("encounters", visit.getEncounters());

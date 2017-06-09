@@ -12,7 +12,7 @@ public class StatusBarFragmentController {
 	// TODO: 3/9/2017 Customize for view only
 	public void controller(FragmentModel model, @FragmentParam(value = "mode", required = false) String mode)
 	        throws Exception {
-		log.error(getClass().getSimpleName() + ".controller()");
+		log.debug(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("mode", mode);
 	}
 }

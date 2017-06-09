@@ -34,14 +34,14 @@ public class ObservationSaver {
 	private ComplexDataHelper complexDataHelper;
 	
 	public Obs saveObservationFromFile(Person person, Encounter encounter, File file) throws IOException {
-		log.error(getClass().getSimpleName() + ".saveObservationFromFile() entered.");
-		log.error("Received file name : " + file.getName());
+		log.debug(getClass().getSimpleName() + ".saveObservationFromFile() entered.");
+		log.debug("Received file name : " + file.getName());
 		String fileExtension = getFileExtension(file.getName());
-		log.error("fileExtension : " + fileExtension);
+		log.debug("fileExtension : " + fileExtension);
 		String mimeType = getMimeTypeFromExtension(fileExtension);
-		log.error("mimeType : " + mimeType);
+		log.debug("mimeType : " + mimeType);
 		Constants.ContentType contentType = getContentType(mimeType);
-		log.error("contentType : " + contentType);
+		log.debug("contentType : " + contentType);
 		
 		ConceptComplex conceptComplex = moduleContext.getConceptComplex(contentType);
 		
@@ -53,20 +53,20 @@ public class ObservationSaver {
 		ComplexData complexData = complexDataHelper.build(file.getName(), obsData, mimeType).asComplexData();
 		
 		obs.setComplexData(complexData);
-		log.error("ValueComplex before saving Obs -> ");
-		log.error(obs.getValueComplex());
+		log.debug("ValueComplex before saving Obs -> ");
+		log.debug(obs.getValueComplex());
 		
 		obs = moduleContext.getObsService().saveObs(obs, getClass().toString());
 		
-		log.error("ValueComplex after saving obs -> ");
-		log.error(obs.getValueComplex());
+		log.debug("ValueComplex after saving obs -> ");
+		log.debug(obs.getValueComplex());
 		
 		return obs;
 	}
 	
 	public Obs saveObservationFromUuid(Person person, Encounter encounter, String obsUuid) throws IOException {
-		log.error(getClass().getSimpleName() + ".saveObservationFromUuid() entered.");
-		log.error("Received UUID name : " + obsUuid);
+		log.debug(getClass().getSimpleName() + ".saveObservationFromUuid() entered.");
+		log.debug("Received UUID name : " + obsUuid);
 		
 		// Getting the Core/Platform complex data object
 		Obs obs = moduleContext.getObsService().getObsByUuid(obsUuid);
@@ -78,13 +78,13 @@ public class ObservationSaver {
 		ModuleComplexData moduleComplexData = moduleContext.getComplexDataHelper().build(complexData);
 		
 		String fileExtension = getFileExtension(moduleComplexData.getTitle());
-		log.error("fileExtension : " + fileExtension);
+		log.debug("fileExtension : " + fileExtension);
 		
 		String mimeType = moduleComplexData.getMimeType();
-		log.error("mimeType : " + mimeType);
+		log.debug("mimeType : " + mimeType);
 		
 		Constants.ContentType contentType = getContentType(mimeType);
-		log.error("contentType : " + contentType);
+		log.debug("contentType : " + contentType);
 		
 		ConceptComplex conceptComplex = moduleContext.getConceptComplex(contentType);
 		
@@ -97,13 +97,13 @@ public class ObservationSaver {
 		        .asComplexData();
 		
 		newObs.setComplexData(newComplexData);
-		log.error("ValueComplex before saving Obs -> ");
-		log.error(newObs.getValueComplex());
+		log.debug("ValueComplex before saving Obs -> ");
+		log.debug(newObs.getValueComplex());
 		
 		newObs = moduleContext.getObsService().saveObs(newObs, getClass().toString());
 		
-		log.error("ValueComplex after saving obs -> ");
-		log.error(newObs.getValueComplex());
+		log.debug("ValueComplex after saving obs -> ");
+		log.debug(newObs.getValueComplex());
 		
 		return newObs;
 	}

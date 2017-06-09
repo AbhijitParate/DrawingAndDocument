@@ -65,11 +65,11 @@ public class UploadController {
 	        @RequestParam("patientid") Patient patient, @RequestParam("visitid") Visit visit,
 	        @RequestParam("providerid") String providerId) throws Exception {
 		
-		log.debug(getClass().getName() + " Request received with " + files.length + " files.");
-		log.error(getClass().getName() + " filename received : " + fileNames.length);
-		log.error(getClass().getName() + " visitid received : " + visit.getId());
-		log.error(getClass().getName() + " patientid received : " + patient.getId());
-		log.error(getClass().getName() + " providerid received : " + providerId);
+		//		log.debug(getClass().getName() + " Request received with " + files.length + " files.");
+		//		log.debug(getClass().getName() + " filename received : " + fileNames.length);
+		//		log.debug(getClass().getName() + " visitid received : " + visit.getId());
+		//		log.debug(getClass().getName() + " patientid received : " + patient.getId());
+		//		log.debug(getClass().getName() + " providerid received : " + providerId);
 		
 		Provider provider = moduleContext.getProviderService().getProvider(Integer.valueOf(providerId));
 		final Encounter encounter = moduleContext.getModuleEncounter(patient, visit, provider);

@@ -14,6 +14,7 @@ $(document).ready(function() {
         canvas.isDrawingMode = false;
         canvas.selection = true;
         canvas.hoverCursor = 'move';
+        canvas.renderAll();
     }
 
     function enablePencil() {
@@ -98,7 +99,7 @@ $(document).ready(function() {
             left: 100,
             top: 100,
             fill: 'rgba(0,0,0,0)',
-            stroke: canvas.freeDrawingBrush.color,
+            stroke: DRAW_COLOR,
             strokeWidth: 1
         });
         canvas.add(line);
@@ -155,7 +156,7 @@ $(document).ready(function() {
 
         var arrow = new fabric.Polyline(points, {
             fill: 'rgba(0,0,0,0)',
-            stroke: canvas.freeDrawingBrush.color,
+            stroke: DRAW_COLOR,
             opacity: 1,
             strokeWidth: 1,
             originX: 'left',
@@ -176,7 +177,7 @@ $(document).ready(function() {
             top:100,
             radius:100,
             fill: 'rgba(0,0,0,0)',
-            stroke: canvas.freeDrawingBrush.color,
+            stroke: DRAW_COLOR,
             strokeWidth: 1
         });
         canvas.add(circle);
@@ -191,7 +192,7 @@ $(document).ready(function() {
             top: 100,
             left: 100,
             fill: 'rgba(0,0,0,0)',
-            stroke: canvas.freeDrawingBrush.color,
+            stroke: DRAW_COLOR,
             strokeWidth: 1
         });
         canvas.add(rect);
@@ -207,7 +208,7 @@ $(document).ready(function() {
             top: 100,
             left: 100,
             fill: 'rgba(0,0,0,0)',
-            stroke: canvas.freeDrawingBrush.color,
+            stroke: DRAW_COLOR,
             strokeWidth: 1
         });
         canvas.add(tri);
@@ -227,7 +228,7 @@ $(document).ready(function() {
             top: 100,
             angle: 0,
             fill: 'rgba(0,0,0,0)',
-            stroke: canvas.freeDrawingBrush.color,
+            stroke: DRAW_COLOR,
             strokeWidth: 1
         });
         canvas.add(pol);

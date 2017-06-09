@@ -28,7 +28,7 @@ public class ComplexDataHelper {
 	// TODO: 3/8/2017 MimeType can be removed from the signature and generate from file extension
 	// 7
 	public ModuleComplexData build(String fileName, Object data, String mimeType) {
-		log.error(getClass().getName() + ".build(1,2,3)");
+		log.debug(getClass().getName() + ".build(1,2,3)");
 		return new ModuleComplexData(fileName, data, mimeType);
 	}
 	
@@ -40,7 +40,7 @@ public class ComplexDataHelper {
 	 *         complexData object
 	 */
 	public ModuleComplexData build(ComplexData complexData) {
-		log.error(getClass().getName() + ".build(1)");
+		log.debug(getClass().getName() + ".build(1)");
 		return new ModuleComplexData(complexData.getTitle(), complexData.getData(),
 		        ((ModuleComplexData) complexData).getMimeType());
 	}

@@ -43,7 +43,7 @@ public class AdminList extends AdministrationSectionExt {
 		
 		Map<String, String> map = new HashMap<String, String>();
 		
-		map.put("annotation/templates.page", "Manage Templates");
+		map.put("annotation/manageTemplates.page", "Manage Templates");
 		
 		return map;
 	}

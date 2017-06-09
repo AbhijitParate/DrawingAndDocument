@@ -69,7 +69,7 @@ public class DownloadController extends MainResourceController {
 		}
 		catch (IOException e) {
 			response.setStatus(500);
-			log.error(
+			log.debug(
 			    "Could not write to HTTP response for when fetching obs with" + " VALUE_COMPLEX='"
 			            + complexObs.getValueComplex() + "'," + " OBS_ID='" + complexObs.getId() + "'," + " OBS_UUID='"
 			            + complexObs.getUuid() + "'", e);

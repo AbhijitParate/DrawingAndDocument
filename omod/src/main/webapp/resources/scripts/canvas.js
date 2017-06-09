@@ -17,9 +17,9 @@ let REDO_STACK = [];
 let updateFlag = true;
 
 $(document).ready(function() {
+
     canvas = window._canvas = new fabric.Canvas('canvas', {
         selection: true,
-        // backgroundColor: '#EAEDED',
         preserveObjectStacking: true
     });
 
@@ -29,10 +29,6 @@ $(document).ready(function() {
         cornerSize: 12,
         padding: 2
     });
-
-    // canvas.zoomToPoint(new fabric.Point(canvas.width / 2, canvas.height / 2), 1.0);
-
-    canvas.freeDrawingBrush.color = 'black';
 
     let selectState = new SelectState(false, null);
 

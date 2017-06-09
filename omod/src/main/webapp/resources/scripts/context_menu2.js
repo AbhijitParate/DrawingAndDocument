@@ -73,11 +73,11 @@ $(document).ready(function() {
             dialog.dialog("destroy");
         });
         input.appendTo(dialog);
-        $("<button />").css('margin', '10px').text("Upload from device").button().on("click", function () {
+        $("<button />").text("Upload from device").button().on("click", function () {
             input.click();
         }).appendTo(dialog);
         $("<p />").appendTo(dialog);
-        $("<button />").css('margin', '10px').text("Capture using web-cam").button().on("click", function () {
+        $("<button />").text("Capture using web-cam").button().on("click", function () {
             createWebcamDialog();
             dialog.dialog("destroy");
         }).appendTo(dialog);
@@ -392,11 +392,11 @@ $(document).ready(function() {
             dialog.dialog("close");
         });
         inputTag.appendTo(dialog);
-        $("<button />").css('margin', '10px').text("Upload from device").button().on("click", function () {
+        $("<button />").text("Upload from device").button().on("click", function () {
             inputTag.click();
         }).appendTo(dialog);
         $("<p />").appendTo(dialog);
-        $("<button />").css('margin', '10px').text("Record using microphone").button().on("click", function () {
+        $("<button />").text("Record using microphone").button().on("click", function () {
             createRecordDialog();
             dialog.dialog("destroy");
         }).appendTo(dialog);
@@ -610,11 +610,11 @@ $(document).ready(function() {
             dialog.dialog("destroy");
         });
         input.appendTo(dialog);
-        $("<button />").css('margin', '10px').text("Upload from device").button().on("click", function () {
+        $("<button />").text("Upload from device").button().on("click", function () {
             input.click();
         }).appendTo(dialog);
         $("<p />").appendTo(dialog);
-        $("<button />").css('margin', '10px').text("Capture using web-cam").button().on("click", function () {
+        $("<button />").text("Capture using web-cam").button().on("click", function () {
             createCamcorderDialog();
             dialog.dialog("destroy");
         }).appendTo(dialog);

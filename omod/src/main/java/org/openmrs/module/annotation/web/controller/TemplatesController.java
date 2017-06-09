@@ -68,7 +68,7 @@ public class TemplatesController extends MainResourceController {
 	@RequestMapping(value = "/upload", method = RequestMethod.POST)
 	public String onUploadTemplate(HttpServletRequest request, @RequestParam(value = "filename") String fileName,
 	        @RequestParam(value = "file") String file, HttpServletResponse response) throws IOException, JSONException {
-		log.error(getClass().getName() + " filename received : " + fileName);
+		log.debug(getClass().getName() + " filename received : " + fileName);
 		
 		if (!file.isEmpty()) {
 			try {

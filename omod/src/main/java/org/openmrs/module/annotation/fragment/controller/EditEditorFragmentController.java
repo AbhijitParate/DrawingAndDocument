@@ -32,7 +32,7 @@ public class EditEditorFragmentController {
 	public void controller(PageRequest pageRequest, FragmentModel model, @RequestParam(value = "visitId") Visit visit,
 	        @RequestParam(value = "patientId") Patient patient, @RequestParam(value = "encounterId") Encounter encounter,
 	        UiSessionContext sessionContext) throws Exception {
-		log.error("controller triggered");
+		log.debug("controller triggered");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("encounterId", encounter.getId());
 		SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");

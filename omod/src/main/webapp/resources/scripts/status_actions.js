@@ -70,7 +70,7 @@ $(document).ready(function () {
                     // for our implementation
                     let data = obj.get('preserveAspectRatio');
                     if (data && data.substring(0,4) === "data") {
-                        let newObj = new Media(data,{
+                        let newObj = new fabric.Media(data,{
                             top: obj.transformMatrix[5],
                             left: obj.transformMatrix[4],
                         });

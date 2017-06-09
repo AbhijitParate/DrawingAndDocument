@@ -36,7 +36,7 @@ public class ViewPopupFragmentController {
 	        @RequestParam(value = "encounterId", required = false) Encounter encounter,
 	        @RequestParam(value = "drawingUuid", required = false) String drawingUuid, UiSessionContext sessionContext,
 	        UiUtils ui, @InjectBeans ModuleContext moduleContext) throws Exception {
-		log.error(getClass().getSimpleName() + ".controller()");
+		log.debug(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("encounterId", encounter.getId());
 		SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");
@@ -53,6 +53,6 @@ public class ViewPopupFragmentController {
 	        @RequestParam(value = "patientId", required = false) Patient patient,
 	        @RequestParam(value = "visitId", required = false) Visit visit, UiSessionContext sessionContext, UiUtils ui,
 	        @InjectBeans ModuleContext moduleContext) throws Exception {
-		log.error("submit triggered");
+		log.debug("submit triggered");
 	}
 }
