@@ -22,17 +22,19 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.text.SimpleDateFormat;
 
 /**
- *  * Controller for a fragment that shows all users  
+ *  * Controller for a fragment that edits encounter  
  */
 public class EditEditorFragmentController {
 	
 	Log log = LogFactory.getLog(getClass());
-	
-	// TODO: 3/9/2017 Customize for edit only
-	public void controller(PageRequest pageRequest, FragmentModel model, @RequestParam(value = "visitId") Visit visit,
-	        @RequestParam(value = "patientId") Patient patient, @RequestParam(value = "encounterId") Encounter encounter,
-	        UiSessionContext sessionContext) throws Exception {
-		log.error("controller triggered");
+
+	public void controller(PageRequest pageRequest,
+                           FragmentModel model,
+                           @RequestParam(value = "visitId") Visit visit,
+                           @RequestParam(value = "patientId") Patient patient,
+                           @RequestParam(value = "encounterId") Encounter encounter,
+                           UiSessionContext sessionContext) throws Exception {
+		log.debug("controller triggered");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("encounterId", encounter.getId());
 		SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");

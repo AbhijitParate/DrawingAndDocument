@@ -17,12 +17,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
+/**
+ * Manage template controller
+ */
 @Controller
 @RequestMapping(value = "/rest/" + RestConstants.VERSION_1 + "/annotation/template")
 public class TemplatesController extends MainResourceController {
 	
 	private final Log log = LogFactory.getLog(getClass());
-	
+
+    /**
+     * Get list of available templates
+     * @param request
+     * @param response
+     * @return
+     * @throws IOException
+     */
 	@ResponseBody
 	@RequestMapping(value = "/all", method = RequestMethod.GET)
 	public String onGetAll(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -35,7 +45,13 @@ public class TemplatesController extends MainResourceController {
 		}
 		return jsonArray.toString();
 	}
-	
+
+    /**
+     * Get template
+     * @param fileName
+     * @param response
+     * @throws IOException
+     */
 	@ResponseBody
 	@RequestMapping(value = "/get/{fileName:.+}", method = RequestMethod.GET)
 	public void onGetTemplate(@PathVariable(value = "fileName") String fileName, HttpServletResponse response)
@@ -50,7 +66,15 @@ public class TemplatesController extends MainResourceController {
 			response.sendError(HttpServletResponse.SC_NOT_FOUND);
 		
 	}
-	
+
+    /**
+     * Delete template
+     * @param fileName
+     * @param response
+     * @return
+     * @throws IOException
+     * @throws JSONException
+     */
 	@ResponseBody
 	@RequestMapping(value = "/delete/{fileName:.+}", method = RequestMethod.GET)
 	public String onDeleteTemplate(@PathVariable(value = "fileName") String fileName, HttpServletResponse response)
@@ -63,12 +87,22 @@ public class TemplatesController extends MainResourceController {
 			return new JSONObject().put("result", "failed").toString();
 		
 	}
-	
+
+    /**
+     * Upload new template
+     * @param request
+     * @param fileName
+     * @param file
+     * @param response
+     * @return
+     * @throws IOException
+     * @throws JSONException
+     */
 	@ResponseBody
 	@RequestMapping(value = "/upload", method = RequestMethod.POST)
 	public String onUploadTemplate(HttpServletRequest request, @RequestParam(value = "filename") String fileName,
 	        @RequestParam(value = "file") String file, HttpServletResponse response) throws IOException, JSONException {
-		log.error(getClass().getName() + " filename received : " + fileName);
+		log.debug(getClass().getName() + " filename received : " + fileName);
 		
 		if (!file.isEmpty()) {
 			try {
@@ -86,7 +120,11 @@ public class TemplatesController extends MainResourceController {
 			return new JSONObject().put("result", "failed").put("description", "File is empty").toString();
 		}
 	}
-	
+
+    /**
+     * Returns template directory
+     * @return
+     */
 	@Override
 	public String getNamespace() {
 		return "v1/annotation/template";

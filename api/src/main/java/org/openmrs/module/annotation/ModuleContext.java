@@ -80,24 +80,32 @@ public class ModuleContext extends ModuleProperties {
 	public AdministrationService getAdministrationService() {
 		return administrationService;
 	}
-	
-	// 5
+
+    /**
+     * Generate concept complex based on contentType
+     * @param contentType
+     * @return
+     */
 	public ConceptComplex getConceptComplex(Constants.ContentType contentType) {
-		log.error(getClass().getName() + ".getConceptComplex()");
+		log.debug(getClass().getName() + ".getConceptComplex()");
 		Map<String, String> map = getMapByGlobalProperty(Constants.GlobalPropertyPIdentifier.CONCEPT_COMPLEX_UUID_MAP);
-		log.error("Concept Complex Map " + map.toString());
+		log.debug("Concept Complex Map " + map.toString());
 		Concept concept = getConceptService().getConceptByUuid(map.get(contentType.toString()));
 		if (concept != null) {
-			log.error("Concept UUID for content type " + concept.getUuid());
-			log.error("Concept is not null for content type " + contentType);
+			log.debug("Concept UUID for content type " + concept.getUuid());
+			log.debug("Concept is not null for content type " + contentType);
 			return getConceptService().getConceptComplex(concept.getConceptId());
 		}
-		log.error("Concept is null for content type " + contentType);
+		log.debug("Concept is null for content type " + contentType);
 		return getDefaultConceptComplex();
 	}
-	
+
+    /**
+     * get the list of concepts
+     * @return
+     */
 	public List<String> getConceptComplexList() {
-		log.error(getClass().getName() + ".getConceptComplexList()");
+		log.debug(getClass().getName() + ".getConceptComplexList()");
 		List<String> list = Collections.<String> emptyList();
 		final String globalPropertyName = Constants.GlobalPropertyPIdentifier.CONCEPT_COMPLEX_UUID_LIST;
 		String globalProperty = administrationService.getGlobalProperty(globalPropertyName);
@@ -108,26 +116,34 @@ public class ModuleContext extends ModuleProperties {
 			list = mapper.readValue(globalProperty, typeRef);
 		}
 		catch (Exception e) {
-			log.error("Could not parse global property '" + globalPropertyName + "' into a List<String>.", e);
+			log.debug("Could not parse global property '" + globalPropertyName + "' into a List<String>.", e);
 		}
 		return list;
 	}
-	
+
+    /**
+     * get concept complex template for the module
+     * @return
+     */
 	private ConceptComplex getDefaultConceptComplex() {
-		log.error(getClass().getName() + ".getDefaultConceptComplex()");
+		log.debug(getClass().getName() + ".getDefaultConceptComplex()");
 		String globalPropertyName = Constants.GlobalPropertyPIdentifier.DEFAULT_CONCEPT_COMPLEX_UUID;
 		Concept concept = getConceptByGlobalProperty(globalPropertyName);
-		log.error("Default Concept UUID for content type " + concept.getUuid());
+		log.debug("Default Concept UUID for content type " + concept.getUuid());
 		ConceptComplex conceptComplex = getConceptService().getConceptComplex(concept.getConceptId());
 		if (conceptComplex == null) {
 			throw new IllegalStateException("Configuration required: " + globalPropertyName);
 		}
 		return conceptComplex;
 	}
-	
-	// 6
+
+    /**
+     * Get global properties map by name
+     * @param globalPropertyName
+     * @return
+     */
 	protected Map<String, String> getMapByGlobalProperty(String globalPropertyName) {
-		log.error(getClass().getName() + ".getMapByGlobalProperty()");
+		log.debug(getClass().getName() + ".getMapByGlobalProperty()");
 		Map<String, String> map = Collections.<String, String> emptyMap();
 		String globalProperty = administrationService.getGlobalProperty(globalPropertyName);
 		
@@ -138,14 +154,22 @@ public class ModuleContext extends ModuleProperties {
 			map = mapper.readValue(globalProperty, typeRef);
 		}
 		catch (Exception e) {
-			log.error("Could not parse global property '" + globalPropertyName + "' into a Map<String, String>.", e);
+			log.debug("Could not parse global property '" + globalPropertyName + "' into a Map<String, String>.", e);
 		}
 		return map;
 	}
 	
 	// 1
+
+    /**
+     * Generates template of encounter for the module
+     * @param patient
+     * @param visit
+     * @param provider
+     * @return
+     */
 	public Encounter getModuleEncounter(Patient patient, Visit visit, Provider provider) {
-		log.error(getClass().getName() + ".getModuleEncounter()");
+		log.debug(getClass().getName() + ".getModuleEncounter()");
 		Encounter encounter = new Encounter();
 		encounter.setVisit(visit);
 		encounter.setEncounterType(getEncounterType());
@@ -156,10 +180,13 @@ public class ModuleContext extends ModuleProperties {
 		encounter = getEncounterService().saveEncounter(encounter);
 		return encounter;
 	}
-	
-	// 3
+
+    /**
+     *
+     * @return
+     */
 	private EncounterRole getEncounterRole() {
-		log.error(getClass().getName() + ".getEncounterRole()");
+		log.debug(getClass().getName() + ".getEncounterRole()");
 		EncounterRole unknownRole = getEncounterService().getEncounterRoleByUuid(EncounterRole.UNKNOWN_ENCOUNTER_ROLE_UUID);
 		if (unknownRole == null) {
 			throw new IllegalStateException("No 'Unknown' encounter role with uuid "
@@ -167,10 +194,13 @@ public class ModuleContext extends ModuleProperties {
 		}
 		return unknownRole;
 	}
-	
-	// 2
+
+    /**
+     * Get encounterType from global properties
+     * @return
+     */
 	private EncounterType getEncounterType() {
-		log.error(getClass().getName() + ".getEncounterType()");
+		log.debug(getClass().getName() + ".getEncounterType()");
 		return getEncounterTypeByGlobalProperty(Constants.GlobalPropertyPIdentifier.ENCOUNTER_TYPE_UUID);
 	}
 }

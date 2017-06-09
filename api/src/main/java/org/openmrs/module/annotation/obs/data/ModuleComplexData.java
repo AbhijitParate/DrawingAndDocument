@@ -42,7 +42,7 @@ public class ModuleComplexData extends ComplexData {
 	// 8
 	public ModuleComplexData(String fileName, Object data, String mimeType) {
 		super(fileName, data);
-		log.error(getClass().getName() + ".ModuleComplexData()");
+		log.debug(getClass().getName() + ".ModuleComplexData()");
 		if (!StringUtils.isEmpty(mimeType)) {
 			this.mimeType = mimeType;
 		}
@@ -51,23 +51,23 @@ public class ModuleComplexData extends ComplexData {
 	
 	// 10
 	public ComplexData asComplexData() {
-		log.error(getClass().getName() + ".asComplexData()");
+		log.debug(getClass().getName() + ".asComplexData()");
 		return this;
 	}
 	
 	// 12 -> 14
 	public String getObsType() {
-		log.error(getClass().getName() + ".getObsType()");
+		log.debug(getClass().getName() + ".getObsType()");
 		return obsType;
 	}
 	
 	public void setObsType(String obsType) {
-		log.error(getClass().getName() + ".setObsType()");
+		log.debug(getClass().getName() + ".setObsType()");
 		this.obsType = obsType;
 	}
 	
 	public byte[] asByteArray() {
-		log.error(getClass().getName() + ".asByteArray()");
+		log.debug(getClass().getName() + ".asByteArray()");
 		return getByteArray(this);
 	}
 	
@@ -120,19 +120,19 @@ public class ModuleComplexData extends ComplexData {
 	 * @return InputStream of complex data
 	 */
 	public InputStream asInputStream() {
-		log.error(getClass().getName() + ".asInputStream()");
+		log.debug(getClass().getName() + ".asInputStream()");
 		return (InputStream) this.getData();
 	}
 	
 	// 9
 	public void setMimeType(String mimeType) {
-		log.error(getClass().getName() + ".setMimeType()");
+		log.debug(getClass().getName() + ".setMimeType()");
 		this.mimeType = mimeType;
 	}
 	
 	// 16
 	public String getMimeType() {
-		log.error(getClass().getName() + ".getMimeType()");
+		log.debug(getClass().getName() + ".getMimeType()");
 		return this.mimeType;
 	}
 }

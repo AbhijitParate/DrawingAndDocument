@@ -14,7 +14,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Parser {
-	
+
+    /**
+     * get observations list
+     * @param encounter
+     * @return
+     */
 	public static ParsedObs parseObservations(Encounter encounter) {
 		
 		ParsedObs parsedObs = new ParsedObs();
@@ -39,7 +44,12 @@ public class Parser {
 		
 		return parsedObs;
 	}
-	
+
+    /**
+     * Generate JSON object
+     * @param obs
+     * @return
+     */
 	private static SimpleObject parseObs(Obs obs) {
 		
 		SimpleObject simpleObject = SimpleObject.create("obsId", obs.getObsId());
@@ -53,7 +63,13 @@ public class Parser {
 		return simpleObject;
 		
 	}
-	
+
+    /**
+     * Get list of visits
+     * @param patient
+     * @param visitService
+     * @return
+     */
 	public static java.util.List<SimpleObject> parseVisits(Patient patient, VisitService visitService) {
 		
 		List<SimpleObject> visits = new LinkedList<SimpleObject>();
@@ -70,7 +86,12 @@ public class Parser {
 		
 		return visits;
 	}
-	
+
+    /**
+     * Get list of encounters
+     * @param visit
+     * @return
+     */
 	public static java.util.List<SimpleObject> parseEncounters(Visit visit) {
 		
 		List<SimpleObject> encounters = new LinkedList<SimpleObject>();
@@ -86,7 +107,12 @@ public class Parser {
 		return encounters;
 		
 	}
-	
+
+    /**
+     * Get list of observations
+     * @param encounter
+     * @return
+     */
 	public static List<SimpleObject> parseAllObservations(Encounter encounter) {
 		
 		List<SimpleObject> observations = new LinkedList<SimpleObject>();

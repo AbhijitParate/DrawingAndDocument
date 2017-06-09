@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 /**
- * Created by abhijit on 2/8/17.
+ * Abstract complex Obs handler which perform basic functions
  */
 public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	
@@ -27,12 +27,12 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	
 	public AbstractComplexObsHandler() {
 		super();
-		log.info(getClass().getName() + ".AbstractComplexObsHandler()");
+		//		log.info(getClass().getName() + ".AbstractComplexObsHandler()");
 		setParentComplexObsHandler();
 	}
 	
 	protected ComplexDataHelper getComplexDataHelper() {
-		log.info(getClass().getName() + ".getComplexDataHelper()");
+		//		log.info(getClass().getName() + ".getComplexDataHelper()");
 		return complexDataHelper;
 	}
 	
@@ -45,19 +45,25 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 	abstract protected ValueComplex saveComplexData(Obs obs, ModuleComplexData moduleComplexData);
 	
 	protected void setComplexObsHandler(ComplexObsHandler complexObsHandler) {
-		log.info(getClass().getName() + ".setComplexObsHandler()");
+		//		log.info(getClass().getName() + ".setComplexObsHandler()");
 		this.complexObsHandler = complexObsHandler;
 	}
 	
-	// 14
 	final protected ComplexObsHandler getComplexObsHandler() {
-		log.info(getClass().getName() + ".getComplexObsHandler()");
+		//		log.info(getClass().getName() + ".getComplexObsHandler()");
 		return complexObsHandler;
 	}
 	
+	/**
+	 * Invoked by handler while retrieving the observation
+	 * 
+	 * @param obs - observation
+	 * @param view - supports only "RAW_VIEW"
+	 * @return - Observation
+	 */
 	@Override
 	final public Obs getObs(Obs obs, String view) {
-		log.info(getClass().getName() + ".getObs()");
+		//		log.info(getClass().getName() + ".getObs()");
 		ValueComplex valueComplex = new ValueComplex(obs.getValueComplex());
 		if (!ValueComplex.isValidModuleValueComplex(valueComplex.getValueComplex())) { // not our implementation
 			return getComplexObsHandler().getObs(obs, view);
@@ -68,13 +74,19 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 		return obs;
 	}
 	
+	/**
+	 * Invoked by handler while saving the complex obs
+	 * 
+	 * @param obs - observation
+	 * @return - result boolean
+	 */
 	@Override
 	final public boolean purgeComplexData(Obs obs) {
-		log.info(getClass().getName() + ".purgeComplexData()");
+		//		log.info(getClass().getName() + ".purgeComplexData()");
 		ModuleComplexData docData = fetchModuleComplexData(obs.getComplexData());
 		if (docData == null) { // not our implementation
 			if (obs.getComplexData() == null) {
-				log.error("Complex data was null and hence was not purged for OBS_ID='" + obs.getObsId() + "'.");
+				//				log.error("Complex data was null and hence was not purged for OBS_ID='" + obs.getObsId() + "'.");
 				return false;
 			} else {
 				return getComplexObsHandler().purgeComplexData(obs);
@@ -84,38 +96,46 @@ public abstract class AbstractComplexObsHandler implements ComplexObsHandler {
 		return deleteComplexData(obs, docData);
 	}
 	
+	/**
+	 * Invoked by handler while saving the obs
+	 * 
+	 * @param obs -
+	 *            {@link org.openmrs.module.emrapi.encounter.domain.EncounterTransaction.Observation}
+	 * @return Obs
+	 */
 	@Override
 	final public Obs saveObs(Obs obs) {
-		log.info(getClass().getName() + ".saveObs()");
+		//		log.info(getClass().getName() + ".saveObs()");
 		// get module obs data and cast it to ModuleComplexData
 		ModuleComplexData moduleComplexData = fetchModuleComplexData(obs.getComplexData());
 		if (moduleComplexData == null) { // not our implementation
 			if (obs.getComplexData() == null) {
-				log.error("Complex data was null and hence was not saved for OBS_ID='" + obs.getObsId() + "'.");
+				//				log.debug("Complex data was null and hence was not saved for OBS_ID='" + obs.getObsId() + "'.");
 				return obs;
 			} else {
-				log.error("Complex data was not null.");
+				//				log.debug("Complex data was not null.");
 				return getComplexObsHandler().saveObs(obs);
 			}
 		}
 		
 		ValueComplex valueComplex = saveComplexData(obs, moduleComplexData);
-		log.info(getClass().getSimpleName() + "generated valueComplex -> " + valueComplex.getValueComplex());
+		//		log.info(getClass().getSimpleName() + "generated valueComplex -> " + valueComplex.getValueComplex());
 		obs.setValueComplex(valueComplex.getValueComplex());
 		return obs;
 	}
 	
-	// 11a
+	/**
+	 * Casts {@link ComplexData} object to {@link ModuleComplexData} object
+	 * 
+	 * @param complexData - {@link ComplexData}
+	 * @return - {@link ModuleComplexData}
+	 */
 	public static ModuleComplexData fetchModuleComplexData(ComplexData complexData) {
 		if (!(complexData instanceof ModuleComplexData)) {
 			return null;
 		}
 		
 		ModuleComplexData moduleComplexData = (ModuleComplexData) complexData;
-		//		String obsType = moduleComplexData.getObsType();
-		//		if (!obsType.startsWith(Constants.ObsType.)) {
-		//			return null;
-		//		}
 		return moduleComplexData;
 	}
 }

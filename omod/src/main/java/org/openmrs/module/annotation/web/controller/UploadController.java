@@ -12,6 +12,7 @@ package org.openmrs.module.annotation.web.controller;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.openmrs.Encounter;
 import org.openmrs.Patient;
@@ -50,44 +51,79 @@ public class UploadController {
 	@Autowired
 	@Qualifier(Constants.Component.OBSERVATION_SAVER)
 	protected ObservationSaver observationSaver;
-	
+
+    /**
+     * This methods is not allowed on the controller
+     * @param response
+     * @throws IOException
+     */
 	@RequestMapping(method = RequestMethod.GET)
 	@ResponseBody
 	public void onGet(HttpServletResponse response) throws IOException {
 		response.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED, "Method not allowed.");
 	}
-	
+
+    /**
+     * Extract parameters for post
+     * @param request
+     * @param files
+     * @param fileNames
+     * @param previousObs
+     * @param patient
+     * @param visit
+     * @param providerId
+     * @return
+     * @throws Exception
+     */
 	@RequestMapping(method = RequestMethod.POST)
 	@ResponseBody
-	public String onPost(HttpServletRequest request, @RequestParam("files[]") String[] files,
-	        @RequestParam("filenames[]") String[] fileNames,
-	        @RequestParam(value = "obs[]", required = false) String[] previousObs,
-	        @RequestParam("patientid") Patient patient, @RequestParam("visitid") Visit visit,
-	        @RequestParam("providerid") String providerId) throws Exception {
+	public String onPost(HttpServletRequest request,
+                         @RequestParam("files[]") String[] files,
+                         @RequestParam("filenames[]") String[] fileNames,
+                         @RequestParam(value = "obs[]", required = false) String[] previousObs,
+                         @RequestParam("patientid") Patient patient,
+                         @RequestParam("visitid") Visit visit,
+                         @RequestParam("providerid") String providerId) throws JSONException {
 		
-		log.debug(getClass().getName() + " Request received with " + files.length + " files.");
-		log.error(getClass().getName() + " filename received : " + fileNames.length);
-		log.error(getClass().getName() + " visitid received : " + visit.getId());
-		log.error(getClass().getName() + " patientid received : " + patient.getId());
-		log.error(getClass().getName() + " providerid received : " + providerId);
+		//		log.debug(getClass().getName() + " Request received with " + files.length + " files.");
+		//		log.debug(getClass().getName() + " filename received : " + fileNames.length);
+		//		log.debug(getClass().getName() + " visitid received : " + visit.getId());
+		//		log.debug(getClass().getName() + " patientid received : " + patient.getId());
+		//		log.debug(getClass().getName() + " providerid received : " + providerId);
 		
 		Provider provider = moduleContext.getProviderService().getProvider(Integer.valueOf(providerId));
 		final Encounter encounter = moduleContext.getModuleEncounter(patient, visit, provider);
-		
-		for (int i = 0; i < files.length; i++) {
-			File dataFile = getFile(fileNames[i], files[i].substring(files[i].indexOf(",") + 1));
-			observationSaver.saveObservationFromFile(patient, encounter, dataFile);
-			dataFile.delete();
-		}
-		if (previousObs != null && previousObs.length > 0) {
-			for (String obsUuid : previousObs)
-				observationSaver.saveObservationFromUuid(patient, encounter, obsUuid);
-		}
-		return new JSONObject().put("result", "success").toString();
-	}
-	
+
+        try {
+            for (int i = 0; i < files.length; i++) {
+                File dataFile = getFile(fileNames[i], files[i].substring(files[i].indexOf(",") + 1));
+                observationSaver.saveObservationFromFile(patient, encounter, dataFile);
+                dataFile.delete();
+            }
+
+            if (previousObs != null && previousObs.length > 0) {
+                // Iterate through obsIds and save it to current encounter
+                for (String obsUuid : previousObs) {
+                    observationSaver.saveObservationFromUuid(patient, encounter, obsUuid);
+}
+            }
+            // Return success
+            return new JSONObject().put("result", "success").toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new JSONObject().put("result", "failed").toString();
+        }
+    }
+
+    /**
+     * Convert base64 dataUrl to file
+     * @param fileName -  File name
+     * @param fileData - Base64 DataUrl
+     * @return - File
+     * @throws IOException
+     */
 	private File getFile(String fileName, String fileData) throws IOException {
-		String storedFileLocation = OpenmrsUtil.getApplicationDataDirectory() + "/Annotation/Temp";
+		String storedFileLocation = OpenmrsUtil.getApplicationDataDirectory() + "/annotation/temp";
 		File folder = new File(storedFileLocation);
 		folder.mkdirs();
 		

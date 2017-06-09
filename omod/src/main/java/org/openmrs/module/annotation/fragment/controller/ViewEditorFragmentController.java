@@ -13,7 +13,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.Encounter;
 import org.openmrs.Patient;
-import org.openmrs.Visit;
 import org.openmrs.module.annotation.ModuleContext;
 import org.openmrs.module.appui.UiSessionContext;
 import org.openmrs.ui.framework.UiUtils;
@@ -31,13 +30,14 @@ public class ViewEditorFragmentController {
 	
 	Log log = LogFactory.getLog(getClass());
 	
-	// TODO: 3/9/2017 Customize for view only
+	// TODO: 5/12/2017 Remove this controller and move averything to StatusBarController
 	public void controller(PageRequest pageRequest, FragmentModel model,
 	        @RequestParam(value = "patientId", required = false) Patient patient,
 	        @RequestParam(value = "encounterId", required = false) Encounter encounter, UiSessionContext sessionContext,
 	        UiUtils ui, @InjectBeans ModuleContext moduleContext) throws Exception {
-		log.error(getClass().getSimpleName() + ".controller()");
+		log.debug(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
+		model.addAttribute("visitId", encounter.getVisit().getId());
 		model.addAttribute("encounterId", encounter.getId());
 		SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");
 		model.addAttribute("encounterTime", sdf.format(encounter.getEncounterDatetime()));
@@ -46,12 +46,5 @@ public class ViewEditorFragmentController {
 		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());
 		model.addAttribute("returnUrl",
 		    "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patient.getId());
-	}
-	
-	public void submit(PageRequest pageRequest, FragmentModel model,
-	        @RequestParam(value = "patientId", required = false) Patient patient,
-	        @RequestParam(value = "visitId", required = false) Visit visit, UiSessionContext sessionContext, UiUtils ui,
-	        @InjectBeans ModuleContext moduleContext) throws Exception {
-		log.error("submit triggered");
 	}
 }

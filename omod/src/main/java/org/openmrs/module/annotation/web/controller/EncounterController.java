@@ -26,6 +26,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Get encounter
+ * This returns the encounter details as JSON
+ */
 @Controller
 @RequestMapping("/rest/" + RestConstants.VERSION_1 + "/annotation/encounter")
 public class EncounterController extends MainResourceController {

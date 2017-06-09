@@ -22,7 +22,7 @@ import org.openmrs.ui.framework.page.PageRequest;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- *  * Controller for a fragment that shows all users  
+ *  * Controller for a fragment to add new drawing  
  */
 public class AddEditorFragmentController {
 	
@@ -31,7 +31,7 @@ public class AddEditorFragmentController {
 	public void controller(PageRequest pageRequest, FragmentModel model, @RequestParam(value = "patientId") Patient patient,
 	        @RequestParam(value = "visitId") Visit visit, UiSessionContext sessionContext, UiUtils ui,
 	        @InjectBeans ModuleContext moduleContext) throws Exception {
-		log.error(getClass().getSimpleName() + ".controller()");
+		log.debug(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("visitId", visit.getId());
 		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());
@@ -42,6 +42,6 @@ public class AddEditorFragmentController {
 	        @RequestParam(value = "patientId", required = false) Patient patient,
 	        @RequestParam(value = "visitId", required = false) Visit visit, UiSessionContext sessionContext, UiUtils ui,
 	        @InjectBeans ModuleContext moduleContext) throws Exception {
-		log.error("submit triggered");
+		log.debug("submit triggered");
 	}
 }

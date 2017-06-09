@@ -47,7 +47,7 @@ public class ValueComplex {
 		if (!isValidModuleValueComplex(valueComplex)) {
 			return;
 		}
-		log.error(getClass().getName() + ".ValueComplex()");
+		log.debug(getClass().getName() + ".ValueComplex()");
 		String[] values = valueComplex.split(SEP);
 		this.obsType = values[1];
 		this.fileName = values[2];
@@ -70,7 +70,7 @@ public class ValueComplex {
 	
 	@Override
 	public String toString() {
-		log.error(getClass().getName() + ".toString()");
+		log.debug(getClass().getName() + ".toString()");
 		return buildValueComplexString(obsType, fileName, mimeType);
 	}
 	
@@ -90,7 +90,7 @@ public class ValueComplex {
 	 * @return String - valueComplexString
 	 */
 	public String getValueComplex() {
-		log.error(getClass().getName() + ".getValueComplex()");
+		log.debug(getClass().getName() + ".getValueComplex()");
 		return buildValueComplexString(obsType, fileName, mimeType);
 	}
 	

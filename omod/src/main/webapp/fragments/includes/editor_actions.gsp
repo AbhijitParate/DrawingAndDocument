@@ -8,7 +8,6 @@
    ui.includeJavascript("annotation", "attachments/attachment-image.js")
    ui.includeJavascript("annotation", "attachments/attachment-notes.js")
    ui.includeJavascript("annotation", "attachments/attachment-video.js")
-   ui.includeJavascript("annotation", "editor.js")
 %>
 
 <div id="controlsContainer" class="controlsContainer">

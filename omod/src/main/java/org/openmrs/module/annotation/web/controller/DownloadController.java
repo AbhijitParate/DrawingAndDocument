@@ -25,6 +25,9 @@ import java.io.InputStream;
 import static org.openmrs.module.annotation.Utils.getContentType;
 import static org.openmrs.module.annotation.Utils.getExtension;
 
+/**
+ * Get drawing / attachment controller
+ */
 @Controller
 @RequestMapping(value = "/rest/" + RestConstants.VERSION_1 + "/annotation")
 public class DownloadController extends MainResourceController {
@@ -34,7 +37,15 @@ public class DownloadController extends MainResourceController {
 	@Autowired
 	@Qualifier(Constants.Component.MODULE_CONTEXT)
 	private ModuleContext moduleContext;
-	
+
+    /**
+     * Get observation with uuid and filename
+     * @param obsUuid
+     * @param fileName
+     * @param view
+     * @param response
+     * @throws IOException
+     */
 	@ResponseBody
 	@RequestMapping(value = "/obs/{obsUuid}/{fileName:.+}")
 	public void onGet(@PathVariable(value = "obsUuid") String obsUuid, @PathVariable(value = "fileName") String fileName,
@@ -69,7 +80,7 @@ public class DownloadController extends MainResourceController {
 		}
 		catch (IOException e) {
 			response.setStatus(500);
-			log.error(
+			log.debug(
 			    "Could not write to HTTP response for when fetching obs with" + " VALUE_COMPLEX='"
 			            + complexObs.getValueComplex() + "'," + " OBS_ID='" + complexObs.getId() + "'," + " OBS_UUID='"
 			            + complexObs.getUuid() + "'", e);

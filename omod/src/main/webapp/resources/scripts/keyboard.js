@@ -33,10 +33,12 @@ $(document).ready(function() {
                 canvas.isDrawingMode = false;
                 break;
             case 46: // Delete
-            case 8: // Backspace
                 event.preventDefault();
                 deleteObjects();
                 break;
+            // case 8: // Backspace
+            //     deleteObjects();
+            //     break;
             case 37: // left
                 object.set('left', left - 1);
                 break;

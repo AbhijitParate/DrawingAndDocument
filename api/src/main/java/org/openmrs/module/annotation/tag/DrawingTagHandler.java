@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Collection;
 import java.util.Map;
 
+@Deprecated
 public class DrawingTagHandler extends SubstitutionTagHandler implements TagHandler {
 	
 	public DrawingTagHandler() {

@@ -12,7 +12,11 @@ import java.io.File;
 public class TemplateUtils {
 	
 	private static Log log = LogFactory.getLog(TemplateUtils.class);
-	
+
+    /**
+     * Healper method to get the template dir for the module in current setup
+     * @return
+     */
 	public static File getDrawingDirectory() {
 		
 		//		File file = OpenmrsUtil.getDirectoryInApplicationDataDirectory(Constants.DRAWING_TEMPLATES_DIR);

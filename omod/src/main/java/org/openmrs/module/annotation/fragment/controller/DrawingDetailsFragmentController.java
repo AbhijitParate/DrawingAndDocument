@@ -7,7 +7,7 @@ import org.openmrs.ui.framework.SimpleObject;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Created by abhij on 2/23/2017.
+ * get encounter details JSON in fragment
  */
 public class DrawingDetailsFragmentController {
 	

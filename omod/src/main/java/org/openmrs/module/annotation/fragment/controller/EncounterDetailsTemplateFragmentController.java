@@ -12,7 +12,7 @@ import org.openmrs.ui.framework.fragment.FragmentModel;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Created by abhij on 2/23/2017. \
+ * controller for encounter details template
  */
 public class EncounterDetailsTemplateFragmentController {
 	
@@ -23,7 +23,7 @@ public class EncounterDetailsTemplateFragmentController {
 	        @SpringBean("encounterService") EncounterService encounterService) {
 		
 		//		model.addAttribute("patient", patient);
-		log.error("EncounterDetailsTemplateFragmentController called");
+		log.debug("EncounterDetailsTemplateFragmentController called");
 		model.put("patient", patient);
 		model.put("visit", visit);
 		model.put("encounters", visit.getEncounters());
