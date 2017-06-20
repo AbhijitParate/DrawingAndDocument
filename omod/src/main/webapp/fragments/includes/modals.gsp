@@ -63,7 +63,7 @@
             </select>
         </div>
         <div id="preview" style="float: right; width: 70%">
-            <img id="preview-image" src="${ ui.resourceLink("annotation", "images/no-preview.jpg") }" style="max-width: 500px; max-height: 400px;">
+            <img id="preview-image" src="${ ui.resourceLink("docsanddrawing", "images/no-preview.jpg") }" style="max-width: 500px; max-height: 400px;">
         </div>
     </div>
 </div>

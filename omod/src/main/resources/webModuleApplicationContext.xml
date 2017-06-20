@@ -19,5 +19,5 @@
 		<property name="maxUploadSize" value="104857600"/>
 	</bean>
 
-    <context:component-scan base-package="org.openmrs.module.annotation.web.controller" />
+    <context:component-scan base-package="org.openmrs.module.docsanddrawing.web.controller" />
 </beans>

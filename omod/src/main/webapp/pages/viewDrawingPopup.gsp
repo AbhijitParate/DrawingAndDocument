@@ -16,4 +16,4 @@
 
 ${ ui.includeFragment("coreapps", "patientHeader", [ patient: patient ]) }
 
-${ ui.includeFragment("annotation", "viewPopup") }
+${ ui.includeFragment("docsanddrawing", "viewPopup") }

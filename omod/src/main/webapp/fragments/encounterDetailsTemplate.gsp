@@ -1,14 +1,14 @@
 <%
     ui.includeJavascript("uicommons", "services/obsService.js")
 
-    ui.includeCss("annotation", "libs/lightcase.css")
-    ui.includeJavascript("annotation", "libs/lightcase.js")
+    ui.includeCss("docsanddrawing", "libs/lightcase.css")
+    ui.includeJavascript("docsanddrawing", "libs/lightcase.js")
 
-    ui.includeCss("annotation", "drawingObsEncounterTemplate.css")
-    ui.includeJavascript("annotation", "drawingObsEncounterTemplate.js")
+    ui.includeCss("docsanddrawing", "drawingObsEncounterTemplate.css")
+    ui.includeJavascript("docsanddrawing", "drawingObsEncounterTemplate.js")
 %>
 
-<div id="annotation-encounter-details">
+<div id="docsanddrawing-encounter-details">
 <script type="text/template" id="encounterDetailsTemplate">
 <li>
     <div class="encounter-date">

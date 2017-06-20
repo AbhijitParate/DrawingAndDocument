@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/annotation.iml" filepath="$PROJECT_DIR$/annotation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api/annotation-api.iml" filepath="$PROJECT_DIR$/api/annotation-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/omod/annotation-omod.iml" filepath="$PROJECT_DIR$/omod/annotation-omod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/docsanddrawing.iml" filepath="$PROJECT_DIR$/docsanddrawing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/docsanddrawing-api.iml" filepath="$PROJECT_DIR$/api/docsanddrawing-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/omod/docsanddrawing-omod.iml" filepath="$PROJECT_DIR$/omod/docsanddrawing-omod.iml" />
     </modules>
   </component>
 </project>

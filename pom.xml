@@ -9,18 +9,18 @@
     </parent>
 
 	<groupId>org.openmrs.module</groupId>
-	<artifactId>annotation</artifactId>
+	<artifactId>docsanddrawing</artifactId>
 	<version>2.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Annotation</name>
-	<description>Improved drawing module</description>
+	<name>Docs and Drawing Annotation</name>
+	<description>Docs and Drawing Annotation Module for OpenMRS</description>
 
 	<url>https://wiki.openmrs.org/x/FQ4z</url>
 
 	<scm>
-		<connection>scm:git:git@github.com:openmrs/openmrs-module-annotation.git</connection>
-		<developerConnection>scm:git:git@github.com:openmrs/openmrs-module-annotation.git</developerConnection>
-		<url>https://github.com/openmrs/openmrs-module-annotation/</url>
+		<connection>scm:git:git@github.com:AbhijitParate/DrawingAndDocument.git</connection>
+		<developerConnection>scm:git:git@github.com:AbhijitParate/DrawingAndDocument.git</developerConnection>
+		<url>https://github.com/AbhijitParate/DrawingAndDocument</url>
 	</scm>
 
 	<modules>

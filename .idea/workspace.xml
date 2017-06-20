@@ -4,23 +4,85 @@
     <bookmark url="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" line="31" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36e80d1b-bbfd-4c70-bb1e-2f046640a285" name="Default" comment="">
+    <list default="true" id="36e80d1b-bbfd-4c70-bb1e-2f046640a285" name="Default" comment="Updated package name and other related stuff">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/videojs.record.lamejs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/videojs.record.libvorbis.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/videojs.record.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/videojs.record.recorderjs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/styles/libs/videojs.record.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/annotation.iml" afterPath="$PROJECT_DIR$/docsanddrawing.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/annotation-api.iml" afterPath="$PROJECT_DIR$/api/docsanddrawing-api.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationActivator.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/AnnotationActivator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationConfig.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/AnnotationConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/Constants.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ExtensionFilter.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/ExtensionFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ModuleContext.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/ModuleContext.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ObservationSaver.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/ObservationSaver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/TemplateUtils.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/TemplateUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Utils.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/Utils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/data/ModuleComplexData.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/data/ModuleComplexData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/data/ValueComplex.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/data/ValueComplex.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/datahelper/ComplexDataHelper.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/datahelper/ComplexDataHelper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/AbstractComplexObsHandler.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/handler/AbstractComplexObsHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/DefaultObsHandler.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/handler/DefaultObsHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/DrawingAndDocObsHandler.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/handler/DrawingAndDocObsHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/ImageObsHandler.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/handler/ImageObsHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/SvgObsHandler.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/handler/SvgObsHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/tag/DrawingTagHandler.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/tag/DrawingTagHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/annotation-omod.iml" afterPath="$PROJECT_DIR$/omod/docsanddrawing-omod.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/extension/html/AdminList.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/extension/html/AdminList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/AddEditorFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/AddEditorFragmentController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/CompareObservationFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/CompareObservationFragmentController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/DrawingDetailsFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/DrawingDetailsFragmentController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EditEditorFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/EditEditorFragmentController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EncounterDetailsTemplateFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/EncounterDetailsTemplateFragmentController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/StatusBarFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/StatusBarFragmentController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/ViewEditorFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/ViewPopupFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewPopupFragmentController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/DownloadController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/DownloadController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/EncounterController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/EncounterController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/TemplatesController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/TemplatesController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/UploadController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/UploadController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/parser/ParsedObs.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/ParsedObs.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/parser/Parser.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/omod/src/test/java/org/openmrs/module/annotation/AdminListExtensionTest.java" afterPath="$PROJECT_DIR$/omod/src/test/java/org/openmrs/module/docsanddrawing/AdminListExtensionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ModuleContext.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ModuleContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ObservationSaver.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ObservationSaver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/TemplateUtils.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/TemplateUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/tag/DrawingTagHandler.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/tag/DrawingTagHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/AddEditorFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/AddEditorFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/DrawingDetailsFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/DrawingDetailsFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EditEditorFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EditEditorFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EncounterDetailsTemplateFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EncounterDetailsTemplateFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/StatusBarFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/StatusBarFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/ViewPopupFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/ViewPopupFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/DownloadController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/DownloadController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/EncounterController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/EncounterController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/TemplatesController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/TemplatesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/UploadController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/UploadController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/parser/Parser.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/parser/Parser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/pom.xml" afterPath="$PROJECT_DIR$/api/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/resources/messages.properties" afterPath="$PROJECT_DIR$/api/src/main/resources/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" afterPath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/pom.xml" afterPath="$PROJECT_DIR$/omod/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/resources/apps/add_annotation_extension.json" afterPath="$PROJECT_DIR$/omod/src/main/resources/apps/add_annotation_extension.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/resources/apps/compare_obs_extension.json" afterPath="$PROJECT_DIR$/omod/src/main/resources/apps/compare_obs_extension.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/resources/apps/encounterDetails_extension.json" afterPath="$PROJECT_DIR$/omod/src/main/resources/apps/encounterDetails_extension.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/resources/config.xml" afterPath="$PROJECT_DIR$/omod/src/main/resources/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" afterPath="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/compareObservations.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/compareObservations.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/encounterDetailsTemplate.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/encounterDetailsTemplate.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/canvas.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/canvas.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/compareObs.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/compareObs.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/editDrawing.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/editDrawing.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/manageTemplates.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/manageTemplates.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawing.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawing.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawingPopup.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawingPopup.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/compareObs.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/compareObs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/drawingObsEncounterTemplate.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/drawingObsEncounterTemplate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/videojs.record.min.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/videojs.record.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/manage_templates.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/manage_templates.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/popup.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/popup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="api/target/" />
     <ignored path="omod/target/" />
@@ -38,10 +100,11 @@
     <ignored path="$PROJECT_DIR$/omod/target/test-classes/" />
     <ignored path=".idea/" />
     <ignored mask="*.log" />
+    <ignored path="$PROJECT_DIR$/omod/target/docsanddrawing-2.1.0-SNAPSHOT/" />
     <manually-removed-from-ignored>
+      <directory path="$PROJECT_DIR$/api/target/" />
       <directory path="$PROJECT_DIR$/target/" />
       <directory path="$PROJECT_DIR$/omod/target/" />
-      <directory path="$PROJECT_DIR$/api/target/" />
     </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,101 +157,143 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ExtensionFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ExtensionFilter.java">
+      <file leaf-file-name="viewPopup.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="82">
+              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+              <folding>
+                <marker date="1497941639183" expanded="false" signature="342:351" ph="..." />
+                <marker date="1497941639183" expanded="false" signature="606:624" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canvas.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/canvas.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModuleComplexData.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/data/ModuleComplexData.java">
+      <file leaf-file-name="editor_actions.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-710">
-              <caret line="53" column="61" lean-forward="true" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+            <state relative-caret-position="369">
+              <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <folding>
+                <marker date="1497941655759" expanded="false" signature="762:773" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="923:945" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="1503:1525" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="1986:2008" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="2435:2457" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="2877:2899" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="3310:3332" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="3929:3951" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="4438:4460" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="4975:4987" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="5153:5175" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="5525:5547" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="6009:6031" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="6461:6483" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="6824:6846" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="7304:7326" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="7628:7640" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="7814:7836" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="8165:8187" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="8553:8575" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="8905:8927" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="9280:9302" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="9812:9834" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="10205:10227" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="10561:10583" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="10956:10978" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="11233:11245" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="11408:11430" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="11928:11950" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="12398:12410" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="12556:12578" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="12998:13020" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="13864:13886" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="14469:14491" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="14863:14875" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="15051:15073" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="15596:15618" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="16100:16122" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="16647:16659" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="16820:16842" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="17314:17336" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="17749:17771" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="18235:18257" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="18731:18753" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="19084:19096" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="19244:19266" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="19625:19637" ph="..." />
+                <marker date="1497941655759" expanded="false" signature="19794:19816" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/header.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java">
+      <file leaf-file-name="modals.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="559">
+              <caret line="64" column="59" lean-forward="false" selection-start-line="64" selection-start-column="59" selection-end-line="64" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnnotationConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationConfig.java">
+      <file leaf-file-name="addEditor.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="488">
+              <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnnotationActivator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationActivator.java">
+      <file leaf-file-name="addDrawing.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="738">
+              <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrawingTagHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/tag/DrawingTagHandler.java">
+      <file leaf-file-name="context_menu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="-4799">
+              <caret line="110" column="13" lean-forward="false" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrawingAndDocObsHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/DrawingAndDocObsHandler.java">
+      <file leaf-file-name="videojs.record.recorderjs.min.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/videojs.record.recorderjs.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="71" column="4" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractComplexObsHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/AbstractComplexObsHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="100" column="7" lean-forward="true" selection-start-line="100" selection-start-column="7" selection-end-line="100" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComplexDataHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/datahelper/ComplexDataHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValueComplex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/data/ValueComplex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="92" column="17" lean-forward="false" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -208,10 +313,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>txt</find>
-      <find>web</find>
-      <find>mp4</find>
-      <find>html</find>
       <find>status</find>
       <find>getTime</find>
       <find>pdf</find>
@@ -238,16 +339,26 @@
       <find>visit</find>
       <find>Media</find>
       <find>log.error</find>
+      <find>woff</find>
+      <find>eot</find>
+      <find>videojs-record</find>
+      <find>annotation</find>
     </findStrings>
     <replaceStrings>
       <replace>class=&quot;button button-small</replace>
       <replace>&lt;button type=&quot;button&quot;</replace>
       <replace>:</replace>
       <replace>log.debug</replace>
+      <replace>docsanddrawing</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -257,33 +368,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/omod/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/omod/src/main/resources/config.xml" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/manage_templates.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/templates.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions2.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/actions_panel.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/CompareObservationFragmentController.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/popup.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/drawingObsEncounterTemplate.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/resources/apps/encounterDetails_extension.json" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/encounterDetailsTemplate.gsp" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/AbstractComplexObsHandler.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/DrawingAndDocObsHandler.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachment.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/canvas.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/editor.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/keyboard.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js" />
@@ -308,6 +392,33 @@
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ObservationSaver.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ModuleContext.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/tag/DrawingTagHandler.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/api/pom.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.java" />
+        <option value="$PROJECT_DIR$/omod/pom.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/resources/config.xml" />
+        <option value="$PROJECT_DIR$/api/src/main/resources/messages.properties" />
+        <option value="$PROJECT_DIR$/omod/src/main/resources/apps/add_annotation_extension.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/resources/apps/compare_obs_extension.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/resources/apps/encounterDetails_extension.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/extension/html/AdminList.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/compareObs.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/editDrawing.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/manageTemplates.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawing.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawingPopup.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/compareObservations.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/encounterDetailsTemplate.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/canvas.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/styles/libs/videojs.record.min.css" />
       </list>
     </option>
   </component>
@@ -327,12 +438,12 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="alwaysUpdateSnapshots" value="true" />
-        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
-        <option name="mavenHome" value="C:/Program Files/Apache/maven" />
+        <option name="localRepository" value="C:\Users\abhij\.m2\repository" />
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.5.0" />
         <option name="outputLevel" value="WARN" />
         <option name="pluginUpdatePolicy" value="UPDATE" />
         <option name="usePluginRegistry" value="true" />
-        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+        <option name="userSettingsFile" value="C:\Users\abhij\apache-maven-3.5.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -349,7 +460,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Annotation" />
+          <option name="myItemId" value="Docs and Drawing Annotation" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -363,7 +474,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Annotation" />
+          <option name="myItemId" value="Docs and Drawing Annotation" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -373,7 +484,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Annotation" />
+          <option name="myItemId" value="Docs and Drawing Annotation" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -388,10 +499,10 @@
     <option name="vmOptions" value="-Dmaven.clean.failOnError=false" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="-62" />
+    <option name="y" value="-1359" />
+    <option name="width" value="2418" />
+    <option name="height" value="1331" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -402,7 +513,7 @@
       <showMembers Scope="false" ProjectPane="true" />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages Scope="true" ProjectPane="true" />
+      <hideEmptyPackages Scope="true" ProjectPane="false" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
@@ -411,25 +522,290 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing-omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing-omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing-omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing-omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="resources">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing-omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="resources">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="apps">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing-omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="openmrs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="module">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controller">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing-omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="openmrs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="module">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="fragment">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controller">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing-omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="omod">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="openmrs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="module">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="extension">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="html">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -439,11 +815,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -454,14 +830,38 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openmrs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docsanddrawing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -483,11 +883,321 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="videojs.record.css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -509,11 +1219,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -539,11 +1249,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -563,7 +1273,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openmrs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docsanddrawing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -573,11 +1299,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -597,7 +1323,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openmrs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docsanddrawing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -611,11 +1353,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -635,37 +1377,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="org" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="omod" />
+              <option name="myItemId" value="openmrs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="docsanddrawing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="fragment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -675,11 +1403,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -699,7 +1427,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openmrs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docsanddrawing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extension" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -709,11 +1453,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -723,37 +1467,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -775,11 +1493,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -805,11 +1523,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="DrawingAndDocument" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -829,155 +1547,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="org" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="openmrs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tag" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="obs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="obs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datahelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="obs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="docsanddrawing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1054,26 +1636,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="annotation-api">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/FileSaver.min.js" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3034483" />
@@ -1089,16 +1656,16 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\fragments" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\fragments\includes" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts\libs" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\styles\libs" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\styles\font" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="org.openmrs.module.annotation" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\pages" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\resources\templates" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\fragments" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts\attachments" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.openmrs.module.annotation.web.controller" />
@@ -1107,15 +1674,27 @@
       <recent name="org.openmrs.module.annotation.obs.data" />
       <recent name="org.openmrs.module.annotation" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\fragments" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\fragments\includes" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts\libs" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\styles\libs" />
-      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\styles\font" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abhij\IdeaProjects\DrawingAndDocument\omod\src\main\webapp\resources\scripts\libs" />
+      <recent name="C:\Users\abhij\IdeaProjects\DrawingAndDocument\omod\src\main\webapp\resources\styles\libs" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\resources\scripts" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\webapp\pages" />
+      <recent name="C:\Users\abhij\Desktop\Ubuntu Stuff\OpenMRS\DrawingModuleVersion2\Annotation2\annotation\omod\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.Run">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.Run Server">
     <configuration default="false" name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1134,68 +1713,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="annotation-api" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -1221,68 +1738,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="myFilePath" />
@@ -1300,12 +1755,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
-    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -1357,9 +1806,6 @@
       <option name="trusted" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="FlutterRunConfigurationType" factoryName="Flutter">
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1382,7 +1828,6 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1425,6 +1870,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -1483,18 +1935,15 @@
       </MavenSettings>
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -1539,6 +1988,19 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -1625,11 +2087,37 @@
       </MavenSettings>
       <method />
     </configuration>
-    <list size="4">
+    <configuration default="false" name="Run Server" type="MavenRunConfiguration" factoryName="Maven" singleton="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="openmrs-sdk:run" />
+                <option value="-DserverId=server" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Maven.Clean" />
       <item index="1" class="java.lang.String" itemvalue="Maven.Run" />
       <item index="2" class="java.lang.String" itemvalue="Maven.Deploy" />
-      <item index="3" class="java.lang.String" itemvalue="Application.test" />
+      <item index="3" class="java.lang.String" itemvalue="Maven.Run Server" />
+      <item index="4" class="java.lang.String" itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -1885,42 +2373,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <frame x="-62" y="-1359" width="2418" height="1331" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41164455" sideWeight="0.50758255" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13618211" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15854633" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986272" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833186" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41927084" sideWeight="0.49241748" order="6" side_tool="false" content_ui="tabs" x="358" y="-1138" width="1685" height="901" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47150838" sideWeight="0.4968051" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41164455" sideWeight="0.50758255" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13877028" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41747573" sideWeight="0.49241748" order="2" side_tool="false" content_ui="tabs" x="358" y="-1138" width="1685" height="901" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34774935" sideWeight="0.4968051" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21985058" sideWeight="0.49433428" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1332745" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30102476" sideWeight="0.49433428" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16950959" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32436976" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15854633" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21845049" sideWeight="0.5056657" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="91" y="91" width="2378" height="1220" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16950959" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2006,7 +2493,8 @@
     <MESSAGE value="Added manage template page in admin dashboard" />
     <MESSAGE value="Moved changes from External editor" />
     <MESSAGE value="Refactored code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored code" />
+    <MESSAGE value="Updated package name and other related stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated package name and other related stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2019,404 +2507,510 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-image.js">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/AnnotationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9353">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-notes.js">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/tag/DrawingTagHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5503">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="84">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-video.js">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/handler/DrawingAndDocObsHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10678">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1344">
+          <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/editDrawing.gsp">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/handler/AbstractComplexObsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="100" column="7" lean-forward="false" selection-start-line="100" selection-start-column="7" selection-end-line="100" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/datahelper/ComplexDataHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/data/ValueComplex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1722">
+          <caret line="92" column="17" lean-forward="false" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/data/ModuleComplexData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="53" column="61" lean-forward="false" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/docsanddrawing-api.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/popup.js">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="121" />
+        <state relative-caret-position="-1092">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewPopupFragmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+        <state relative-caret-position="-354">
+          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp">
+    <entry file="file://$PROJECT_DIR$/api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="46" column="62" lean-forward="false" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="39" column="128" lean-forward="true" selection-start-line="39" selection-start-column="128" selection-end-line="39" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="72" lean-forward="false" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/keyboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3910">
-          <caret line="230" column="30" lean-forward="false" selection-start-line="230" selection-start-column="30" selection-end-line="230" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/canvas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="107" column="9" lean-forward="false" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15589">
-          <caret line="917" column="43" lean-forward="false" selection-start-line="917" selection-start-column="43" selection-end-line="917" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6715">
-          <caret line="395" column="50" lean-forward="false" selection-start-line="395" selection-start-column="8" selection-end-line="395" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        <state relative-caret-position="656">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2009">
+          <caret line="60" column="52" lean-forward="false" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1497939412725" expanded="true" signature="3194:3197" ph="/**...*/" />
+            <marker date="1497939412725" expanded="true" signature="3274:4029" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/omod/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="82">
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-454">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/liquibase.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/pom.xml">
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1271">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/ViewEditorFragmentController.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/apps/add_annotation_extension.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        <state relative-caret-position="246">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/UploadController.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/apps/compare_obs_extension.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="113" column="71" lean-forward="true" selection-start-line="113" selection-start-column="71" selection-end-line="113" selection-end-column="71" />
+        <state relative-caret-position="246">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/apps/encounterDetails_extension.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/extension/html/AdminList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <marker date="1497045143123" expanded="true" signature="3312:3733" ph="//..." />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1075#1076#0" expanded="false" />
+            <element signature="e#1114#1115#0" expanded="false" />
+            <element signature="e#1232#1233#0" expanded="false" />
+            <element signature="e#1268#1269#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/TemplatesController.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/AddEditorFragmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2108">
-          <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
+        <state relative-caret-position="123">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/DownloadController.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/DownloadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+        <state relative-caret-position="369">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3779#3780#0" expanded="false" />
+            <element signature="e#3812#3813#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/EncounterController.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/EncounterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state relative-caret-position="410">
+          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2169#2170#0" expanded="false" />
+            <element signature="e#2202#2203#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/parser/ParsedObs.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/TemplatesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/web/controller/parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="111" column="31" lean-forward="false" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/AddEditorFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/DrawingDetailsFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EditEditorFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/EncounterDetailsTemplateFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/StatusBarFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="369">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4037#4038#0" expanded="false" />
+            <element signature="e#4079#4080#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/fragment/controller/ViewPopupFragmentController.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/UploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        <state relative-caret-position="287">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/annotation/extension/html/AdminList.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/AnnotationActivator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/TemplateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ObservationSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="75" column="71" lean-forward="false" selection-start-line="75" selection-start-column="71" selection-end-line="75" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ModuleContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="184" column="6" lean-forward="true" selection-start-line="184" selection-start-column="6" selection-end-line="184" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/ExtensionFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/AnnotationActivator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="41">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1238#1239#0" expanded="false" />
+            <element signature="e#1273#1274#0" expanded="false" />
+            <element signature="e#3970#3971#0" expanded="false" />
+            <element signature="e#4007#4008#0" expanded="false" />
+            <element signature="e#4047#4048#0" expanded="false" />
+            <element signature="e#4075#4076#0" expanded="false" />
+            <element signature="e#4114#4115#0" expanded="false" />
+            <element signature="e#4141#4142#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/compareObs.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/tag/DrawingTagHandler.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/editDrawing.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="738">
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/DrawingAndDocObsHandler.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/manageTemplates.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="71" column="4" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+        <state relative-caret-position="246">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/handler/AbstractComplexObsHandler.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawing.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="100" column="7" lean-forward="true" selection-start-line="100" selection-start-column="7" selection-end-line="100" selection-end-column="7" />
+        <state relative-caret-position="738">
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/datahelper/ComplexDataHelper.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawingPopup.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="738">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/data/ValueComplex.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/compareObservations.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="92" column="17" lean-forward="false" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+        <state relative-caret-position="82">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/annotation/obs/data/ModuleComplexData.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-710">
-          <caret line="53" column="61" lean-forward="true" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+        <state relative-caret-position="518">
+          <caret line="52" column="44" lean-forward="false" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/encounterDetailsTemplate.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <marker date="1497941618827" expanded="false" signature="4532:4545" ph="..." />
+            <marker date="1497941618827" expanded="false" signature="5057:5090" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <marker date="1497941624038" expanded="false" signature="324:350" ph="..." />
+            <marker date="1497941624038" expanded="false" signature="412:427" ph="..." />
+            <marker date="1497941624038" expanded="false" signature="451:463" ph="..." />
+            <marker date="1497941624038" expanded="false" signature="592:604" ph="..." />
+            <marker date="1497941624038" expanded="false" signature="724:744" ph="..." />
+            <marker date="1497941624038" expanded="false" signature="769:781" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="53" column="44" lean-forward="false" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding>
+            <marker date="1497941639183" expanded="false" signature="342:351" ph="..." />
+            <marker date="1497941639183" expanded="false" signature="606:624" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/canvas.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <marker date="1497941655759" expanded="false" signature="762:773" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="923:945" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="1503:1525" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="1986:2008" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="2435:2457" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="2877:2899" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="3310:3332" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="3929:3951" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="4438:4460" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="4975:4987" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="5153:5175" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="5525:5547" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="6009:6031" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="6461:6483" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="6824:6846" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="7304:7326" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="7628:7640" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="7814:7836" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="8165:8187" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="8553:8575" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="8905:8927" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="9280:9302" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="9812:9834" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="10205:10227" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="10561:10583" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="10956:10978" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="11233:11245" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="11408:11430" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="11928:11950" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="12398:12410" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="12556:12578" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="12998:13020" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="13864:13886" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="14469:14491" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="14863:14875" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="15051:15073" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="15596:15618" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="16100:16122" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="16647:16659" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="16820:16842" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="17314:17336" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="17749:17771" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="18235:18257" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="18731:18753" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="19084:19096" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="19244:19266" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="19625:19637" ph="..." />
+            <marker date="1497941655759" expanded="false" signature="19794:19816" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/header.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="64" column="59" lean-forward="false" selection-start-line="64" selection-start-column="59" selection-end-line="64" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/styles/libs/videojs.record.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/styles/libs/video-js.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="0" column="1818" lean-forward="true" selection-start-line="0" selection-start-column="1818" selection-end-line="0" selection-end-column="1818" />
+          <folding>
+            <element signature="e#1892#6885#1" expanded="false" />
+            <element signature="e#6901#14603#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4799">
+          <caret line="110" column="13" lean-forward="false" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/videojs.record.recorderjs.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

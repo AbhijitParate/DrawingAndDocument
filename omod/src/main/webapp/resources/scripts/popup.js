@@ -6,12 +6,12 @@
 $(document).ready(function() {
     $(document).ready(function() {
         console.log("Document ready.");
-        var url = "/openmrs/ws/rest/v1/annotation/encounter/get?encounterid="+encounterId;
+        var url = "/openmrs/ws/rest/v1/docsanddrawing/encounter/get?encounterid="+encounterId;
         $.getJSON(
-            //emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: encounterId })
+            //emr.fragmentActionLink("docsanddrawing", "drawingDetails", "getEncounterDetails", { encounterId: encounterId })
             url
         ).success(function(data){
-            $("#drawing").attr("src", "../ws/rest/v1/annotation/obs/" + data.drawing.uuid + "/drawing.svg");
+            $("#drawing").attr("src", "../ws/rest/v1/docsanddrawing/obs/" + data.drawing.uuid + "/drawing.svg");
         });
     });
 } );

@@ -24,23 +24,23 @@
   		    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
     <!-- Add here beans related to the API context -->
-    <context:component-scan base-package="org.openmrs.module.annotation" />
+    <context:component-scan base-package="org.openmrs.module.docsanddrawing" />
 
     <!-- Handlers that can be set to complex concepts -->
     <bean parent="obsServiceTarget">
         <property name="handlers">
             <map>
                 <entry key="DrawingAndDocObsHandler">
-                    <bean class="org.openmrs.module.annotation.obs.handler.DrawingAndDocObsHandler" />
+                    <bean class="org.openmrs.module.docsanddrawing.obs.handler.DrawingAndDocObsHandler" />
                 </entry>
                 <!--<entry key="DefaultObsHandler">-->
-                    <!--<bean class="org.openmrs.module.annotation.obs.handler.DefaultObsHandler" />-->
+                    <!--<bean claDefaultObsHandlerdler" />-->
                 <!--</entry>-->
                 <!--<entry key="ImageObsHandler">-->
-                    <!--<bean class="org.openmrs.module.annotation.obs.handler.ImageObsHandler" />-->
+                    <!--<bean claImageObsHandlerdler" />-->
                 <!--</entry>-->
                 <!--<entry key="SvgObsHandler">-->
-                    <!--<bean class="org.openmrs.module.annotation.obs.handler.SvgObsHandler" />-->
+                    <!--<bean claSvgObsHandlerdler" />-->
                 <!--</entry>-->
             </map>
         </property>

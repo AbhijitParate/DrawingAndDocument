@@ -70,10 +70,10 @@ $(function() {
             encounterDetailsSection.html("<i class=\"icon-spinner icon-spin icon-2x pull-left\"></i>");
         }
 
-        var url = "/openmrs/ws/rest/v1/annotation/encounter/get?encounterid="+encounterId;
+        var url = "/openmrs/ws/rest/v1/docsanddrawing/encounter/get?encounterid="+encounterId;
         $.getJSON(
             //emr.fragmentActionLink("[module name]", "[lower(c)ontroller name]FragmentController", "[function name]", { [parameter name]: [parameter value] })
-            // emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: encounterId })
+            // emr.fragmentActionLink("docsanddrawing", "drawingDetails", "getEncounterDetails", { encounterId: encounterId })
             url
 
         ).success(function(data){
@@ -113,7 +113,7 @@ $(function() {
 
     function createListItem(obs) {
         var a = $("<a/>").addClass("attachments-list-item")
-            .attr("href", "../../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+obs.name)
+            .attr("href", "../../ws/rest/v1/docsanddrawing/obs/" + obs.uuid +"/"+obs.name)
             .attr("title", obs.name)
             .text(obs.name).lightcase();
         return $("<li/>").append(a);
@@ -138,8 +138,8 @@ $(function() {
         var icon = $("<i/>").addClass("icon-picture");
         var heading = $("<h5/>").append(icon).append("Drawing").addClass("header");
         var div = $("<div/>").addClass("drawing-container");
-        var a = $("<a/>").attr("href", "../../ws/rest/v1/annotation/obs/" + drawing.uuid +"/"+drawing.name).lightcase();
-        var img = $("<img/>").attr("src", "../../ws/rest/v1/annotation/obs/" + drawing.uuid +"/"+drawing.name)
+        var a = $("<a/>").attr("href", "../../ws/rest/v1/docsanddrawing/obs/" + drawing.uuid +"/"+drawing.name).lightcase();
+        var img = $("<img/>").attr("src", "../../ws/rest/v1/docsanddrawing/obs/" + drawing.uuid +"/"+drawing.name)
                      .attr("width", "450").attr("height", "450");
         a.append(img);
         div.append(a);

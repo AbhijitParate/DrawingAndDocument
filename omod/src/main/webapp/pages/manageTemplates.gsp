@@ -4,10 +4,10 @@
     ui.includeJavascript("uicommons", "bootstrap-collapse.js")
     ui.includeJavascript("uicommons", "bootstrap-transition.js")
 
-    ui.includeCss("annotation", "libs/jquery-ui.min.css")
-    ui.includeJavascript("annotation", "libs/jquery-ui.min.js")
+    ui.includeCss("docsanddrawing", "libs/jquery-ui.min.css")
+    ui.includeJavascript("docsanddrawing", "libs/jquery-ui.min.js")
 
-    ui.includeJavascript("annotation", "manage_templates.js")
+    ui.includeJavascript("docsanddrawing", "manage_templates.js")
 %>
 
 <h2 style="margin:0;">Manage Templates</h2>

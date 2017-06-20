@@ -35,7 +35,7 @@ $(document).ready(function() {
         data.append('file', fileDataUrl);
 
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', '/openmrs/ws/rest/v1/annotation/template/upload', true);
+        xhr.open('POST', '/openmrs/ws/rest/v1/docsanddrawing/template/upload', true);
         xhr.send(data);
 
         xhr.onload = function (response) {
@@ -49,7 +49,7 @@ $(document).ready(function() {
     function updateTemplateList() {
         $.ajax({
             type: "GET",
-            url: "/openmrs/ws/rest/v1/annotation/template/all",
+            url: "/openmrs/ws/rest/v1/docsanddrawing/template/all",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(data){
@@ -86,7 +86,7 @@ $(document).ready(function() {
         span.appendTo(div);
 
         let a_view = $("<a/>")
-            .attr("href", "/openmrs/ws/rest/v1/annotation/template/get/" + templateName)
+            .attr("href", "/openmrs/ws/rest/v1/docsanddrawing/template/get/" + templateName)
             .attr("data-id", templateName)
             .attr("title", templateName)
             .text(templateName)
@@ -102,7 +102,7 @@ $(document).ready(function() {
         console.debug("delete item " +  templateName);
         $.ajax({
             type: "GET",
-            url: "/openmrs/ws/rest/v1/annotation/template/delete/"+templateName,
+            url: "/openmrs/ws/rest/v1/docsanddrawing/template/delete/"+templateName,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(data){
@@ -118,7 +118,7 @@ $(document).ready(function() {
     }
 
     function onTemplateSelected(templateName) {
-        var url = "/openmrs/ws/rest/v1/annotation/template/get/" + templateName;
+        var url = "/openmrs/ws/rest/v1/docsanddrawing/template/get/" + templateName;
         var imag =  $("<img src='" + url + "' width='400' height=auto />");
         $("#preview").empty().append(imag);
     }

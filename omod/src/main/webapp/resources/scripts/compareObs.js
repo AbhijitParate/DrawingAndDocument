@@ -9,7 +9,7 @@ $(function() {
     let visits;
 
     $.getJSON(
-        emr.fragmentActionLink("annotation", "compareObservation", "getVisits", { patientId: patientId })
+        emr.fragmentActionLink("docsanddrawing", "compareObservation", "getVisits", { patientId: patientId })
     ).success(function(data){
         console.debug(data);
         visits = data.visits;
@@ -71,7 +71,7 @@ function getListContainer(visits) {
             console.info($(ui.selected).attr('data-id'));
             let visitId = $(ui.selected).attr('data-id');
             $.getJSON(
-                emr.fragmentActionLink("annotation", "compareObservation", "getEncounters", { visitId: visitId })
+                emr.fragmentActionLink("docsanddrawing", "compareObservation", "getEncounters", { visitId: visitId })
             ).success(function(data) {
                 console.debug(data);
                 let encounters = data.encounters;
@@ -93,7 +93,7 @@ function getListContainer(visits) {
             console.info($(ui.selected).attr('data-id'));
             let encId = $(ui.selected).attr('data-id');
             $.getJSON(
-                emr.fragmentActionLink("annotation", "compareObservation", "getObservations", { encounterId: encId })
+                emr.fragmentActionLink("docsanddrawing", "compareObservation", "getObservations", { encounterId: encId })
             ).success(function(data) {
                 console.debug(data);
                 let observations = data.observations;
@@ -117,16 +117,16 @@ function getListContainer(visits) {
             let obsUuid = $(ui.selected).attr('data-id');
             obsPreview.empty();
             if(obsComment.includes('jpg') || obsComment.includes('svg') || obsComment.includes('png')){
-                $("<img />").attr("src", "../ws/rest/v1/annotation/obs/" + obsUuid + "/" + obsComment)
+                $("<img />").attr("src", "../ws/rest/v1/docsanddrawing/obs/" + obsUuid + "/" + obsComment)
                     .appendTo(obsPreview);
             } else if(obsComment.includes('webm')) {
                 let video = $("<video width='500' height='400' controls autoplay />");
                 $("<source />")
-                    .attr("src", "../ws/rest/v1/annotation/obs/" + obsUuid + "/" + obsComment)
+                    .attr("src", "../ws/rest/v1/docsanddrawing/obs/" + obsUuid + "/" + obsComment)
                     .appendTo(video);
                 video.appendTo(obsPreview);
             } else if(obsComment.includes('txt')){
-                $("<p />").attr("src", "../ws/rest/v1/annotation/obs/" + obsUuid + "/" + obsComment)
+                $("<p />").attr("src", "../ws/rest/v1/docsanddrawing/obs/" + obsUuid + "/" + obsComment)
                     .appendTo(obsPreview);
             } else {
                 $("<p />").text("Preview not available").appendTo(obsPreview);

@@ -1,6 +1,6 @@
 <%
-    ui.includeCss("annotation", "compareObs.css")
-    ui.includeJavascript("annotation", "compareObs.js")
+    ui.includeCss("docsanddrawing", "compareObs.css")
+    ui.includeJavascript("docsanddrawing", "compareObs.js")
 %>
 
 <h2>Compare Observations</h2>

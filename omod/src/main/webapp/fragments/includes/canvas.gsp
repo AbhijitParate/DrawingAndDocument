@@ -1,6 +1,6 @@
 <%
-    ui.includeJavascript("annotation", "canvas.js")
-    ui.includeJavascript("annotation", "context_menu.js")
+    ui.includeJavascript("docsanddrawing", "canvas.js")
+    ui.includeJavascript("docsanddrawing", "context_menu.js")
 %>
 <div id="canvasContainer" class="canvasContainer">
     <div id="canvasWrapper" style="height: 100%; width: 100%; position: relative;">

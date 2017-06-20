@@ -6,8 +6,8 @@
 	<id>${project.parent.artifactId}</id>
 	<name>${project.parent.name}</name>
 	<version>${project.parent.version}</version>
-	<package>org.openmrs.module.annotation</package>
-	<author>abhijit</author>
+	<package>org.openmrs.module.docsanddrawing</package>
+	<author>Abhijit Parate</author>
 	<description>
 			${project.parent.description}
 	</description>
@@ -44,7 +44,7 @@
 	<!-- Extensions -->
 	<extension>
 		<point>org.openmrs.admin.list</point>
-		<class>org.openmrs.module.annotation.extension.html.AdminList</class>
+		<class>org.openmrs.module.docsanddrawing.extension.html.AdminList</class>
 	</extension>
 
 	<aware_of_modules>

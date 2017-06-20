@@ -10,6 +10,7 @@
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <resolve-scope>dev26:</resolve-scope>
+      <unqualified-resolve-schemas>dev26:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

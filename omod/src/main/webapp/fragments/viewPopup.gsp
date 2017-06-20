@@ -1,6 +1,6 @@
 
 <%
-    ui.includeJavascript("annotation", "popup.js")
+    ui.includeJavascript("docsanddrawing", "popup.js")
 %>
 
 <script>

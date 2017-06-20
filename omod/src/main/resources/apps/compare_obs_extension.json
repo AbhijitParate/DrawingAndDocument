@@ -4,7 +4,7 @@
         "extensionPointId": "patientDashboard.visitActions",
         "type": "link",
         "label": "Compare Observations",
-        "url": "annotation/compareObs.page?patientId={{patient.uuid}}",
+        "url": "docsanddrawing/compareObs.page?patientId={{patient.uuid}}",
         "icon": "icon-exchange",
         "order": 26,
         "requiredPrivilege": "Task: coreapps.createVisit"

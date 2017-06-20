@@ -8,12 +8,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="annotation-api" />
         <module name="annotation-omod" />
+        <module name="docsanddrawing-api" />
+        <module name="docsanddrawing-omod" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="annotation" target="1.5" />
       <module name="annotation-api" target="1.6" />
       <module name="annotation-omod" target="1.6" />
+      <module name="docsanddrawing" target="1.5" />
+      <module name="docsanddrawing-api" target="1.6" />
+      <module name="docsanddrawing-omod" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

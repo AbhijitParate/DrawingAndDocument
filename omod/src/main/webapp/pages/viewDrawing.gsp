@@ -16,4 +16,4 @@
 
 ${ ui.includeFragment("coreapps", "patientHeader", [ patient: patient ]) }
 
-${ui.includeFragment("annotation", "viewEditor")}
+${ui.includeFragment("docsanddrawing", "viewEditor")}

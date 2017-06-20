@@ -1,37 +1,37 @@
 <%
-    ui.includeJavascript("annotation", "libs/jquery-3.1.1.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/jquery-3.1.1.min.js")
 
-    ui.includeCss("annotation", "libs/jquery-ui.min.css")
-    ui.includeJavascript("annotation", "libs/jquery-ui.min.js")
+    ui.includeCss("docsanddrawing", "libs/jquery-ui.min.css")
+    ui.includeJavascript("docsanddrawing", "libs/jquery-ui.min.js")
 
-    ui.includeCss("annotation", "libs/spectrum.min.css")
-    ui.includeJavascript("annotation", "libs/spectrum.min.js")
+    ui.includeCss("docsanddrawing", "libs/spectrum.min.css")
+    ui.includeJavascript("docsanddrawing", "libs/spectrum.min.js")
 
-    ui.includeCss("annotation", "libs/jquery.webui-popover.min.css")
-    ui.includeJavascript("annotation", "libs/jquery.webui-popover.min.js")
+    ui.includeCss("docsanddrawing", "libs/jquery.webui-popover.min.css")
+    ui.includeJavascript("docsanddrawing", "libs/jquery.webui-popover.min.js")
 
-    ui.includeJavascript("annotation", "libs/jquery.ui-contextmenu.min.js")
-    ui.includeJavascript("annotation", "libs/FileSaver.min.js")
-    ui.includeJavascript("annotation", "libs/jspdf.min.js")
-    ui.includeJavascript("annotation", "libs/fabric.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/jquery.ui-contextmenu.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/FileSaver.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/jspdf.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/fabric.min.js")
 
-    ui.includeJavascript("annotation", "libs/webcam.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/webcam.min.js")
 
-    ui.includeCss("annotation", "libs/video-js.min.css")
-    ui.includeCss("annotation", "libs/videojs.record.css")
-    ui.includeJavascript("annotation", "libs/video.min.js")
-    ui.includeJavascript("annotation", "libs/videojs.record.min.js")
-    ui.includeJavascript("annotation", "libs/wavesurfer.min.js")
-    ui.includeJavascript("annotation", "libs/videojs.wavesurfer.min.js")
-    ui.includeJavascript("annotation", "libs/wavesurfer.microphone.min.js")
-    ui.includeJavascript("annotation", "libs/RecordRTC.min.js")
+    ui.includeCss("docsanddrawing", "libs/video-js.min.css")
+    ui.includeCss("docsanddrawing", "libs/videojs.record.css")
+    ui.includeJavascript("docsanddrawing", "libs/video.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/videojs.record.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/wavesurfer.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/videojs.wavesurfer.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/wavesurfer.microphone.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/RecordRTC.min.js")
 
-    ui.includeJavascript("annotation", "libs/blob-util.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/blob-util.min.js")
 
-    ui.includeCss("annotation", "editor.css")
-    ui.includeCss("annotation", "controls.css")
+    ui.includeCss("docsanddrawing", "editor.css")
+    ui.includeCss("docsanddrawing", "controls.css")
 
-    ui.includeJavascript("annotation", "ui.js")
+    ui.includeJavascript("docsanddrawing", "ui.js")
 %>
 <script>
     var patientId =${ patientId };
@@ -47,11 +47,11 @@
         <strong id="encounter-time">${ ui.format(encounterTime) }</strong>
         <span id="encounter-date">${ ui.format(encounterDate) }</span>
     </div>
-    ${ui.includeFragment("annotation", "statusBar", [ mode: "view" ])}
+    ${ui.includeFragment("docsanddrawing", "statusBar", [ mode: "view" ])}
     <div id="main-container" class="outerContainer">
-        ${ui.includeFragment("annotation", "includes/editor_actions")}
-        ${ui.includeFragment("annotation", "includes/canvas")}
-        ${ui.includeFragment("annotation", "includes/modals")}
+        ${ui.includeFragment("docsanddrawing", "includes/editor_actions")}
+        ${ui.includeFragment("docsanddrawing", "includes/canvas")}
+        ${ui.includeFragment("docsanddrawing", "includes/modals")}
     </div>
     <div id="progress-container" hidden>
 

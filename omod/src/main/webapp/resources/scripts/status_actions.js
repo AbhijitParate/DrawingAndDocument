@@ -21,8 +21,8 @@ $(document).ready(function () {
     function loadDataFromEncounter() {
         console.debug("EcnounterId : " + encounterId);
 
-        // var url = emr.fragmentActionLink("annotation", "drawingDetails", "getEncounterDetails", { encounterId: encounterId });
-        var url = "/openmrs/ws/rest/v1/annotation/encounter/get?encounterid="+encounterId;
+        // var url = emr.fragmentActionLink("docsanddrawing", "drawingDetails", "getEncounterDetails", { encounterId: encounterId });
+        var url = "/openmrs/ws/rest/v1/docsanddrawing/encounter/get?encounterid="+encounterId;
 
         console.debug(url);
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
     function recreateCanvas(drawing) {
 
         let div = $("<div />");
-        $("<img src='./../ms/uiframework/resource/annotation/images/loading.gif' width='100' height='100' />").appendTo(div);
+        $("<img src='./../ms/uiframework/resource/docsanddrawing/images/loading.gif' width='100' height='100' />").appendTo(div);
         div.dialog({
             title: 'Loading...',
             resizable: false,
@@ -61,7 +61,7 @@ $(document).ready(function () {
         });
 
         console.debug(drawing);
-        fabric.loadSVGFromURL("../ws/rest/v1/annotation/obs/" + drawing.uuid +"/"+drawing.name,
+        fabric.loadSVGFromURL("../ws/rest/v1/docsanddrawing/obs/" + drawing.uuid +"/"+drawing.name,
             function(objects, options) {
                 console.log(objects);
                 let mediaobjs = [];
@@ -143,7 +143,7 @@ $(document).ready(function () {
         span.appendTo(div);
 
         let a_view = $("<a/>")
-            .attr("href", "../ws/rest/v1/annotation/obs/" + obs.uuid +"/"+obs.name)
+            .attr("href", "../ws/rest/v1/docsanddrawing/obs/" + obs.uuid +"/"+obs.name)
             .attr("data-id", obs.uuid)
             .attr("title", obs.name)
             .text(obs.name)
@@ -256,7 +256,7 @@ $(document).ready(function () {
                     default:
                         console.info("File attachment");
                         return $('<img class="previewWindow" width="550" height="500" '
-                            + 'src="./../ms/uiframework/resource/annotation/images/no-preview.jpg" />');
+                            + 'src="./../ms/uiframework/resource/docsanddrawing/images/no-preview.jpg" />');
                 }
             }
         }
@@ -321,7 +321,7 @@ $(document).ready(function () {
 
         previewDiv = $("<div />").attr("id","attachmentPreview")
             .appendTo(dialog);
-        $("<img src='./../ms/uiframework/resource/annotation/images/no-preview.jpg' " +
+        $("<img src='./../ms/uiframework/resource/docsanddrawing/images/no-preview.jpg' " +
             "width='550' height='500' />").appendTo(previewDiv);
 
         dialog.attr("title", "Attachments");
@@ -445,7 +445,7 @@ $(document).ready(function () {
         });
 
         //open the request
-        request.open("POST","../ws/rest/v1/annotation/upload");
+        request.open("POST","../ws/rest/v1/docsanddrawing/upload");
 
         //set the request header for no caching
         request.setRequestHeader("Cache-Control","no-cache");

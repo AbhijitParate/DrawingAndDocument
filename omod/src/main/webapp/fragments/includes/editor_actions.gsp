@@ -1,13 +1,13 @@
 <%
-   ui.includeJavascript("annotation", "actions.js")
-   ui.includeJavascript("annotation", "keyboard.js")
-   ui.includeJavascript("annotation", "import.js")
-   ui.includeJavascript("annotation", "attachment.js")
-   ui.includeJavascript("annotation", "attachments/attachment-audio.js")
-   ui.includeJavascript("annotation", "attachments/attachment-file.js")
-   ui.includeJavascript("annotation", "attachments/attachment-image.js")
-   ui.includeJavascript("annotation", "attachments/attachment-notes.js")
-   ui.includeJavascript("annotation", "attachments/attachment-video.js")
+   ui.includeJavascript("docsanddrawing", "actions.js")
+   ui.includeJavascript("docsanddrawing", "keyboard.js")
+   ui.includeJavascript("docsanddrawing", "import.js")
+   ui.includeJavascript("docsanddrawing", "attachment.js")
+   ui.includeJavascript("docsanddrawing", "attachments/attachment-audio.js")
+   ui.includeJavascript("docsanddrawing", "attachments/attachment-file.js")
+   ui.includeJavascript("docsanddrawing", "attachments/attachment-image.js")
+   ui.includeJavascript("docsanddrawing", "attachments/attachment-notes.js")
+   ui.includeJavascript("docsanddrawing", "attachments/attachment-video.js")
 %>
 
 <div id="controlsContainer" class="controlsContainer">

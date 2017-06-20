@@ -1,20 +1,20 @@
 [
   {
-    "id": "annotation.encounterTemplate",
+    "id": "docsanddrawing.encounterTemplate",
     "extensionPointId": "org.openmrs.referenceapplication.encounterTemplate",
     "type": "fragment",
     "extensionParams": {
       "templateId": "encounterDetailsTemplate",
-      "templateFragmentProviderName": "annotation",
+      "templateFragmentProviderName": "docsanddrawing",
       "templateFragmentId": "encounterDetailsTemplate",
       "supportedEncounterTypes": {
         "43c25184-f41f-11e6-bc64-92361f002671": {
           "icon": "icon-paper-clip",
           "deletable": true,
           "editable": true,
-          "editUrl": "annotation/editDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}",
-          "viewUrl": "annotation/viewDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}",
-          "popupUrl": "annotation/viewDrawingPopup.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}"
+          "editUrl": "docsanddrawing/editDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}",
+          "viewUrl": "docsanddrawing/viewDrawing.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}",
+          "popupUrl": "docsanddrawing/viewDrawingPopup.page?patientId={{patient.uuid}}&encounterId={{encounter.id}}"
         }
       }
     }
