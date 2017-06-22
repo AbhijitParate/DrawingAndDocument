@@ -17,8 +17,8 @@
       <module name="annotation-api" target="1.6" />
       <module name="annotation-omod" target="1.6" />
       <module name="docsanddrawing" target="1.5" />
-      <module name="docsanddrawing-api" target="1.5" />
-      <module name="docsanddrawing-omod" target="1.5" />
+      <module name="docsanddrawing-api" target="1.6" />
+      <module name="docsanddrawing-omod" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
