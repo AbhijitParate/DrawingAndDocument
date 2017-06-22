@@ -10,13 +10,11 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>docsanddrawing</artifactId>
-	<version>2.1.0-SNAPSHOT</version>
+	<version>1.1.0</version>
 	<packaging>pom</packaging>
 	<name>Docs and Drawing Annotation</name>
 	<description>Docs and Drawing Annotation Module for OpenMRS</description>
-
 	<url>https://wiki.openmrs.org/x/FQ4z</url>
-
 	<scm>
 		<connection>scm:git:git@github.com:AbhijitParate/DrawingAndDocument.git</connection>
 		<developerConnection>scm:git:git@github.com:AbhijitParate/DrawingAndDocument.git</developerConnection>
@@ -28,25 +26,42 @@
 		<module>omod</module>
 	</modules>
 
+	<!--<properties>-->
+		<!--<openMRSVersion>1.11.6</openMRSVersion>-->
+		<!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+		<!--<uiframeworkVersion>3.11.0</uiframeworkVersion>-->
+		<!--<appframeworkVersion>2.10.0</appframeworkVersion>-->
+		<!--<uicommonsVersion>2.3.0</uicommonsVersion>-->
+		<!--<appuiVersion>1.8.0</appuiVersion>-->
+		<!--<coreappsVersion>1.14.0</coreappsVersion>-->
+		<!--<idgenVersion>4.4.1</idgenVersion>-->
+		<!--&lt;!&ndash;<htmlformentryVersion>2.6</htmlformentryVersion>&ndash;&gt;-->
+		<!--&lt;!&ndash;<legacyUiVersion>1.2.4-SNAPSHOT</legacyUiVersion>&ndash;&gt;-->
+		<!--<emrapiVersion>1.22.1</emrapiVersion>-->
+		<!--<referenceAppVersion>2.6.0</referenceAppVersion>-->
+	<!--</properties>-->
+
+
+	<!--2.4-->
 	<properties>
-		<openMRSVersion>1.11.6</openMRSVersion>
+		<openMRSVersion>1.11.5</openMRSVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<uiframeworkVersion>3.6</uiframeworkVersion>
-		<emrapiVersion>1.18</emrapiVersion>
-		<appframeworkVersion>2.9</appframeworkVersion>
-		<uicommonsVersion>2.1</uicommonsVersion>
-		<appuiVersion>1.7</appuiVersion>
-		<coreappsVersion>1.11.1</coreappsVersion>
-		<idgenVersion>4.4.0</idgenVersion>
-		<htmlformentryVersion>3.3.1</htmlformentryVersion>
-		<legacyUiVersion>1.2.4-SNAPSHOT</legacyUiVersion>
+		<uiframeworkVersion>3.4</uiframeworkVersion>
+		<appframeworkVersion>2.4</appframeworkVersion>
+		<uicommonsVersion>1.7</uicommonsVersion>
+		<appuiVersion>1.3</appuiVersion>
+		<coreappsVersion>1.11.0</coreappsVersion>
+		<idgenVersion>3.2</idgenVersion>
+		<!--<htmlformentryVersion>2.6</htmlformentryVersion>-->
+		<!--<legacyUiVersion>1.2.4-SNAPSHOT</legacyUiVersion>-->
+		<!--<emrapiVersion>1.14</emrapiVersion>-->
+		<emrapiVersion>RELEASE</emrapiVersion>
+		<referenceAppVersion>2.4</referenceAppVersion>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
-
 			<!-- Begin OpenMRS core -->
-
 			<dependency>
 				<groupId>org.openmrs.api</groupId>
 				<artifactId>openmrs-api</artifactId>
@@ -107,13 +122,6 @@
 
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
-				<artifactId>emrapi-api-1.9</artifactId>
-				<version>${emrapiVersion}</version>
-				<scope>provided</scope>
-			</dependency>
-
-			<dependency>
-				<groupId>org.openmrs.module</groupId>
 				<artifactId>uicommons-api</artifactId>
 				<version>${uicommonsVersion}</version>
 				<scope>provided</scope>
@@ -123,6 +131,13 @@
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>appui-api</artifactId>
 				<version>${appuiVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>coreapps-api</artifactId>
+				<version>${coreappsVersion}</version>
 				<scope>provided</scope>
 			</dependency>
 
@@ -140,19 +155,12 @@
 				<scope>provided</scope>
 			</dependency>
 
-			<dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>coreapps-api</artifactId>
-				<version>${coreappsVersion}</version>
-				<scope>provided</scope>
-			</dependency>
-
-            <dependency>
-                <groupId>org.openmrs.module</groupId>
-                <artifactId>legacyui-omod</artifactId>
-                <version>${legacyUiVersion}</version>
-                <scope>provided</scope>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.openmrs.module</groupId>-->
+                <!--<artifactId>legacyui-omod</artifactId>-->
+                <!--<version>${legacyUiVersion}</version>-->
+                <!--<scope>provided</scope>-->
+            <!--</dependency>-->
 
 			<!-- End OpenMRS modules -->
 
@@ -160,9 +168,9 @@
             <dependency>
                 <groupId>org.openmrs.distro</groupId>
                 <artifactId>referenceapplication</artifactId>
-                <version>2.4</version>
+                <version>${referenceAppVersion}</version>
                 <type>pom</type>
-                <scope>import</scope>
+                <scope>provided</scope>
             </dependency>
 		</dependencies>
 	</dependencyManagement>

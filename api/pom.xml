@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.openmrs.module</groupId>
 		<artifactId>docsanddrawing</artifactId>
-		<version>2.1.0-SNAPSHOT</version>
+		<version>1.1.0</version>
 	</parent>
 
 	<artifactId>docsanddrawing-api</artifactId>
@@ -47,11 +47,11 @@
 			<type>pom</type>
 			<scope>test</scope>
 		</dependency>
-        <dependency>
-            <groupId>org.openmrs.module</groupId>
-            <artifactId>htmlformentry-api</artifactId>
-            <version>${htmlformentryVersion}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.openmrs.module</groupId>-->
+            <!--<artifactId>htmlformentry-api</artifactId>-->
+            <!--<version>${htmlformentryVersion}</version>-->
+        <!--</dependency>-->
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>coreapps-api</artifactId>

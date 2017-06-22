@@ -16,9 +16,7 @@ import org.openmrs.api.ConceptService;
 import org.openmrs.api.EncounterService;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.BaseModuleActivator;
-import org.openmrs.module.ModuleFactory;
-import org.openmrs.module.docsanddrawing.tag.DrawingTagHandler;
-import org.openmrs.module.htmlformentry.HtmlFormEntryService;
+//import org.openmrs.module.htmlformentry.HtmlFormEntryService;
 
 import java.util.Locale;
 
@@ -39,10 +37,10 @@ public class AnnotationActivator extends BaseModuleActivator {
 		
 		updateConceptsAndEncounters();
 		
-		if (ModuleFactory.isModuleStarted("htmlformentry")) {
-			HtmlFormEntryService htmlFormEntryService = Context.getService(HtmlFormEntryService.class);
-			htmlFormEntryService.addHandler(Constants.MODULE_TAG, new DrawingTagHandler());
-		}
+		//		if (ModuleFactory.isModuleStarted("htmlformentry")) {
+		//			HtmlFormEntryService htmlFormEntryService = Context.getService(HtmlFormEntryService.class);
+		//			htmlFormEntryService.addHandler(Constants.MODULE_TAG, new DrawingTagHandler());
+		//		}
 		log.info("started");
 	}
 	
@@ -97,13 +95,13 @@ public class AnnotationActivator extends BaseModuleActivator {
 	
 	@Override
 	public void stopped() {
-		try {
-			HtmlFormEntryService htmlFormEntryService = Context.getService(HtmlFormEntryService.class);
-			htmlFormEntryService.getHandlers().remove(Constants.MODULE_TAG);
-		}
-		catch (Exception ex) {
-			ex.printStackTrace();
-		}
+		//		try {
+		//			HtmlFormEntryService htmlFormEntryService = Context.getService(HtmlFormEntryService.class);
+		//			htmlFormEntryService.getHandlers().remove(Constants.MODULE_TAG);
+		//		}
+		//		catch (Exception ex) {
+		//			ex.printStackTrace();
+		//		}
 		log.info("stopped");
 	}
 	
