@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration />
+    </facet>
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -18,6 +23,15 @@
     <orderEntry type="library" name="videojs.record.min.js" level="project" />
     <orderEntry type="library" name="webcam.min.js" level="project" />
     <orderEntry type="library" name="lightcase.js" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:legacyui-omod:1.2.4-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:legacyui-api:1.2.4-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:webservices.rest-omod-common:2.14" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.atteo:evo-inflector:1.2.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.5.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.5.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml.jackson.core:jackson-core:2.5.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:webservices.rest-omod-1.8:2.14" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:webservices.rest-omod-1.9:2.14" level="project" />
     <orderEntry type="module" module-name="docsanddrawing-api" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.api:openmrs-api:1.11.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
