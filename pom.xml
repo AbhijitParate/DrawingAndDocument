@@ -34,18 +34,6 @@
 				<version>${project.version}</version>
 			</extension>
 		</extensions>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.eluder.coveralls</groupId>
-                    <artifactId>coveralls-maven-plugin</artifactId>
-                    <version>4.3.0</version>
-                    <configuration>
-                        <repoToken>h9XcuxpLaQgxPArzK1ah7wiemcFkI8yBW</repoToken>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 	<!--<properties>-->
 		<!--<openMRSVersion>1.11.6</openMRSVersion>-->
