@@ -1,0 +1,83 @@
+.attachment-list-item{
+    list-style: none;
+}
+
+
+.attachment-list-item > div {
+    display:inline-flex;
+    margin:2px
+}
+
+.attachment-list-item > div > a {
+    display: block;
+    font-size:20px;
+    width: 270px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.attachment-list-item > div > span {
+    color: red;
+    font-size:20px;
+}
+
+#expandButton {
+    float:right;
+    height:100%;
+    width:20px;
+    padding:0;
+}
+
+#attachmentDiv {
+    float: left;
+    height: 100%;
+    width: 300px;
+}
+
+#attachmentDiv > h4 {
+    margin: 5px;
+    font-size: large;
+}
+
+#attachmentDiv > ul {
+    float:left;
+    margin:5px;
+    max-height:400px;
+    overflow:scroll;
+    overflow-x:hidden;
+    overflow-y:auto;
+    width:300px;
+}
+
+#attachmentPreview {
+    float:left;
+    height:100%;
+    width:550px;
+    display:none;
+}
+
+#attachmentPreview > img {
+    width: 500px;
+    height: 500px;
+    margin: 25px;
+}
+
+#attachmentPreview > audio {
+    width: 500px;
+    height: 500px;
+    margin: 25px;
+}
+
+#attachmentPreview > video {
+    width: 500px;
+    height: 500px;
+    margin: 25px;
+}
+
+#attachmentPreview > textarea {
+    width: 500px;
+    height: 500px;
+    margin: 25px;
+}
+

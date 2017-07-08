@@ -1,0 +1,47 @@
+.details {
+    float: left;
+    width: 730px;
+    height: inherit;
+}
+
+.drawing {
+    width: 65%;
+    float: left;
+}
+
+.drawing-container {
+    width: 450px;
+    height: 450px;
+    border: solid gainsboro 1px;
+    margin: 10px;
+}
+
+.attachments-container {
+    height: 100%;
+    width: 34%;
+    float: right;
+    border-left: #cccccc 1px ridge;
+}
+
+.header {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.attachments-list {
+    height: 90%;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.attachments-list > li {
+    text-overflow: ellipsis;
+    font-size: 15px;
+    width: 20em;
+    overflow: hidden;
+    margin: 5px;
+}

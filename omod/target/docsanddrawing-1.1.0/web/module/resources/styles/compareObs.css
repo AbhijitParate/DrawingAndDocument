@@ -1,0 +1,76 @@
+.list-container {
+    border: 1px #cccccc solid;
+    text-align: center;
+    margin: 1%;
+}
+
+.remove-list {
+    float: left;
+    margin-top: 100px;
+}
+
+.visit-list {
+    width: 30%;
+    float: left;
+    margin: 5px;
+}
+
+.encounter-list {
+    width: 30%;
+    float: left;
+    margin: 5px;
+}
+
+.observation-list {
+    width: 30%;
+    float: left;
+    margin: 5px;
+}
+
+.observation-preview {
+    border: 1px #cccccc solid;
+    display: inline-block;
+    text-align: center;
+    width: 98%;
+    max-width: 98%;
+    max-height: 30%;
+    margin: 5px;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.selection {
+    border: 1px #cccccc solid;
+    width: 100%;
+    margin: 1%;
+    position:relative;
+    height: 200px;
+    max-height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+label{
+    font-size: 18px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.ui-selecting {
+    background: #ccc;
+}
+
+.ui-selected {
+    background: #007fff;
+    color: white;
+}
+
+.ui-selectee:hover {
+    cursor: hand;
+    background-color: #007fff;
+    color: white;
+}
