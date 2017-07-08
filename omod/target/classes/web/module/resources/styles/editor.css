@@ -1,0 +1,106 @@
+/*Container for the whole page*/
+
+.outerContainer {
+    height: 817px;
+    border: solid dimgrey 2px;
+}
+
+.controlsContainer {
+    float: left;
+    width: 16%;
+    height: 98%;
+    margin: 0.5%;
+}
+
+.canvasContainer {
+    float: left;
+    width: 82%;
+    height: 98%;
+    border: solid 1px;
+    elevation: above;
+    margin-top: 0.5%;
+}
+
+.bottomControlContainer {
+    width: 98%;
+    height: 5%;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: solid 1px;
+    float: left;
+}
+
+.button-regular {
+    float: left;
+    width: 48px;
+    height: 48px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.button-small {
+    top: 10px;
+    right: 10px;
+    height: 32px;
+    width: 32px;
+    padding: 1px;
+}
+
+.button-canvas {
+    height: 32px;
+    width: 32px;
+    margin: 1px;
+    padding: 1px;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.not-available {
+    background-color: #ff625e;
+}
+
+#canvas:hover{
+    cursor: crosshair;
+}
+
+.attachmentFilePreview{
+    margin-left: 5px;
+    font-size: medium;
+}
+
+.previewWindow {
+    width: 400px;
+    height: 300px;
+}
+
+.listItemDiv {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.icon {
+    margin: 2px;
+    width:24px;
+    height:24px;
+    vertical-align: middle;
+}
+.text {
+    vertical-align: middle;
+    font-size: large;
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.control-header {
+    padding: 1% 1% 1% 15%;
+}

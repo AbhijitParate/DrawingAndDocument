@@ -2,10 +2,279 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36e80d1b-bbfd-4c70-bb1e-2f046640a285" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.omod" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0-tests.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/extension/html/AdminList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/fragment/controller/AddEditorFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/fragment/controller/CompareObservationFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/fragment/controller/DrawingDetailsFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/fragment/controller/EditEditorFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/fragment/controller/EncounterDetailsTemplateFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/fragment/controller/StatusBarFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/fragment/controller/ViewPopupFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/DownloadController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/EncounterController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/TemplatesController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/UploadController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/parser/ParsedObs.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/parser/Parser$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/no-preview.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/templates/template-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/templates/template-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/templates/template-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/templates/template-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/images/templates/template-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/webcam.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/font/lightcase.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/font/lightcase.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/font/lightcase.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/font/videojs-record.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/images/ui-icons_444444_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/images/ui-icons_555555_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/images/ui-icons_777620_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/images/ui-icons_777777_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/images/ui-icons_cc0000_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/templates/template-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/templates/template-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/templates/template-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/templates/template-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/templates/template-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/dependency-maven-plugin-markers/org.openmrs.module-docsanddrawing-api-jar-1.1.0.marker" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/commons-codec-1.9.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/commons-fileupload-1.3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/commons-io-2.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/docsanddrawing-api-1.1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/json-20090211.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/extension/html/AdminList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/AddEditorFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/CompareObservationFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/DrawingDetailsFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/EditEditorFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/EncounterDetailsTemplateFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/StatusBarFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/ViewPopupFragmentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/DownloadController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/EncounterController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/TemplatesController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/UploadController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/parser/ParsedObs.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/parser/Parser$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/no-preview.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/templates/template-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/templates/template-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/templates/template-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/templates/template-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/templates/template-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/webcam.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/font/lightcase.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/font/lightcase.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/font/lightcase.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/font/videojs-record.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_444444_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_555555_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_777620_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_777777_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_cc0000_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/templates/template-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/templates/template-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/templates/template-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/templates/template-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/templates/template-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/test-classes/org/openmrs/module/docsanddrawing/AdminListExtensionTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Run_on_Server_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/.externalToolBuilders/Maven_Ant_Builder.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/maven-eclipse.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/apps/add_annotation_extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/apps/compare_obs_extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/apps/encounterDetails_extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/liquibase.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/messages.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/messages_es.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/messages_fr.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/addEditor.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/compareObservations.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/editEditor.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/encounterDetailsTemplate.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/includes/canvas.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/includes/editor_actions.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/includes/header.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/includes/modals.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/statusBar.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/viewEditor.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/viewPopup.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/pages/addDrawing.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/pages/compareObs.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/pages/editDrawing.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/pages/manageTemplates.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/pages/viewDrawing.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/pages/viewDrawingPopup.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/attachment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/attachments/attachment-audio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/attachments/attachment-file.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/attachments/attachment-image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/attachments/attachment-notes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/attachments/attachment-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/compareObs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/context_menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/context_menu2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/drawingObsEncounterTemplate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/import.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/keyboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/FileSaver.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/RecordRTC.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/blob-util.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/fabric.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/fabric.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/jquery-3.1.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/jquery.ui-contextmenu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/jquery.webui-popover.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/jspdf.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/lightcase.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/spectrum.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/video.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/videojs.record.lamejs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/videojs.record.libvorbis.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/videojs.record.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/videojs.record.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/videojs.record.recorderjs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/videojs.wavesurfer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/wavesurfer.microphone.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/wavesurfer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/libs/webcam.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/manage_templates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/status_actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/attachment.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/compareObs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/controls.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/drawingObsEncounterTemplate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/font/lightcase.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/jquery.webui-popover.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/lightcase.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/spectrum.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/video-js.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/videojs.record.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/styles/libs/videojs.record.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/classes/webModuleApplicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/apps/add_annotation_extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/apps/compare_obs_extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/apps/encounterDetails_extension.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/liquibase.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/messages.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/messages_es.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/messages_fr.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/moduleApplicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/addEditor.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/compareObservations.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/editEditor.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/encounterDetailsTemplate.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/includes/canvas.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/includes/editor_actions.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/includes/header.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/includes/modals.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/statusBar.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/viewEditor.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/viewPopup.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/addDrawing.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/compareObs.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/editDrawing.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/manageTemplates.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/viewDrawing.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/viewDrawingPopup.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachments/attachment-audio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachments/attachment-file.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachments/attachment-image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachments/attachment-notes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachments/attachment-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/compareObs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/context_menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/context_menu2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/drawingObsEncounterTemplate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/import.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/keyboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/FileSaver.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/RecordRTC.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/blob-util.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/fabric.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/fabric.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/jquery-3.1.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/jquery.ui-contextmenu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/jquery.webui-popover.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/jspdf.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/lightcase.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/spectrum.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/video.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.record.lamejs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.record.libvorbis.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.record.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.record.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.record.recorderjs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.wavesurfer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/wavesurfer.microphone.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/wavesurfer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/webcam.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/manage_templates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/status_actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/attachment.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/compareObs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/controls.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/drawingObsEncounterTemplate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/font/lightcase.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/jquery.webui-popover.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/lightcase.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/spectrum.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/video-js.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/videojs.record.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/videojs.record.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/webModuleApplicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/surefire-reports/TEST-org.openmrs.module.docsanddrawing.AdminListExtensionTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/surefire-reports/org.openmrs.module.docsanddrawing.AdminListExtensionTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0-tests.jar" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0-tests.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.jar" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.omod" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.omod" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-video.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="api/target/docsanddrawing-api-1.1.0-tests.jar" />
     <ignored path="api/target/docsanddrawing-api-1.1.0.jar" />
@@ -85,6 +354,14 @@
     <ignored path=".idea/libraries/Maven__postgresql_postgresql_8_3_603_jdbc4.xml" />
     <ignored path=".idea/libraries/Maven__postgresql_postgresql_9_0_801_jdbc4.xml" />
     <ignored path=".idea/runConfigurations/Run_Server_2_3_1.xml" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/omod/${project.build.directory}/classes/" />
+    <ignored path="$PROJECT_DIR$/omod/${project.build.directory}/test-classes/" />
+    <ignored path="$PROJECT_DIR$/omod/target/" />
+    <ignored path="$PROJECT_DIR$/api/${project.build.directory}/classes/" />
+    <ignored path="$PROJECT_DIR$/api/${project.build.directory}/test-classes/" />
+    <ignored path="$PROJECT_DIR$/api/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,16 +376,117 @@
     <favorites_list name="annotation" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <leaf>
+      <file leaf-file-name="import.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="299" column="61" lean-forward="false" selection-start-line="297" selection-start-column="32" selection-end-line="299" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status_actions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="88" column="38" lean-forward="false" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attachment.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context_menu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-11923">
+              <caret line="703" column="41" lean-forward="false" selection-start-line="703" selection-start-column="34" selection-end-line="703" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attachment-video.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-video.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="408" column="43" lean-forward="false" selection-start-line="408" selection-start-column="43" selection-end-line="408" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ecli</find>
+      <find>myVideo</find>
+      <find>audio:</find>
+      <find>pdf</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-video.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.5.0" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -166,63 +544,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawingAndDocument" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawingAndDocument" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawingAndDocument" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawingAndDocument" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="omod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawingAndDocument" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawingAndDocument" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <option name="show-excluded-files" value="false" />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawingAndDocument" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docsanddrawing-omod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Changed Files">
           <PATH>
@@ -260,7 +582,25 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="docsanddrawing-api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="docsanddrawing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="DrawingAndDocument">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -283,8 +623,85 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-excluded-files" value="false" />
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docsanddrawing-omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -298,7 +715,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Maven.Run on Server 2.4">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -322,6 +739,98 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -341,6 +850,68 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="docsanddrawing" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -363,6 +934,9 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -401,8 +975,37 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Maven.Run Server 2.3.1" />
+      <item index="0" class="java.lang.String" itemvalue="Maven.Run on Server 2.4" />
     </list>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -411,21 +1014,34 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2582" height="1416" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41164455" sideWeight="0.50758255" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20923695" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34749362" sideWeight="0.4968051" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.346644" sideWeight="0.4968051" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41631266" sideWeight="0.49241748" order="2" side_tool="false" content_ui="tabs" x="358" y="-1138" width="1685" height="901" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46833578" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="196" y="264" width="1678" height="998" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46813935" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="196" y="264" width="1678" height="998" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31606427" sideWeight="0.49433428" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32048193" sideWeight="0.49433428" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916054" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15854633" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24939759" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21845049" sideWeight="0.5056657" order="7" side_tool="true" content_ui="tabs" />
@@ -445,7 +1061,6 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="91" y="91" width="2378" height="1220" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16950959" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -513,6 +1128,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding complex obs to encounters in visit dashboard." />
     <MESSAGE value="Saving complex obs in DB and FileSystem" />
@@ -543,60 +1161,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/handler/DrawingAndDocObsHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/datahelper/ComplexDataHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/data/ValueComplex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1722">
-          <caret line="92" column="17" lean-forward="false" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/obs/data/ModuleComplexData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="53" column="61" lean-forward="false" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/docsanddrawing-api.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1092">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewPopupFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-354">
-          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-454">
@@ -688,13 +1265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/AnnotationActivator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -831,13 +1401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4799">
-          <caret line="110" column="13" lean-forward="false" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/videojs.record.recorderjs.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -869,21 +1432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="101" column="21" lean-forward="false" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="63" column="21" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/resources/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -899,19 +1447,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/AnnotationActivator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="228" column="44" lean-forward="false" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="299" column="61" lean-forward="false" selection-start-line="297" selection-start-column="32" selection-end-line="299" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="88" column="38" lean-forward="false" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11923">
+          <caret line="703" column="41" lean-forward="false" selection-start-line="703" selection-start-column="34" selection-end-line="703" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="408" column="43" lean-forward="false" selection-start-line="408" selection-start-column="43" selection-end-line="408" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/FileSaver.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="1" column="3045" lean-forward="false" selection-start-line="1" selection-start-column="3045" selection-end-line="1" selection-end-column="3045" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

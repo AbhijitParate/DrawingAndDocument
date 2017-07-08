@@ -1,0 +1,12 @@
+[
+    {
+        "id": "${project.parent.artifactId}.compare",
+        "extensionPointId": "patientDashboard.visitActions",
+        "type": "link",
+        "label": "Compare Observations",
+        "url": "docsanddrawing/compareObs.page?patientId={{patient.uuid}}",
+        "icon": "icon-exchange",
+        "order": 26,
+        "requiredPrivilege": "Task: coreapps.createVisit"
+    }
+]
