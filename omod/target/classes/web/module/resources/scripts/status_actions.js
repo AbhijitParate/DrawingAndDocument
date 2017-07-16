@@ -28,7 +28,8 @@ $(document).ready(function () {
 
         $.getJSON(url,
             function success(data) {
-                recreateCanvas(data.drawing);
+            console.log(data);
+                recreateCanvas(data.json);
                 if(data.obs.length > 0) {
                     previousAttachments = data.obs;
                 }
@@ -61,56 +62,70 @@ $(document).ready(function () {
         });
 
         console.debug(drawing);
-        fabric.loadSVGFromURL("../ws/rest/v1/docsanddrawing/obs/" + drawing.uuid +"/"+drawing.name,
-            function(objects, options) {
-                console.log(objects);
-                let mediaobjs = [];
-                for(let i = 0; i < objects.length; i++) {
-                    let obj = objects[i];
-                    // for our implementation
-                    let data = obj.get('preserveAspectRatio');
-                    if (data && data.substring(0,4) === "data") {
-                        let newObj = new fabric.Media(data,{
-                            top: obj.transformMatrix[5],
-                            left: obj.transformMatrix[4],
-                        });
-                        mediaobjs.push(newObj);
-                        canvas.add(newObj);
-                        newObj.on('image:loaded', function () {
-                            canvas.renderAll.bind(canvas);
-                            canvas.moveTo(newObj, 999);
-                        });
-                    }
-                    // todo: recreate image is buggy, size of image is inconsistent
-                    else if (obj.type === "image") {
-                        // console.log("Image ->");
-                        // console.log(obj);
-                        // console.log("<- Image");
-                        obj.setTop(obj.top + obj.transformMatrix[5]);
-                        obj.setLeft(obj.left + obj.transformMatrix[4]);
-                        obj.setTransformMatrix(null);
-                        canvas.add(obj);
-                    }
-                    // todo: recreate text from svg
-                    else if (obj.type === "text") {
-                        // console.log("Text ->");
-                        // console.log(obj);
-                        // console.log("<- Text");
-                        let text = new fabric.Text(obj.text, {
-                            top: obj.transformMatrix[5],
-                            left: obj.transformMatrix[4],
-                        });
-                        canvas.add(text);
-                    }
-                    else {
-                        canvas.add(obj);
-                    }
-                }
 
-                canvas.renderAll();
-                div.dialog('destroy');
-
+        $.getJSON(
+            "../ws/rest/v1/docsanddrawing/obs/" + drawing.uuid +"/"+drawing.name,
+            function success(data) {
+                console.log(data);
+                canvas.loadFromJSON(data,
+                    function onLoad() {
+                    canvas.renderAll();
+                    // updateFlag = true;
+                    // enableUndoRedo();
+                    div.dialog('destroy');
+                });
             });
+
+        // fabric.loadFromJSON("../ws/rest/v1/docsanddrawing/obs/" + drawing.uuid +"/"+drawing.name,
+        //     function(objects, options) {
+        //         console.log(objects);
+        //         let mediaobjs = [];
+        //         for(let i = 0; i < objects.length; i++) {
+        //             let obj = objects[i];
+        //             // for our implementation
+        //             let data = obj.get('preserveAspectRatio');
+        //             if (data && data.substring(0,4) === "data") {
+        //                 let newObj = new fabric.Media(data,{
+        //                     top: obj.transformMatrix[5],
+        //                     left: obj.transformMatrix[4],
+        //                 });
+        //                 mediaobjs.push(newObj);
+        //                 canvas.add(newObj);
+        //                 newObj.on('image:loaded', function () {
+        //                     canvas.renderAll.bind(canvas);
+        //                     canvas.moveTo(newObj, 999);
+        //                 });
+        //             }
+        //             // todo: recreate image is buggy, size of image is inconsistent
+        //             else if (obj.type === "image") {
+        //                 // console.log("Image ->");
+        //                 // console.log(obj);
+        //                 // console.log("<- Image");
+        //                 // obj.setTop(obj.top + obj.transformMatrix[5]);
+        //                 // obj.setLeft(obj.left + obj.transformMatrix[4]);
+        //                 // obj.setTransformMatrix(null);
+        //                 canvas.add(obj);
+        //             }
+        //             // todo: recreate text from svg
+        //             else if (obj.type === "text") {
+        //                 // console.log("Text ->");
+        //                 // console.log(obj);
+        //                 // console.log("<- Text");
+        //                 let text = new fabric.Text(obj.text, {
+        //                     top: obj.transformMatrix[5],
+        //                     left: obj.transformMatrix[4],
+        //                 });
+        //                 canvas.add(text);
+        //             }
+        //             else {
+        //                 canvas.add(obj);
+        //             }
+        //         }
+        //
+        //         canvas.renderAll();
+        //         div.dialog('destroy');
+        //
+        //     });
     }
 
     function recreateAttachments(obsArray) {
@@ -307,7 +322,7 @@ $(document).ready(function () {
         let attachmentDiv = $("<div />").attr("id","attachmentDiv")
             .appendTo(dialog);
 
-        if(attachments != null && attachments.length > 0){
+        if(attachments !== null && attachments.length > 0){
             $("<h4 />").text("New attachments").appendTo(attachmentDiv);
             let localAttachDiv = recreateLocalAttachments();
             localAttachDiv.appendTo(attachmentDiv);
@@ -385,6 +400,7 @@ $(document).ready(function () {
     function saveData() {
         prepareForm();
         saveSVG(formData);
+        saveJSON();
         saveAttachments(formData);
         savePreviousObs();
         uploadData();
@@ -399,6 +415,11 @@ $(document).ready(function () {
     function saveSVG() {
         formData.append("files[]", btoa(canvas.toSVG()));
         formData.append("filenames[]", Math.floor(Date.now()) + ".svg" );
+    }
+
+    function saveJSON() {
+        formData.append("files[]", btoa(JSON.stringify(canvas)));
+        formData.append("filenames[]", Math.floor(Date.now()) + ".json" );
     }
 
     function saveAttachments() {

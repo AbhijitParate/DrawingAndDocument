@@ -39,13 +39,16 @@ public class EncounterController extends MainResourceController {
 	
 	public static final String DRAWING = "drawing";
 	
+	public static final String DRAWING_JSON = "json";
+	
 	@RequestMapping(value = "/get", method = RequestMethod.GET)
 	@ResponseBody
 	public SimpleObject onGet(@RequestParam(value = "encounterid") Encounter encounter, HttpServletResponse response)
 	        throws JSONException {
 		
 		ParsedObs parsedObs = Parser.parseObservations(encounter);
-		return SimpleObject.create(DRAWING, parsedObs.getDrawing(), OBSERVATIONS, parsedObs.getObs());
+		return SimpleObject.create(DRAWING, parsedObs.getDrawing(), OBSERVATIONS, parsedObs.getObs(), DRAWING_JSON,
+		    parsedObs.getJson());
 	}
 	
 	@Override

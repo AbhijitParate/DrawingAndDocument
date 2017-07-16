@@ -329,4 +329,38 @@ $(document).ready(function() {
         input.click();
     });
 
+    $("#import-json").on('click', function () {
+        let input = $("<input />").attr("type", "file").attr("accept", "*/*");
+        input.change(function (e) {
+            let div = $("<div />");
+            $("<img src='./../ms/uiframework/resource/docsanddrawing/images/loading.gif' width='100' height='100' />").appendTo(div);
+            div.dialog({
+                title: 'Loading...',
+                resizable: false,
+                position: {
+                    of: window,
+                    at: "center center",
+                    my: "center center"
+                },
+                height: "180",
+                width: "100",
+                icon: hide
+            });
+            console.log("File selected...");
+            let image = e.target.files[0];
+
+            let reader = new FileReader();
+            reader.onload = (function (e) {
+                console.log("Loading complete...");
+                let img = e.target.result;
+                canvas.loadFromJSON(img, function onLoad() {
+                    canvas.renderAll();
+                    div.dialog('destroy');
+                });
+            });
+            reader.readAsText(image);
+        });
+        input.click();
+    });
+
 });

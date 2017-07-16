@@ -193,6 +193,9 @@
             <button type="button" id="import-svg" class="button-regular ui-button ui-widget ui-corner-all" title="Import canvas from svg file">
                 SVG
             </button>
+            <button type="button" id="import-json" class="button-regular ui-button ui-widget ui-corner-all" title="Import canvas from svg file">
+                json
+            </button>
         </div>
         <h3 class="control-header">Attach files</h3>
         <div style="padding: 1%;">
@@ -243,7 +246,7 @@
             <button type="button" id="save-png" class="button-regular ui-button ui-widget ui-corner-all" title="Save as PNG">
                 png
             </button>
-            <button type="button" id="save-json" class="button-regular ui-button ui-widget ui-corner-all" title="Save as JSON">
+            <button type="button" id="save-json" class="button-regular ui-button ui-widget ui-corner-all" title="Save as json">
                 json
             </button>
             <button type="button" id="save-svg" class="button-regular ui-button ui-widget ui-corner-all" title="Save as SVG">

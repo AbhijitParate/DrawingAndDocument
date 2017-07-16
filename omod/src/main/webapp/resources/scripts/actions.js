@@ -2,7 +2,6 @@
  * Created by abhij on 3/7/2017.
  *
  */
-import {saveAs} from "./libs/FileSaver.min";
 let fillColor;
 
 $(document).ready(function() {
@@ -554,7 +553,7 @@ $(document).ready(function() {
             quality: 0.8,
             multiplier: 1
         });
-        let windowContent = '<!DOCTYPE html>';
+        let windowContent = "<!DOCTYPE html>";
         windowContent += "<html>";
         windowContent += "<head><title>Print canvas</title></head>";
         windowContent += "<body>";
@@ -567,7 +566,9 @@ $(document).ready(function() {
         printWin.document.write(windowContent);
         printWin.document.close();
         printWin.focus();
-        printWin.print();
+        printWin.onload = function(){
+            printWin.print();
+        };
         // printWin.close();
     });
 
