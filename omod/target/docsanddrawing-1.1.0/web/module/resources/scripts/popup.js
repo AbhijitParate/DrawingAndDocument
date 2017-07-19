@@ -6,7 +6,7 @@
 $(document).ready(function() {
     $(document).ready(function() {
         console.log("Document ready.");
-        var url = "/openmrs/ws/rest/v1/docsanddrawing/encounter/get?encounterid="+encounterId;
+        var url = "../ws/rest/v1/docsanddrawing/encounter/get?encounterid="+encounterId;
         $.getJSON(
             //emr.fragmentActionLink("docsanddrawing", "drawingDetails", "getEncounterDetails", { encounterId: encounterId })
             url
