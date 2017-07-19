@@ -52,8 +52,8 @@ public class DownloadController extends MainResourceController {
 	public void onGet(@PathVariable(value = "obsUuid") String obsUuid, @PathVariable(value = "fileName") String fileName,
 	        @RequestParam(value = "view", required = false) String view, HttpServletResponse response) throws IOException {
 		
-		log.debug("Obs ID" + obsUuid);
-		log.debug("FileName " + fileName);
+		//		log.debug("Obs ID" + obsUuid);
+		//		log.debug("FileName " + fileName);
 		
 		// Getting the Core/Platform complex data object
 		Obs obs = moduleContext.getObsService().getObsByUuid(obsUuid);

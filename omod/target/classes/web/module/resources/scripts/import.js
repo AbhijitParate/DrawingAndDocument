@@ -7,6 +7,8 @@ $(document).ready(function() {
     // Template
     let uploadImage, imagePath;
     let dialogTemplate = $("#dialog-upload");
+    let dialogWebcam = $("#dialog-webcam") , reset = false;
+
     dialogTemplate.dialog({
         resizable: false,
         position: {
@@ -136,7 +138,6 @@ $(document).ready(function() {
     });
 
     // WebCam
-    let dialogWebcam = $("#dialog-webcam") , reset = false;
     dialogWebcam.dialog({
         resizable: true,
         position: {

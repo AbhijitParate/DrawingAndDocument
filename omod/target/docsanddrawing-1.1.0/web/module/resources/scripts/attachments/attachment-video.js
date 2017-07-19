@@ -51,10 +51,10 @@ $(document).ready(function($) {
             height: "auto",
             width: "auto",
             open: function () {
-                console.info("Video dialog opened");
+                // console.info("Video dialog opened");
             },
             close: function () {
-                console.info("Video dialog closed");
+                // console.info("Video dialog closed");
             },
             autoOpen: false,
             buttons: {

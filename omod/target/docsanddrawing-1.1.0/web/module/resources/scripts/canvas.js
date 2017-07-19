@@ -40,7 +40,7 @@ $(document).ready(function() {
     canvas.on("object:added", function (e) {
         if(updateFlag) {
             var object = e.target;
-            console.log('object:added');
+            // console.log('object:added');
             updateStack();
         }
     });
@@ -48,13 +48,13 @@ $(document).ready(function() {
     canvas.on("object:removed", function (e) {
         if(updateFlag) {
             var object = e.target;
-            console.log('object:removed');
+            // console.log('object:removed');
             updateStack();
         }
     });
 
     canvas.on("object:modified", function (event) {
-        console.log('object:modified');
+        // console.log('object:modified');
         var object = event.target;
         if(updateFlag) {
             updateStack();
@@ -62,25 +62,29 @@ $(document).ready(function() {
     });
 
     canvas.on("object:selected", function (event) {
-        console.log('object:selected');
+        // console.log('object:selected');
         var object = event.target;
-        console.info(object.type);
-        if( EDITOR_MODE === FILL && (object.type === 'rect' || object.type === 'circle' || object.type === 'triangle' || object.type === 'polygon')) {
-            object.set('fill' , fillColor);
+        // console.info(object.type);
+        if( EDITOR_MODE === FILL
+            && (object.type === "rect"
+                || object.type === "circle"
+                || object.type === "triangle"
+                || object.type === "polygon")) {
+            object.set("fill" , fillColor);
             updateStack();
         }
     });
 
     canvas.on("mouse:up", function (event) {
-        // console.log('3 event:mouse:up - X: ' + event.e.offsetX + ' Y: ' + event.e.offsetY);
+        // // console.log('3 event:mouse:up - X: ' + event.e.offsetX + ' Y: ' + event.e.offsetY);
             if(selectState.isFirstClick === true){
                 if(canvas.getActiveObject())
                     if(selectState.object.tag && selectState.object.tag === "media" && isEventWithinObject(event.e, selectState.object)) {
-                        console.log('object:double-clicked');
+                        // console.log('object:double-clicked');
                         selectState.object.show();
                         selectState.isFirstClick = false;
                     } else if (selectState.object.type === "text" && isEventWithinObject(event.e, selectState.object)){
-                        console.info("Text double clicked.");
+                        // console.info("Text double clicked.");
                         createDialogForText(selectState.object);
                     }
             } else {
@@ -94,31 +98,31 @@ $(document).ready(function() {
     var timeout;
 
     function ping() {
-        console.log("pinging....");
+        // console.log("pinging....");
         clearTimeout(timeout);
         timeout = setTimeout(function() {
-            console.log("PING");
+            // console.log("PING");
             $.ajax({
                 url : '../ws/rest/v1/docsanddrawing/ping',
-                type : 'GET',
-                dataType:'json',
+                type : "GET",
+                dataType:"json",
                 success : function(data) {
-                    console.log(data.result);
+                    // console.log(data.result);
                 },
                 error : function(request, error) {
-                    console.log("Request: "+JSON.stringify(request));
+                    // console.log("Request: "+JSON.stringify(request));
                 }
             });
         }, 10 * 1000);
     }
 
     canvas.on("mouse:down", function (event) {
-        console.log('2 object:mouse:down - X: ' + event.e.offsetX + ' Y: ' + event.e.offsetY);
+        // console.log('2 object:mouse:down - X: ' + event.e.offsetX + ' Y: ' + event.e.offsetY);
         ping();
     });
 
     function isEventWithinObject(touchEvent, object) {
-        console.log("Touch X:" + touchEvent.offsetX + " Y:" + touchEvent.offsetY );
+        // console.log("Touch X:" + touchEvent.offsetX + " Y:" + touchEvent.offsetY );
         return touchEvent.offsetX >= object.aCoords.tl.x && touchEvent.offsetX <= object.aCoords.br.x
             && touchEvent.offsetY >= object.aCoords.tl.y && touchEvent.offsetY <= object.aCoords.br.y;
     }
@@ -128,7 +132,7 @@ $(document).ready(function() {
 });
 
 function createDialogForText(object) {
-    console.info(object);
+    // console.info(object);
     let dialog = $("<div/>");
     dialog.attr("title", "Annotation");
 
@@ -185,14 +189,14 @@ function createDialogForText(object) {
         autoOpen: false,
         buttons: {
             "Clear": function () {
-                console.info("Retry clicked");
+                // console.info("Retry clicked");
                 noteTextArea.val("");
                 attachBtn.button("disable");
                 clearBtn.button("disable");
             },
             "Add": function () {
-                console.info("Attach clicked");
-                console.info(noteTextArea.val().replace(/\n/g," "));
+                // console.info("Attach clicked");
+                // console.info(noteTextArea.val().replace(/\n/g," "));
                 canvas.remove(object);
                 let text = new fabric.Text(noteTextArea.val().replace(/\n/g," "), {
                     fontFamily: "sans-serif",
@@ -219,14 +223,24 @@ function State(data) {
 }
 
 function updateStack() {
-    console.log('stack updated');
+    // console.log('stack updated');
     UNDO_STACK.push(new State(CANVAS_CURRENT));
     CANVAS_CURRENT = JSON.stringify(canvas);
 }
 
+function disableUndoRedo() {
+    $("#undo").attr("disabled", true);
+    $("#redo").attr("disabled", true);
+}
+
+function enableUndoRedo() {
+    $("#undo").attr("disabled", false);
+    $("#redo").attr("disabled", false);
+}
+
 function undo() {
     if(UNDO_STACK.length > 0) {
-        console.log("undo");
+        // console.log("undo");
         updateFlag = false;
         disableUndoRedo();
         canvas.clear().renderAll();
@@ -240,23 +254,13 @@ function undo() {
         });
 
     } else {
-        console.log("not undone");
+        // console.log("not undone");
     }
-}
-
-function disableUndoRedo() {
-    $("#undo").attr("disabled", true);
-    $("#redo").attr("disabled", true);
-}
-
-function enableUndoRedo() {
-    $("#undo").attr("disabled", false);
-    $("#redo").attr("disabled", false);
 }
 
 function redo() {
     if(REDO_STACK.length > 0) {
-        console.log("redo");
+        // console.log("redo");
         updateFlag = false;
         disableUndoRedo();
         canvas.clear().renderAll();
@@ -269,7 +273,7 @@ function redo() {
             enableUndoRedo();
         });
     } else {
-        console.log("not redone");
+        // console.log("not redone");
     }
 }
 

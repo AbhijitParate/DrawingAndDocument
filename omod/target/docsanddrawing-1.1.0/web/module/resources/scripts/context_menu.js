@@ -1,55 +1,6 @@
 $(document).ready(function() {
 
-    let clickPoint;
-
-    $(document).contextmenu({
-        delegate: ".upper-canvas",
-        autoFocus: true,
-        preventContextMenuForPopup: true,
-        preventSelect: true,
-        taphold: true,
-        menu: [
-            {
-                title: "Add image",
-                cmd: "add-image"
-            },
-            {
-                title: "Add audio clip",
-                cmd: "add-audio"
-            },
-            {
-                title: "Add video clip",
-                cmd: "add-video"
-            }
-        ],
-        // Implement the beforeOpen callback to dynamically change the entries
-        beforeOpen: function (event, ui) {
-
-            clickPoint = new fabric.Point(event.offsetX, event.offsetY);
-
-            // Optionally return false, to prevent opening the menu now
-        },
-        // Handle menu selection to implement a fake-clipboard
-        select: function (event, ui) {
-            // var clickPoint = new fabric.Point(event.offsetX, event.offsetY);
-            let input;
-            let options = {top: clickPoint.y, left: clickPoint.x};
-            switch (ui.cmd) {
-                case "add-image":
-                    console.log("add-image : " + clickPoint);
-                    createImageDialog();
-                    break;
-                case "add-audio":
-                    console.log("add-audio : " + clickPoint);
-                    createAudioDialog();
-                    break;
-                case "add-video":
-                    console.log("add-video : " + clickPoint);
-                    createVideoDialog();
-                    break;
-            }
-        },
-    });
+    var clickPoint;
 
     function createImageDialog() {
         let dialog = $("<div/>");
@@ -957,6 +908,55 @@ $(document).ready(function() {
         });
         $(".vjs-device-button.vjs-control.vjs-icon-device-perm").click();
     }
+
+    $(document).contextmenu({
+        delegate: ".upper-canvas",
+        autoFocus: true,
+        preventContextMenuForPopup: true,
+        preventSelect: true,
+        taphold: true,
+        menu: [
+            {
+                title: "Add image",
+                cmd: "add-image"
+            },
+            {
+                title: "Add audio clip",
+                cmd: "add-audio"
+            },
+            {
+                title: "Add video clip",
+                cmd: "add-video"
+            }
+        ],
+        // Implement the beforeOpen callback to dynamically change the entries
+        beforeOpen: function (event, ui) {
+
+            clickPoint = new fabric.Point(event.offsetX, event.offsetY);
+
+            // Optionally return false, to prevent opening the menu now
+        },
+        // Handle menu selection to implement a fake-clipboard
+        select: function (event, ui) {
+            // var clickPoint = new fabric.Point(event.offsetX, event.offsetY);
+            let input;
+            let options = {top: clickPoint.y, left: clickPoint.x};
+            switch (ui.cmd) {
+                case "add-image":
+                    console.log("add-image : " + clickPoint);
+                    createImageDialog();
+                    break;
+                case "add-audio":
+                    console.log("add-audio : " + clickPoint);
+                    createAudioDialog();
+                    break;
+                case "add-video":
+                    console.log("add-video : " + clickPoint);
+                    createVideoDialog();
+                    break;
+            }
+        },
+    });
 
 });
 

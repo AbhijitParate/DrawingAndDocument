@@ -9,14 +9,9 @@
  */
 package org.openmrs.module.docsanddrawing.fragment.controller;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.openmrs.Patient;
 import org.openmrs.Visit;
-import org.openmrs.module.docsanddrawing.ModuleContext;
 import org.openmrs.module.appui.UiSessionContext;
-import org.openmrs.ui.framework.UiUtils;
-import org.openmrs.ui.framework.annotation.InjectBeans;
 import org.openmrs.ui.framework.fragment.FragmentModel;
 import org.openmrs.ui.framework.page.PageRequest;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,22 +21,16 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 public class AddEditorFragmentController {
 	
-	Log log = LogFactory.getLog(getClass());
+	//	Log log = LogFactory.getLog(getClass());
 	
-	public void controller(PageRequest pageRequest, FragmentModel model, @RequestParam(value = "patientId") Patient patient,
-	        @RequestParam(value = "visitId") Visit visit, UiSessionContext sessionContext, UiUtils ui,
-	        @InjectBeans ModuleContext moduleContext) throws Exception {
-		log.debug(getClass().getSimpleName() + ".controller()");
+	public void controller(PageRequest pageRequest, FragmentModel model, UiSessionContext sessionContext,
+	        @RequestParam(value = "patientId") Patient patient, @RequestParam(value = "visitId") Visit visit)
+	        throws Exception {
+		//		log.debug(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("visitId", visit.getId());
 		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());
-		model.addAttribute("returnUrl", pageRequest.getRequest().getParameter("returnUrl"));
-	}
-	
-	public void submit(PageRequest pageRequest, FragmentModel model,
-	        @RequestParam(value = "patientId", required = false) Patient patient,
-	        @RequestParam(value = "visitId", required = false) Visit visit, UiSessionContext sessionContext, UiUtils ui,
-	        @InjectBeans ModuleContext moduleContext) throws Exception {
-		log.debug("submit triggered");
+		//		model.addAttribute("returnUrl", "../coreapps/clinicianfacing/patient.page?patientId="+patient.getId()+"&visitId"+visit.getId());
+		//		model.addAttribute("returnUrl", pageRequest.getRequest().getParameter("returnUrl"));
 	}
 }

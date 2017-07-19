@@ -35,11 +35,11 @@ public class EncounterController extends MainResourceController {
 	
 	protected final Log log = LogFactory.getLog(getClass());
 	
-	public static final String OBSERVATIONS = "obs";
+	private static final String OBSERVATIONS = "obs";
 	
-	public static final String DRAWING = "drawing";
+	private static final String DRAWING = "drawing";
 	
-	public static final String DRAWING_JSON = "json";
+	private static final String DRAWING_JSON = "json";
 	
 	@RequestMapping(value = "/get", method = RequestMethod.GET)
 	@ResponseBody

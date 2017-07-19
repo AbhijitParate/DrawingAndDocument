@@ -15,6 +15,20 @@ public class Constants {
 	
 	public static final String[] TEMPLATE_EXTENSIONS = { "JPEG", "JPG", "PNG" };
 	
+	public static final String ENCOUNTER_TYPE = "Drawings & Docs";
+	
+	public static final String ENCOUNTER_TYPE_UUID = "43c25184-f41f-11e6-bc64-92361f002671";
+	
+	public static final String ENCOUNTER_UUID = "325fbc82-f565-11e6-bc64-92361f002671";
+	
+	public static final String MODULE_TAG = "DrawingAndAttachments";
+	
+	public static final String MODULE_BASE_URL = "/" + MODULE_ID;
+	
+	public static final String UPLOAD_DOCUMENT_URL = MODULE_BASE_URL + "/upload";
+	
+	public static final String DOWNLOAD_DOCUMENT_URL = MODULE_BASE_URL + "/download";
+	
 	public static class Component {
 		
 		// ObservationSaver
@@ -48,10 +62,6 @@ public class Constants {
 		public static final String FILE = " FILE";
 	}
 	
-	public static final String ENCOUNTER_TYPE = "Drawings & Docs";
-	
-	public static final String ENCOUNTER_TYPE_UUID = "43c25184-f41f-11e6-bc64-92361f002671";
-	
 	public static class ConceptUUID {
 		
 		public static final String DEFAULT = "5118786a-f41d-11e6-bc64-92361f002671";
@@ -79,16 +89,6 @@ public class Constants {
 		
 		public static final String CONCEPT_COMPLEX_UUID_LIST = MODULE_ID + ".conceptComplexUuidList";
 	}
-	
-	public static final String ENCOUNTER_UUID = "325fbc82-f565-11e6-bc64-92361f002671";
-	
-	public static final String MODULE_TAG = "DrawingAndAttachments";
-	
-	public static final String MODULE_BASE_URL = "/" + MODULE_ID;
-	
-	public static final String UPLOAD_DOCUMENT_URL = MODULE_BASE_URL + "/upload";
-	
-	public static final String DOWNLOAD_DOCUMENT_URL = MODULE_BASE_URL + "/download";
 	
 	public static final Map<String, String> mimeTypes;
 	static {

@@ -12,57 +12,6 @@ $(document).ready(function($) {
 
     });
 
-    function createDialog() {
-        let dialog = $("<div/>");
-        dialog.attr("title", "Attach Image");
-        let input = $("<input/>");
-        input.attr("type", "file");
-        input.attr("hidden","");
-        input.attr("name","images[]");
-        input.attr("accept","image/*");
-        input.on("change", function (e) {
-            let temp = e.target.files[0];
-            // console.info("Image selected ->");
-            // console.info(temp);
-            createUploadImageDialog(temp);
-            dialog.dialog("destroy");
-        });
-        input.appendTo(dialog);
-        $("<button />").css({'margin': '10px'}).text("Upload from device").button().on("click", function () {
-            input.click();
-        }).appendTo(dialog);
-        $("<p />").appendTo(dialog);
-        $("<button />").css({'margin': '10px'}).text("Capture using web-cam").button().on("click", function () {
-            createWebcamDialog();
-            dialog.dialog("destroy");
-        }).appendTo(dialog);
-        dialog.dialog({
-            modal:true,
-            resizable: true,
-            position: {
-                of: window,
-                at: "center center",
-                my: "center center"
-            },
-            height: "auto",
-            width: "auto",
-            open: function () {
-                console.info("Image dialog opened");
-            },
-            close: function () {
-                console.info("Image dialog closed");
-            },
-            autoOpen: false,
-            buttons: {
-                "Cancel": function () {
-                    $(this).dialog("destroy");
-                }
-            }
-        });
-
-        dialog.dialog("open");
-    }
-
     function createUploadImageDialog(image) {
         // console.info("createUploadImageDialog ->");
         // console.info(image);
@@ -75,8 +24,8 @@ $(document).ready(function($) {
         input.attr("accept","image/*");
         input.on("change", function (e) {
             let image = e.target.files[0];
-            console.info("Image selected ->");
-            console.info(image);
+            // console.info("Image selected ->");
+            // console.info(image);
             createUploadImageDialog(image);
             dialog.dialog("destroy");
         });
@@ -104,10 +53,10 @@ $(document).ready(function($) {
             height: "auto",
             width: "auto",
             open: function () {
-                console.info("Upload image dialog opened");
+                // console.info("Upload image dialog opened");
             },
             close: function () {
-                console.info("Upload image dialog closed");
+                // console.info("Upload image dialog closed");
             },
             autoOpen: false,
             buttons: {
@@ -119,7 +68,7 @@ $(document).ready(function($) {
                     input.click();
                 },
                 "Attach": function () {
-                    console.info("Attach file code here");
+                    // console.info("Attach file code here");
                     let attachmentImage = new Attachment(image.name, "image", previewImage );
                     attachments.push(attachmentImage);
                     $(this).dialog("destroy");
@@ -142,8 +91,8 @@ $(document).ready(function($) {
         input.attr("accept","image/*");
         input.on("change", function (e) {
             let image = e.target.files[0];
-            console.info("Image selected ->");
-            console.info(image);
+            // console.info("Image selected ->");
+            // console.info(image);
             createUploadImageDialog(image);
             dialog.dialog("destroy");
         });
@@ -165,6 +114,11 @@ $(document).ready(function($) {
         let attachmentImage;
         let player;
         var attachBtn, retryBtn, uploadBtn;
+        function saveAttachment() {
+            // console.info("Save attachment code here");
+            attachments.push(attachmentImage);
+        }
+
         dialog.dialog({
             modal:true,
             resizable: true,
@@ -176,7 +130,7 @@ $(document).ready(function($) {
             height: 650,
             width: 680,
             open: function () {
-                console.info("Webcam dialog opened");
+                // console.info("Webcam dialog opened");
                 player = videojs("myCamera", {
                     controls: true,
                     width: 640,
@@ -197,10 +151,10 @@ $(document).ready(function($) {
 
                 // error handling
                 player.on('deviceError', function() {
-                    console.warn('device error:', player.deviceErrorCode);
+                    // console.warn('device error:', player.deviceErrorCode);
                 });
                 player.on('error', function(error) {
-                    console.log('error:', error);
+                    // console.log('error:', error);
                 });
                 // snapshot is available
                 player.on('finishRecord', function() {
@@ -226,24 +180,24 @@ $(document).ready(function($) {
                 upload :{
                     text : "Upload from system",
                     click : function () {
-                        console.info("Upload clicked");
+                        // console.info("Upload clicked");
                         input.click();
                         $(this).dialog("close");
                     }
                 },
                 "Retry": function () {
-                    console.info("Retry clicked");
+                    // console.info("Retry clicked");
                     $(".vjs-icon-photo-retry").click();
                     retryBtn.button("disable");
                     attachBtn.button("disable");
                 },
                 "Attach": function () {
-                    console.info("Attach clicked");
+                    // console.info("Attach clicked");
                     saveAttachment();
                     $(this).dialog("close");
                 },
                 "Cancel": function () {
-                    console.info("Camera dialog closed");
+                    // console.info("Camera dialog closed");
                     $(this).dialog("close");
                 },
             }
@@ -254,11 +208,6 @@ $(document).ready(function($) {
             player.recorder.destroy();
         }
 
-        function saveAttachment() {
-            console.info("Save attachment code here");
-            attachments.push(attachmentImage);
-        }
-
         dialog.dialog("open");
 
         select.on("change", function () {
@@ -266,7 +215,7 @@ $(document).ready(function($) {
             let size = $(this).val();
             switch (size){
                 case "1":
-                    console.info("1");
+                    // console.info("1");
                     player.recorder.destroy();
                     newVideo = $("<video/>").addClass("video-js vjs-default-skin");
                     newVideo.appendTo(imageDiv);
@@ -295,7 +244,7 @@ $(document).ready(function($) {
                     });
                     break;
                 case "2":
-                    console.info("2");
+                    // console.info("2");
                     player.recorder.destroy();
                     newVideo = $("<video/>").addClass("video-js vjs-default-skin");
                     newVideo.appendTo(imageDiv);
@@ -324,7 +273,7 @@ $(document).ready(function($) {
                     });
                     break;
                 case "3":
-                    console.info("3");
+                    // console.info("3");
                     player.recorder.destroy();
                     newVideo = $("<video/>").addClass("video-js vjs-default-skin");
                     newVideo.appendTo(imageDiv);
@@ -353,7 +302,7 @@ $(document).ready(function($) {
                     });
                     break;
                 case "4":
-                    console.info("4");
+                    // console.info("4");
                     player.recorder.destroy();
                     newVideo = $("<video/>").addClass("video-js vjs-default-skin");
                     newVideo.appendTo(imageDiv);
@@ -398,6 +347,57 @@ $(document).ready(function($) {
             $(".vjs-device-button.vjs-control.vjs-icon-device-perm").click();
         });
         $(".vjs-device-button.vjs-control.vjs-icon-device-perm").click();
+    }
+
+    function createDialog() {
+        let dialog = $("<div/>");
+        dialog.attr("title", "Attach Image");
+        let input = $("<input/>");
+        input.attr("type", "file");
+        input.attr("hidden","");
+        input.attr("name","images[]");
+        input.attr("accept","image/*");
+        input.on("change", function (e) {
+            let temp = e.target.files[0];
+            // console.info("Image selected ->");
+            // console.info(temp);
+            createUploadImageDialog(temp);
+            dialog.dialog("destroy");
+        });
+        input.appendTo(dialog);
+        $("<button />").css({'margin': '10px'}).text("Upload from device").button().on("click", function () {
+            input.click();
+        }).appendTo(dialog);
+        $("<p />").appendTo(dialog);
+        $("<button />").css({'margin': '10px'}).text("Capture using web-cam").button().on("click", function () {
+            createWebcamDialog();
+            dialog.dialog("destroy");
+        }).appendTo(dialog);
+        dialog.dialog({
+            modal:true,
+            resizable: true,
+            position: {
+                of: window,
+                at: "center center",
+                my: "center center"
+            },
+            height: "auto",
+            width: "auto",
+            open: function () {
+                // console.info("Image dialog opened");
+            },
+            close: function () {
+                // console.info("Image dialog closed");
+            },
+            autoOpen: false,
+            buttons: {
+                "Cancel": function () {
+                    $(this).dialog("destroy");
+                }
+            }
+        });
+
+        dialog.dialog("open");
     }
 
 });

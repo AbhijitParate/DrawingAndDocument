@@ -10,65 +10,9 @@ $(document).ready(function($) {
         createDialog();
     });
 
-    function getInputTag(dialog) {
-        let input = $("<input/>");
-        input.attr("type", "file");
-        input.attr("hidden","");
-        input.attr("name","notes[]");
-        input.attr("accept","text/*");
-        input.on("change", function (e) {
-            let file = e.target.files[0];
-            console.info("Note file selected ->" + file.name);
-            createUploadNoteDialog(file);
-            dialog.dialog("close");
-        });
-        return input;
-    }
-
-    function createDialog() {
-        let dialog = $("<div/>");
-        dialog.attr("title", "Attach Notes");
-        let inputTag = getInputTag(dialog);
-        inputTag.appendTo(dialog);
-        $("<button />").css('margin', '10px').text("Upload from device").button().on("click", function () {
-            inputTag.click();
-        }).appendTo(dialog);
-        $("<p />").appendTo(dialog);
-        $("<button />").css('margin', '10px').text("Create new note").button().on("click", function () {
-            createNewNoteDialog();
-            dialog.dialog("destroy");
-        }).appendTo(dialog);
-        dialog.dialog({
-            modal:true,
-            resizable: true,
-            position: {
-                of: window,
-                at: "center center",
-                my: "center center"
-            },
-            height: "auto",
-            width: "auto",
-            open: function () {
-                console.info("Notes dialog opened");
-            },
-            close: function () {
-                console.info("Notes dialog closed");
-                $(this).dialog("destroy");
-            },
-            autoOpen: false,
-            buttons: {
-                "Cancel": function () {
-                    $(this).dialog("close");
-                }
-            }
-        });
-
-        dialog.dialog("open");
-    }
-
     function createUploadNoteDialog(noteFile) {
-        // console.info("createUploadImageDialog ->");
-        // console.info(image);
+        // // console.info("createUploadImageDialog ->");
+        // // console.info(image);
         let dialog = $("<div/>");
         dialog.attr("title", "Upload notes from system");
         let input = getInputTag(dialog);
@@ -83,14 +27,14 @@ $(document).ready(function($) {
 
         let noteInput = $("<input />");
         noteInput.attr("type", "text");
-        noteInput.prop('readonly', true);
+        noteInput.prop("readonly", true);
         noteInput.appendTo(noteLabel);
 
         let noteTextArea = $("<textarea />");
         noteTextArea.css({"height":"400", "width":"500", "float":"left","margin-top": "10px"});
         noteTextArea.attr("title","Preview Text");
         noteTextArea.appendTo(wrapperDiv);
-        noteTextArea.prop('readonly', true);
+        noteTextArea.prop("readonly", true);
 
         let fileContent;
         let reader = new FileReader();
@@ -114,10 +58,10 @@ $(document).ready(function($) {
             height: "auto",
             width: "550",
             open: function () {
-                console.info("Upload audio dialog opened");
+                // console.info("Upload audio dialog opened");
             },
             close: function () {
-                console.info("Upload audio dialog closed");
+                // console.info("Upload audio dialog closed");
                 $(this).dialog("destroy");
             },
             autoOpen: false,
@@ -130,7 +74,7 @@ $(document).ready(function($) {
                     input.click();
                 },
                 "Attach": function () {
-                    console.info("Attach file code here");
+                    // console.info("Attach file code here");
                     let reader = new FileReader();
                     reader.onload = (function (e) {
                         let attachment = new Attachment(noteFile.name, "note", e.target.result );
@@ -200,7 +144,7 @@ $(document).ready(function($) {
             height: "auto",
             width: "550",
             open: function () {
-                console.info("Record audio dialog opened");
+                // console.info("Record audio dialog opened");
                 attachBtn = $(".ui-dialog-buttonpane button:contains('Attach')");
                 clearBtn = $(".ui-dialog-buttonpane button:contains('Clear')");
                 uploadBtn = $(".ui-dialog-buttonpane button:contains('Upload')");
@@ -215,16 +159,16 @@ $(document).ready(function($) {
             autoOpen: false,
             buttons: {
                 "Upload from system" : function() {
-                    console.info("Upload clicked");
+                    // console.info("Upload clicked");
                     inputTag.click();
                 },
                 "Clear": function () {
-                    console.info("Retry clicked");
+                    // console.info("Retry clicked");
                     $(this).dialog("destroy");
                     createNewNoteDialog();
                 },
                 "Attach": function () {
-                    console.info("Attach clicked");
+                    // console.info("Attach clicked");
                     saveAttachment();
                     $(this).dialog("close");
                 },
@@ -235,15 +179,71 @@ $(document).ready(function($) {
         });
 
         function saveAttachment() {
-            console.info("Save attachment code here");
+            // console.info("Save attachment code here");
             let noteName = noteInput.val();
             let textToWrite = noteTextArea.val();
             let newAttachmentNotes = new Attachment(noteName + ".txt", "note", btoa(textToWrite));
             attachments.push(newAttachmentNotes);
-            console.info( "Attaching -> " + newAttachmentNotes);
+            // console.info( "Attaching -> " + newAttachmentNotes);
         }
 
         dialog.dialog("open");
     }
-    
+
+    function createDialog() {
+        let dialog = $("<div/>");
+        dialog.attr("title", "Attach Notes");
+        let inputTag = getInputTag(dialog);
+        inputTag.appendTo(dialog);
+        $("<button />").css('margin', '10px').text("Upload from device").button().on("click", function () {
+            inputTag.click();
+        }).appendTo(dialog);
+        $("<p />").appendTo(dialog);
+        $("<button />").css('margin', '10px').text("Create new note").button().on("click", function () {
+            createNewNoteDialog();
+            dialog.dialog("destroy");
+        }).appendTo(dialog);
+        dialog.dialog({
+            modal:true,
+            resizable: true,
+            position: {
+                of: window,
+                at: "center center",
+                my: "center center"
+            },
+            height: "auto",
+            width: "auto",
+            open: function () {
+                // console.info("Notes dialog opened");
+            },
+            close: function () {
+                // console.info("Notes dialog closed");
+                $(this).dialog("destroy");
+            },
+            autoOpen: false,
+            buttons: {
+                "Cancel": function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+
+        dialog.dialog("open");
+    }
+
+    function getInputTag(dialog) {
+        let input = $("<input/>");
+        input.attr("type", "file");
+        input.attr("hidden","");
+        input.attr("name","notes[]");
+        input.attr("accept","text/*");
+        input.on("change", function (e) {
+            let file = e.target.files[0];
+            // console.info("Note file selected ->" + file.name);
+            createUploadNoteDialog(file);
+            dialog.dialog("close");
+        });
+        return input;
+    }
+
 });

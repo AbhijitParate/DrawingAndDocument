@@ -39,7 +39,7 @@ public class TemplatesController extends MainResourceController {
 	public String onGetAll(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		File file = getTemplateDir();
 		JSONArray jsonArray = new JSONArray();
-		if (file.exists() && file.isDirectory()) {
+		if (file.exists() && file.isDirectory() && file.listFiles() != null) {
 			for (File f : file.listFiles()) {
 				jsonArray.put(f.getName());
 			}

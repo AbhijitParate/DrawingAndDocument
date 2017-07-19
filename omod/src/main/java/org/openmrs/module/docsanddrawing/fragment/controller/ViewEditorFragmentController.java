@@ -9,16 +9,10 @@
  */
 package org.openmrs.module.docsanddrawing.fragment.controller;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.openmrs.Encounter;
 import org.openmrs.Patient;
-import org.openmrs.module.docsanddrawing.ModuleContext;
 import org.openmrs.module.appui.UiSessionContext;
-import org.openmrs.ui.framework.UiUtils;
-import org.openmrs.ui.framework.annotation.InjectBeans;
 import org.openmrs.ui.framework.fragment.FragmentModel;
-import org.openmrs.ui.framework.page.PageRequest;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.text.SimpleDateFormat;
@@ -28,14 +22,12 @@ import java.text.SimpleDateFormat;
  */
 public class ViewEditorFragmentController {
 	
-	Log log = LogFactory.getLog(getClass());
+	//	Log log = LogFactory.getLog(getClass());
 	
-	// TODO: 5/12/2017 Remove this controller and move averything to StatusBarController
-	public void controller(PageRequest pageRequest, FragmentModel model,
-	        @RequestParam(value = "patientId", required = false) Patient patient,
-	        @RequestParam(value = "encounterId", required = false) Encounter encounter, UiSessionContext sessionContext,
-	        UiUtils ui, @InjectBeans ModuleContext moduleContext) throws Exception {
-		log.debug(getClass().getSimpleName() + ".controller()");
+	public void controller(FragmentModel model, @RequestParam(value = "patientId", required = false) Patient patient,
+	        @RequestParam(value = "encounterId", required = false) Encounter encounter, UiSessionContext sessionContext)
+	        throws Exception {
+		//		log.debug(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("visitId", encounter.getVisit().getId());
 		model.addAttribute("encounterId", encounter.getId());

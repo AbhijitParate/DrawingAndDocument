@@ -1,58 +1,4 @@
 $(function() {
-    $(document).on('click','.drawing-details.collapsed', function(event){
-        var jqTarget = $(event.currentTarget);
-        var encounterId = jqTarget.data("encounter-id");
-        var displayWithHtmlForm = jqTarget.data("encounter-form") && jqTarget.data("display-with-html-form");
-        var dataTarget = jqTarget.data("target");
-        var templateId = jqTarget.data("template");
-        getEncounterDetails(encounterId, dataTarget, templateId);
-    });
-
-    $(document).on('click', '.deleteEncounterId', function(event) {
-        var encounterId = $(event.target).attr("data-encounter-id");
-        createDeleteEncounterDialog(encounterId, $(this));
-        showDeleteEncounterDialog();
-    });
-
-    $(document).on('click', '#drawing-view-encounter', function(event) {
-        console.debug("View encounter");
-        var encounterId = $(event.target).attr("data-encounter-id");
-        var patientId = $(event.target).attr("data-patient-id");
-        var viewUrl = $(event.target).attr("data-view-url");
-        viewUrl = viewUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
-                .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
-        console.debug(viewUrl);
-        emr.navigateTo({ applicationUrl: viewUrl });
-    });
-
-    $(document).on('click', '#drawing-edit-encounter', function(event) {
-        console.debug("Edit encounter");
-
-        var encounterId = $(event.target).attr("data-encounter-id");
-        var patientId = $(event.target).attr("data-patient-id");
-        var visitId = $(event.target).attr("data-visit-id");
-        var editUrl = $(event.target).attr("data-edit-url");
-        editUrl = editUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
-            .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
-        editUrl += "&visitId=" + visitId;
-        console.debug(editUrl);
-        emr.navigateTo({ applicationUrl: editUrl });
-    });
-
-    $(document).on('click', '#drawing-popup-encounter', function(event) {
-        console.debug("Edit encounter");
-
-        var encounterId = $(event.target).attr("data-encounter-id");
-        var patientId = $(event.target).attr("data-patient-id");
-        var visitId = $(event.target).attr("data-visit-id");
-        var popupUrl = $(event.target).attr("data-popup-url");
-        popupUrl = popupUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
-            .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
-        popupUrl += "&visitId=" + visitId;
-        console.debug(popupUrl + " clicked");
-        // emr.navigateTo({ applicationUrl: popupUrl });
-        window.open("../../"+popupUrl, 'Drawing popup', 'window settings');
-    });
 
     // //We cannot assign it here due to Jasmine failure:
     // //net.sourceforge.htmlunit.corejs.javascript.EcmaError: TypeError: Cannot call method "replace" of undefined
@@ -64,19 +10,14 @@ $(function() {
     // console.debug("dataTarget -> " + dataTarget);
     // console.debug("displayTemplateId ->" + templateId);
 
-    var encounterDetailsSection = $(" .encounter-details-" + encounterId);
+        let encounterDetailsSection = $(" .encounter-details-" + encounterId);
 
-        if(encounterDetailsSection.html() == "") {
+        if(encounterDetailsSection.html() === "") {
             encounterDetailsSection.html("<i class=\"icon-spinner icon-spin icon-2x pull-left\"></i>");
         }
 
-        var url = "../../ws/rest/v1/docsanddrawing/encounter/get?encounterid="+encounterId;
-        $.getJSON(
-            //emr.fragmentActionLink("[module name]", "[lower(c)ontroller name]FragmentController", "[function name]", { [parameter name]: [parameter value] })
-            // emr.fragmentActionLink("docsanddrawing", "drawingDetails", "getEncounterDetails", { encounterId: encounterId })
-            url
-
-        ).success(function(data){
+        let url = "../../ws/rest/v1/docsanddrawing/encounter/get?encounterid=" + encounterId;
+        $.getJSON(url).success(function(data){
             // this is where data is received from DrawingDetailsFragmentController#getEncounterDetails as json
 
             var html = generateHtml(data);
@@ -100,15 +41,6 @@ $(function() {
             encounterDetailsSection.html("<p>Error Occurred</p>");
             // console.debug(err);
         });
-    }
-
-    function generateHtml(data) {
-        var main = $("<div/>").addClass("details");
-        var drawingDiv = createDrawingDiv(data.drawing);
-        var attachmentDiv = createAttachmentsDiv(data.obs);
-        drawingDiv.appendTo(main);
-        attachmentDiv.appendTo(main);
-        return main;
     }
 
     function createListItem(obs) {
@@ -210,7 +142,7 @@ $(function() {
             actions: {
                 confirm: function() {
                     emr.getFragmentActionWithCallback('coreapps', 'visit/visitDetails', 'deleteVisit'
-                        , { visitId: visitId}
+                        , { visitId : visitId }
                         , function(data) {
                             jq('#delete-visit-dialog' + ' .icon-spin').css('display', 'inline-block').parent().addClass('disabled');
                             emr.navigateTo({
@@ -229,4 +161,68 @@ $(function() {
             }
         });
     }
+
+    function generateHtml(data) {
+        var main = $("<div/>").addClass("details");
+        var drawingDiv = createDrawingDiv(data.drawing);
+        var attachmentDiv = createAttachmentsDiv(data.obs);
+        drawingDiv.appendTo(main);
+        attachmentDiv.appendTo(main);
+        return main;
+    }
+
+    $(document).on('click','.drawing-details.collapsed', function(event){
+        var jqTarget = $(event.currentTarget);
+        var encounterId = jqTarget.data("encounter-id");
+        var displayWithHtmlForm = jqTarget.data("encounter-form") && jqTarget.data("display-with-html-form");
+        var dataTarget = jqTarget.data("target");
+        var templateId = jqTarget.data("template");
+        getEncounterDetails(encounterId, dataTarget, templateId);
+    });
+
+    $(document).on('click', '.deleteEncounterId', function(event) {
+        var encounterId = $(event.target).attr("data-encounter-id");
+        createDeleteEncounterDialog(encounterId, $(this));
+        showDeleteEncounterDialog();
+    });
+
+    $(document).on('click', '#drawing-view-encounter', function(event) {
+        console.debug("View encounter");
+        var encounterId = $(event.target).attr("data-encounter-id");
+        var patientId = $(event.target).attr("data-patient-id");
+        var viewUrl = $(event.target).attr("data-view-url");
+        viewUrl = viewUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
+            .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
+        console.debug(viewUrl);
+        emr.navigateTo({ applicationUrl: viewUrl });
+    });
+
+    $(document).on('click', '#drawing-edit-encounter', function(event) {
+        console.debug("Edit encounter");
+
+        var encounterId = $(event.target).attr("data-encounter-id");
+        var patientId = $(event.target).attr("data-patient-id");
+        var visitId = $(event.target).attr("data-visit-id");
+        var editUrl = $(event.target).attr("data-edit-url");
+        editUrl = editUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
+            .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
+        editUrl += "&visitId=" + visitId;
+        console.debug(editUrl);
+        emr.navigateTo({ applicationUrl: editUrl });
+    });
+
+    $(document).on('click', '#drawing-popup-encounter', function(event) {
+        console.debug("Edit encounter");
+
+        var encounterId = $(event.target).attr("data-encounter-id");
+        var patientId = $(event.target).attr("data-patient-id");
+        var visitId = $(event.target).attr("data-visit-id");
+        var popupUrl = $(event.target).attr("data-popup-url");
+        popupUrl = popupUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
+            .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
+        popupUrl += "&visitId=" + visitId;
+        console.debug(popupUrl + " clicked");
+        // emr.navigateTo({ applicationUrl: popupUrl });
+        window.open("../../"+popupUrl, 'Drawing popup', 'window settings');
+    });
 });

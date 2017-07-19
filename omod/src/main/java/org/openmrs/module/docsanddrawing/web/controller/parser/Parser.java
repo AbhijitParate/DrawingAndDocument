@@ -69,20 +69,6 @@ public class Parser {
 		
 	}
 	
-	private static SimpleObject parseJson(Obs obs) {
-		
-		SimpleObject simpleObject = SimpleObject.create("obsId", obs.getObsId());
-		simpleObject.put("uuid", obs.getUuid());
-		
-		simpleObject.put("name", obs.getComment());
-		if (obs.getComplexData() instanceof ModuleComplexData) {
-			simpleObject.put("obsType", ((ModuleComplexData) obs.getComplexData()).getObsType());
-			simpleObject.put("mimeType", ((ModuleComplexData) obs.getComplexData()).getMimeType());
-		}
-		return simpleObject;
-		
-	}
-	
 	/**
 	 * Get list of visits
 	 * 

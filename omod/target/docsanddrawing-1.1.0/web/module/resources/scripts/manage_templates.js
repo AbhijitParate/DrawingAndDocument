@@ -39,7 +39,7 @@ $(document).ready(function() {
         xhr.send(data);
 
         xhr.onload = function (response) {
-            console.debug(response.target.responseText);
+            // console.debug(response.target.responseText);
             if (response.target.responseText.includes("success")){
                 location.reload();
             }
@@ -65,7 +65,7 @@ $(document).ready(function() {
 
         var templateList = $("#template-list");
         $.each(data, function (i) {
-            console.log(data[i]);
+            // console.log(data[i]);
             templateList.append(createListItem(data[i]));
         });
     }
@@ -99,14 +99,14 @@ $(document).ready(function() {
     }
 
     function deleteTemplate(templateName) {
-        console.debug("delete item " +  templateName);
+        // console.debug("delete item " +  templateName);
         $.ajax({
             type: "GET",
             url: "../ws/rest/v1/docsanddrawing/template/delete/"+templateName,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(data){
-                console.debug(data);
+                // console.debug(data);
                 if (data.result === 'success')
                     location.reload();
             },

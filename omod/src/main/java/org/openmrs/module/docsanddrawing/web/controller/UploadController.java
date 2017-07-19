@@ -42,7 +42,7 @@ import java.io.IOException;
 @RequestMapping(value = "/rest/" + RestConstants.VERSION_1 + "/docsanddrawing/upload")
 public class UploadController {
 	
-	protected final Log log = LogFactory.getLog(getClass());
+	//	protected final Log log = LogFactory.getLog(getClass());
 	
 	@Autowired
 	@Qualifier(Constants.Component.MODULE_CONTEXT)

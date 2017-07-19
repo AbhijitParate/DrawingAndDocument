@@ -97,7 +97,7 @@ public class Utils {
 	public static boolean isImage(String fileName) {
 		String extension = getExtension(fileName);
 		for (String s : Constants.TEMPLATE_EXTENSIONS)
-			if (extension.toUpperCase().equals(s))
+			if (extension.equalsIgnoreCase(s))
 				return true;
 		
 		return false;

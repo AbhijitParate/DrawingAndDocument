@@ -1,13 +1,7 @@
 package org.openmrs.module.docsanddrawing.fragment.controller;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.openmrs.Patient;
 import org.openmrs.Visit;
-import org.openmrs.api.EncounterService;
-import org.openmrs.ui.framework.UiUtils;
-import org.openmrs.ui.framework.annotation.SpringBean;
-import org.openmrs.ui.framework.fragment.FragmentConfiguration;
 import org.openmrs.ui.framework.fragment.FragmentModel;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -16,16 +10,15 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 public class EncounterDetailsTemplateFragmentController {
 	
-	protected final Log log = LogFactory.getLog(getClass());
+	//	protected final Log log = LogFactory.getLog(getClass());
 	
-	public void controller(FragmentConfiguration config, FragmentModel model, UiUtils ui,
-	        @RequestParam("patientId") Patient patient, @RequestParam("visitId") Visit visit,
-	        @SpringBean("encounterService") EncounterService encounterService) {
+	public void controller(FragmentModel model, @RequestParam("patientId") Patient patient,
+	        @RequestParam("visitId") Visit visit) {
 		
 		//		model.addAttribute("patient", patient);
-		log.debug("EncounterDetailsTemplateFragmentController called");
+		//		log.debug("EncounterDetailsTemplateFragmentController called");
 		model.put("patient", patient);
-		model.put("visit", visit);
+		model.put("visit", visit.getId());
 		model.put("encounters", visit.getEncounters());
 		model.put("custom", "custom data");
 	}

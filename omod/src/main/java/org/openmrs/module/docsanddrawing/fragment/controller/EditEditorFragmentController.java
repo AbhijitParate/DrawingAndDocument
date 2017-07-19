@@ -9,14 +9,11 @@
  */
 package org.openmrs.module.docsanddrawing.fragment.controller;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.openmrs.Encounter;
 import org.openmrs.Patient;
 import org.openmrs.Visit;
 import org.openmrs.module.appui.UiSessionContext;
 import org.openmrs.ui.framework.fragment.FragmentModel;
-import org.openmrs.ui.framework.page.PageRequest;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.text.SimpleDateFormat;
@@ -26,12 +23,12 @@ import java.text.SimpleDateFormat;
  */
 public class EditEditorFragmentController {
 	
-	Log log = LogFactory.getLog(getClass());
+	//	Log log = LogFactory.getLog(getClass());
 	
-	public void controller(PageRequest pageRequest, FragmentModel model, @RequestParam(value = "visitId") Visit visit,
+	public void controller(FragmentModel model, @RequestParam(value = "visitId") Visit visit,
 	        @RequestParam(value = "patientId") Patient patient, @RequestParam(value = "encounterId") Encounter encounter,
 	        UiSessionContext sessionContext) throws Exception {
-		log.debug("controller triggered");
+		//		log.debug("controller triggered");
 		model.addAttribute("patientId", patient.getId());
 		model.addAttribute("encounterId", encounter.getId());
 		SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");

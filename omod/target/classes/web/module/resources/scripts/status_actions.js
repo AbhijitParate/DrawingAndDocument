@@ -167,6 +167,69 @@ $(document).ready(function () {
         return listItem;
     }
 
+    function createAttachmentDialog() {
+        let dialog = $("<div/>");
+        let previewDiv;
+        $("<button id='expandButton' />").append($("<i class='icon-chevron-right'/>"))
+            .click(function () {
+                if (expanded) {
+                    collapse();
+                } else {
+                    expand();
+                }
+            })
+            .appendTo(dialog);
+
+        let attachmentDiv = $("<div />").attr("id","attachmentDiv")
+            .appendTo(dialog);
+
+        if(attachments !== null && attachments.length > 0){
+            $("<h4 />").text("New attachments").appendTo(attachmentDiv);
+            let localAttachDiv = recreateLocalAttachments();
+            localAttachDiv.appendTo(attachmentDiv);
+        }
+
+        if(previousAttachments){
+            $("<h4 />").text("Previous attachments").appendTo(attachmentDiv);
+            let prevAttachDiv = recreateAttachments(previousAttachments);
+            prevAttachDiv.appendTo(attachmentDiv);
+        }
+
+        previewDiv = $("<div />").attr("id","attachmentPreview")
+            .appendTo(dialog);
+        $("<img src='./../ms/uiframework/resource/docsanddrawing/images/no-preview.jpg' " +
+            "width='550' height='500' />").appendTo(previewDiv);
+
+        dialog.attr("title", "Attachments");
+        dialog.dialog({
+            width: 500,
+            height: 700,
+            modal:true,
+            resizable: true,
+            position: {
+                // of: "#canvasWrapper",
+                at: "center center",
+                my: "center center"
+            },
+            open: function () {
+                console.info("Attachments dialog opened");
+                if(expanded) expand();
+            },
+            close: function () {
+                console.info("Attachments dialog closed");
+                $(this).dialog("destroy");
+            },
+            autoOpen: false,
+            buttons: {
+                "Cancel": function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+
+        dialog.dialog("open");
+    }
+
     // Show list of attachments on click
     $("#status-view-attachments").click(function () {
             createAttachmentDialog();
@@ -304,69 +367,6 @@ $(document).ready(function () {
         $("#expandButton").empty().append($("<i class='icon-chevron-right'/>"));
         $("#attachmentPreview").css('display','none');
         expanded = false;
-    }
-
-    function createAttachmentDialog() {
-        let dialog = $("<div/>");
-        let previewDiv;
-        $("<button id='expandButton' />").append($("<i class='icon-chevron-right'/>"))
-        .click(function () {
-            if (expanded) {
-                collapse();
-            } else {
-                expand();
-            }
-        })
-        .appendTo(dialog);
-
-        let attachmentDiv = $("<div />").attr("id","attachmentDiv")
-            .appendTo(dialog);
-
-        if(attachments !== null && attachments.length > 0){
-            $("<h4 />").text("New attachments").appendTo(attachmentDiv);
-            let localAttachDiv = recreateLocalAttachments();
-            localAttachDiv.appendTo(attachmentDiv);
-        }
-
-        if(previousAttachments){
-            $("<h4 />").text("Previous attachments").appendTo(attachmentDiv);
-            let prevAttachDiv = recreateAttachments(previousAttachments);
-            prevAttachDiv.appendTo(attachmentDiv);
-        }
-
-        previewDiv = $("<div />").attr("id","attachmentPreview")
-            .appendTo(dialog);
-        $("<img src='./../ms/uiframework/resource/docsanddrawing/images/no-preview.jpg' " +
-            "width='550' height='500' />").appendTo(previewDiv);
-
-        dialog.attr("title", "Attachments");
-        dialog.dialog({
-            width: 500,
-            height: 700,
-            modal:true,
-            resizable: true,
-            position: {
-                // of: "#canvasWrapper",
-                at: "center center",
-                my: "center center"
-            },
-            open: function () {
-                console.info("Attachments dialog opened");
-                if(expanded) expand();
-            },
-            close: function () {
-                console.info("Attachments dialog closed");
-                $(this).dialog("destroy");
-            },
-            autoOpen: false,
-            buttons: {
-                "Cancel": function () {
-                    $(this).dialog("close");
-                }
-            }
-        });
-
-        dialog.dialog("open");
     }
 
     // Show list of attachments on clicks
