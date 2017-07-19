@@ -37,7 +37,7 @@
     var patientId =${ patientId };
     var visitId = ${ visitId };
     var providerId = ${ providerId };
-    var returnlink ="${ ui.format(returnUrl) }";
+    var returnlink ="${ '../coreapps/patientdashboard/patientDashboard.page?patientId=' + patientId + '&visitId=' + visitId }";
 </script>
 <div id="drawing-and-attachments">
     <h2 style="margin:0;">Add Drawing</h2>
