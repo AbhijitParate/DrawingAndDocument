@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36e80d1b-bbfd-4c70-bb1e-2f046640a285" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/context_menu2.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0-tests.jar" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0-tests.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.jar" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.omod" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.omod" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/docsanddrawing-api-1.1.0.jar" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/docsanddrawing-api-1.1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/EditEditorFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/EditEditorFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewPopupFragmentController.java" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewPopupFragmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/drawingObsEncounterTemplate.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/drawingObsEncounterTemplate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/manage_templates.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/manage_templates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/popup.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/drawingObsEncounterTemplate.js" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/drawingObsEncounterTemplate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/import.js" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/import.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/status_actions.js" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/resources/scripts/status_actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/drawingObsEncounterTemplate.js" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/drawingObsEncounterTemplate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/import.js" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/import.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="api/target/docsanddrawing-api-1.1.0-tests.jar" />
     <ignored path="api/target/docsanddrawing-api-1.1.0.jar" />
@@ -132,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+              <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -996,7 +977,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41164455" sideWeight="0.50758255" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20854093" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34462446" sideWeight="0.4968051" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34462446" sideWeight="0.4968051" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39323843" sideWeight="0.49241748" order="12" side_tool="false" content_ui="tabs" x="358" y="-1138" width="1685" height="901" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965165" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46983856" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="196" y="264" width="1678" height="998" />
@@ -1095,7 +1076,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed navigation bugs&#10;Fixed Handlers&#10;Added concepts&#10;Refactored code" />
     <MESSAGE value="Customized encounter details template&#10;Modified parsedObject" />
     <MESSAGE value="Removed progress dialog and added progressbar with success and error messages" />
     <MESSAGE value="Finalized view in EncounterDetails&#10;Updated view and edit fragments" />
@@ -1120,7 +1100,8 @@
     <MESSAGE value="Updated Readme" />
     <MESSAGE value="Fixed few bugs" />
     <MESSAGE value="Updated OMOD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated OMOD" />
+    <MESSAGE value="Updated OMOD for relative paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated OMOD for relative paths" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1531,7 +1512,7 @@
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding />
         </state>
       </provider>
