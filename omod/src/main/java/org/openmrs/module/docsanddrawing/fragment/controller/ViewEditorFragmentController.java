@@ -44,7 +44,6 @@ public class ViewEditorFragmentController {
 		sdf = new SimpleDateFormat("EEE, d MMM yyyy");
 		model.addAttribute("encounterDate", sdf.format(encounter.getEncounterDatetime()));
 		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());
-		model.addAttribute("returnUrl",
-		    "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patient.getId());
+		model.addAttribute("returnUrl", "../coreapps/patientdashboard/patientDashboard.page?patientId=" + patient.getId());
 	}
 }

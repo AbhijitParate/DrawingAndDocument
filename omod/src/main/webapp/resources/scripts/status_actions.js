@@ -22,7 +22,7 @@ $(document).ready(function () {
         console.debug("EcnounterId : " + encounterId);
 
         // var url = emr.fragmentActionLink("docsanddrawing", "drawingDetails", "getEncounterDetails", { encounterId: encounterId });
-        var url = "/openmrs/ws/rest/v1/docsanddrawing/encounter/get?encounterid="+encounterId;
+        var url = "../ws/rest/v1/docsanddrawing/encounter/get?encounterid="+encounterId;
 
         console.debug(url);
 

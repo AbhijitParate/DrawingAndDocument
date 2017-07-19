@@ -45,8 +45,7 @@ public class ViewPopupFragmentController {
 		model.addAttribute("encounterDate", sdf.format(encounter.getEncounterDatetime()));
 		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());
 		model.addAttribute("drawingUuid", drawingUuid);
-		model.addAttribute("returnUrl",
-		    "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patient.getId());
+		model.addAttribute("returnUrl", "../coreapps/patientdashboard/patientDashboard.page?patientId=" + patient.getId());
 	}
 	
 	public void submit(PageRequest pageRequest, FragmentModel model,

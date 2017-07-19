@@ -47,7 +47,7 @@ $(document).ready(function() {
 
             $.ajax({
                 type: "GET",
-                url: "/openmrs/ws/rest/v1/docsanddrawing/template/all",
+                url: "../ws/rest/v1/docsanddrawing/template/all",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function(data){
@@ -114,9 +114,8 @@ $(document).ready(function() {
         Webcam.attach("#front-cam");
     });
 
-    //http://localhost:8080/openmrs/ms/uiframework/resource/annotation/images/no-preview.jpg
     $("#template-select").on("change" ,function () {
-        imagePath = "/openmrs/ws/rest/v1/docsanddrawing/template/get/" + $(this).val();
+        imagePath = "../ws/rest/v1/docsanddrawing/template/get/" + $(this).val();
         console.info(imagePath);
         $("#preview-image").attr('src', imagePath);
 
@@ -330,7 +329,7 @@ $(document).ready(function() {
     });
 
     $("#import-json").on('click', function () {
-        let input = $("<input />").attr("type", "file").attr("accept", "*/*");
+        let input = $("<input />").attr("type", "file").attr("accept", ".json");
         input.change(function (e) {
             let div = $("<div />");
             $("<img src='./../ms/uiframework/resource/docsanddrawing/images/loading.gif' width='100' height='100' />").appendTo(div);

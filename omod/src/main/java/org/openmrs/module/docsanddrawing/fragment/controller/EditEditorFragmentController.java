@@ -40,7 +40,6 @@ public class EditEditorFragmentController {
 		model.addAttribute("encounterDate", sdf.format(encounter.getEncounterDatetime()));
 		model.addAttribute("visitId", visit.getId());
 		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());
-		model.addAttribute("returnUrl",
-		    "/openmrs/coreapps/patientdashboard/patientDashboard.page?patientId=" + patient.getId());
+		model.addAttribute("returnUrl", "../coreapps/patientdashboard/patientDashboard.page?patientId=" + patient.getId());
 	}
 }
