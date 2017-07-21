@@ -249,85 +249,47 @@ $(document).ready(function() {
         fileUploadInput.click();
     });
 
-    $("#import-svg").on('click', function () {
-        let input = $("<input />").attr("type", "file").attr("accept","image/svg+xml");
-        input.change(function (e) {
-            let div = $("<div />");
-            $("<img src='./../ms/uiframework/resource/docsanddrawing/images/loading.gif' width='100' height='100' />").appendTo(div);
-            div.dialog({
-                title: 'Loading...',
-                resizable: false,
-                position: {
-                    of: window,
-                    at: "center center",
-                    my: "center center"
-                },
-                height: "180",
-                width: "100",
-                icon: hide
-            });
-            let image = e.target.files[0];
-            let reader = new FileReader();
-            reader.onload = (function (e) {
-                let img = e.target.result;
-                fabric.loadSVGFromURL(img,
-                    function(objects, options) {
-                        console.log(objects);
-                        let mediaobjs = [];
-                        for(let i = 0; i < objects.length; i++) {
-                            let obj = objects[i];
-                            console.log("Object ->");
-                            console.log(obj);
-                            console.log("<- Object");
-                            // for our implementation
-                            let data = obj.get('preserveAspectRatio');
-                            if (data && data.substring(0,4) === "data") {
-                                let newObj = new fabric.Media(data,{
-                                    top: obj.transformMatrix[5],
-                                    left: obj.transformMatrix[4],
-                                });
-                                mediaobjs.push(newObj);
-                                canvas.add(newObj);
-                                newObj.on('image:loaded', function () {
-                                    canvas.renderAll.bind(canvas);
-                                    canvas.moveTo(newObj, 999);
-                                });
-                            }
-                            // todo: recreate image is buggy, size of image is inconsistent
-                            else if (obj.type === "image") {
-                                obj.setTop(obj.top + obj.transformMatrix[5]);
-                                obj.setLeft(obj.left + obj.transformMatrix[4]);
-                                obj.setTransformMatrix(null);
-                                // obj.transformMatrix[4] -= obj.left;
-                                // obj.transformMatrix[5] -= obj.top;
-                                // obj.setTransformMatrix(obj.transformMatrix);
-                                canvas.add(obj);
-                            }
-                            // todo: recreate text from svg
-                            else if (obj.type === "text") {
-                                console.log("Text ->");
-                                console.log(obj);
-                                console.log("<- Text");
-                                let text = new fabric.Text(obj.text, {
-                                    top: obj.transformMatrix[5],
-                                    left: obj.transformMatrix[4],
-                                });
-                                canvas.add(text);
-                            }
-                            else {
-                                canvas.add(obj);
-                            }
-                        }
-
-                        canvas.renderAll();
-                        div.dialog('destroy');
-                    });
-            });
-            reader.readAsDataURL(image);
-
-        });
-        input.click();
-    });
+    // $("#import-svg").on('click', function () {
+    //     let input = $("<input />").attr("type", "file").attr("accept","image/svg+xml");
+    //     input.change(function (e) {
+    //         let div = $("<div />");
+    //         $("<img src='./../ms/uiframework/resource/docsanddrawing/images/loading.gif' width='100' height='100' />").appendTo(div);
+    //         div.dialog({
+    //             title: 'Loading...',
+    //             resizable: false,
+    //             position: {
+    //                 of: window,
+    //                 at: "center center",
+    //                 my: "center center"
+    //             },
+    //             height: "180",
+    //             width: "100",
+    //             icon: hide
+    //         });
+    //         let image = e.target.files[0];
+    //         let reader = new FileReader();
+    //         reader.onload = (function (e) {
+    //             let img = e.target.result;
+    //             fabric.loadSVGFromURL(img,
+    //                 function(objects, options) {
+    //                     console.log(objects);
+    //                     var loadedObjects = new fabric.Group(group);
+    //                     loadedObjects.set({
+    //                         left: 0,
+    //                         top: 0,
+    //                         width:800,
+    //                         height:800
+    //                     });
+    //                     canvas.add(loadedObjects);
+    //                     canvas.renderAll();
+    //                     div.dialog('destroy');
+    //                 });
+    //         });
+    //         reader.readAsDataURL(image);
+    //
+    //     });
+    //     input.click();
+    // });
 
     $("#import-json").on('click', function () {
         let input = $("<input />").attr("type", "file").attr("accept", ".json");

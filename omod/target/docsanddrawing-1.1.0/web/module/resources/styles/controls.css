@@ -93,6 +93,10 @@
     float: right;
 }
 
+.selected {
+    background: darkgray;
+}
+
 /* place fullscreen control on right side of the player */
 .video-js .vjs-control.vjs-fullscreen-control {
     position: absolute;

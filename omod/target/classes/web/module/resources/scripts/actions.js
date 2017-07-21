@@ -15,10 +15,11 @@ $(document).ready(function() {
         canvas.selection = true;
         canvas.hoverCursor = 'move';
         canvas.renderAll();
+        EDITOR_MODE = SELECT;
     }
 
     function enablePencil() {
-        console.debug(PENCIL_SIZE);
+        // console.debug(PENCIL_SIZE);
         canvas.freeDrawingBrush.width = PENCIL_SIZE;
         canvas.freeDrawingBrush.color = DRAW_COLOR;
         canvas.isDrawingMode = true;
@@ -40,7 +41,14 @@ $(document).ready(function() {
 //1.Draw
     // 1.Pencil
     $("#pencil").click(function () {
-        enablePencil();
+        // console.log(EDITOR_MODE);
+        if (EDITOR_MODE !== DRAW) {
+            this.classList.add("selected");
+            enablePencil();
+        } else {
+            this.classList.remove("selected");
+            enableSelect();
+        }
     });
 
     // 1a.Slider
@@ -326,7 +334,17 @@ $(document).ready(function() {
     });
     // 5. Crop
     $("#crop").click(function () {
-
+        // todo: Add crop feature
+        // console.log(canvas.getActiveObject());
+        // console.log(canvas.getActiveGroup());
+        var objects = canvas.getObjects();
+        for(let i=0; i < objects.length; i++) {
+            if(!objects[i].active){
+                objects[i].remove();
+                i--;
+            }
+        }
+        canvas.renderAll();
     });
     // 6. Fit
     $("#fit").click(function () {

@@ -4,7 +4,7 @@
  */
 $(document).ready(function() {
 
-    document.onkeydown = onKeyDownHandler;
+    // document.onkeydown = onKeyDownHandler;
 
     /**
      * Handles various key press invents on canvas
@@ -27,7 +27,7 @@ $(document).ready(function() {
             let top = object.getTop();
         }
 
-        console.warn("keyboard keypress event :" + key );
+        // console.warn("keyboard keypress event :" + key );
         switch (key) {
             case 27: // Esc
                 canvas.isDrawingMode = false;

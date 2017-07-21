@@ -7,7 +7,7 @@ let canvas;
 
 const ERASE = "erase", DRAW = "draw", FILL = 'fill', SELECT = 'select';
 
-let EDITOR_MODE = DRAW;
+let EDITOR_MODE;
 
 let CANVAS_CURRENT;
 let UNDO_STACK = [];
@@ -65,25 +65,25 @@ $(document).ready(function() {
         // console.log('object:selected');
         var object = event.target;
         // console.info(object.type);
-        if( EDITOR_MODE === FILL
-            && (object.type === "rect"
-                || object.type === "circle"
-                || object.type === "triangle"
-                || object.type === "polygon")) {
-            object.set("fill" , fillColor);
-            updateStack();
-        }
+        // if( EDITOR_MODE === FILL
+        //     && (object.type === "rect"
+        //         || object.type === "circle"
+        //         || object.type === "triangle"
+        //         || object.type === "polygon")) {
+        //     object.set("fill" , fillColor);
+        //     updateStack();
+        // }
     });
 
     canvas.on("mouse:up", function (event) {
         // // console.log('3 event:mouse:up - X: ' + event.e.offsetX + ' Y: ' + event.e.offsetY);
             if(selectState.isFirstClick === true){
                 if(canvas.getActiveObject())
-                    if(selectState.object.tag && selectState.object.tag === "media" && isEventWithinObject(event.e, selectState.object)) {
+                    if(selectState.object && selectState.object.tag && selectState.object.tag === "media" && isEventWithinObject(event.e, selectState.object)) {
                         // console.log('object:double-clicked');
                         selectState.object.show();
                         selectState.isFirstClick = false;
-                    } else if (selectState.object.type === "text" && isEventWithinObject(event.e, selectState.object)){
+                    } else if (selectState.object && selectState.object.type === "text" && isEventWithinObject(event.e, selectState.object)){
                         // console.info("Text double clicked.");
                         createDialogForText(selectState.object);
                     }
