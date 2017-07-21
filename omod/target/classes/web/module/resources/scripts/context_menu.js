@@ -927,12 +927,27 @@ $(document).ready(function() {
             {
                 title: "Add video clip",
                 cmd: "add-video"
+            },
+            {
+                title: "Fill color in selected shape",
+                cmd: "add-color"
             }
         ],
         // Implement the beforeOpen callback to dynamically change the entries
         beforeOpen: function (event, ui) {
 
             clickPoint = new fabric.Point(event.offsetX, event.offsetY);
+
+            let activeObject = canvas.getActiveObject();
+            if (canvas.getActiveObject() &&
+                (activeObject.type === "rect"
+                || activeObject.type === "circle"
+                || activeObject.type === "triangle"
+                || activeObject.type === "polygon")) {
+                $(document).contextmenu("enableEntry", "add-color", true);
+            } else {
+                $(document).contextmenu("enableEntry", "add-color", false);
+            }
 
             // Optionally return false, to prevent opening the menu now
         },
@@ -953,6 +968,20 @@ $(document).ready(function() {
                 case "add-video":
                     console.log("add-video : " + clickPoint);
                     createVideoDialog();
+                    break;
+                case "add-color":
+                    let activeObject = canvas.getActiveObject();
+                    console.log(activeObject);
+                    if (activeObject !== undefined && activeObject !== null) {
+                        if ((activeObject.type === "rect"
+                            || activeObject.type === "circle"
+                            || activeObject.type === "triangle"
+                            || activeObject.type === "polygon")) {
+                            activeObject.set("fill", fillColor);
+                            updateStack();
+                            canvas.renderAll();
+                        }
+                    }
                     break;
             }
         },

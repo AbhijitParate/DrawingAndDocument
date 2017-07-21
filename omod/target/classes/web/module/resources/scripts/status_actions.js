@@ -5,14 +5,14 @@
 
 $(document).ready(function () {
 
-    console.info(pageMode);
+    // console.info(pageMode);
 
     var progressLabel, progressBar;
 
-    if(pageMode == "view"){
+    if(pageMode === "view"){
         $("#status-save").hide();
         loadDataFromEncounter();
-    } else if (pageMode == "edit"){
+    } else if (pageMode === "edit"){
         loadDataFromEncounter();
     }
 
@@ -28,7 +28,7 @@ $(document).ready(function () {
 
         $.getJSON(url,
             function success(data) {
-            console.log(data);
+            // console.log(data);
                 recreateCanvas(data.json);
                 if(data.obs.length > 0) {
                     previousAttachments = data.obs;
@@ -39,7 +39,7 @@ $(document).ready(function () {
                 emr.errorMessage("Failed to load Encounter!");
             })
             .always(function() {
-                console.log( "complete" );
+                // console.log( "complete" );
                 emr.successMessage("Encounter loaded successfully!");
             });
     }
@@ -61,12 +61,12 @@ $(document).ready(function () {
             icon: hide
         });
 
-        console.debug(drawing);
+        // console.debug(drawing);
 
         $.getJSON(
             "../ws/rest/v1/docsanddrawing/obs/" + drawing.uuid +"/"+drawing.name,
             function success(data) {
-                console.log(data);
+                // console.log(data);
                 canvas.loadFromJSON(data,
                     function onLoad() {
                     canvas.renderAll();
@@ -75,61 +75,10 @@ $(document).ready(function () {
                     div.dialog('destroy');
                 });
             });
-
-        // fabric.loadFromJSON("../ws/rest/v1/docsanddrawing/obs/" + drawing.uuid +"/"+drawing.name,
-        //     function(objects, options) {
-        //         console.log(objects);
-        //         let mediaobjs = [];
-        //         for(let i = 0; i < objects.length; i++) {
-        //             let obj = objects[i];
-        //             // for our implementation
-        //             let data = obj.get('preserveAspectRatio');
-        //             if (data && data.substring(0,4) === "data") {
-        //                 let newObj = new fabric.Media(data,{
-        //                     top: obj.transformMatrix[5],
-        //                     left: obj.transformMatrix[4],
-        //                 });
-        //                 mediaobjs.push(newObj);
-        //                 canvas.add(newObj);
-        //                 newObj.on('image:loaded', function () {
-        //                     canvas.renderAll.bind(canvas);
-        //                     canvas.moveTo(newObj, 999);
-        //                 });
-        //             }
-        //             // todo: recreate image is buggy, size of image is inconsistent
-        //             else if (obj.type === "image") {
-        //                 // console.log("Image ->");
-        //                 // console.log(obj);
-        //                 // console.log("<- Image");
-        //                 // obj.setTop(obj.top + obj.transformMatrix[5]);
-        //                 // obj.setLeft(obj.left + obj.transformMatrix[4]);
-        //                 // obj.setTransformMatrix(null);
-        //                 canvas.add(obj);
-        //             }
-        //             // todo: recreate text from svg
-        //             else if (obj.type === "text") {
-        //                 // console.log("Text ->");
-        //                 // console.log(obj);
-        //                 // console.log("<- Text");
-        //                 let text = new fabric.Text(obj.text, {
-        //                     top: obj.transformMatrix[5],
-        //                     left: obj.transformMatrix[4],
-        //                 });
-        //                 canvas.add(text);
-        //             }
-        //             else {
-        //                 canvas.add(obj);
-        //             }
-        //         }
-        //
-        //         canvas.renderAll();
-        //         div.dialog('destroy');
-        //
-        //     });
     }
 
     function recreateAttachments(obsArray) {
-        console.debug(obsArray);
+        // console.debug(obsArray);
         // var attachmentDiv = $("<div/>").css('width','100%');;
         var list = $("<ul/>").css('width','100%');
 
@@ -212,11 +161,11 @@ $(document).ready(function () {
                 my: "center center"
             },
             open: function () {
-                console.info("Attachments dialog opened");
+                // console.info("Attachments dialog opened");
                 if(expanded) expand();
             },
             close: function () {
-                console.info("Attachments dialog closed");
+                // console.info("Attachments dialog closed");
                 $(this).dialog("destroy");
             },
             autoOpen: false,
@@ -242,7 +191,7 @@ $(document).ready(function () {
                 break;
             }
         }
-        console.info("file removed");
+        // console.info("file removed");
     }
 
     function createLocalAttachmentItem(attachment) {
@@ -267,7 +216,7 @@ $(document).ready(function () {
             .attr("title", attachment.name)
             .text(attachment.name);
         a_view.click(function () {
-            console.info("Attachment ID: " + $(this).attr("data-id"));
+            // console.info("Attachment ID: " + $(this).attr("data-id"));
             $("#attachmentPreview").empty();
             $("#attachmentPreview").append(getPreviewAttachment($(this).attr("data-id")));
             if(!expanded) expand();
@@ -279,20 +228,20 @@ $(document).ready(function () {
     // For reference
     function getPreviewAttachment(id) {
 
-        console.info(id + " clicked.");
+        // console.info(id + " clicked.");
 
         for (let i = 0; i < attachments.length; i++) {
             let attachment = attachments[i];
-            console.info("before if " + attachment.id);
-            console.info(attachment.id === id);
+            // console.info("before if " + attachment.id);
+            // console.info(attachment.id === id);
             if (""+attachment.id === id+"") {
-                console.info(attachment.type);
+                // console.info(attachment.type);
                 switch (attachment.type) {
                     case "image":
-                        console.info("Image file");
+                        // console.info("Image file");
                         return $('<img class="previewWindow" src=' + attachment.data + '>');
                     case "video":
-                        console.info("Video file");
+                        // console.info("Video file");
                         if (attachment.data instanceof Blob) {
                             let videoReader = new FileReader();
                             videoReader.onloadend = (function (e) {
@@ -307,10 +256,10 @@ $(document).ready(function () {
                             return video;
                         }
 
-                        console.info("Video data-> " + attachment.data);
+                        // console.info("Video data-> " + attachment.data);
                         break;
                     case "audio":
-                        console.info("Audio file");
+                        // console.info("Audio file");
                         if (attachment.data instanceof Blob) {
                             let audioReader = new FileReader();
                             audioReader.onloadend = (function (e) {
@@ -325,14 +274,14 @@ $(document).ready(function () {
                             return audio;
                         }
 
-                        console.info("Audio data-> " + attachment.data);
+                        // console.info("Audio data-> " + attachment.data);
                         break;
                     case "note":
-                        console.info("Text file");
+                        // console.info("Text file");
                         return $('<textarea class="previewWindow" title="Preview Text" disabled>')
                         .text(atob(attachment.data.replace("data:text/plain;base64,", "")));
                     default:
-                        console.info("File attachment");
+                        // console.info("File attachment");
                         return $('<img class="previewWindow" width="550" height="500" '
                             + 'src="./../ms/uiframework/resource/docsanddrawing/images/no-preview.jpg" />');
                 }
@@ -449,7 +398,7 @@ $(document).ready(function () {
             if(event.lengthComputable){
                 //get our percentage
                 var percent = (Math.round(event.loaded / event.total) * 100);
-                console.error( " progress: " + percent + " %");
+                // console.error( " progress: " + percent + " %");
                 // progressBar.progressbar( "value", percent);
             }
         });
@@ -462,7 +411,7 @@ $(document).ready(function () {
         //for errors we'll use the info element but for now console log it
         request.upload.addEventListener('error',function(event){
             progressLabel.text("Error occurred!");
-            console.log("error: " + event);
+            // console.log("error: " + event);
         });
 
         //open the request
@@ -477,8 +426,8 @@ $(document).ready(function () {
         request.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
                 // progressBar.hide();
-                console.info( "success: Upload succeeded");
-                console.info( "success: Upload response : " + request.responseText);
+                // console.info( "success: Upload succeeded");
+                // console.info( "success: Upload response : " + request.responseText);
                 if(request.responseText.includes("success")) {
                     progressLabel.text("Encounter saved successfully!");
                     window.location.href = returnlink;

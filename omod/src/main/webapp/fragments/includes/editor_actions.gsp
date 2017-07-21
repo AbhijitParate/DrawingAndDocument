@@ -14,24 +14,19 @@
     <div id="controls">
         <h3 class="control-header">Draw</h3>
         <div style="padding:1%;">
+            <button type="button" id="draw-color-picker" class="button-regular ui-button ui-widget ui-corner-all" title="Pencil draw color">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#000000" d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" ></path>
+                </svg>
+            </button>
             <button type="button" id="text" class="button-regular ui-button ui-widget ui-corner-all" title="Add Text">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M3,3H16V6H11V18H8V6H3V3M12,7H14V9H12V7M15,7H17V9H15V7M18,7H20V9H18V7M12,10H14V12H12V10M12,13H14V15H12V13M12,16H14V18H12V16M12,19H14V21H12V19Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="select" class="button-regular ui-button ui-widget ui-corner-all" title="Enable Selection mode">
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M13.64,21.97C13.14,22.21 12.54,22 12.31,21.5L10.13,16.76L7.62,18.78C7.45,18.92 7.24,19 7,19A1,1 0 0,1 6,18V3A1,1 0 0,1 7,2C7.24,2 7.47,2.09 7.64,2.23L7.65,2.22L19.14,11.86C19.57,12.22 19.62,12.85 19.27,13.27C19.12,13.45 18.91,13.57 18.7,13.61L15.54,14.23L17.74,18.96C18,19.46 17.76,20.05 17.26,20.28L13.64,21.97Z" ></path>
-                </svg>
-            </button>
             <button type="button" id="shape" class="button-regular ui-button ui-widget ui-corner-all" title="Add Shapes">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M2,2H11V11H2V2M17.5,2C20,2 22,4 22,6.5C22,9 20,11 17.5,11C15,11 13,9 13,6.5C13,4 15,2 17.5,2M6.5,14L11,22H2L6.5,14M19,17H22V19H19V22H17V19H14V17H17V14H19V17Z" ></path>
-                </svg>
-            </button>
-            <button type="button" id="draw-color-picker" class="button-regular ui-button ui-widget ui-corner-all" title="Pencil draw color">
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" ></path>
                 </svg>
             </button>
             <button type="button" id="fill-color-picker" class="button-regular ui-button ui-widget ui-corner-all" title="Shape fill color">
@@ -47,11 +42,6 @@
             <button type="button" id="pencil" class="button-regular ui-button ui-widget ui-corner-all" title="Enable Pencil">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M16.84,2.73C16.45,2.73 16.07,2.88 15.77,3.17L13.65,5.29L18.95,10.6L21.07,8.5C21.67,7.89 21.67,6.94 21.07,6.36L17.9,3.17C17.6,2.88 17.22,2.73 16.84,2.73M12.94,6L4.84,14.11L7.4,14.39L7.58,16.68L9.86,16.85L10.15,19.41L18.25,11.3M4.25,15.04L2.5,21.73L9.2,19.94L8.96,17.78L6.65,17.61L6.47,15.29" ></path>
-                </svg>
-            </button>
-            <button type="button" id="erase" class="button-regular ui-button ui-widget ui-corner-all" title="Eraser">
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M15.14,3C14.63,3 14.12,3.2 13.73,3.59L2.59,14.73C1.81,15.5 1.81,16.77 2.59,17.56L5.03,20H12.69L21.41,11.27C22.2,10.5 22.2,9.23 21.41,8.44L16.56,3.59C16.17,3.2 15.65,3 15.14,3M17,18L15,20H22V18" ></path>
                 </svg>
             </button>
         </div>
