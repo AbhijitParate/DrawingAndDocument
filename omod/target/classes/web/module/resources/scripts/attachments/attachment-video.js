@@ -152,7 +152,7 @@ $(document).ready(function($) {
         // $("<option/>").attr("value", "3").text("1024×768").appendTo(select);
         $("<option/>").attr("value", "4").text("1280×720").appendTo(select);
         let label = $("<label/>").css("float","right");
-        label.text("Image size : ");
+        label.text("Video size : ");
         label.appendTo(selectDiv);
         let imageDiv = $("<div/>").css('text-align', '-webkit-center').appendTo(dialog);
         let video = $("<video/>").addClass("video-js vjs-default-skin");

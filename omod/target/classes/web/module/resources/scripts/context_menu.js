@@ -152,6 +152,7 @@ $(document).ready(function() {
             },
             close: function () {
                 destroyCam();
+                // $(this).dialog("destroy");
             },
             autoOpen: false,
             buttons: {
@@ -185,7 +186,8 @@ $(document).ready(function() {
         });
 
         function destroyCam() {
-            player.recorder.reset();
+            player.recorder.destroy();
+            // $(this).dialog("destroy");
             imageDiv.remove();
         }
 
@@ -429,7 +431,7 @@ $(document).ready(function() {
                 player = videojs("myAudio", {
                     controls: true,
                     width: 600,
-                    height: 300,
+                    height: 400,
                     plugins: {
                         wavesurfer: {
                             src: "live",
@@ -546,7 +548,7 @@ $(document).ready(function() {
         input.attr("type", "file");
         input.attr("hidden","");
         input.attr("name","video[]");
-        input.attr("accept","video/*");
+        input.attr("accept","video/mp4,video/webm,video/ogg");
         input.on("change", function (e) {
             let video = e.target.files[0];
             let reader = new FileReader();
@@ -627,7 +629,7 @@ $(document).ready(function() {
         // $("<option/>").attr("value", "3").text("1024×768").appendTo(select);
         $("<option/>").attr("value", "4").text("1280×720").appendTo(select);
         let label = $("<label/>").css("float","right");
-        label.text("Image size : ");
+        label.text("Video size : ");
         label.appendTo(selectDiv);
         let imageDiv = $("<div/>").appendTo(dialog);
         let video = $("<video/>").addClass("video-js vjs-default-skin");
@@ -891,8 +893,8 @@ $(document).ready(function() {
                 // console.log('snapshot ready: ', player.recordedData);
                 // attachBtn.text('Capture');
                 console.info("finished recording");
-                let data = player.recordedData;
-
+                let data = player.recordedData.video;
+                console.log(data);
                 let fr = new FileReader();
                 fr.onload = function(e) {
                     attachmentVideo = new Attachment("video_"+getTimeStamp()+".webm", "video", e.target.result );
@@ -1150,7 +1152,7 @@ function getPreviewDialog(data, mimeType) {
             $("<source />").attr("src", data).appendTo(audio);
             div.dialog({
                 width: 500,
-                height: 120,
+                height: 200,
                 close: function () {
                     $(this).dialog('destroy');
                 },
