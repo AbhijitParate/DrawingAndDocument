@@ -144,6 +144,7 @@ $(document).ready(function($) {
             height: "auto",
             width: "550",
             open: function () {
+                document.onkeydown = null;
                 // console.info("Record audio dialog opened");
                 attachBtn = $(".ui-dialog-buttonpane button:contains('Attach')");
                 clearBtn = $(".ui-dialog-buttonpane button:contains('Clear')");
@@ -155,6 +156,7 @@ $(document).ready(function($) {
             },
             close: function () {
                 $(this).dialog("destroy");
+                document.onkeydown = keyFunction;
             },
             autoOpen: false,
             buttons: {
