@@ -11,6 +11,7 @@
     ui.includeJavascript("docsanddrawing", "libs/jquery.webui-popover.min.js")
 
     ui.includeJavascript("docsanddrawing", "libs/jquery.ui-contextmenu.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/FileSaver.min.js")
     ui.includeJavascript("docsanddrawing", "libs/jspdf.min.js")
     ui.includeJavascript("docsanddrawing", "libs/fabric.min.js")
 

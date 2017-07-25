@@ -66,10 +66,10 @@ $(document).ready(function($) {
             },
             autoOpen: false,
             buttons: {
-                "New note": function () {
-                    createNewNoteDialog();
-                    $(this).dialog("close");
-                },
+                // "New note": function () {
+                //     createNewNoteDialog();
+                //     $(this).dialog("close");
+                // },
                 "Reselect": function () {
                     input.click();
                 },
@@ -93,7 +93,7 @@ $(document).ready(function($) {
 
     function createNewNoteDialog() {
         let dialog = $("<div/>");
-        dialog.attr("title", "Upload notes from system");
+        dialog.attr("title", "Upload notes from device");
         let inputTag = getInputTag(dialog);
         inputTag.appendTo(dialog);
 
@@ -158,10 +158,10 @@ $(document).ready(function($) {
             },
             autoOpen: false,
             buttons: {
-                "Upload from system" : function() {
-                    // console.info("Upload clicked");
-                    inputTag.click();
-                },
+                // "Upload from system" : function() {
+                //     // console.info("Upload clicked");
+                //     inputTag.click();
+                // },
                 "Clear": function () {
                     // console.info("Retry clicked");
                     $(this).dialog("destroy");

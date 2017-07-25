@@ -2,9 +2,12 @@
  * Created by abhij on 3/7/2017.
  *
  */
+// import {saveAs} from "./libs/FileSaver.min";
 let fillColor;
 
 $(document).ready(function() {
+
+    // var FileSaver = require('file-saver');
 
     let DRAW_COLOR = 'BLACK';
 
@@ -337,14 +340,16 @@ $(document).ready(function() {
         // todo: Add crop feature
         // console.log(canvas.getActiveObject());
         // console.log(canvas.getActiveGroup());
-        var objects = canvas.getObjects();
-        for(let i=0; i < objects.length; i++) {
-            if(!objects[i].active){
-                objects[i].remove();
-                i--;
+        if (canvas.getActiveObject() || canvas.getActiveGroup()) {
+            let objects = canvas.getObjects();
+            for (let i = 0; i < objects.length; i++) {
+                if (!objects[i].active) {
+                    objects[i].remove();
+                    i--;
+                }
             }
+            canvas.renderAll();
         }
-        canvas.renderAll();
     });
     // 6. Fit
     $("#fit").click(function () {
@@ -353,9 +358,10 @@ $(document).ready(function() {
         if( object &&  object.type === 'image') {
             object.setWidth(700);
             object.setHeight(700);
+            object.scaleToWidth(700);
+            object.scaleToWidth(700);
             object.setTop(50);
             object.setLeft(50);
-
             canvas.renderAll();
         }
     });

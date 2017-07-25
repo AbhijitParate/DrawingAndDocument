@@ -16,7 +16,7 @@ $(document).ready(function($) {
         // console.info("createUploadImageDialog ->");
         // console.info(image);
         let dialog = $("<div/>");
-        dialog.attr("title", "Upload image from system");
+        dialog.attr("title", "Upload image from device");
         let input = $("<input/>");
         input.attr("type", "file");
         input.attr("hidden","");
@@ -60,10 +60,10 @@ $(document).ready(function($) {
             },
             autoOpen: false,
             buttons: {
-                "Web-cam": function () {
-                    createWebcamDialog();
-                    $(this).dialog("destroy");
-                },
+                // "Web-cam": function () {
+                //     createWebcamDialog();
+                //     $(this).dialog("destroy");
+                // },
                 "Reselect": function () {
                     input.click();
                 },
@@ -177,14 +177,14 @@ $(document).ready(function($) {
             },
             autoOpen: false,
             buttons: {
-                upload :{
-                    text : "Upload from system",
-                    click : function () {
-                        // console.info("Upload clicked");
-                        input.click();
-                        $(this).dialog("close");
-                    }
-                },
+                // upload :{
+                //     text : "Upload from system",
+                //     click : function () {
+                //         // console.info("Upload clicked");
+                //         input.click();
+                //         $(this).dialog("close");
+                //     }
+                // },
                 "Retry": function () {
                     // console.info("Retry clicked");
                     $(".vjs-icon-photo-retry").click();

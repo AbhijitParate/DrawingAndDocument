@@ -39,7 +39,7 @@
                     <path fill="#000000" d="M20.37,8.91L19.37,10.64L7.24,3.64L8.24,1.91L11.28,3.66L12.64,3.29L16.97,5.79L17.34,7.16L20.37,8.91M6,19V7H11.07L18,11V19A2,2 0 0,1 16,21H8A2,2 0 0,1 6,19Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="pencil" class="button-regular ui-button ui-widget ui-corner-all" title="Enable Pencil">
+            <button type="button" id="pencil" class="button-regular ui-button ui-widget ui-corner-all" title="Enable / Disable Pencil">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M16.84,2.73C16.45,2.73 16.07,2.88 15.77,3.17L13.65,5.29L18.95,10.6L21.07,8.5C21.67,7.89 21.67,6.94 21.07,6.36L17.9,3.17C17.6,2.88 17.22,2.73 16.84,2.73M12.94,6L4.84,14.11L7.4,14.39L7.58,16.68L9.86,16.85L10.15,19.41L18.25,11.3M4.25,15.04L2.5,21.73L9.2,19.94L8.96,17.78L6.65,17.61L6.47,15.29" ></path>
                 </svg>
@@ -47,7 +47,7 @@
         </div>
         <h3 class="control-header" title="Transform">Transform</h3>
         <div style="padding: 1%;">
-            <button type="button" id="flip-vertical" class="button-regular ui-button ui-widget ui-corner-all" title="Flip Vertically">
+            <button type="button" id="flip-vertical" class="button-regular ui-button ui-widget ui-corner-all" title="Flip object Vertically">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" ></path>
                 </svg>
@@ -57,12 +57,12 @@
                     <path fill="#000000" d="M4,2H7A2,2 0 0,1 9,4V20A2,2 0 0,1 7,22H4A2,2 0 0,1 2,20V4A2,2 0 0,1 4,2M20,15A2,2 0 0,1 22,17V20A2,2 0 0,1 20,22H11V15H20M14,4A8,8 0 0,1 22,12L21.94,13H19.92L20,12A6,6 0 0,0 14,6V9L10,5L14,1V4Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="fit" class="button-regular ui-button ui-widget ui-corner-all" title="Fit size">
+            <button type="button" id="fit" class="button-regular ui-button ui-widget ui-corner-all" title="Fit object in the canvas">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M19,3H15V5H19V9H21V5C21,3.89 20.1,3 19,3M19,19H15V21H19A2,2 0 0,0 21,19V15H19M5,15H3V19A2,2 0 0,0 5,21H9V19H5M3,5V9H5V5H9V3H5A2,2 0 0,0 3,5Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="flip-horizontal" class="button-regular ui-button ui-widget ui-corner-all" title="Flip Horizontally">
+            <button type="button" id="flip-horizontal" class="button-regular ui-button ui-widget ui-corner-all" title="Flip object Horizontally">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M9,3L5,7H8V14H10V7H13M16,17V10H14V17H11L15,21L19,17H16Z" ></path>
                 </svg>
@@ -72,7 +72,7 @@
                     <path fill="#000000" d="M10,4V1L14,5L10,9V6A6,6 0 0,0 4,12L4.08,13H2.06L2,12A8,8 0 0,1 10,4M17,2H20A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H17A2,2 0 0,1 15,20V4A2,2 0 0,1 17,2M4,15H13V22H4A2,2 0 0,1 2,20V17A2,2 0 0,1 4,15Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="crop" class="button-regular ui-button ui-widget ui-corner-all" title="Crop">
+            <button type="button" id="crop" class="button-regular ui-button ui-widget ui-corner-all" title="Discard unselected objects">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M7,17V1H5V5H1V7H5V17A2,2 0 0,0 7,19H17V23H19V19H23V17M17,15H19V7C19,5.89 18.1,5 17,5H9V7H17V15Z" ></path>
                 </svg>
@@ -80,47 +80,47 @@
         </div>
         <h3 class="control-header">Position</h3>
         <div style="padding: 1%;">
-            <button type="button" id="pos-top-left" class="button-regular ui-button ui-widget ui-corner-all" title="Position top left corner">
+            <button type="button" id="pos-top-left" class="button-regular ui-button ui-widget ui-corner-all" title="Place object at top left corner">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="pos-top" class="button-regular ui-button ui-widget ui-corner-all" title="Position top">
+            <button type="button" id="pos-top" class="button-regular ui-button ui-widget ui-corner-all" title="Place object at top center">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="pos-top-right" class="button-regular ui-button ui-widget ui-corner-all" title="Position top right corner">
+            <button type="button" id="pos-top-right" class="button-regular ui-button ui-widget ui-corner-all" title="Place object at top right corner">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="pos-left" class="button-regular ui-button ui-widget ui-corner-all" title="Position left">
+            <button type="button" id="pos-left" class="button-regular ui-button ui-widget ui-corner-all" title="Place object at left">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="pos-center" class="button-regular ui-button ui-widget ui-corner-all" title="Position center">
+            <button type="button" id="pos-center" class="button-regular ui-button ui-widget ui-corner-all" title="Place object at center">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M19.5,3.09L20.91,4.5L16.41,9H20V11H13V4H15V7.59L19.5,3.09M20.91,19.5L19.5,20.91L15,16.41V20H13V13H20V15H16.41L20.91,19.5M4.5,3.09L9,7.59V4H11V11H4V9H7.59L3.09,4.5L4.5,3.09M3.09,19.5L7.59,15H4V13H11V20H9V16.41L4.5,20.91L3.09,19.5Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="pos-right" class="button-regular ui-button ui-widget ui-corner-all" title="Position right">
+            <button type="button" id="pos-right" class="button-regular ui-button ui-widget ui-corner-all" title="Place object at right">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="pos-bottom-left" class="button-regular ui-button ui-widget ui-corner-all" title="Position bottom left corner">
+            <button type="button" id="pos-bottom-left" class="button-regular ui-button ui-widget ui-corner-all" title="Place object at bottom left corner">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M19,6.41L17.59,5L7,15.59V9H5V19H15V17H8.41L19,6.41Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="pos-bottom" class="button-regular ui-button ui-widget ui-corner-all" title="Position bottom">
+            <button type="button" id="pos-bottom" class="button-regular ui-button ui-widget ui-corner-all" title="Place object at bottom">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="pos-bottom-right" class="button-regular ui-button ui-widget ui-corner-all" title="Position bottom right corner">
+            <button type="button" id="pos-bottom-right" class="button-regular ui-button ui-widget ui-corner-all" title="Place object at bottom right corner">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" ></path>
                 </svg>
@@ -128,12 +128,12 @@
         </div>
         <h3 class="control-header">Layers</h3>
         <div style="padding: 1%;">
-            <button type="button" id="layer-up" class="button-regular ui-button ui-widget ui-corner-all" title="Move one layer up">
+            <button type="button" id="layer-up" class="button-regular ui-button ui-widget ui-corner-all" title="Move object one layer up">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M7,21H9V19H7M11,21H13V19H11M19,15H9V5H19M19,3H9C7.89,3 7,3.89 7,5V15A2,2 0 0,0 9,17H14L18,17H19A2,2 0 0,0 21,15V5C21,3.89 20.1,3 19,3M15,21H17V19H15M3,9H5V7H3M5,21V19H3A2,2 0 0,0 5,21M3,17H5V15H3M3,13H5V11H3V13Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="layer-down" class="button-regular ui-button ui-widget ui-corner-all" title="Move one layer down">
+            <button type="button" id="layer-down" class="button-regular ui-button ui-widget ui-corner-all" title="Move object one layer down">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M15,17H17V15H15M15,5H17V3H15M5,7H3V19A2,2 0 0,0 5,21H17V19H5M19,17A2,2 0 0,0 21,15H19M19,9H21V7H19M19,13H21V11H19M9,17V15H7A2,2 0 0,0 9,17M13,3H11V5H13M19,3V5H21C21,3.89 20.1,3 19,3M13,15H11V17H13M9,3C7.89,3 7,3.89 7,5H9M9,11H7V13H9M9,7H7V9H9V7Z" ></path>
                 </svg>
@@ -146,12 +146,12 @@
                     <path fill="#000000" d="M12.5,8C9.85,8 7.45,9 5.6,10.6L2,7V16H11L7.38,12.38C8.77,11.22 10.54,10.5 12.5,10.5C16.04,10.5 19.05,12.81 20.1,16L22.47,15.22C21.08,11.03 17.15,8 12.5,8Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="hide" class="button-regular ui-button ui-widget ui-corner-all" title="Hide">
+            <button type="button" id="hide" class="button-regular ui-button ui-widget ui-corner-all" title="Hide canvas">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M11.83,9L15,12.16C15,12.11 15,12.05 15,12A3,3 0 0,0 12,9C11.94,9 11.89,9 11.83,9M7.53,9.8L9.08,11.35C9.03,11.56 9,11.77 9,12A3,3 0 0,0 12,15C12.22,15 12.44,14.97 12.65,14.92L14.2,16.47C13.53,16.8 12.79,17 12,17A5,5 0 0,1 7,12C7,11.21 7.2,10.47 7.53,9.8M2,4.27L4.28,6.55L4.73,7C3.08,8.3 1.78,10 1,12C2.73,16.39 7,19.5 12,19.5C13.55,19.5 15.03,19.2 16.38,18.66L16.81,19.08L19.73,22L21,20.73L3.27,3M12,7A5,5 0 0,1 17,12C17,12.64 16.87,13.26 16.64,13.82L19.57,16.75C21.07,15.5 22.27,13.86 23,12C21.27,7.61 17,4.5 12,4.5C10.6,4.5 9.26,4.75 8,5.2L10.17,7.35C10.74,7.13 11.35,7 12,7Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="clear" class="button-regular ui-button ui-widget ui-corner-all" title="Clear">
+            <button type="button" id="clear" class="button-regular ui-button ui-widget ui-corner-all" title="Remove all objects and create new canvas">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M20,4C21.11,4 22,4.89 22,6V18C22,19.11 21.11,20 20,20H4C2.89,20 2,19.11 2,18V6C2,4.89 2.89,4 4,4H20M8.5,15V9H7.25V12.5L4.75,9H3.5V15H4.75V11.5L7.3,15H8.5M13.5,10.26V9H9.5V15H13.5V13.75H11V12.64H13.5V11.38H11V10.26H13.5M20.5,14V9H19.25V13.5H18.13V10H16.88V13.5H15.75V9H14.5V14A1,1 0 0,0 15.5,15H19.5A1,1 0 0,0 20.5,14Z" ></path>
                 </svg>

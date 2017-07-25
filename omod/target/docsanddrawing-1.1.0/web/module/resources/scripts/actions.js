@@ -2,9 +2,12 @@
  * Created by abhij on 3/7/2017.
  *
  */
+// import {saveAs} from "./libs/FileSaver.min";
 let fillColor;
 
 $(document).ready(function() {
+
+    // var FileSaver = require('file-saver');
 
     let DRAW_COLOR = 'BLACK';
 

@@ -19,8 +19,8 @@ $(document).ready(function($) {
         input.attr("accept","video/*");
         input.on("change", function (e) {
             let video = e.target.files[0];
-            console.info("Video selected ->");
-            console.info(video);
+            // console.info("Video selected ->");
+            // console.info(video);
             createUploadVideoDialog(video);
             dialog.dialog("destroy");
         });
@@ -37,7 +37,7 @@ $(document).ready(function($) {
         }).appendTo(dialog);
         $("<p />").appendTo(dialog);
         $("<button />").css('margin', '10px').text("Capture using web-cam").button().on("click", function () {
-            createWebcamDialog();
+            createVideoRecordDialog();
             dialog.dialog("destroy");
         }).appendTo(dialog);
         dialog.dialog({
@@ -71,7 +71,7 @@ $(document).ready(function($) {
         // console.info("createUploadImageDialog ->");
         // console.info(image);
         let dialog = $("<div/>");
-        dialog.attr("title", "Upload video from system");
+        dialog.attr("title", "Upload video from device");
         let input = getInputTag(dialog);
         input.appendTo(dialog);
         let videoTag = $("<video />");
@@ -107,15 +107,15 @@ $(document).ready(function($) {
             },
             autoOpen: false,
             buttons: {
-                "Web-cam": function () {
-                    createWebcamDialog();
-                    $(this).dialog("destroy");
-                },
+                // "Web-cam": function () {
+                //     createWebcamDialog();
+                //     $(this).dialog("destroy");
+                // },
                 "Reselect": function () {
                     input.click();
                 },
                 "Attach": function () {
-                    console.info("Attach file code here");
+                    // console.info("Attach file code here");
                     let attachmentVideo = new Attachment(video.name, "video", previewVideo );
                     attachments.push(attachmentVideo);
                     $(this).dialog("destroy");
@@ -128,7 +128,7 @@ $(document).ready(function($) {
         dialog.dialog("open");
     }
 
-    function createWebcamDialog() {
+    function createVideoRecordDialog() {
         let dialog = $("<div/>");
         dialog.attr("title", "Capture video from camera");
         let input = $("<input/>");
@@ -137,10 +137,10 @@ $(document).ready(function($) {
         input.attr("name","videos[]");
         input.attr("accept","video/*");
         input.on("change", function (e) {
-            let image = e.target.files[0];
+            let video = e.target.files[0];
             console.info("Image selected ->");
-            console.info(image);
-            createUploadVideoDialog(image);
+            console.info(video);
+            createUploadVideoDialog(video);
             dialog.dialog("destroy");
         });
         input.appendTo(dialog);
@@ -152,7 +152,7 @@ $(document).ready(function($) {
         // $("<option/>").attr("value", "3").text("1024×768").appendTo(select);
         $("<option/>").attr("value", "4").text("1280×720").appendTo(select);
         let label = $("<label/>").css("float","right");
-        label.text("Image size : ");
+        label.text("Video size : ");
         label.appendTo(selectDiv);
         let imageDiv = $("<div/>").css('text-align', '-webkit-center').appendTo(dialog);
         let video = $("<video/>").addClass("video-js vjs-default-skin");
@@ -214,7 +214,7 @@ $(document).ready(function($) {
                 // snapshot is available
                 player.on('finishRecord', function() {
                     console.info("finished recording");
-                    let data = player.recordedData;
+                    let data = player.recordedData.video;
 
                     let fr = new FileReader();
                     fr.onload = function(e) {
@@ -234,15 +234,15 @@ $(document).ready(function($) {
             },
             autoOpen: false,
             buttons: {
-                upload :{
-                    text : "Upload from system",
-                    click : function () {
-                        console.info("Upload clicked");
-                        input.click();
-                        $(this).dialog("destroy");
-                        destroyCam();
-                    }
-                },
+                // upload :{
+                //     text : "Upload from system",
+                //     click : function () {
+                //         console.info("Upload clicked");
+                //         input.click();
+                //         $(this).dialog("destroy");
+                //         destroyCam();
+                //     }
+                // },
                 "Retry": function () {
                     console.info("Retry clicked");
                     $(".vjs-icon-photo-retry").click();

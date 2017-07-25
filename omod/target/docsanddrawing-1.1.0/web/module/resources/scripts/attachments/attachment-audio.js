@@ -71,7 +71,7 @@ $(document).ready(function($) {
         // console.info("createUploadImageDialog ->");
         // console.info(image);
         let dialog = $("<div/>");
-        dialog.attr("title", "Upload audio from system");
+        dialog.attr("title", "Upload audio from device");
         let input = getInputTag(dialog);
         input.appendTo(dialog);
 
@@ -108,10 +108,10 @@ $(document).ready(function($) {
             },
             autoOpen: false,
             buttons: {
-                "Mic": function () {
-                    createRecordDialog();
-                    $(this).dialog("close");
-                },
+                // "Mic": function () {
+                //     createRecordDialog();
+                //     $(this).dialog("close");
+                // },
                 "Reselect": function () {
                     input.click();
                 },
@@ -119,10 +119,10 @@ $(document).ready(function($) {
                     console.info("Attach file code here");
                     let attachment = new Attachment(video.name, "audio", previewVideo );
                     attachments.push(attachment);
-                    $(this).dialog("close");
+                    $(this).dialog("destroy");
                 },
                 "Cancel": function () {
-                    $(this).dialog("close");
+                    $(this).dialog("destroy");
                 },
             }
         });
@@ -232,10 +232,10 @@ $(document).ready(function($) {
             },
             autoOpen: false,
             buttons: {
-                "Upload from system" : function() {
-                    console.info("Upload clicked");
-                    inputTag.click();
-                },
+                // "Upload from system" : function() {
+                //     console.info("Upload clicked");
+                //     inputTag.click();
+                // },
                 "Retry": function () {
                     console.info("Retry clicked");
                     $(this).dialog("destroy");
@@ -244,11 +244,11 @@ $(document).ready(function($) {
                 "Attach": function () {
                     console.info("Attach clicked");
                     saveAttachment();
-                    $(this).dialog("close");
+                    $(this).dialog("destroy");
                 },
                 "Cancel": function () {
                     console.info("Camera dialog closed");
-                    $(this).dialog("close");
+                    $(this).dialog("destroy");
                 },
             }
         });

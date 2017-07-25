@@ -7,7 +7,7 @@ $(document).ready(function() {
     // Template
     let uploadImage, imagePath;
     let dialogTemplate = $("#dialog-upload");
-    let dialogWebcam = $("#dialog-webcam") , reset = false;
+    let reset = false;
 
     dialogTemplate.dialog({
         resizable: false,
@@ -137,80 +137,87 @@ $(document).ready(function() {
         dialogTemplate.dialog("open");
     });
 
-    // WebCam
-    dialogWebcam.dialog({
-        resizable: true,
-        position: {
-            of: window,
-            at: "center center",
-            my: "center center"
-        },
-        width: 640 + 33,
-        height: 480 + 180,
-        open: function () {
-            Webcam.set({
-                width: 640,
-                height: 480,
-                dest_width: 640,
-                dest_height: 480,
-            });
-            Webcam.attach("#front-cam");
-            $(".ui-dialog-buttonpane button:contains('Use')").button("disable");
-        },
-        close: function () {
-            Webcam.reset();
-            $(".ui-dialog-buttonpane button:contains('Reset')").text('Capture');
-            $(this).dialog("destroy");
-        },
-        modal: true,
-        autoOpen: false,
-        buttons: {
-            "Capture": function () {
-                if (reset === true) {
-                    Webcam.attach("#front-cam");
-                    $(".ui-dialog-buttonpane button:contains('Reset')").text('Capture');
-                    $(".ui-dialog-buttonpane button:contains('Use')").button("disable");
-                    reset = false;
-                } else {
-                    Webcam.snap(function (data_uri) {
-                        document.getElementById('front-cam').innerHTML = '<img src="' + data_uri + '"/>';
-                        imagePath = data_uri;
-                    });
-                    $(".ui-dialog-buttonpane button:contains('Capture')").text('Reset');
-                    $(".ui-dialog-buttonpane button:contains('Use')").button("enable");
-                    reset = true;
-                }
+        let dialogWebcam = $("#dialog-webcam")
+        // WebCam
+        dialogWebcam.dialog({
+            resizable: true,
+            position: {
+                of: window,
+                at: "center center",
+                my: "center center"
             },
-            "Use"  : function () {
-                $(this).dialog("close");
-                Webcam.reset();
-                blobUtil.imgSrcToDataURL(imagePath, 'image/jpeg').then(function (dataUrl) {
-                    // success
-                    fabric.Image.fromURL(
-                        dataUrl,
-                        function(oImg) {
-                            if(oImg.width > 600){
-                                oImg.setWidth(600);
-                            }
-                            if(oImg.height > 600){
-                                oImg.setHeight(600);
-                            }
-                            // oImg.scale(1);
-                            oImg.set({'top': 100, 'left': 100});
-                            canvas.centerObject(oImg);
-                            canvas.add(oImg);
-                        }
-                    );
+            width: 640 + 33,
+            height: 480 + 180,
+            open: function () {
+                Webcam.set({
+                    width: 640,
+                    height: 480,
+                    dest_width: 640,
+                    dest_height: 480,
                 });
+                Webcam.attach("#front-cam");
+                $(".ui-dialog-buttonpane button:contains('Use')").button("disable");
             },
-            "Cancel": function () {
-                $(this).dialog("close");
+            close: function () {
                 Webcam.reset();
+                $(".ui-dialog-buttonpane button:contains('Reset')").text('Capture');
+                $(this).dialog("close");
+            },
+            modal: true,
+            autoOpen: false,
+            buttons: {
+                "Capture": function () {
+                    if (reset === true) {
+                        Webcam.attach("#front-cam");
+                        $(".ui-dialog-buttonpane button:contains('Reset')").text('Capture');
+                        $(".ui-dialog-buttonpane button:contains('Use')").button("disable");
+                        reset = false;
+                    } else {
+                        Webcam.snap(function (data_uri) {
+                            document.getElementById('front-cam').innerHTML = '<img src="' + data_uri + '"/>';
+                            imagePath = data_uri;
+                        });
+                        $(".ui-dialog-buttonpane button:contains('Capture')").text('Reset');
+                        $(".ui-dialog-buttonpane button:contains('Use')").button("enable");
+                        reset = true;
+                    }
+                },
+                "Use"  : function () {
+                    $(this).dialog("close");
+                    Webcam.reset();
+                    blobUtil.imgSrcToDataURL(imagePath, 'image/jpeg').then(function (dataUrl) {
+                        // success
+                        fabric.Image.fromURL(
+                            dataUrl,
+                            function(oImg) {
+                                if(oImg.width > 600){
+                                    oImg.setWidth(600);
+                                }
+                                if(oImg.height > 600){
+                                    oImg.setHeight(600);
+                                }
+                                // oImg.scale(1);
+                                oImg.set({'top': 100, 'left': 100});
+                                canvas.centerObject(oImg);
+                                canvas.add(oImg);
+                            }
+                        );
+                    });
+                },
+                "Cancel": function () {
+                    $(this).dialog("close");
+                    Webcam.reset();
+                }
             }
-        }
-    });
-    $("#import-camera").click(function () {
+        });
+
+    function showWebcamDialog() {
+        reset = false;
         dialogWebcam.dialog('open');
+    }
+
+    $("#import-camera").click(function () {
+        showWebcamDialog();
     });
 
     // Upload

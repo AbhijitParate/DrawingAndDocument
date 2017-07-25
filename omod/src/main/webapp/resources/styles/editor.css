@@ -12,6 +12,15 @@
     margin: 0.5%;
 }
 
+.ui-dialog-titlebar-close {
+    /*content: "X";*/
+    visibility: hidden;
+}
+
+/*.ui-state-default .ui-icon {*/
+    /*background-image: url("./images/ui-icons_888888_256x240.png");*/
+/*}*/
+
 .canvasContainer {
     float: left;
     width: 82%;

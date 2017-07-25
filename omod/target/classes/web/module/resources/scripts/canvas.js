@@ -174,17 +174,16 @@ function createDialogForText(object) {
         height: "auto",
         width: "460",
         open: function () {
-
+            document.onkeydown = null;
             attachBtn = $(".ui-dialog-buttonpane button:contains('Add')");
             clearBtn = $(".ui-dialog-buttonpane button:contains('Clear')");
             uploadBtn = $(".ui-dialog-buttonpane button:contains('Upload')");
-
             !object ? attachBtn.button("disable") : false;
             !object ? clearBtn.button("disable") : false;
-
         },
         close: function () {
             $(this).dialog("destroy");
+            document.onkeydown = keyFunction;
         },
         autoOpen: false,
         buttons: {
@@ -282,36 +281,29 @@ function clearCanvas() {
 }
 
 // Copy Paste
-let copiedObject;
-let copiedObjects = [];
+var copiedObjects = [];
 function copy(){
-    let object;
-
-    if(canvas.getActiveGroup()){
-        for(let i = 0; i < canvas.getActiveGroup().objects.length; i++){
-            object = canvas.getActiveGroup().objects[i];
-            copiedObjects[i] = object;
-        }
-    } else if(canvas.getActiveObject()){
-        object = canvas.getActiveObject();
-        copiedObject = object;
+    // if(canvas.getActiveGroup()){
+    //     console.log(canvas.getActiveGroup());
+    //     for(let i = 0; i < canvas.getActiveGroup()._objects.length; i++){
+    //         copiedObjects[i] = fabric.util.object.clone(canvas.getActiveGroup()._objects[i]);
+    //     }
+    // } else
+    if(canvas.getActiveObject()){
+        copiedObjects = [];
+        copiedObjects[0] = fabric.util.object.clone(canvas.getActiveObject());
     }
 }
 
 function paste(){
-    let object;
     if(copiedObjects.length > 0){
-        for(let i in copiedObjects){
-            object = copiedObjects[i];
+        canvas.discardActiveObject();
+        for(let i = 0; i < copiedObjects.length; i++){
+            let object = copiedObjects[i];
             object.set("top", object.top+10);
             object.set("left", object.left+10);
-            canvas.add(copiedObjects[i]);
+            canvas.add(fabric.util.object.clone(copiedObjects[i]));
         }
-    } else if(copiedObject){
-        let object = copiedObject;
-        object.set("top", object.top+10);
-        object.set("left", object.left+10);
-        canvas.add(object);
     }
     canvas.renderAll();
 }

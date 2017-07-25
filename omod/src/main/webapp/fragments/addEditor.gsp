@@ -1,7 +1,7 @@
 <%
-    ui.includeJavascript("docsanddrawing", "libs/jquery-3.1.1.min.js")
-
     ui.includeCss("docsanddrawing", "libs/jquery-ui.min.css")
+
+    ui.includeJavascript("docsanddrawing", "libs/jquery-3.1.1.min.js")
     ui.includeJavascript("docsanddrawing", "libs/jquery-ui.min.js")
 
     ui.includeCss("docsanddrawing", "libs/spectrum.min.css")

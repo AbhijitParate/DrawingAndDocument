@@ -1106,8 +1106,8 @@ fabric.Media = fabric.util.createClass(
  * @param {Function} callback Callback to invoke when an image instance is created
  */
 fabric.Media.fromObject = function (object, callback) {
-    console.info("recreating object");
-    console.info(object);
+    // console.info("recreating object");
+    // console.info(object);
     var obj =  new fabric.Media(object.data, {
         top: object.top,
         left: object.left
@@ -1132,6 +1132,11 @@ function getPreviewDialog(data, mimeType) {
                 // height: 520,
                 close: function () {
                     $(this).dialog('destroy');
+                },
+                buttons : {
+                    "Close" : function () {
+                        $(this).dialog('destroy');
+                    }
                 }
             });
             break;
@@ -1148,6 +1153,11 @@ function getPreviewDialog(data, mimeType) {
                 height: 120,
                 close: function () {
                     $(this).dialog('destroy');
+                },
+                buttons : {
+                    "Close" : function () {
+                        $(this).dialog('destroy');
+                    }
                 }
             });
             break;
@@ -1164,6 +1174,11 @@ function getPreviewDialog(data, mimeType) {
                 height: 500,
                 close: function () {
                     $(this).dialog('destroy');
+                },
+                buttons : {
+                    "Close" : function () {
+                        $(this).dialog('destroy');
+                    }
                 }
             });
             break;
