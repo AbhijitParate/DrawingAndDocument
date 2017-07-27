@@ -14,19 +14,9 @@
     <div id="controls">
         <h3 class="control-header">Draw</h3>
         <div style="padding:1%;">
-            <button type="button" id="draw-color-picker" class="button-regular ui-button ui-widget ui-corner-all" title="Pencil draw color">
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" ></path>
-                </svg>
-            </button>
             <button type="button" id="text" class="button-regular ui-button ui-widget ui-corner-all" title="Add Text">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M3,3H16V6H11V18H8V6H3V3M12,7H14V9H12V7M15,7H17V9H15V7M18,7H20V9H18V7M12,10H14V12H12V10M12,13H14V15H12V13M12,16H14V18H12V16M12,19H14V21H12V19Z" ></path>
-                </svg>
-            </button>
-            <button type="button" id="shape" class="button-regular ui-button ui-widget ui-corner-all" title="Add Shapes">
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M2,2H11V11H2V2M17.5,2C20,2 22,4 22,6.5C22,9 20,11 17.5,11C15,11 13,9 13,6.5C13,4 15,2 17.5,2M6.5,14L11,22H2L6.5,14M19,17H22V19H19V22H17V19H14V17H17V14H19V17Z" ></path>
                 </svg>
             </button>
             <button type="button" id="fill-color-picker" class="button-regular ui-button ui-widget ui-corner-all" title="Shape fill color">
@@ -34,9 +24,19 @@
                     <path fill="#000000" d="M19,11.5C19,11.5 17,13.67 17,15A2,2 0 0,0 19,17A2,2 0 0,0 21,15C21,13.67 19,11.5 19,11.5M5.21,10L10,5.21L14.79,10M16.56,8.94L7.62,0L6.21,1.41L8.59,3.79L3.44,8.94C2.85,9.5 2.85,10.47 3.44,11.06L8.94,16.56C9.23,16.85 9.62,17 10,17C10.38,17 10.77,16.85 11.06,16.56L16.56,11.06C17.15,10.47 17.15,9.5 16.56,8.94Z" ></path>
                 </svg>
             </button>
+            <button type="button" id="shape" class="button-regular ui-button ui-widget ui-corner-all" title="Add Shapes">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#000000" d="M2,2H11V11H2V2M17.5,2C20,2 22,4 22,6.5C22,9 20,11 17.5,11C15,11 13,9 13,6.5C13,4 15,2 17.5,2M6.5,14L11,22H2L6.5,14M19,17H22V19H19V22H17V19H14V17H17V14H19V17Z" ></path>
+                </svg>
+            </button>
             <button type="button" id="delete" class="button-regular ui-button ui-widget ui-corner-all" title="Delete objects">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M20.37,8.91L19.37,10.64L7.24,3.64L8.24,1.91L11.28,3.66L12.64,3.29L16.97,5.79L17.34,7.16L20.37,8.91M6,19V7H11.07L18,11V19A2,2 0 0,1 16,21H8A2,2 0 0,1 6,19Z" ></path>
+                </svg>
+            </button>
+            <button type="button" id="draw-color-picker" class="button-regular ui-button ui-widget ui-corner-all" title="Pencil draw color">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#000000" d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" ></path>
                 </svg>
             </button>
             <button type="button" id="pencil" class="button-regular ui-button ui-widget ui-corner-all" title="Enable / Disable Pencil">
@@ -178,10 +178,6 @@
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="#000000" d="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z" ></path>
                 </svg>
-            </button>
-            <input  id="import-upload-input" type="file" accept="image/*" hidden>
-            <button type="button" id="import-json" class="button-regular ui-button ui-widget ui-corner-all" title="Import canvas from json file">
-                JSON
             </button>
         </div>
         <h3 class="control-header">Attach files</h3>
