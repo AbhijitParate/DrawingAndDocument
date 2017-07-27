@@ -28,6 +28,7 @@ public class AddEditorFragmentController {
 	        throws Exception {
 		//		log.debug(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
+		model.addAttribute("patientIdentifier", patient.getPatientIdentifier(3).getIdentifier());
 		model.addAttribute("visitId", visit.getId());
 		model.addAttribute("providerId", sessionContext.getCurrentProvider().getId());
 		//		model.addAttribute("returnUrl", "../coreapps/clinicianfacing/patient.page?patientId="+patient.getId()+"&visitId"+visit.getId());

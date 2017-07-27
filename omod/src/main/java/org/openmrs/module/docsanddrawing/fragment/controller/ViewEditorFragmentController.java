@@ -11,6 +11,7 @@ package org.openmrs.module.docsanddrawing.fragment.controller;
 
 import org.openmrs.Encounter;
 import org.openmrs.Patient;
+import org.openmrs.PatientIdentifierType;
 import org.openmrs.module.appui.UiSessionContext;
 import org.openmrs.ui.framework.fragment.FragmentModel;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -29,6 +30,7 @@ public class ViewEditorFragmentController {
 	        throws Exception {
 		//		log.debug(getClass().getSimpleName() + ".controller()");
 		model.addAttribute("patientId", patient.getId());
+		model.addAttribute("patientIdentifier", patient.getPatientIdentifier(3).getIdentifier());
 		model.addAttribute("visitId", encounter.getVisit().getId());
 		model.addAttribute("encounterId", encounter.getId());
 		SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");

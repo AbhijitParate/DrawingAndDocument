@@ -7,6 +7,7 @@
 
     ui.includeCss("docsanddrawing", "attachment.css")
     ui.includeJavascript("docsanddrawing", "status_actions.js")
+    ui.includeJavascript("docsanddrawing", "backup_restore.js")
 %>
 <div id="status-bar" style="margin: 2px; height: 45px;" >
     <button id="status-save" class="confirm right" style="margin-right: 0">

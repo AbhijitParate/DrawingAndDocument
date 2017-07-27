@@ -67,7 +67,7 @@ $(document).ready(function($) {
         dialog.dialog("open");
     }
 
-    function createUploadAudioDialog(video) {
+    function createUploadAudioDialog(audio) {
         // console.info("createUploadImageDialog ->");
         // console.info(image);
         let dialog = $("<div/>");
@@ -80,13 +80,13 @@ $(document).ready(function($) {
         audioTag.css("max-height","400px");
         audioTag.attr("controls", "");
         audioTag.attr("autoplay", "");
-        let previewVideo;
+        let previewAudio;
         let reader = new FileReader();
         reader.onload = (function (e) {
-            previewVideo = e.target.result;
-            audioTag.attr("src",previewVideo);
+            previewAudio = e.target.result;
+            audioTag.attr("src",previewAudio);
         });
-        reader.readAsDataURL(video);
+        reader.readAsDataURL(audio);
         audioTag.appendTo(dialog);
 
         dialog.dialog({
@@ -117,7 +117,7 @@ $(document).ready(function($) {
                 },
                 "Attach": function () {
                     console.info("Attach file code here");
-                    let attachment = new Attachment(video.name, "audio", previewVideo );
+                    let attachment = new Attachment("audio_" + audio.name, "audio", previewAudio );
                     attachments.push(attachment);
                     $(this).dialog("destroy");
                 },

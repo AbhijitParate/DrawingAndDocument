@@ -5,7 +5,7 @@
 	<!-- Base Module Properties -->
 	<id>docsanddrawing</id>
 	<name>Docs and Drawing Annotation</name>
-	<version>1.1.1</version>
+	<version>1.1.2</version>
 	<package>org.openmrs.module.docsanddrawing</package>
 	<author>Abhijit Parate</author>
 	<description>
