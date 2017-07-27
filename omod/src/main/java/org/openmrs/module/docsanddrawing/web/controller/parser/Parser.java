@@ -27,10 +27,10 @@ public class Parser {
 		
 		for (Obs obs : encounter.getObsAtTopLevel(false)) {
 			
-			if (obs.getComment().contains("svg")) {
+			if (obs.getComment().endsWith(".svg")) {
 				parsedObs.setDrawing(parseObs(obs));
 				continue;
-			} else if (obs.getComment().contains("json")) {
+			} else if (obs.getComment().endsWith(".drawing")) {
 				parsedObs.setJson(parseObs(obs));
 				continue;
 			}

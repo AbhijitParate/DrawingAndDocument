@@ -2,139 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36e80d1b-bbfd-4c70-bb1e-2f046640a285" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.1.omod" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/dependency-maven-plugin-markers/org.openmrs.module-docsanddrawing-api-jar-1.1.0.marker" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0-tests.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0.omod" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/apps/add_annotation_extension.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/apps/encounterDetails_extension.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/commons-codec-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/commons-fileupload-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/commons-io-2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/docsanddrawing-api-1.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/lib/json-20090211.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/liquibase.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/messages.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/messages_es.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/messages_fr.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/moduleApplicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/extension/html/AdminList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/AddEditorFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/DrawingDetailsFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/EditEditorFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/EncounterDetailsTemplateFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/StatusBarFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/fragment/controller/ViewPopupFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/DownloadController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/EncounterController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/TemplatesController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/UploadController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/parser/ParsedObs.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/parser/Parser$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/addEditor.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/compareObservations.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/editEditor.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/encounterDetailsTemplate.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/includes/canvas.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/includes/editor_actions.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/includes/header.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/includes/modals.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/statusBar.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/viewEditor.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/fragments/viewPopup.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/addDrawing.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/compareObs.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/editDrawing.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/manageTemplates.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/viewDrawing.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/pages/viewDrawingPopup.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/no-preview.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/templates/template-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/templates/template-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/templates/template-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/templates/template-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/images/templates/template-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachments/attachment-audio.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachments/attachment-file.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachments/attachment-image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachments/attachment-notes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/attachments/attachment-video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/compareObs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/context_menu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/drawingObsEncounterTemplate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/import.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/keyboard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/FileSaver.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/RecordRTC.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/blob-util.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/fabric.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/fabric.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/jquery-3.1.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/jquery.ui-contextmenu.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/jquery.webui-popover.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/jspdf.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/lightcase.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/spectrum.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/video.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.record.lamejs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.record.libvorbis.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.record.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.record.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.record.recorderjs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/videojs.wavesurfer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/wavesurfer.microphone.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/wavesurfer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/webcam.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/libs/webcam.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/manage_templates.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/popup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/status_actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/scripts/ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/attachment.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/compareObs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/controls.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/drawingObsEncounterTemplate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/editor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/font/lightcase.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/font/lightcase.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/font/lightcase.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/font/lightcase.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/font/videojs-record.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_444444_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_555555_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_777620_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_777777_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_cc0000_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/images/ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/jquery.webui-popover.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/lightcase.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/spectrum.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/video-js.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/videojs.record.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/resources/styles/libs/videojs.record.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/templates/template-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/templates/template-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/templates/template-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/templates/template-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/web/module/templates/template-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.0/webModuleApplicationContext.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.2.omod" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.2.omod" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/pom.xml" afterPath="$PROJECT_DIR$/api/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/pom.xml" afterPath="$PROJECT_DIR$/omod/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/config.xml" afterPath="$PROJECT_DIR$/omod/target/classes/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" />
     </list>
     <ignored path="api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
     <ignored path="api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
@@ -210,6 +80,14 @@
     <ignored path="$PROJECT_DIR$/api/${project.build.directory}/classes/" />
     <ignored path="$PROJECT_DIR$/api/${project.build.directory}/test-classes/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
+    <ignored path="$PROJECT_DIR$/omod/target/classes/" />
+    <ignored path="$PROJECT_DIR$/omod/target/dependency-maven-plugin-markers/" />
+    <ignored path="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.1/" />
+    <ignored path="$PROJECT_DIR$/omod/target/maven-archiver/" />
+    <ignored path="$PROJECT_DIR$/omod/target/maven-status/" />
+    <ignored path="$PROJECT_DIR$/omod/target/test-classes/" />
+    <ignored path="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.2/" />
+    <ignored path="$PROJECT_DIR$/omod/target/surefire-reports/" />
     <manually-removed-from-ignored>
       <directory path="$PROJECT_DIR$/target/" />
       <directory path="$PROJECT_DIR$/omod/target/" />
@@ -231,42 +109,146 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="attachment-notes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-notes.js">
+      <file leaf-file-name="addEditor.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="152" column="44" lean-forward="false" selection-start-line="152" selection-start-column="44" selection-end-line="152" selection-end-column="44" />
+            <state relative-caret-position="480">
+              <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editor_actions.gsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="180" column="21" lean-forward="false" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editEditor.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status_actions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-384">
+              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding>
-                <element signature="e#0#41#0" expanded="false" />
-                <element signature="e#137#210#0" expanded="false" />
-                <element signature="e#270#319#0" expanded="false" />
-                <element signature="e#1262#1359#0" expanded="false" />
-                <element signature="e#1575#1701#0" expanded="false" />
-                <element signature="e#1787#1865#0" expanded="false" />
-                <element signature="e#1898#2019#0" expanded="false" />
-                <element signature="e#2274#2328#0" expanded="false" />
-                <element signature="e#2368#2825#0" expanded="false" />
-                <element signature="e#2533#2708#0" expanded="false" />
-                <element signature="e#2865#2929#0" expanded="false" />
-                <element signature="e#3246#3283#0" expanded="false" />
-                <element signature="e#3879#4170#0" expanded="false" />
-                <element signature="e#3948#4050#0" expanded="false" />
-                <element signature="e#4056#4160#0" expanded="false" />
-                <element signature="e#4433#4549#0" expanded="false" />
-                <element signature="e#5499#5662#0" expanded="false" />
-                <element signature="e#5702#5859#0" expanded="false" />
-                <element signature="e#5899#5963#0" expanded="false" />
-                <element signature="e#6026#6406#0" expanded="false" />
-                <element signature="e#6741#6782#0" expanded="false" />
-                <element signature="e#6942#7026#0" expanded="false" />
-                <element signature="e#7068#7746#0" expanded="false" />
-                <element signature="e#7145#7261#0" expanded="false" />
-                <element signature="e#7348#7419#0" expanded="false" />
-                <element signature="e#7452#7566#0" expanded="false" />
-                <element signature="e#7618#7736#0" expanded="false" />
-                <element signature="e#7658#7722#0" expanded="false" />
-                <element signature="e#8044#8241#0" expanded="false" />
+                <element signature="e#0#43#0" expanded="false" />
+                <element signature="e#180#254#0" expanded="false" />
+                <element signature="e#997#1115#0" expanded="false" />
+                <element signature="e#1148#1279#0" expanded="false" />
+                <element signature="e#1510#1800#0" expanded="false" />
+                <element signature="e#1597#1713#0" expanded="false" />
+                <element signature="e#2360#2387#0" expanded="false" />
+                <element signature="e#2705#3510#0" expanded="false" />
+                <element signature="e#3001#3139#0" expanded="false" />
+                <element signature="e#3015#3050#0" expanded="false" />
+                <element signature="e#3728#3880#0" expanded="false" />
+                <element signature="e#3760#3811#0" expanded="false" />
+                <element signature="e#3817#3866#0" expanded="false" />
+                <element signature="e#4302#4516#0" expanded="false" />
+                <element signature="e#4839#5575#0" expanded="false" />
+                <element signature="e#4965#5094#0" expanded="false" />
+                <element signature="e#5126#5242#0" expanded="false" />
+                <element signature="e#5275#5395#0" expanded="false" />
+                <element signature="e#5447#5565#0" expanded="false" />
+                <element signature="e#5487#5551#0" expanded="false" />
+                <element signature="e#8376#8652#0" expanded="false" />
+                <element signature="e#8911#9435#0" expanded="false" />
+                <element signature="e#9043#9335#0" expanded="false" />
+                <element signature="e#9441#9717#0" expanded="false" />
+                <element signature="e#10790#11042#0" expanded="false" />
+                <element signature="e#11068#11321#0" expanded="false" />
+                <element signature="e#11405#12106#0" expanded="false" />
+                <element signature="e#11679#11995#0" expanded="false" />
+                <element signature="e#11775#11884#0" expanded="false" />
+                <element signature="e#11919#11985#0" expanded="false" />
+                <element signature="e#12152#12224#0" expanded="false" />
+                <element signature="e#12288#12449#0" expanded="false" />
+                <element signature="e#12478#12630#0" expanded="false" />
+                <element signature="e#12655#12794#0" expanded="false" />
+                <element signature="e#13004#13295#0" expanded="false" />
+                <element signature="e#13059#13289#0" expanded="false" />
+                <element signature="e#13328#13562#0" expanded="false" />
+                <element signature="e#13362#13556#0" expanded="false" />
+                <element signature="e#13429#13546#0" expanded="false" />
+                <element signature="e#13590#15497#0" expanded="false" />
+                <element signature="e#13764#14074#0" expanded="false" />
+                <element signature="e#13804#14064#0" expanded="false" />
+                <element signature="e#13937#13987#0" expanded="false" />
+                <element signature="e#14189#14201#0" expanded="false" />
+                <element signature="e#14343#14452#0" expanded="false" />
+                <element signature="e#14768#15490#0" expanded="false" />
+                <element signature="e#14832#15480#0" expanded="false" />
+                <element signature="e#14850#14872#0" expanded="false" />
+                <element signature="e#15085#15305#0" expanded="false" />
+                <element signature="e#15311#15466#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EncounterController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/EncounterController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="727">
+              <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParsedObs.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/ParsedObs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="864">
+              <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              <folding>
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -281,37 +263,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3421">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/omod/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;header&quot;</find>
-      <find>dialogWebcam</find>
-      <find>filesavert</find>
-      <find>filesaver</find>
-      <find>filesave</find>
-      <find>filesav</find>
-      <find>filesa</find>
       <find>files</find>
       <find>f</find>
       <find>fi</find>
@@ -335,6 +297,13 @@
       <find>fabriMedia</find>
       <find>fabricMedia</find>
       <find>fabric.Media</find>
+      <find>encounterId</find>
+      <find>get</find>
+      <find>getIn</find>
+      <find>getInp</find>
+      <find>getInpu</find>
+      <find>getInput</find>
+      <find>attachment</find>
     </findStrings>
     <replaceStrings>
       <replace>// console.</replace>
@@ -361,11 +330,8 @@
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/Constants.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/docsanddrawing/Utils.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/DrawingDetailsFragmentController.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/EditEditorFragmentController.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/StatusBarFragmentController.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewPopupFragmentController.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/DownloadController.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/EncounterController.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/TemplatesController.java" />
@@ -373,28 +339,37 @@
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/manage_templates.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/drawingObsEncounterTemplate.js" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/EncounterDetailsTemplateFragmentController.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/AddEditorFragmentController.java" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/styles/controls.css" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/keyboard.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/canvas.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/header.gsp" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/manageTemplates.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/styles/editor.css" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-image.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-audio.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-notes.js" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-video.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-image.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-file.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-video.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-audio.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-notes.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/header.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/EditEditorFragmentController.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/AddEditorFragmentController.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawing.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/editDrawing.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/backup_restore.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.java" />
         <option value="$PROJECT_DIR$/api/pom.xml" />
         <option value="$PROJECT_DIR$/omod/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" />
       </list>
     </option>
   </component>
@@ -514,6 +489,166 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -521,6 +656,21 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docsanddrawing-omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Changed Files">
           <PATH>
@@ -613,21 +763,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawingAndDocument" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docsanddrawing-omod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -642,8 +777,8 @@
       <recent name="org.openmrs.module.docsanddrawing.web.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\abhij\IdeaProjects\DrawingAndDocument\omod\src\main\webapp\resources\styles\libs\images" />
       <recent name="C:\Users\abhij\IdeaProjects\DrawingAndDocument\omod\src\main\webapp\resources\scripts\libs" />
+      <recent name="C:\Users\abhij\IdeaProjects\DrawingAndDocument\omod\src\main\webapp\resources\styles\libs\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1142,12 +1277,12 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41164455" sideWeight="0.50758255" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20782918" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30044183" sideWeight="0.4968051" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5960854" sideWeight="0.49241748" order="12" side_tool="false" content_ui="tabs" x="358" y="-1138" width="1685" height="901" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3460972" sideWeight="0.4968051" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30320284" sideWeight="0.49241748" order="12" side_tool="false" content_ui="tabs" x="358" y="-1138" width="1685" height="901" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965165" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46946564" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="196" y="264" width="1678" height="998" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2380783" sideWeight="0.49433428" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26939502" sideWeight="0.49433428" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916054" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15854633" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24939759" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1241,7 +1376,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added popup view in patient dashboard" />
     <MESSAGE value="Removed multiple ObsHandlers&#10;Renamed ObsTypes and Descriptions" />
     <MESSAGE value="Added date to view, edit , popup encounter." />
     <MESSAGE value="Added manage template page in admin dashboard" />
@@ -1266,7 +1400,8 @@
     <MESSAGE value="Fixed keyboard issues and removed select and eraser" />
     <MESSAGE value="Fixed minor bugs and issues with UI" />
     <MESSAGE value="Updated version to 1.1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated version to 1.1.1" />
+    <MESSAGE value="Updated version to 1.1.2&#10;Added backup and restore functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated version to 1.1.2&#10;Added backup and restore functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1275,76 +1410,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/EditEditorFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="38" column="90" lean-forward="true" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/StatusBarFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="14" column="89" lean-forward="false" selection-start-line="14" selection-start-column="89" selection-end-line="14" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewPopupFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/ParsedObs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="69" column="5" lean-forward="false" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/DownloadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/EncounterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/TemplatesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/KeepAliveController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -1380,13 +1445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/AddEditorFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/styles/controls.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4608">
@@ -1401,28 +1459,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/compareObs.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/editDrawing.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1436,45 +1473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/encounterDetailsTemplate.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/header.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawing.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/styles/editor.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1922">
-          <caret line="4" column="67" lean-forward="false" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1485,27 +1487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/canvas.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1488">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="41" column="126" lean-forward="false" selection-start-line="41" selection-start-column="126" selection-end-line="41" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/webcam.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -1513,42 +1494,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-audio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="242" column="18" lean-forward="false" selection-start-line="242" selection-start-column="18" selection-end-line="242" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20496">
-          <caret line="427" column="38" lean-forward="false" selection-start-line="427" selection-start-column="38" selection-end-line="427" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachment.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1569,17 +1515,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/canvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="185" column="45" lean-forward="true" selection-start-line="185" selection-start-column="12" selection-end-line="185" selection-end-column="45" />
+        <state relative-caret-position="144">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="369" column="42" lean-forward="true" selection-start-line="369" selection-start-column="4" selection-end-line="369" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/jszip.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/canvas.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/modals.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewPopup.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/libs/jszip-utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2352">
+          <caret line="631" column="25" lean-forward="false" selection-start-line="631" selection-start-column="25" selection-end-line="631" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="23" column="61" lean-forward="false" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1488">
-          <caret line="154" column="25" lean-forward="false" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
+        <state relative-caret-position="2016">
+          <caret line="118" column="64" lean-forward="false" selection-start-line="118" selection-start-column="64" selection-end-line="118" selection-end-column="64" />
           <folding>
             <element signature="e#0#44#0" expanded="false" />
             <element signature="e#141#214#0" expanded="false" />
@@ -1595,311 +1607,69 @@
             <element signature="e#1736#1807#0" expanded="false" />
             <element signature="e#1859#1979#0" expanded="false" />
             <element signature="e#1899#1965#0" expanded="false" />
-            <element signature="e#2075#4138#0" expanded="false" />
             <element signature="e#2085#2131#0" expanded="false" />
             <element signature="e#2636#2738#0" expanded="false" />
-            <element signature="e#2836#4099#0" expanded="false" />
             <element signature="e#2913#3029#0" expanded="false" />
             <element signature="e#3116#3191#0" expanded="false" />
             <element signature="e#3224#3342#0" expanded="false" />
-            <element signature="e#3394#4089#0" expanded="false" />
             <element signature="e#3412#3439#0" expanded="false" />
             <element signature="e#3597#3651#0" expanded="false" />
-            <element signature="e#3691#3968#0" expanded="false" />
-            <element signature="e#4008#4074#0" expanded="false" />
-            <element signature="e#4497#4713#0" expanded="false" />
-            <element signature="e#5715#9615#0" expanded="false" />
-            <element signature="e#5792#5908#0" expanded="false" />
-            <element signature="e#5995#8401#0" expanded="false" />
-            <element signature="e#6340#7360#0" expanded="false" />
-            <element signature="e#6545#7342#0" expanded="false" />
-            <element signature="e#6636#7320#0" expanded="false" />
-            <element signature="e#6799#7136#0" expanded="false" />
-            <element signature="e#6923#7061#0" expanded="false" />
-            <element signature="e#7450#7544#0" expanded="false" />
-            <element signature="e#7598#7667#0" expanded="false" />
-            <element signature="e#7764#8295#0" expanded="false" />
-            <element signature="e#7972#8113#0" expanded="false" />
-            <element signature="e#8434#8479#0" expanded="false" />
-            <element signature="e#8531#9605#0" expanded="false" />
-            <element signature="e#8549#8561#0" expanded="false" />
-            <element signature="e#8939#9162#0" expanded="false" />
-            <element signature="e#9202#9392#0" expanded="false" />
-            <element signature="e#9432#9590#0" expanded="false" />
-            <element signature="e#9649#9730#0" expanded="false" />
-            <element signature="e#9766#9879#0" expanded="false" />
-            <element signature="e#9953#17578#0" expanded="false" />
-            <element signature="e#10031#16580#0" expanded="false" />
-            <element signature="e#10391#11467#0" expanded="false" />
-            <element signature="e#10576#11445#0" expanded="false" />
-            <element signature="e#10675#11419#0" expanded="false" />
-            <element signature="e#10854#11219#0" expanded="false" />
-            <element signature="e#10986#11136#0" expanded="false" />
-            <element signature="e#11540#11642#0" expanded="false" />
-            <element signature="e#12017#13093#0" expanded="false" />
-            <element signature="e#12202#13071#0" expanded="false" />
-            <element signature="e#12301#13045#0" expanded="false" />
-            <element signature="e#12480#12845#0" expanded="false" />
-            <element signature="e#12612#12762#0" expanded="false" />
-            <element signature="e#13166#13271#0" expanded="false" />
-            <element signature="e#13646#14725#0" expanded="false" />
-            <element signature="e#13832#14703#0" expanded="false" />
-            <element signature="e#13931#14677#0" expanded="false" />
-            <element signature="e#14110#14476#0" expanded="false" />
-            <element signature="e#14242#14393#0" expanded="false" />
-            <element signature="e#14798#14904#0" expanded="false" />
-            <element signature="e#15279#16358#0" expanded="false" />
-            <element signature="e#15465#16336#0" expanded="false" />
-            <element signature="e#15564#16310#0" expanded="false" />
-            <element signature="e#15743#16109#0" expanded="false" />
-            <element signature="e#15875#16026#0" expanded="false" />
-            <element signature="e#16431#16537#0" expanded="false" />
-            <element signature="e#16667#17407#0" expanded="false" />
-            <element signature="e#16685#16732#0" expanded="false" />
-            <element signature="e#17108#17241#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9936">
-          <caret line="207" column="38" lean-forward="false" selection-start-line="207" selection-start-column="12" selection-end-line="207" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="361" column="37" lean-forward="false" selection-start-line="361" selection-start-column="37" selection-end-line="361" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="631" column="25" lean-forward="false" selection-start-line="631" selection-start-column="25" selection-end-line="631" selection-end-column="25" />
-          <folding>
-            <element signature="e#86#2066#0" expanded="false" />
-            <element signature="e#391#915#0" expanded="false" />
-            <element signature="e#587#825#0" expanded="false" />
-            <element signature="e#1056#1094#0" expanded="false" />
-            <element signature="e#1260#1343#0" expanded="false" />
-            <element signature="e#1385#2026#0" expanded="false" />
-            <element signature="e#1462#1588#0" expanded="false" />
-            <element signature="e#1675#1743#0" expanded="false" />
-            <element signature="e#1776#1844#0" expanded="false" />
-            <element signature="e#1896#2016#0" expanded="false" />
-            <element signature="e#1936#2002#0" expanded="false" />
-            <element signature="e#2102#12794#0" expanded="false" />
-            <element signature="e#2420#2946#0" expanded="false" />
-            <element signature="e#2617#2855#0" expanded="false" />
-            <element signature="e#3887#7256#0" expanded="false" />
-            <element signature="e#3964#4090#0" expanded="false" />
-            <element signature="e#4177#5996#0" expanded="false" />
-            <element signature="e#4278#4705#0" expanded="false" />
-            <element signature="e#4413#4533#0" expanded="false" />
-            <element signature="e#4564#4687#0" expanded="false" />
-            <element signature="e#4598#4665#0" expanded="false" />
-            <element signature="e#5039#5133#0" expanded="false" />
-            <element signature="e#5187#5256#0" expanded="false" />
-            <element signature="e#5353#5890#0" expanded="false" />
-            <element signature="e#5375#5422#0" expanded="false" />
-            <element signature="e#6029#6120#0" expanded="false" />
-            <element signature="e#6172#7246#0" expanded="false" />
-            <element signature="e#6190#6202#0" expanded="false" />
-            <element signature="e#6580#6803#0" expanded="false" />
-            <element signature="e#6843#7033#0" expanded="false" />
-            <element signature="e#7073#7231#0" expanded="false" />
-            <element signature="e#7290#7413#0" expanded="false" />
-            <element signature="e#7449#7755#0" expanded="false" />
-            <element signature="e#7829#12712#0" expanded="false" />
-            <element signature="e#7907#11953#0" expanded="false" />
-            <element signature="e#7938#8916#0" expanded="false" />
-            <element signature="e#8269#8887#0" expanded="false" />
-            <element signature="e#8514#8646#0" expanded="false" />
-            <element signature="e#8681#8865#0" expanded="false" />
-            <element signature="e#8719#8839#0" expanded="false" />
-            <element signature="e#8933#9911#0" expanded="false" />
-            <element signature="e#9264#9882#0" expanded="false" />
-            <element signature="e#9509#9641#0" expanded="false" />
-            <element signature="e#9676#9860#0" expanded="false" />
-            <element signature="e#9714#9834#0" expanded="false" />
-            <element signature="e#9928#10907#0" expanded="false" />
-            <element signature="e#10259#10878#0" expanded="false" />
-            <element signature="e#10505#10637#0" expanded="false" />
-            <element signature="e#10672#10856#0" expanded="false" />
-            <element signature="e#10710#10830#0" expanded="false" />
-            <element signature="e#10924#11939#0" expanded="false" />
-            <element signature="e#11255#11874#0" expanded="false" />
-            <element signature="e#11501#11633#0" expanded="false" />
-            <element signature="e#11668#11852#0" expanded="false" />
-            <element signature="e#11706#11826#0" expanded="false" />
-            <element signature="e#12040#12541#0" expanded="false" />
-            <element signature="e#12058#12105#0" expanded="false" />
-            <element signature="e#12829#14939#0" expanded="false" />
-            <element signature="e#13151#13739#0" expanded="false" />
-            <element signature="e#13348#13650#0" expanded="false" />
-            <element signature="e#13883#13924#0" expanded="false" />
-            <element signature="e#14092#14175#0" expanded="false" />
-            <element signature="e#14217#14899#0" expanded="false" />
-            <element signature="e#14294#14420#0" expanded="false" />
-            <element signature="e#14507#14575#0" expanded="false" />
-            <element signature="e#14608#14719#0" expanded="false" />
-            <element signature="e#14771#14889#0" expanded="false" />
-            <element signature="e#14811#14875#0" expanded="false" />
-            <element signature="e#14975#21378#0" expanded="false" />
-            <element signature="e#15306#15908#0" expanded="false" />
-            <element signature="e#15436#15819#0" expanded="false" />
-            <element signature="e#16270#20851#0" expanded="false" />
-            <element signature="e#16347#16473#0" expanded="false" />
-            <element signature="e#16560#19926#0" expanded="false" />
-            <element signature="e#16911#17695#0" expanded="false" />
-            <element signature="e#17043#17677#0" expanded="false" />
-            <element signature="e#17081#17428#0" expanded="false" />
-            <element signature="e#17462#17655#0" expanded="false" />
-            <element signature="e#17852#17946#0" expanded="false" />
-            <element signature="e#18000#18069#0" expanded="false" />
-            <element signature="e#18124#18198#0" expanded="false" />
-            <element signature="e#18295#19745#0" expanded="false" />
-            <element signature="e#18317#18364#0" expanded="false" />
-            <element signature="e#18767#19658#0" expanded="false" />
-            <element signature="e#19959#20047#0" expanded="false" />
-            <element signature="e#20099#20841#0" expanded="false" />
-            <element signature="e#20117#20155#0" expanded="false" />
-            <element signature="e#20311#20470#0" expanded="false" />
-            <element signature="e#20510#20664#0" expanded="false" />
-            <element signature="e#20704#20826#0" expanded="false" />
-            <element signature="e#20885#20998#0" expanded="false" />
-            <element signature="e#21034#21340#0" expanded="false" />
-            <element signature="e#21740#22270#0" expanded="false" />
-            <element signature="e#21870#22179#0" expanded="false" />
-            <element signature="e#22411#22449#0" expanded="false" />
-            <element signature="e#22615#22701#0" expanded="false" />
-            <element signature="e#22825#23466#0" expanded="false" />
-            <element signature="e#22902#23028#0" expanded="false" />
-            <element signature="e#23115#23183#0" expanded="false" />
-            <element signature="e#23216#23284#0" expanded="false" />
-            <element signature="e#23336#23456#0" expanded="false" />
-            <element signature="e#23376#23442#0" expanded="false" />
-            <element signature="e#23863#24393#0" expanded="false" />
-            <element signature="e#23993#24302#0" expanded="false" />
-            <element signature="e#25359#29213#0" expanded="false" />
-            <element signature="e#25436#25562#0" expanded="false" />
-            <element signature="e#25649#28368#0" expanded="false" />
-            <element signature="e#25994#27014#0" expanded="false" />
-            <element signature="e#26199#26996#0" expanded="false" />
-            <element signature="e#26290#26974#0" expanded="false" />
-            <element signature="e#26453#26790#0" expanded="false" />
-            <element signature="e#26577#26715#0" expanded="false" />
-            <element signature="e#27104#27198#0" expanded="false" />
-            <element signature="e#27252#27321#0" expanded="false" />
-            <element signature="e#27418#28262#0" expanded="false" />
-            <element signature="e#27440#27487#0" expanded="false" />
-            <element signature="e#27939#28080#0" expanded="false" />
-            <element signature="e#28401#28446#0" expanded="false" />
-            <element signature="e#28498#29203#0" expanded="false" />
-            <element signature="e#28537#28760#0" expanded="false" />
-            <element signature="e#28800#28990#0" expanded="false" />
-            <element signature="e#29030#29188#0" expanded="false" />
-            <element signature="e#29247#29328#0" expanded="false" />
-            <element signature="e#29364#29670#0" expanded="false" />
-            <element signature="e#29744#36734#0" expanded="false" />
-            <element signature="e#29822#35696#0" expanded="false" />
-            <element signature="e#29853#31287#0" expanded="false" />
-            <element signature="e#30182#31258#0" expanded="false" />
-            <element signature="e#30367#31236#0" expanded="false" />
-            <element signature="e#30466#31210#0" expanded="false" />
-            <element signature="e#30645#31010#0" expanded="false" />
-            <element signature="e#30777#30927#0" expanded="false" />
-            <element signature="e#31304#32738#0" expanded="false" />
-            <element signature="e#31633#32709#0" expanded="false" />
-            <element signature="e#31818#32687#0" expanded="false" />
-            <element signature="e#31917#32661#0" expanded="false" />
-            <element signature="e#32096#32461#0" expanded="false" />
-            <element signature="e#32228#32378#0" expanded="false" />
-            <element signature="e#32755#34192#0" expanded="false" />
-            <element signature="e#33084#34163#0" expanded="false" />
-            <element signature="e#33270#34141#0" expanded="false" />
-            <element signature="e#33369#34115#0" expanded="false" />
-            <element signature="e#33548#33914#0" expanded="false" />
-            <element signature="e#33680#33831#0" expanded="false" />
-            <element signature="e#34209#35682#0" expanded="false" />
-            <element signature="e#34538#35617#0" expanded="false" />
-            <element signature="e#34724#35595#0" expanded="false" />
-            <element signature="e#34823#35569#0" expanded="false" />
-            <element signature="e#35002#35368#0" expanded="false" />
-            <element signature="e#35134#35285#0" expanded="false" />
-            <element signature="e#35783#36563#0" expanded="false" />
-            <element signature="e#35801#35848#0" expanded="false" />
-            <element signature="e#36264#36397#0" expanded="false" />
-            <element signature="e#37016#37447#0" expanded="false" />
-            <element signature="e#37030#37114#0" expanded="false" />
-            <element signature="e#37128#37217#0" expanded="false" />
-            <element signature="e#37231#37320#0" expanded="false" />
-            <element signature="e#37334#37437#0" expanded="false" />
-            <element signature="e#37569#38218#0" expanded="false" />
-            <element signature="e#37948#38038#0" expanded="false" />
-            <element signature="e#38044#38135#0" expanded="false" />
-            <element signature="e#38320#39744#0" expanded="false" />
-            <element signature="e#38504#39734#0" expanded="false" />
-            <element signature="e#38538#38685#0" expanded="false" />
-            <element signature="e#38702#38849#0" expanded="false" />
-            <element signature="e#38866#39013#0" expanded="false" />
-            <element signature="e#39030#39720#0" expanded="false" />
-            <element signature="e#39237#39693#0" expanded="false" />
-            <element signature="e#39488#39671#0" expanded="false" />
-            <element signature="e#56262#59988#0" expanded="false" />
-            <element signature="e#56415#56517#0" expanded="false" />
-            <element signature="e#56573#57745#0" expanded="false" />
-            <element signature="e#56876#57342#0" expanded="false" />
-            <element signature="e#56928#57016#0" expanded="false" />
-            <element signature="e#57033#57121#0" expanded="false" />
-            <element signature="e#57138#57226#0" expanded="false" />
-            <element signature="e#57243#57328#0" expanded="false" />
-            <element signature="e#57388#57722#0" expanded="false" />
-            <element signature="e#57406#57437#0" expanded="false" />
-            <element signature="e#57780#58213#0" expanded="false" />
-            <element signature="e#57811#58203#0" expanded="false" />
-            <element signature="e#58242#58304#0" expanded="false" />
-            <element signature="e#58356#58695#0" expanded="false" />
-            <element signature="e#58587#58683#0" expanded="false" />
-            <element signature="e#58732#59839#0" expanded="false" />
-            <element signature="e#59149#59249#0" expanded="false" />
-            <element signature="e#59872#59981#0" expanded="false" />
-            <element signature="e#59993#60224#0" expanded="false" />
-            <element signature="e#60279#60558#0" expanded="false" />
-            <element signature="e#60285#60322#0" expanded="false" />
-            <element signature="e#60397#60455#0" expanded="false" />
-            <element signature="n#!!block;n#getPreviewDialog#0" expanded="false" />
-            <element signature="e#60700#62780#0" expanded="false" />
-            <element signature="e#60724#61330#0" expanded="false" />
-            <element signature="e#60968#61309#0" expanded="false" />
-            <element signature="e#61065#61131#0" expanded="false" />
-            <element signature="e#61159#61295#0" expanded="false" />
-            <element signature="e#61203#61277#0" expanded="false" />
-            <element signature="e#61340#62041#0" expanded="false" />
-            <element signature="e#61502#61579#0" expanded="false" />
-            <element signature="e#61682#62020#0" expanded="false" />
-            <element signature="e#61776#61842#0" expanded="false" />
-            <element signature="e#61870#62006#0" expanded="false" />
-            <element signature="e#61914#61988#0" expanded="false" />
-            <element signature="e#62051#62774#0" expanded="false" />
-            <element signature="e#62213#62289#0" expanded="false" />
-            <element signature="e#62415#62753#0" expanded="false" />
-            <element signature="e#62509#62575#0" expanded="false" />
-            <element signature="e#62603#62739#0" expanded="false" />
-            <element signature="e#62647#62721#0" expanded="false" />
+            <element signature="e#4017#4083#0" expanded="false" />
+            <element signature="e#4506#4722#0" expanded="false" />
+            <element signature="e#5801#5917#0" expanded="false" />
+            <element signature="e#6004#8410#0" expanded="false" />
+            <element signature="e#6349#7369#0" expanded="false" />
+            <element signature="e#6554#7351#0" expanded="false" />
+            <element signature="e#6645#7329#0" expanded="false" />
+            <element signature="e#6808#7145#0" expanded="false" />
+            <element signature="e#6932#7070#0" expanded="false" />
+            <element signature="e#7459#7553#0" expanded="false" />
+            <element signature="e#7607#7676#0" expanded="false" />
+            <element signature="e#7773#8304#0" expanded="false" />
+            <element signature="e#7981#8122#0" expanded="false" />
+            <element signature="e#8443#8488#0" expanded="false" />
+            <element signature="e#8558#8570#0" expanded="false" />
+            <element signature="e#8948#9171#0" expanded="false" />
+            <element signature="e#9441#9599#0" expanded="false" />
+            <element signature="e#9658#9739#0" expanded="false" />
+            <element signature="e#9775#9888#0" expanded="false" />
+            <element signature="e#9962#17587#0" expanded="false" />
+            <element signature="e#10040#16589#0" expanded="false" />
+            <element signature="e#10400#11476#0" expanded="false" />
+            <element signature="e#10585#11454#0" expanded="false" />
+            <element signature="e#10684#11428#0" expanded="false" />
+            <element signature="e#10863#11228#0" expanded="false" />
+            <element signature="e#10995#11145#0" expanded="false" />
+            <element signature="e#11549#11651#0" expanded="false" />
+            <element signature="e#12026#13102#0" expanded="false" />
+            <element signature="e#12211#13080#0" expanded="false" />
+            <element signature="e#12310#13054#0" expanded="false" />
+            <element signature="e#12489#12854#0" expanded="false" />
+            <element signature="e#12621#12771#0" expanded="false" />
+            <element signature="e#13175#13280#0" expanded="false" />
+            <element signature="e#13655#14734#0" expanded="false" />
+            <element signature="e#13841#14712#0" expanded="false" />
+            <element signature="e#13940#14686#0" expanded="false" />
+            <element signature="e#14119#14485#0" expanded="false" />
+            <element signature="e#14251#14402#0" expanded="false" />
+            <element signature="e#14807#14913#0" expanded="false" />
+            <element signature="e#15288#16367#0" expanded="false" />
+            <element signature="e#15474#16345#0" expanded="false" />
+            <element signature="e#15573#16319#0" expanded="false" />
+            <element signature="e#15752#16118#0" expanded="false" />
+            <element signature="e#15884#16035#0" expanded="false" />
+            <element signature="e#16440#16546#0" expanded="false" />
+            <element signature="e#16676#17416#0" expanded="false" />
+            <element signature="e#16694#16741#0" expanded="false" />
+            <element signature="e#17117#17250#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-notes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="152" column="44" lean-forward="false" selection-start-line="152" selection-start-column="44" selection-end-line="152" selection-end-column="44" />
+        <state relative-caret-position="1231">
+          <caret line="186" column="58" lean-forward="false" selection-start-line="186" selection-start-column="58" selection-end-line="186" selection-end-column="58" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
             <element signature="e#137#210#0" expanded="false" />
@@ -1909,28 +1679,357 @@
             <element signature="e#1787#1865#0" expanded="false" />
             <element signature="e#1898#2019#0" expanded="false" />
             <element signature="e#2274#2328#0" expanded="false" />
-            <element signature="e#2368#2825#0" expanded="false" />
-            <element signature="e#2533#2708#0" expanded="false" />
-            <element signature="e#2865#2929#0" expanded="false" />
-            <element signature="e#3246#3283#0" expanded="false" />
-            <element signature="e#3879#4170#0" expanded="false" />
-            <element signature="e#3948#4050#0" expanded="false" />
-            <element signature="e#4056#4160#0" expanded="false" />
-            <element signature="e#4433#4549#0" expanded="false" />
-            <element signature="e#5499#5662#0" expanded="false" />
-            <element signature="e#5702#5859#0" expanded="false" />
-            <element signature="e#5899#5963#0" expanded="false" />
-            <element signature="e#6026#6406#0" expanded="false" />
-            <element signature="e#6741#6782#0" expanded="false" />
-            <element signature="e#6942#7026#0" expanded="false" />
-            <element signature="e#7068#7746#0" expanded="false" />
-            <element signature="e#7145#7261#0" expanded="false" />
-            <element signature="e#7348#7419#0" expanded="false" />
-            <element signature="e#7452#7566#0" expanded="false" />
-            <element signature="e#7618#7736#0" expanded="false" />
-            <element signature="e#7658#7722#0" expanded="false" />
-            <element signature="e#8044#8241#0" expanded="false" />
+            <element signature="e#2873#2937#0" expanded="false" />
+            <element signature="e#3254#3291#0" expanded="false" />
+            <element signature="e#3887#4178#0" expanded="false" />
+            <element signature="e#3956#4058#0" expanded="false" />
+            <element signature="e#4064#4168#0" expanded="false" />
+            <element signature="e#4441#4557#0" expanded="false" />
+            <element signature="e#5507#5670#0" expanded="false" />
+            <element signature="e#5907#5971#0" expanded="false" />
+            <element signature="e#6757#6798#0" expanded="false" />
+            <element signature="e#6958#7042#0" expanded="false" />
+            <element signature="e#7084#7762#0" expanded="false" />
+            <element signature="e#7161#7277#0" expanded="false" />
+            <element signature="e#7364#7435#0" expanded="false" />
+            <element signature="e#7468#7582#0" expanded="false" />
+            <element signature="e#7634#7752#0" expanded="false" />
+            <element signature="e#7674#7738#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-audio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="120" column="49" lean-forward="false" selection-start-line="120" selection-start-column="49" selection-end-line="120" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#138#170#0" expanded="false" />
+            <element signature="e#207#675#0" expanded="false" />
+            <element signature="e#431#645#0" expanded="false" />
+            <element signature="e#705#2018#0" expanded="false" />
+            <element signature="e#972#1013#0" expanded="false" />
+            <element signature="e#1181#1264#0" expanded="false" />
+            <element signature="e#1306#1978#0" expanded="false" />
+            <element signature="e#1383#1499#0" expanded="false" />
+            <element signature="e#1586#1654#0" expanded="false" />
+            <element signature="e#1687#1798#0" expanded="false" />
+            <element signature="e#1850#1968#0" expanded="false" />
+            <element signature="e#1890#1954#0" expanded="false" />
+            <element signature="e#2074#2120#0" expanded="false" />
+            <element signature="e#2899#3015#0" expanded="false" />
+            <element signature="e#3102#3177#0" expanded="false" />
+            <element signature="e#3210#3328#0" expanded="false" />
+            <element signature="e#3398#3421#0" expanded="false" />
+            <element signature="e#3577#3631#0" expanded="false" />
+            <element signature="e#4152#9531#0" expanded="false" />
+            <element signature="e#4641#9205#0" expanded="false" />
+            <element signature="e#4718#4834#0" expanded="false" />
+            <element signature="e#4915#8276#0" expanded="false" />
+            <element signature="e#5266#6050#0" expanded="false" />
+            <element signature="e#5398#6032#0" expanded="false" />
+            <element signature="e#5436#5783#0" expanded="false" />
+            <element signature="e#5817#6010#0" expanded="false" />
+            <element signature="e#6207#6301#0" expanded="false" />
+            <element signature="e#6355#6424#0" expanded="false" />
+            <element signature="e#6479#6553#0" expanded="false" />
+            <element signature="e#6650#8095#0" expanded="false" />
+            <element signature="e#6672#6719#0" expanded="false" />
+            <element signature="e#7122#8008#0" expanded="false" />
+            <element signature="e#8309#8397#0" expanded="false" />
+            <element signature="e#8449#9195#0" expanded="false" />
+            <element signature="e#8467#8505#0" expanded="false" />
+            <element signature="e#8661#8820#0" expanded="false" />
+            <element signature="e#8860#9016#0" expanded="false" />
+            <element signature="e#9056#9180#0" expanded="false" />
+            <element signature="e#9239#9349#0" expanded="false" />
+            <element signature="e#9385#9493#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachments/attachment-image.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="71" column="64" lean-forward="false" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+            <element signature="e#141#215#0" expanded="false" />
+            <element signature="e#273#319#0" expanded="false" />
+            <element signature="e#667#889#0" expanded="false" />
+            <element signature="e#724#761#0" expanded="false" />
+            <element signature="e#1151#1253#0" expanded="false" />
+            <element signature="e#1428#1544#0" expanded="false" />
+            <element signature="e#1631#1709#0" expanded="false" />
+            <element signature="e#1742#1820#0" expanded="false" />
+            <element signature="e#1890#1917#0" expanded="false" />
+            <element signature="e#2075#2129#0" expanded="false" />
+            <element signature="e#2497#2563#0" expanded="false" />
+            <element signature="e#2663#13373#0" expanded="false" />
+            <element signature="e#2981#3203#0" expanded="false" />
+            <element signature="e#3038#3075#0" expanded="false" />
+            <element signature="e#4156#4272#0" expanded="false" />
+            <element signature="e#4296#7551#0" expanded="false" />
+            <element signature="e#4373#4489#0" expanded="false" />
+            <element signature="e#4570#6398#0" expanded="false" />
+            <element signature="e#4674#5101#0" expanded="false" />
+            <element signature="e#4809#4929#0" expanded="false" />
+            <element signature="e#4960#5083#0" expanded="false" />
+            <element signature="e#4994#5061#0" expanded="false" />
+            <element signature="e#5435#5532#0" expanded="false" />
+            <element signature="e#5586#5658#0" expanded="false" />
+            <element signature="e#5755#6292#0" expanded="false" />
+            <element signature="e#5777#5824#0" expanded="false" />
+            <element signature="e#6431#6518#0" expanded="false" />
+            <element signature="e#6570#7541#0" expanded="false" />
+            <element signature="e#6588#6600#0" expanded="false" />
+            <element signature="e#6938#7164#0" expanded="false" />
+            <element signature="e#7204#7361#0" expanded="false" />
+            <element signature="e#7401#7526#0" expanded="false" />
+            <element signature="e#7585#7666#0" expanded="false" />
+            <element signature="e#7740#13291#0" expanded="false" />
+            <element signature="e#7818#12532#0" expanded="false" />
+            <element signature="e#8183#8801#0" expanded="false" />
+            <element signature="e#8428#8560#0" expanded="false" />
+            <element signature="e#8595#8779#0" expanded="false" />
+            <element signature="e#8633#8753#0" expanded="false" />
+            <element signature="e#8874#8975#0" expanded="false" />
+            <element signature="e#9355#9973#0" expanded="false" />
+            <element signature="e#9600#9732#0" expanded="false" />
+            <element signature="e#9767#9951#0" expanded="false" />
+            <element signature="e#9805#9925#0" expanded="false" />
+            <element signature="e#10046#10142#0" expanded="false" />
+            <element signature="e#10522#11141#0" expanded="false" />
+            <element signature="e#10768#10900#0" expanded="false" />
+            <element signature="e#10935#11119#0" expanded="false" />
+            <element signature="e#10973#11093#0" expanded="false" />
+            <element signature="e#11214#11320#0" expanded="false" />
+            <element signature="e#11700#12319#0" expanded="false" />
+            <element signature="e#11946#12078#0" expanded="false" />
+            <element signature="e#12113#12297#0" expanded="false" />
+            <element signature="e#12151#12271#0" expanded="false" />
+            <element signature="e#12392#12489#0" expanded="false" />
+            <element signature="e#12619#13120#0" expanded="false" />
+            <element signature="e#12637#12684#0" expanded="false" />
+            <element signature="e#13403#15078#0" expanded="false" />
+            <element signature="e#13708#13927#0" expanded="false" />
+            <element signature="e#13764#13801#0" expanded="false" />
+            <element signature="e#14070#14108#0" expanded="false" />
+            <element signature="e#14276#14359#0" expanded="false" />
+            <element signature="e#14401#15038#0" expanded="false" />
+            <element signature="e#14478#14594#0" expanded="false" />
+            <element signature="e#14681#14752#0" expanded="false" />
+            <element signature="e#14785#14856#0" expanded="false" />
+            <element signature="e#14908#15028#0" expanded="false" />
+            <element signature="e#14948#15014#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/DownloadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/encounterDetailsTemplate.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2736">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/header.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/viewEditor.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/EditEditorFragmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/ViewEditorFragmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/viewDrawing.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/editDrawing.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/addDrawing.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/backup_restore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/AddEditorFragmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="30" column="97" lean-forward="false" selection-start-line="30" selection-start-column="97" selection-end-line="30" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+            <element signature="e#180#254#0" expanded="false" />
+            <element signature="e#997#1115#0" expanded="false" />
+            <element signature="e#1148#1279#0" expanded="false" />
+            <element signature="e#1510#1800#0" expanded="false" />
+            <element signature="e#1597#1713#0" expanded="false" />
+            <element signature="e#2360#2387#0" expanded="false" />
+            <element signature="e#2705#3510#0" expanded="false" />
+            <element signature="e#3001#3139#0" expanded="false" />
+            <element signature="e#3015#3050#0" expanded="false" />
+            <element signature="e#3728#3880#0" expanded="false" />
+            <element signature="e#3760#3811#0" expanded="false" />
+            <element signature="e#3817#3866#0" expanded="false" />
+            <element signature="e#4302#4516#0" expanded="false" />
+            <element signature="e#4839#5575#0" expanded="false" />
+            <element signature="e#4965#5094#0" expanded="false" />
+            <element signature="e#5126#5242#0" expanded="false" />
+            <element signature="e#5275#5395#0" expanded="false" />
+            <element signature="e#5447#5565#0" expanded="false" />
+            <element signature="e#5487#5551#0" expanded="false" />
+            <element signature="e#8376#8652#0" expanded="false" />
+            <element signature="e#8911#9435#0" expanded="false" />
+            <element signature="e#9043#9335#0" expanded="false" />
+            <element signature="e#9441#9717#0" expanded="false" />
+            <element signature="e#10790#11042#0" expanded="false" />
+            <element signature="e#11068#11321#0" expanded="false" />
+            <element signature="e#11405#12106#0" expanded="false" />
+            <element signature="e#11679#11995#0" expanded="false" />
+            <element signature="e#11775#11884#0" expanded="false" />
+            <element signature="e#11919#11985#0" expanded="false" />
+            <element signature="e#12152#12224#0" expanded="false" />
+            <element signature="e#12288#12449#0" expanded="false" />
+            <element signature="e#12478#12630#0" expanded="false" />
+            <element signature="e#12655#12794#0" expanded="false" />
+            <element signature="e#13004#13295#0" expanded="false" />
+            <element signature="e#13059#13289#0" expanded="false" />
+            <element signature="e#13328#13562#0" expanded="false" />
+            <element signature="e#13362#13556#0" expanded="false" />
+            <element signature="e#13429#13546#0" expanded="false" />
+            <element signature="e#13590#15497#0" expanded="false" />
+            <element signature="e#13764#14074#0" expanded="false" />
+            <element signature="e#13804#14064#0" expanded="false" />
+            <element signature="e#13937#13987#0" expanded="false" />
+            <element signature="e#14189#14201#0" expanded="false" />
+            <element signature="e#14343#14452#0" expanded="false" />
+            <element signature="e#14768#15490#0" expanded="false" />
+            <element signature="e#14832#15480#0" expanded="false" />
+            <element signature="e#14850#14872#0" expanded="false" />
+            <element signature="e#15085#15305#0" expanded="false" />
+            <element signature="e#15311#15466#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/EncounterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/ParsedObs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1942,18 +2041,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/pom.xml">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3421">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/pom.xml">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="288">
+          <caret line="180" column="21" lean-forward="false" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
           <folding />
         </state>
       </provider>

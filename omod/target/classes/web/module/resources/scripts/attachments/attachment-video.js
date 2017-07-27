@@ -116,7 +116,7 @@ $(document).ready(function($) {
                 },
                 "Attach": function () {
                     // console.info("Attach file code here");
-                    let attachmentVideo = new Attachment(video.name, "video", previewVideo );
+                    let attachmentVideo = new Attachment("video_"+video.name, "video", previewVideo );
                     attachments.push(attachmentVideo);
                     $(this).dialog("destroy");
                 },

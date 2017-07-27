@@ -12,6 +12,8 @@
 
     ui.includeJavascript("docsanddrawing", "libs/jquery.ui-contextmenu.min.js")
     ui.includeJavascript("docsanddrawing", "libs/FileSaver.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/jszip.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/jszip-utils.js")
     ui.includeJavascript("docsanddrawing", "libs/jspdf.min.js")
     ui.includeJavascript("docsanddrawing", "libs/fabric.min.js")
 
@@ -35,6 +37,7 @@
 %>
 <script>
     var patientId   = ${ patientId };
+    var patientIdentifier = "${patientIdentifier}";
     var encounterId = ${ encounterId };
     var visitId     = ${ visitId };
     var providerId  = ${ providerId };

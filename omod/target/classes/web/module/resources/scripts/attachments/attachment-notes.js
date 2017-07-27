@@ -77,7 +77,7 @@ $(document).ready(function($) {
                     // console.info("Attach file code here");
                     let reader = new FileReader();
                     reader.onload = (function (e) {
-                        let attachment = new Attachment(noteFile.name, "note", e.target.result );
+                        let attachment = new Attachment("note_"+noteFile.name, "note", e.target.result );
                         attachments.push(attachment);
                     });
                     reader.readAsDataURL(noteFile);
@@ -184,7 +184,7 @@ $(document).ready(function($) {
             // console.info("Save attachment code here");
             let noteName = noteInput.val();
             let textToWrite = noteTextArea.val();
-            let newAttachmentNotes = new Attachment(noteName + ".txt", "note", btoa(textToWrite));
+            let newAttachmentNotes = new Attachment("note_"+noteName + ".txt", "note", btoa(textToWrite));
             attachments.push(newAttachmentNotes);
             // console.info( "Attaching -> " + newAttachmentNotes);
         }

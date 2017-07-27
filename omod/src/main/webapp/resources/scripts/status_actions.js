@@ -5,7 +5,7 @@
 
 $(document).ready(function () {
 
-    // console.info(pageMode);
+    console.info(patientIdentifier);
 
     var progressLabel, progressBar;
 
@@ -233,7 +233,7 @@ $(document).ready(function () {
         for (let i = 0; i < attachments.length; i++) {
             let attachment = attachments[i];
             // console.info("before if " + attachment.id);
-            // console.info(attachment.id === id);
+            console.info(attachment);
             if (""+attachment.id === id+"") {
                 // console.info(attachment.type);
                 switch (attachment.type) {
@@ -295,6 +295,7 @@ $(document).ready(function () {
             });
 
         attachments.forEach(function (attachment) {
+            console.log(attachment);
             list.append(createLocalAttachmentItem(attachment));
         });
         return list;
@@ -368,7 +369,7 @@ $(document).ready(function () {
 
     function saveJSON() {
         formData.append("files[]", btoa(JSON.stringify(canvas)));
-        formData.append("filenames[]", Math.floor(Date.now()) + ".json" );
+        formData.append("filenames[]", Math.floor(Date.now()) + ".drawing" );
     }
 
     function saveAttachments() {

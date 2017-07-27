@@ -69,7 +69,7 @@ $(document).ready(function($) {
                 },
                 "Attach": function () {
                     // console.info("Attach file code here");
-                    let attachmentImage = new Attachment(image.name, "image", previewImage );
+                    let attachmentImage = new Attachment("image_" + image.name, "image", previewImage );
                     attachments.push(attachmentImage);
                     $(this).dialog("destroy");
                 },

@@ -30,6 +30,7 @@ public class EditEditorFragmentController {
 	        UiSessionContext sessionContext) throws Exception {
 		//		log.debug("controller triggered");
 		model.addAttribute("patientId", patient.getId());
+		model.addAttribute("patientIdentifier", patient.getPatientIdentifier(3).getIdentifier());
 		model.addAttribute("encounterId", encounter.getId());
 		SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");
 		model.addAttribute("encounterTime", sdf.format(encounter.getEncounterDatetime()));

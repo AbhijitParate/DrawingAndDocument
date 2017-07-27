@@ -21,7 +21,7 @@ $(document).ready(function() {
             let reader = new FileReader();
             reader.onload = (function (e) {
                 let previewFile = e.target.result;
-                let attachmentNewFile = new Attachment(file.name, "file", previewFile );
+                let attachmentNewFile = new Attachment("file_"+file.name, "file", previewFile );
                 attachments.push(attachmentNewFile);
             });
             reader.readAsDataURL(file);
