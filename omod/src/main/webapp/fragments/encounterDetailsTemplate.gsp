@@ -65,7 +65,7 @@
             {{ if (config.viewUrl) { }}
                 data-view-url="{{- config.viewUrl }}"
             {{ } }}
-            title="${ ui.message("coreapps.view") }"></i>
+            title="View"></i>
 
          <i id="drawing-edit-encounter" class="delete-item icon-pencil" style="vertical-align: top"
             data-mode="edit"
@@ -75,7 +75,7 @@
             {{ if (config.editUrl) { }}
                 data-edit-url="{{- config.editUrl }}"
             {{ } }}
-            title="${ ui.message("coreapps.edit") }"></i>
+            title="Edit"></i>
 
         <i id="drawing-popup-encounter" class="delete-item icon-external-link" style="vertical-align: top"
            data-mode="popup"
@@ -93,7 +93,7 @@
             <i class="deleteEncounterId delete-item icon-remove"
                data-visit-id="{{- encounter.visitId }}"
                data-encounter-id="{{- encounter.encounterId }}"
-               title="${ ui.message("coreapps.delete") }"></i>
+               title="Delete"></i>
 
         {{  } }}
     </span>
