@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36e80d1b-bbfd-4c70-bb1e-2f046640a285" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.3.omod" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.2.omod" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/fragment/controller/DrawingDetailsFragmentController.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/fragment/controller/DrawingDetailsFragmentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/DownloadController.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/DownloadController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/EncounterController.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/EncounterController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/TemplatesController.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/TemplatesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/UploadController.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/UploadController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/parser/Parser$1.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/parser/Parser$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/docsanddrawing/web/controller/parser/Parser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.3.jar" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.3.omod" afterPath="$PROJECT_DIR$/omod/target/docsanddrawing-1.1.3.omod" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/pom.xml" afterPath="$PROJECT_DIR$/api/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/pom.xml" afterPath="$PROJECT_DIR$/omod/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/config.xml" afterPath="$PROJECT_DIR$/omod/target/classes/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/includes/editor_actions.gsp" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/fragments/includes/editor_actions.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
     </list>
     <ignored path="api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
     <ignored path="api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
@@ -126,6 +111,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="backup_restore.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/backup_restore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="786">
+              <caret line="144" column="5" lean-forward="false" selection-start-line="132" selection-start-column="4" selection-end-line="144" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="addEditor.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/addEditor.gsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -139,8 +134,8 @@
       <file leaf-file-name="editor_actions.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+            <state relative-caret-position="398">
+              <caret line="165" column="33" lean-forward="false" selection-start-line="165" selection-start-column="33" selection-end-line="165" selection-end-column="33" />
               <folding>
                 <element signature="e#0#616#0#GSP" expanded="false" />
                 <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
@@ -201,7 +196,6 @@
                 <element signature="n#svg#0;n#button#2;n#div#4;n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#button#3;n#div#4;n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#svg#0;n#button#3;n#div#4;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#button#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#svg#0;n#button#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#button#1;n#div#5;n#div#0;n#div#0;n#!!top" expanded="false" />
@@ -239,20 +233,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editEditor.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/editEditor.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="status_actions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-384">
+            <state relative-caret-position="-1584">
               <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
@@ -310,16 +294,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EncounterController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/EncounterController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ParsedObs.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/web/controller/parser/ParsedObs.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -363,11 +337,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
               <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="228" column="21" lean-forward="false" selection-start-line="228" selection-start-column="21" selection-end-line="228" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -384,7 +368,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>files</find>
       <find>f</find>
       <find>fi</find>
       <find>file</find>
@@ -414,6 +397,7 @@
       <find>getInpu</find>
       <find>getInput</find>
       <find>attachment</find>
+      <find>import</find>
     </findStrings>
     <replaceStrings>
       <replace>// console.</replace>
@@ -454,7 +438,6 @@
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/canvas.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/manageTemplates.gsp" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/styles/editor.css" />
-        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/context_menu.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/actions.js" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/fragments/statusBar.gsp" />
@@ -480,6 +463,7 @@
         <option value="$PROJECT_DIR$/api/pom.xml" />
         <option value="$PROJECT_DIR$/omod/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js" />
       </list>
     </option>
   </component>
@@ -586,6 +570,256 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawingAndDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1458,13 +1692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16032">
-          <caret line="334" column="3" lean-forward="false" selection-start-line="334" selection-start-column="3" selection-end-line="334" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/attachment.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1857,14 +2084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/backup_restore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/docsanddrawing/fragment/controller/AddEditorFragmentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -1878,65 +2097,6 @@
         <state relative-caret-position="720">
           <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="51" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-384">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-            <element signature="e#180#254#0" expanded="false" />
-            <element signature="e#997#1115#0" expanded="false" />
-            <element signature="e#1148#1279#0" expanded="false" />
-            <element signature="e#1510#1800#0" expanded="false" />
-            <element signature="e#1597#1713#0" expanded="false" />
-            <element signature="e#2360#2387#0" expanded="false" />
-            <element signature="e#2705#3510#0" expanded="false" />
-            <element signature="e#3001#3139#0" expanded="false" />
-            <element signature="e#3015#3050#0" expanded="false" />
-            <element signature="e#3728#3880#0" expanded="false" />
-            <element signature="e#3760#3811#0" expanded="false" />
-            <element signature="e#3817#3866#0" expanded="false" />
-            <element signature="e#4302#4516#0" expanded="false" />
-            <element signature="e#4839#5575#0" expanded="false" />
-            <element signature="e#4965#5094#0" expanded="false" />
-            <element signature="e#5126#5242#0" expanded="false" />
-            <element signature="e#5275#5395#0" expanded="false" />
-            <element signature="e#5447#5565#0" expanded="false" />
-            <element signature="e#5487#5551#0" expanded="false" />
-            <element signature="e#8376#8652#0" expanded="false" />
-            <element signature="e#8911#9435#0" expanded="false" />
-            <element signature="e#9043#9335#0" expanded="false" />
-            <element signature="e#9441#9717#0" expanded="false" />
-            <element signature="e#10790#11042#0" expanded="false" />
-            <element signature="e#11068#11321#0" expanded="false" />
-            <element signature="e#11405#12106#0" expanded="false" />
-            <element signature="e#11679#11995#0" expanded="false" />
-            <element signature="e#11775#11884#0" expanded="false" />
-            <element signature="e#11919#11985#0" expanded="false" />
-            <element signature="e#12152#12224#0" expanded="false" />
-            <element signature="e#12288#12449#0" expanded="false" />
-            <element signature="e#12478#12630#0" expanded="false" />
-            <element signature="e#12655#12794#0" expanded="false" />
-            <element signature="e#13004#13295#0" expanded="false" />
-            <element signature="e#13059#13289#0" expanded="false" />
-            <element signature="e#13328#13562#0" expanded="false" />
-            <element signature="e#13362#13556#0" expanded="false" />
-            <element signature="e#13429#13546#0" expanded="false" />
-            <element signature="e#13590#15497#0" expanded="false" />
-            <element signature="e#13764#14074#0" expanded="false" />
-            <element signature="e#13804#14064#0" expanded="false" />
-            <element signature="e#13937#13987#0" expanded="false" />
-            <element signature="e#14189#14201#0" expanded="false" />
-            <element signature="e#14343#14452#0" expanded="false" />
-            <element signature="e#14768#15490#0" expanded="false" />
-            <element signature="e#14832#15480#0" expanded="false" />
-            <element signature="e#14850#14872#0" expanded="false" />
-            <element signature="e#15085#15305#0" expanded="false" />
-            <element signature="e#15311#15466#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1975,10 +2135,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/fragments/includes/editor_actions.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+        <state relative-caret-position="398">
+          <caret line="165" column="33" lean-forward="false" selection-start-line="165" selection-start-column="33" selection-end-line="165" selection-end-column="33" />
           <folding>
             <element signature="e#0#616#0#GSP" expanded="false" />
             <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
@@ -2039,7 +2223,6 @@
             <element signature="n#svg#0;n#button#2;n#div#4;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#button#3;n#div#4;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#svg#0;n#button#3;n#div#4;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#button#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#svg#0;n#button#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#button#1;n#div#5;n#div#0;n#div#0;n#!!top" expanded="false" />
@@ -2076,26 +2259,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/pom.xml">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/backup_restore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="786">
+          <caret line="144" column="5" lean-forward="false" selection-start-line="132" selection-start-column="4" selection-end-line="144" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/pom.xml">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/status_actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="-1584">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+            <element signature="e#180#254#0" expanded="false" />
+            <element signature="e#997#1115#0" expanded="false" />
+            <element signature="e#1148#1279#0" expanded="false" />
+            <element signature="e#1510#1800#0" expanded="false" />
+            <element signature="e#1597#1713#0" expanded="false" />
+            <element signature="e#2360#2387#0" expanded="false" />
+            <element signature="e#2705#3510#0" expanded="false" />
+            <element signature="e#3001#3139#0" expanded="false" />
+            <element signature="e#3015#3050#0" expanded="false" />
+            <element signature="e#3728#3880#0" expanded="false" />
+            <element signature="e#3760#3811#0" expanded="false" />
+            <element signature="e#3817#3866#0" expanded="false" />
+            <element signature="e#4302#4516#0" expanded="false" />
+            <element signature="e#4839#5575#0" expanded="false" />
+            <element signature="e#4965#5094#0" expanded="false" />
+            <element signature="e#5126#5242#0" expanded="false" />
+            <element signature="e#5275#5395#0" expanded="false" />
+            <element signature="e#5447#5565#0" expanded="false" />
+            <element signature="e#5487#5551#0" expanded="false" />
+            <element signature="e#8376#8652#0" expanded="false" />
+            <element signature="e#8911#9435#0" expanded="false" />
+            <element signature="e#9043#9335#0" expanded="false" />
+            <element signature="e#9441#9717#0" expanded="false" />
+            <element signature="e#10790#11042#0" expanded="false" />
+            <element signature="e#11068#11321#0" expanded="false" />
+            <element signature="e#11405#12106#0" expanded="false" />
+            <element signature="e#11679#11995#0" expanded="false" />
+            <element signature="e#11775#11884#0" expanded="false" />
+            <element signature="e#11919#11985#0" expanded="false" />
+            <element signature="e#12152#12224#0" expanded="false" />
+            <element signature="e#12288#12449#0" expanded="false" />
+            <element signature="e#12478#12630#0" expanded="false" />
+            <element signature="e#12655#12794#0" expanded="false" />
+            <element signature="e#13004#13295#0" expanded="false" />
+            <element signature="e#13059#13289#0" expanded="false" />
+            <element signature="e#13328#13562#0" expanded="false" />
+            <element signature="e#13362#13556#0" expanded="false" />
+            <element signature="e#13429#13546#0" expanded="false" />
+            <element signature="e#13590#15497#0" expanded="false" />
+            <element signature="e#13764#14074#0" expanded="false" />
+            <element signature="e#13804#14064#0" expanded="false" />
+            <element signature="e#13937#13987#0" expanded="false" />
+            <element signature="e#14189#14201#0" expanded="false" />
+            <element signature="e#14343#14452#0" expanded="false" />
+            <element signature="e#14768#15490#0" expanded="false" />
+            <element signature="e#14832#15480#0" expanded="false" />
+            <element signature="e#14850#14872#0" expanded="false" />
+            <element signature="e#15085#15305#0" expanded="false" />
+            <element signature="e#15311#15466#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/scripts/import.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="285">
+          <caret line="228" column="21" lean-forward="false" selection-start-line="228" selection-start-column="21" selection-end-line="228" selection-end-column="21" />
           <folding />
         </state>
       </provider>

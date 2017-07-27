@@ -220,8 +220,17 @@ $(document).ready(function() {
         showWebcamDialog();
     });
 
+    function getInputTag() {
+        let input = $("<input/>");
+        input.attr("type", "file");
+        input.attr("hidden","");
+        input.attr("name","notes[]");
+        input.attr("accept","image/*");
+        return input;
+    }
+
     // Upload
-    let fileUploadInput = $("#import-upload-input");
+    let fileUploadInput = getInputTag();
     fileUploadInput.change(function () {
 
         if (this.files && this.files[0]) {
