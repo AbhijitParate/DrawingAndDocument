@@ -2,12 +2,6 @@
    ui.includeJavascript("docsanddrawing", "actions.js")
    ui.includeJavascript("docsanddrawing", "keyboard.js")
    ui.includeJavascript("docsanddrawing", "import.js")
-   ui.includeJavascript("docsanddrawing", "attachment.js")
-   ui.includeJavascript("docsanddrawing", "attachments/attachment-audio.js")
-   ui.includeJavascript("docsanddrawing", "attachments/attachment-file.js")
-   ui.includeJavascript("docsanddrawing", "attachments/attachment-image.js")
-   ui.includeJavascript("docsanddrawing", "attachments/attachment-notes.js")
-   ui.includeJavascript("docsanddrawing", "attachments/attachment-video.js")
 %>
 
 <div id="controlsContainer" class="controlsContainer">
@@ -229,14 +223,8 @@
             <button type="button" id="save-png" class="button-regular ui-button ui-widget ui-corner-all" title="Save as PNG">
                 png
             </button>
-            <button type="button" id="save-json" class="button-regular ui-button ui-widget ui-corner-all" title="Save as json">
-                json
-            </button>
-            <button type="button" id="save-svg" class="button-regular ui-button ui-widget ui-corner-all" title="Save as SVG">
-                svg
-            </button>
         </div>
-        <h3 class="control-header">Backup / Restore</h3>
+        <h3 id="header-backup-restore" class="control-header">Restore</h3>
         <div style="padding: 1%;">
             <button type="button" id="backup" class="button-regular ui-button ui-widget ui-corner-all" title="Backup drawing">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">

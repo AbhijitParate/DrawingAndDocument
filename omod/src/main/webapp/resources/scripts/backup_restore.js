@@ -7,6 +7,7 @@ $(document).ready(function() {
         $("#backup").remove();
     } else {
         $("#restore").remove();
+        $("#header-backup-restore").html("Backup");
     }
 
     $("#backup").click(function () {
@@ -147,6 +148,7 @@ $(document).ready(function() {
             let file = e.target.files[0];
             console.info("Note file selected ->" + file.name);
             handleFile(file);
+            $(this).attr("value", "");
         });
         return input;
     }

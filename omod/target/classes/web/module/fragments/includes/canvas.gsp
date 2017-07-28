@@ -1,6 +1,13 @@
 <%
     ui.includeJavascript("docsanddrawing", "canvas.js")
     ui.includeJavascript("docsanddrawing", "context_menu.js")
+
+    ui.includeJavascript("docsanddrawing", "attachment.js")
+    ui.includeJavascript("docsanddrawing", "attachments/attachment-audio.js")
+    ui.includeJavascript("docsanddrawing", "attachments/attachment-file.js")
+    ui.includeJavascript("docsanddrawing", "attachments/attachment-image.js")
+    ui.includeJavascript("docsanddrawing", "attachments/attachment-notes.js")
+    ui.includeJavascript("docsanddrawing", "attachments/attachment-video.js")
 %>
 <div id="canvasContainer" class="canvasContainer">
     <div id="canvasWrapper" style="height: 100%; width: 100%; position: relative;">
