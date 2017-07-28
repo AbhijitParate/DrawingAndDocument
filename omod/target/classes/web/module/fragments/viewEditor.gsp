@@ -52,10 +52,13 @@
     </div>
     ${ui.includeFragment("docsanddrawing", "statusBar", [ mode: "view" ])}
     <div id="main-container" class="outerContainer">
-        ${ui.includeFragment("docsanddrawing", "includes/editor_actions")}
         ${ui.includeFragment("docsanddrawing", "includes/canvas")}
-        ${ui.includeFragment("docsanddrawing", "includes/modals")}
     </div>
+    <style>
+        #canvasContainer {
+            margin-left: 10%;
+        }
+    </style>
     <div id="progress-container" hidden>
 
     </div>

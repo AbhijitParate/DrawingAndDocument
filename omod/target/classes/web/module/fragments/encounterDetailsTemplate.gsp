@@ -4,6 +4,11 @@
     ui.includeCss("docsanddrawing", "libs/lightcase.css")
     ui.includeJavascript("docsanddrawing", "libs/lightcase.js")
 
+    ui.includeJavascript("docsanddrawing", "libs/jszip.min.js")
+    ui.includeJavascript("docsanddrawing", "libs/jszip-utils.js")
+
+    ui.includeJavascript("docsanddrawing", "libs/FileSaver.min.js")
+
     ui.includeCss("docsanddrawing", "drawingObsEncounterTemplate.css")
     ui.includeJavascript("docsanddrawing", "drawingObsEncounterTemplate.js")
 %>
@@ -86,6 +91,13 @@
                 data-popup-url="{{- config.popupUrl }}"
            {{ } }}
            title="Popup view"></i>
+
+        <i id="drawing-backup-encounter" class="delete-item icon-cloud-download" style="vertical-align: top"
+           data-mode="backup"
+           data-visit-id="{{- encounter.visitId }}"
+           data-patient-id="{{- patient.id }}"
+           data-encounter-id="{{- encounter.encounterId }}"
+           title="Backup Encounter"></i>
 
         {{ } }}
         {{ if ( encounter.canDelete ) { }}

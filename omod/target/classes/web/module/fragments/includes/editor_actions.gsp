@@ -29,9 +29,9 @@
                     <path fill="#000000" d="M2,2H11V11H2V2M17.5,2C20,2 22,4 22,6.5C22,9 20,11 17.5,11C15,11 13,9 13,6.5C13,4 15,2 17.5,2M6.5,14L11,22H2L6.5,14M19,17H22V19H19V22H17V19H14V17H17V14H19V17Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="delete" class="button-regular ui-button ui-widget ui-corner-all" title="Delete objects">
+            <button type="button" id="pencil" class="button-regular ui-button ui-widget ui-corner-all" title="Enable / Disable Pencil">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M20.37,8.91L19.37,10.64L7.24,3.64L8.24,1.91L11.28,3.66L12.64,3.29L16.97,5.79L17.34,7.16L20.37,8.91M6,19V7H11.07L18,11V19A2,2 0 0,1 16,21H8A2,2 0 0,1 6,19Z" ></path>
+                    <path fill="#000000" d="M16.84,2.73C16.45,2.73 16.07,2.88 15.77,3.17L13.65,5.29L18.95,10.6L21.07,8.5C21.67,7.89 21.67,6.94 21.07,6.36L17.9,3.17C17.6,2.88 17.22,2.73 16.84,2.73M12.94,6L4.84,14.11L7.4,14.39L7.58,16.68L9.86,16.85L10.15,19.41L18.25,11.3M4.25,15.04L2.5,21.73L9.2,19.94L8.96,17.78L6.65,17.61L6.47,15.29" ></path>
                 </svg>
             </button>
             <button type="button" id="draw-color-picker" class="button-regular ui-button ui-widget ui-corner-all" title="Pencil draw color">
@@ -39,9 +39,9 @@
                     <path fill="#000000" d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" ></path>
                 </svg>
             </button>
-            <button type="button" id="pencil" class="button-regular ui-button ui-widget ui-corner-all" title="Enable / Disable Pencil">
+            <button type="button" id="delete" class="button-regular ui-button ui-widget ui-corner-all" title="Delete objects">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M16.84,2.73C16.45,2.73 16.07,2.88 15.77,3.17L13.65,5.29L18.95,10.6L21.07,8.5C21.67,7.89 21.67,6.94 21.07,6.36L17.9,3.17C17.6,2.88 17.22,2.73 16.84,2.73M12.94,6L4.84,14.11L7.4,14.39L7.58,16.68L9.86,16.85L10.15,19.41L18.25,11.3M4.25,15.04L2.5,21.73L9.2,19.94L8.96,17.78L6.65,17.61L6.47,15.29" ></path>
+                    <path fill="#000000" d="M20.37,8.91L19.37,10.64L7.24,3.64L8.24,1.91L11.28,3.66L12.64,3.29L16.97,5.79L17.34,7.16L20.37,8.91M6,19V7H11.07L18,11V19A2,2 0 0,1 16,21H8A2,2 0 0,1 6,19Z" ></path>
                 </svg>
             </button>
         </div>

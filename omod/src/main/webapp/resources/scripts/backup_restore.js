@@ -2,6 +2,13 @@
  * Created by abhij on 7/25/2017.
  */
 $(document).ready(function() {
+
+    if (pageMode === "add") {
+        $("#backup").remove();
+    } else {
+        $("#restore").remove();
+    }
+
     $("#backup").click(function () {
         console.log("backup");
         loadDataFromEncounter();

@@ -193,12 +193,12 @@ $(function() {
         var viewUrl = $(event.target).attr("data-view-url");
         viewUrl = viewUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
             .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
-        console.debug(viewUrl);
+        //console.debug(viewUrl);
         emr.navigateTo({ applicationUrl: viewUrl });
     });
 
     $(document).on('click', '#drawing-edit-encounter', function(event) {
-        console.debug("Edit encounter");
+        //console.debug("Edit encounter");
 
         var encounterId = $(event.target).attr("data-encounter-id");
         var patientId = $(event.target).attr("data-patient-id");
@@ -207,12 +207,12 @@ $(function() {
         editUrl = editUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
             .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
         editUrl += "&visitId=" + visitId;
-        console.debug(editUrl);
+        //console.debug(editUrl);
         emr.navigateTo({ applicationUrl: editUrl });
     });
 
     $(document).on('click', '#drawing-popup-encounter', function(event) {
-        console.debug("Edit encounter");
+       // console.debug("Edit encounter");
 
         var encounterId = $(event.target).attr("data-encounter-id");
         var patientId = $(event.target).attr("data-patient-id");
@@ -221,8 +221,79 @@ $(function() {
         popupUrl = popupUrl.replace("{{patientId}}", patientId).replace("{{patient.uuid}}", patientId)
             .replace("{{encounterId}}", encounterId).replace("{{encounter.id}}", encounterId);
         popupUrl += "&visitId=" + visitId;
-        console.debug(popupUrl + " clicked");
+        // console.debug(popupUrl + " clicked");
         // emr.navigateTo({ applicationUrl: popupUrl });
         window.open("../../"+popupUrl, 'Drawing popup', 'window settings');
     });
+
+    $(document).on('click', '#drawing-backup-encounter', function(event) {
+        //console.log("backup");
+        var encounterId = $(event.target).attr("data-encounter-id");
+        loadDataFromEncounter(encounterId);
+    });
+
+    function loadDataFromEncounter(encounterId) {
+        var url = "../../ws/rest/v1/docsanddrawing/encounter/get?encounterid="+encounterId;
+
+        $.getJSON(url,
+            function success(data) {
+                // console.log(data);
+                downloadAndZip(data);
+            })
+            .fail(function() {
+                console.log( "error" );
+                // emr.errorMessage("Failed to load Encounter!");
+            })
+            .always(function() {
+                console.log( "complete" );
+                // emr.successMessage("Encounter loaded successfully!");
+            });
+    }
+
+    function getTimeStamp() {
+        let currentDate = new Date();
+        return currentDate.getDate() + "-"
+            + (currentDate.getMonth()+1) + "-"
+            + currentDate.getFullYear() + "_"
+            + currentDate.getHours() + "_"
+            + currentDate.getMinutes() + "_"
+            + currentDate.getSeconds();
+    }
+
+    function downloadAndZip(data) {
+        var patientId = document.querySelector(".patient-header .identifiers span").innerHTML;
+        // console.log(patientId);
+        var zip = new JSZip();
+
+        var count = 0;
+        var zipFilename = patientId + "_" + getTimeStamp() + ".drw";
+
+        var urls = [];
+
+        urls.push("../../ws/rest/v1/docsanddrawing/obs/" + data.json.uuid +"/"+data.json.name);
+
+        // urls.push("../ws/rest/v1/docsanddrawing/obs/" + data.drawing.uuid +"/"+data.drawing.name);
+
+        data.obs.forEach(function (o) {
+            urls.push("../../ws/rest/v1/docsanddrawing/obs/" + o.uuid +"/"+o.name);
+        });
+
+        urls.forEach(function(url){
+            let filename = url.substring(url.lastIndexOf('/')+1);
+            // loading a file and add it in a zip file
+            JSZipUtils.getBinaryContent(url, function (err, data) {
+                if(err) {
+                    throw err; // or handle the error
+                }
+                zip.file(filename, data, {binary:true});
+                count++;
+                if (count === urls.length) {
+                    zip.generateAsync({type: "blob"})
+                        .then(function (content) {
+                            saveAs(content, zipFilename);
+                        });
+                }
+            });
+        });
+    }
 });

@@ -57,8 +57,7 @@ $(document).ready(function () {
                 my: "center center"
             },
             height: "180",
-            width: "100",
-            icon: hide
+            width: "100"
         });
 
         // console.debug(drawing);
