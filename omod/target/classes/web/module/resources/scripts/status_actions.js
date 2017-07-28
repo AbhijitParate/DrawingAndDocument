@@ -5,7 +5,7 @@
 
 $(document).ready(function () {
 
-    console.info(patientIdentifier);
+    // console.info(patientIdentifier);
 
     var progressLabel, progressBar;
 
@@ -294,7 +294,7 @@ $(document).ready(function () {
             });
 
         attachments.forEach(function (attachment) {
-            console.log(attachment);
+            // console.log(attachment);
             list.append(createLocalAttachmentItem(attachment));
         });
         return list;

@@ -3,10 +3,11 @@
  */
 $(document).ready(function() {
 
-    if (pageMode === "add") {
+    if (pageMode === "add" || pageMode === "edit") {
         $("#backup").remove();
     } else {
         $("#restore").remove();
+        $("#header-backup-restore").html("Backup");
     }
 
     $("#backup").click(function () {
@@ -19,7 +20,7 @@ $(document).ready(function() {
 
         $.getJSON(url,
             function success(data) {
-                console.log(data);
+                // console.log(data);
                 downloadAndZip(data);
             })
             .fail(function() {
@@ -68,18 +69,19 @@ $(document).ready(function() {
     }
 
     $("#restore").click(function () {
-        console.log("restore");
+        // console.log("restore");
         getInputTag().click();
     });
 
     function handleFile(file) {
+        attachments = [];
         JSZip.loadAsync(file)
             .then(function(zip) {
                 zip.forEach(function (relativePath, zipEntry) {
                     zipEntry
                         .async('blob')
                         .then(function (fileData) {
-                            console.log(fileData);
+                            // console.log(fileData);
                             let f = new File([fileData], zipEntry.name);
                             if(f.name.endsWith(".drawing")){
                                 let r = new FileReader();
@@ -116,7 +118,7 @@ $(document).ready(function() {
             contents = "data:text/plain" + contents.slice(5);
             let attachment = new Attachment(name, type, contents);
             attachments.push(attachment);
-            console.log(attachment);
+            // console.log(attachment);
         };
         r.readAsDataURL(file);
     }
@@ -128,7 +130,7 @@ $(document).ready(function() {
             contents = "data:" + type+ "/" + getExtension(name) + contents.slice(5);
             let attachment = new Attachment(name, type, contents);
             attachments.push(attachment);
-            console.log(attachment);
+            // console.log(attachment);
         };
         r.readAsDataURL(file);
     }
@@ -145,8 +147,9 @@ $(document).ready(function() {
         input.attr("accept",".drw");
         input.on("change", function (e) {
             let file = e.target.files[0];
-            console.info("Note file selected ->" + file.name);
+            // console.info("Note file selected ->" + file.name);
             handleFile(file);
+            $(this).attr("value", "");
         });
         return input;
     }
