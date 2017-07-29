@@ -54,7 +54,11 @@ $(function() {
     function createAttachmentsDiv(obsArray) {
         var attachmentDiv = $("<div/>").addClass("attachments-container");
         var icon = $("<i/>").addClass("icon-paper-clip");
-        var heading = $("<h5/>").append(icon).append("Attachments").addClass("header");
+        var heading = $("<h5/>")
+            .attr("title","Open full editor to preview or download the attachments")
+            .append(icon)
+            .append("Attachments")
+            .addClass("header");
         var list = $("<ul/>").addClass("attachments-list");
         attachmentDiv.append(heading);
 

@@ -63,7 +63,8 @@
     <span>
         {{ if ( config.editable && encounter.canEdit) { }}
 
-         <i id="drawing-view-encounter" class="delete-item icon-file-alt" style="vertical-align: top"
+         <i id="drawing-view-encounter"
+            class="delete-item icon-file-alt" style="vertical-align: top"
             data-mode="view"
             data-patient-id="{{- patient.id }}"
             data-encounter-id="{{- encounter.encounterId }}"
@@ -97,7 +98,7 @@
            data-visit-id="{{- encounter.visitId }}"
            data-patient-id="{{- patient.id }}"
            data-encounter-id="{{- encounter.encounterId }}"
-           title="Backup Encounter"></i>
+           title="Backup" ></i>
 
         {{ } }}
         {{ if ( encounter.canDelete ) { }}

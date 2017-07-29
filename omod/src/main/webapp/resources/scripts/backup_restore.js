@@ -90,6 +90,7 @@ $(document).ready(function() {
                                     canvas.loadFromJSON(contents,
                                         function onLoad() {
                                             canvas.renderAll();
+                                            emr.successMessage("Encounter restored successfully!");
                                         });
                                 };
                                 r.readAsText(f);
@@ -143,7 +144,6 @@ $(document).ready(function() {
         let input = $("<input/>");
         input.attr("type", "file");
         input.attr("hidden","");
-        input.attr("name","notes[]");
         input.attr("accept",".drw");
         input.on("change", function (e) {
             let file = e.target.files[0];

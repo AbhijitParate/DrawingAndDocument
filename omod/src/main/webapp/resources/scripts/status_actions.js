@@ -91,27 +91,51 @@ $(document).ready(function () {
     function createListItem(obs) {
         let listItem = $("<li/>").addClass('attachment-list-item');
         let div = $("<div />").appendTo(listItem);
-        let span = $("<span />");
-
-        let icon = $("<i/>");
-        icon.addClass("icon-remove");
-        icon.attr("data-file", obs.uuid);
-        icon.click(function (){
-            // todo: remove previous attachment
-            // removeAttachment(attachment.id);
-            listItem.remove();
-        });
-        icon.appendTo(span);
-
-        span.appendTo(div);
-
-        let a_view = $("<a/>")
+        let text_view = $("<p/>")
             .attr("href", "../ws/rest/v1/docsanddrawing/obs/" + obs.uuid +"/"+obs.name)
             .attr("data-id", obs.uuid)
             .attr("title", obs.name)
-            .text(obs.name)
-            .lightcase();
-        a_view.appendTo(div);
+            .css({  "font-size" : "20px",
+                    "max-width": "240px",
+                    "white-space": "nowrap",
+                    "overflow": "hidden",
+                    "display": "inline-block",
+                    "text-overflow": "ellipsis" })
+            .attr("title", obs.name)
+            .text(obs.name);
+        text_view.appendTo(div);
+
+        let span = $("<span />");
+
+        let preview_view = $("<a/>")
+            .addClass("icon-eye-open")
+            .attr("href", "../ws/rest/v1/docsanddrawing/obs/" + obs.uuid +"/"+obs.name)
+            .attr("data-id", obs.uuid)
+            .attr("target","_blank")
+            .attr("title", "Preview");
+        preview_view.appendTo(span);
+
+        let download_view = $("<a/>")
+            .addClass("icon-download-alt")
+            .attr("href", "../ws/rest/v1/docsanddrawing/obs/" + obs.uuid +"/"+obs.name)
+            .attr("data-id", obs.uuid)
+            .attr("download", obs.name)
+            .attr("title", "Download");
+
+        download_view.appendTo(span);
+        if(pageMode !== "view") {
+            let icon = $("<i/>")
+                .addClass("icon-remove")
+                .attr("data-file", obs.uuid)
+                .click(function () {
+                    removePreviousAttachment(obs.uuid);
+                    listItem.remove();
+                });
+            icon.appendTo(span);
+        }
+
+        span.appendTo(div);
+
         return listItem;
     }
 
@@ -150,7 +174,7 @@ $(document).ready(function () {
 
         dialog.attr("title", "Attachments");
         dialog.dialog({
-            width: 500,
+            width: 600,
             height: 700,
             modal:true,
             resizable: true,
@@ -193,6 +217,16 @@ $(document).ready(function () {
         // console.info("file removed");
     }
 
+    function removePreviousAttachment(uuid) {
+        for (let i = 0; i < previousAttachments.length; i++) {
+            if (previousAttachments[i].uuid === uuid) {
+                previousAttachments.splice(i, 1);
+                break;
+            }
+        }
+        // console.info("file removed");
+    }
+
     function createLocalAttachmentItem(attachment) {
         let listItem = $("<li/>").addClass('attachment-list-item');
         let div = $("<div />").appendTo(listItem);
@@ -207,8 +241,6 @@ $(document).ready(function () {
         });
         icon.appendTo(span);
 
-        span.appendTo(div);
-
         let a_view = $("<a/>")
             .attr("href","#")
             .attr("data-id", attachment.id)
@@ -221,6 +253,7 @@ $(document).ready(function () {
             if(!expanded) expand();
         });
         a_view.appendTo(div);
+        span.appendTo(div);
         return listItem;
     }
 
@@ -232,7 +265,7 @@ $(document).ready(function () {
         for (let i = 0; i < attachments.length; i++) {
             let attachment = attachments[i];
             // console.info("before if " + attachment.id);
-            console.info(attachment);
+            // console.info(attachment);
             if (""+attachment.id === id+"") {
                 // console.info(attachment.type);
                 switch (attachment.type) {
@@ -304,7 +337,7 @@ $(document).ready(function () {
 
     function expand() {
         let uiDialog = $('.ui-dialog');
-        uiDialog.animate({width: '950px'});
+        uiDialog.animate({width: '1000px'});
         $("#expandButton").empty().append($("<i class='icon-chevron-left'/>"));
         $("#attachmentPreview").css('display','block');
         expanded = true;
