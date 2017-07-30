@@ -2,7 +2,7 @@
  * Created by abhij on 3/7/2017.
  *
  */
-
+let previousAttachments;
 let attachments = [];
 let attachmentId = 0;
 

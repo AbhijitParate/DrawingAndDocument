@@ -517,6 +517,8 @@ $(document).ready(function() {
 
     $("#clear").click(function () {
         clearCanvas();
+        attachments = [];
+        previousAttachments = [];
     });
 
     $("#hide").click(function () {

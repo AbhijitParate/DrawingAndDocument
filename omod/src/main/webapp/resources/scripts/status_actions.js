@@ -12,11 +12,11 @@ $(document).ready(function () {
     if(pageMode === "view"){
         $("#status-save").hide();
         loadDataFromEncounter();
-    } else if (pageMode === "edit"){
+    } else if (pageMode === "edit") {
         loadDataFromEncounter();
     }
 
-    var previousAttachments;
+    // var previousAttachments;
 
     function loadDataFromEncounter() {
         console.debug("EcnounterId : " + encounterId);
@@ -468,6 +468,11 @@ $(document).ready(function () {
                 } else {
                     progressLabel.text("Failed to save Encounter!");
                     emr.errorMessage("Failed to save Encounter!");
+                    $(this).prop('disabled', false);
+                    $("#status-cancel").prop('disabled', false);
+                    $("#status-view-attachments").prop('disabled', false);
+                    $("#main-container").show();
+                    $("#progress-container").hide();
                 }
             }
         };
