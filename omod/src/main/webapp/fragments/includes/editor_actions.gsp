@@ -43,7 +43,7 @@
         <div style="padding: 1%;">
             <button type="button" id="flip-vertical" class="button-regular ui-button ui-widget ui-corner-all" title="Flip object Vertically">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" ></path>
+                    <path fill="#000000" d="M9,3L5,7H8V14H10V7H13M16,17V10H14V17H11L15,21L19,17H16Z" ></path>
                 </svg>
             </button>
             <button type="button" id="rotate-anti-clock" class="button-regular ui-button ui-widget ui-corner-all" title="Rotate Anti-clockwise">
@@ -58,7 +58,7 @@
             </button>
             <button type="button" id="flip-horizontal" class="button-regular ui-button ui-widget ui-corner-all" title="Flip object Horizontally">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M9,3L5,7H8V14H10V7H13M16,17V10H14V17H11L15,21L19,17H16Z" ></path>
+                    <path fill="#000000" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" ></path>
                 </svg>
             </button>
             <button type="button" id="rotate-clock" class="button-regular ui-button ui-widget ui-corner-all" title="Rotate Clockwise">

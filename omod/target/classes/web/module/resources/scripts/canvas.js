@@ -197,7 +197,7 @@ function createDialogForText(object) {
                 // console.info("Attach clicked");
                 // console.info(noteTextArea.val().replace(/\n/g," "));
                 canvas.remove(object);
-                let text = new fabric.Text(noteTextArea.val().replace(/\n/g," "), {
+                let text = new fabric.Text(noteTextArea.val(), {
                     fontFamily: "sans-serif",
                     textAlign: "left",
                     left: object?object.left:100,

@@ -313,18 +313,18 @@ $(document).ready(function() {
 // 2.Transform
     // 1. Flip Vertical
     $("#flip-vertical").click(function () {
-        if(canvas.getActiveObject().get('flipX'))
-            canvas.getActiveObject().set('flipX', false);
-        else
-            canvas.getActiveObject().set('flipX', true);
-        canvas.renderAll();
-    });
-    // 2. Flip Horizontal
-    $("#flip-horizontal").click(function () {
         if(canvas.getActiveObject().get('flipY'))
             canvas.getActiveObject().set('flipY', false);
         else
             canvas.getActiveObject().set('flipY', true);
+        canvas.renderAll();
+    });
+    // 2. Flip Horizontal
+    $("#flip-horizontal").click(function () {
+        if(canvas.getActiveObject().get('flipX'))
+            canvas.getActiveObject().set('flipX', false);
+        else
+            canvas.getActiveObject().set('flipX', true);
         canvas.renderAll();
     });
     // 3. Rotate Clockwise
