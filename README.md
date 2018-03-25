@@ -1,4 +1,4 @@
-# DrawingAndDocument
+# Document and Drawing Annotation Module
 
 The providers use drawing/sketches to record findings of patient’s examination. These drawings are later linked to the patient's medical records within OpenMRS. Document and Drawing Annotation module provides a means to create such drawings and tools to annotate them efficiently. Along with drawings, providers can also attach additional files (e.g. audios, videos, images, pdfs) to the patient’s records which are saved as a part of the encounter.
 
